@@ -1,0 +1,38 @@
+- name: As tabelas
+  tocHref: /azure/
+  topicHref: /azure/
+  items:
+    - name: Azure para desenvolvedores Java
+      tocHref: /java/
+      topicHref: /java/azure/
+      items:
+        - name: Instalar
+          tocHref: /java/azure/java-sdk-azure-install
+          topicHref: /java/azure/java-sdk-azure-install
+        - name: Introdução
+          tocHref: /java/azure/java-sdk-azure-get-started
+          topicHref: /java/azure/java-sdk-azure-get-started
+        - name: Principais conceitos
+          tocHref: /java/azure/java-sdk-azure-concepts
+          topicHref: /java/azure/java-sdk-azure-concepts
+        - name: Autenticação
+          tocHref: /java/azure/java-sdk-azure-authenticate
+          topicHref: /java/azure/java-sdk-azure-authenticate
+          items:
+            - name: Criar uma entidade de serviço
+              tocHref: /cli/azure/create-an-azure-service-principal-azure-cli
+              topicHref: /cli/azure/create-an-azure-service-principal-azure-cli
+        - name: Notas de versão
+          tocHref: /java/azure/java-sdk-azure-release-notes
+          topicHref: /java/azure/java-sdk-azure-release-notes
+    - name: Exemplo de código
+      items:
+        - name: Máquinas virtuais
+          tocHref: /java/azure/java-sdk-azure-virtual-machine-samples
+          topicHref: /java/azure/java-sdk-azure-virtual-machine-samples
+        - name: Aplicativos Web
+          tocHref: /java/azure/java-sdk-azure-web-apps-samples
+          topicHref: /java/azure/java-sdk-azure-web-apps-samples
+        - name: Banco de dados SQL
+          tocHref: /java/azure/java-sdk-azure-sql-database-samples
+          topicHref: /java/azure/java-sdk-azure-sql-database-samples
