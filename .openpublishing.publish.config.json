@@ -32,7 +32,10 @@
     }
   ],
   "notification_subscribers": [],
-  "branches_to_filter": [],
+  "branches_to_filter": [
+    "live-sxs"
+  ],
+  "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
   "dependent_repositories": [
@@ -41,6 +44,15 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pt-BR",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/azure/azure-docs-sdk-java",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
     }
   ],
   "dependent_packages": [
