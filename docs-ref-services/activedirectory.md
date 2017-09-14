@@ -11,25 +11,25 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: active-directory
-ms.openlocfilehash: fa748db254aafc9a54b9819faf7a7b7caec92deb
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: 838d46caebc73b59029eb876a53c2bcd536472fd
+ms.sourcegitcommit: ae39830d5a54fedceac78d8df1718e77741e03fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
-# <a name="azure-active-directory-libraries-for-java"></a><span data-ttu-id="61e3c-104">Bibliotecas do Azure Active Directory para Java</span><span class="sxs-lookup"><span data-stu-id="61e3c-104">Azure Active Directory libraries for Java</span></span>
+# <a name="azure-active-directory-libraries-for-java"></a><span data-ttu-id="7523b-104">Bibliotecas do Azure Active Directory para Java</span><span class="sxs-lookup"><span data-stu-id="7523b-104">Azure Active Directory libraries for Java</span></span>
 
-## <a name="overview"></a><span data-ttu-id="61e3c-105">Visão geral</span><span class="sxs-lookup"><span data-stu-id="61e3c-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="7523b-105">Visão geral</span><span class="sxs-lookup"><span data-stu-id="7523b-105">Overview</span></span>
 
-<span data-ttu-id="61e3c-106">Conectar usuários e controlar o acesso a aplicativos e APIs com o [Azure Active Directory](/azure/active-directory/active-directory-whatis).</span><span class="sxs-lookup"><span data-stu-id="61e3c-106">Sign-on users and control access to applications and APIs with [Azure Active Directory](/azure/active-directory/active-directory-whatis).</span></span>
+<span data-ttu-id="7523b-106">Conectar usuários e controlar o acesso a aplicativos e APIs com o [Azure Active Directory](/azure/active-directory/active-directory-whatis).</span><span class="sxs-lookup"><span data-stu-id="7523b-106">Sign-on users and control access to applications and APIs with [Azure Active Directory](/azure/active-directory/active-directory-whatis).</span></span>
 
-<span data-ttu-id="61e3c-107">Para começar a usar o Azure AD, consulte [Conectar-se e desconectar-se de aplicativo Web de Java com o Azure AD](/azure/active-directory/develop/active-directory-devquickstarts-webapp-java).</span><span class="sxs-lookup"><span data-stu-id="61e3c-107">To get started with Azure AD, see [Java web app sign-in and sign-out with Azure AD](/azure/active-directory/develop/active-directory-devquickstarts-webapp-java).</span></span>
+<span data-ttu-id="7523b-107">Para começar a usar o Azure AD, consulte [Conectar-se e desconectar-se de aplicativo Web de Java com o Azure AD](/azure/active-directory/develop/active-directory-devquickstarts-webapp-java).</span><span class="sxs-lookup"><span data-stu-id="7523b-107">To get started with Azure AD, see [Java web app sign-in and sign-out with Azure AD](/azure/active-directory/develop/active-directory-devquickstarts-webapp-java).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="61e3c-108">Biblioteca do cliente</span><span class="sxs-lookup"><span data-stu-id="61e3c-108">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="7523b-108">Biblioteca do cliente</span><span class="sxs-lookup"><span data-stu-id="7523b-108">Client library</span></span>
 
-<span data-ttu-id="61e3c-109">Configurar a autenticação do OAuth2, OpenID Connect ou Active Directory Graph e conexão de acesso único [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference) com a [biblioteca de autenticação do Azure Active Directory (ADAL) para Java](https://github.com/AzureAD/azure-activedirectory-library-for-java).</span><span class="sxs-lookup"><span data-stu-id="61e3c-109">Configure OAuth2, OpenID Connect, or Active Directory Graph authentication and [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference) single-sign on with the [Azure Active Directory authentication library (ADAL) for Java](https://github.com/AzureAD/azure-activedirectory-library-for-java).</span></span>
+<span data-ttu-id="7523b-109">Configurar a autenticação do OAuth2, OpenID Connect ou Active Directory Graph e conexão de acesso único [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference) com a [biblioteca de autenticação do Azure Active Directory (ADAL) para Java](https://github.com/AzureAD/azure-activedirectory-library-for-java).</span><span class="sxs-lookup"><span data-stu-id="7523b-109">Configure OAuth2, OpenID Connect, or Active Directory Graph authentication and [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference) single-sign on with the [Azure Active Directory authentication library (ADAL) for Java](https://github.com/AzureAD/azure-activedirectory-library-for-java).</span></span>
 
-<span data-ttu-id="61e3c-110">[Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a biblioteca do cliente em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="61e3c-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>
+<span data-ttu-id="7523b-110">[Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a biblioteca do cliente em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="7523b-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the client library in your project.</span></span>
 
 ```XML
 <dependency>
@@ -39,9 +39,9 @@ ms.lasthandoff: 08/28/2017
 </dependency>
 ```   
 
-### <a name="example"></a><span data-ttu-id="61e3c-111">Exemplo</span><span class="sxs-lookup"><span data-stu-id="61e3c-111">Example</span></span>
+### <a name="example"></a><span data-ttu-id="7523b-111">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7523b-111">Example</span></span>
 
-<span data-ttu-id="61e3c-112">Recuperar um Token Web JSON (JWT) para um usuário em um locatário do Active Directory usando a [API do Graph](https://docs.microsoft.com/azure/active-directory/develop/active-directory-graph-api) do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="61e3c-112">Retrieve a JSON Web Token (JWT) for a user in your an Active Directory tenant using Azure Active Directory's [Graph API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-graph-api).</span></span> <span data-ttu-id="61e3c-113">Esse token, em seguida, pode ser usado para autenticar o usuário com um aplicativo ou com a API.</span><span class="sxs-lookup"><span data-stu-id="61e3c-113">This token can then be used to authenticate the user with an application or API.</span></span>
+<span data-ttu-id="7523b-112">Recuperar um Token Web JSON (JWT) para um usuário em um locatário do Active Directory usando a [API do Graph](https://docs.microsoft.com/azure/active-directory/develop/active-directory-graph-api) do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="7523b-112">Retrieve a JSON Web Token (JWT) for a user in your an Active Directory tenant using Azure Active Directory's [Graph API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-graph-api).</span></span> <span data-ttu-id="7523b-113">Esse token, em seguida, pode ser usado para autenticar o usuário com um aplicativo ou com a API.</span><span class="sxs-lookup"><span data-stu-id="7523b-113">This token can then be used to authenticate the user with an application or API.</span></span>
 
 ```java
 ExecutorService service = Executors.newFixedThreadPool(1);
@@ -55,23 +55,23 @@ System.out.println("Refresh Token - " + result.getRefreshToken());
 System.out.println("ID Token - " + result.getIdToken());
 ```
 
-## <a name="management-api"></a><span data-ttu-id="61e3c-114">API de Gerenciamento</span><span class="sxs-lookup"><span data-stu-id="61e3c-114">Management API</span></span>
+## <a name="management-api"></a><span data-ttu-id="7523b-114">API de Gerenciamento</span><span class="sxs-lookup"><span data-stu-id="7523b-114">Management API</span></span>
 
-<span data-ttu-id="61e3c-115">Configurar [controle de acesso baseado em função](/azure/active-directory/role-based-access-control-what-is) e atribuir identidades (como usuários e [entidades de serviço](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects)) para essas funções com a API de gerenciamento.</span><span class="sxs-lookup"><span data-stu-id="61e3c-115">Configure [role based access control](/azure/active-directory/role-based-access-control-what-is) and assign identities (such as users and [service principals](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects)) to those roles with the management API.</span></span> 
+<span data-ttu-id="7523b-115">Configurar [controle de acesso baseado em função](/azure/active-directory/role-based-access-control-what-is) e atribuir identidades (como usuários e [entidades de serviço](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects)) para essas funções com a API de gerenciamento.</span><span class="sxs-lookup"><span data-stu-id="7523b-115">Configure [role based access control](/azure/active-directory/role-based-access-control-what-is) and assign identities (such as users and [service principals](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects)) to those roles with the management API.</span></span> 
 
-<span data-ttu-id="61e3c-116">[Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a API de gerenciamento em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="61e3c-116">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
+<span data-ttu-id="7523b-116">[Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a API de gerenciamento em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="7523b-116">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
 
 ```XML
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-mgmt-graph-rbac</artifactId>
-    <version>1.1.2</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 
-### <a name="example"></a><span data-ttu-id="61e3c-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="61e3c-117">Example</span></span> 
+### <a name="example"></a><span data-ttu-id="7523b-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7523b-117">Example</span></span> 
 
-<span data-ttu-id="61e3c-118">Criar uma nova entidade de serviço e atribuir a ela a função de Colaborador.</span><span class="sxs-lookup"><span data-stu-id="61e3c-118">Create a new service principal and assign it the Contributor role.</span></span>
+<span data-ttu-id="7523b-118">Criar uma nova entidade de serviço e atribuir a ela a função de Colaborador.</span><span class="sxs-lookup"><span data-stu-id="7523b-118">Create a new service principal and assign it the Contributor role.</span></span>
 
 ```java
 ServicePrincipal sp = Azure.servicePrincipals().define(spName)
@@ -86,14 +86,14 @@ RoleAssignment roleAssignment2 = authenticated.roleAssignments()
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="61e3c-119">Explorar as APIs de gerenciamento</span><span class="sxs-lookup"><span data-stu-id="61e3c-119">Explore the Management APIs</span></span>](/java/api/overview/azure/activedirectory/managementapi)
+> [<span data-ttu-id="7523b-119">Explorar as APIs de gerenciamento</span><span class="sxs-lookup"><span data-stu-id="7523b-119">Explore the Management APIs</span></span>](/java/api/overview/azure/activedirectory/managementapi)
 
 
-## <a name="samples"></a><span data-ttu-id="61e3c-120">Exemplos</span><span class="sxs-lookup"><span data-stu-id="61e3c-120">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="7523b-120">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7523b-120">Samples</span></span>
 
-<span data-ttu-id="61e3c-121">[Gerenciar grupos, usuários e funções](https://github.com/Azure-Samples/aad-java-browse-graph-and-manage-roles)  </span><span class="sxs-lookup"><span data-stu-id="61e3c-121">[Manage groups, users, and roles](https://github.com/Azure-Samples/aad-java-browse-graph-and-manage-roles)  </span></span>  
-<span data-ttu-id="61e3c-122">[Conectar e desconectar usuários em um aplicativo Web de Java](https://github.com/Azure-Samples/active-directory-java-webapp-openidconnect)  </span><span class="sxs-lookup"><span data-stu-id="61e3c-122">[Sign-in and sign-out users in a Java web app](https://github.com/Azure-Samples/active-directory-java-webapp-openidconnect)  </span></span>  
-<span data-ttu-id="61e3c-123">[Acessar uma API com o Azure AD usando um aplicativo de linha de comando](https://github.com/Azure-Samples/active-directory-java-native-headless) </span><span class="sxs-lookup"><span data-stu-id="61e3c-123">[Access an API with Azure AD using a command line app](https://github.com/Azure-Samples/active-directory-java-native-headless) </span></span>  
-[<span data-ttu-id="61e3c-124">Chamar a API do Graph do Active AD a partir do seu aplicativo Web de Java</span><span class="sxs-lookup"><span data-stu-id="61e3c-124">Call the Active AD Graph API from your Java web app</span></span>](https://github.com/Azure-Samples/active-directory-java-graphapi-web/)  
+<span data-ttu-id="7523b-121">[Gerenciar grupos, usuários e funções](https://github.com/Azure-Samples/aad-java-browse-graph-and-manage-roles)  </span><span class="sxs-lookup"><span data-stu-id="7523b-121">[Manage groups, users, and roles](https://github.com/Azure-Samples/aad-java-browse-graph-and-manage-roles)  </span></span>  
+<span data-ttu-id="7523b-122">[Conectar e desconectar usuários em um aplicativo Web de Java](https://github.com/Azure-Samples/active-directory-java-webapp-openidconnect)  </span><span class="sxs-lookup"><span data-stu-id="7523b-122">[Sign-in and sign-out users in a Java web app](https://github.com/Azure-Samples/active-directory-java-webapp-openidconnect)  </span></span>  
+<span data-ttu-id="7523b-123">[Acessar uma API com o Azure AD usando um aplicativo de linha de comando](https://github.com/Azure-Samples/active-directory-java-native-headless) </span><span class="sxs-lookup"><span data-stu-id="7523b-123">[Access an API with Azure AD using a command line app](https://github.com/Azure-Samples/active-directory-java-native-headless) </span></span>  
+[<span data-ttu-id="7523b-124">Chamar a API do Graph do Active AD a partir do seu aplicativo Web de Java</span><span class="sxs-lookup"><span data-stu-id="7523b-124">Call the Active AD Graph API from your Java web app</span></span>](https://github.com/Azure-Samples/active-directory-java-graphapi-web/)  
 
-<span data-ttu-id="61e3c-125">Explorar mais [exemplos de código Java para o Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=java) que você pode usar nos seus aplicativos.</span><span class="sxs-lookup"><span data-stu-id="61e3c-125">Explore more [sample Java code for Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=java) you can use in your apps.</span></span>
+<span data-ttu-id="7523b-125">Explorar mais [exemplos de código Java para o Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=java) que você pode usar nos seus aplicativos.</span><span class="sxs-lookup"><span data-stu-id="7523b-125">Explore more [sample Java code for Azure AD](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=java) you can use in your apps.</span></span>
