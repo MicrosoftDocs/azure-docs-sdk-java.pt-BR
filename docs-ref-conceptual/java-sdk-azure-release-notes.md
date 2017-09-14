@@ -10,11 +10,11 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: fc246d499b2f5f20a7efbaed16c4b4193d8d8e6c
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: c0d5c4b3702d3bee4e93de51cec36e72aeaf598f
+ms.sourcegitcommit: ae39830d5a54fedceac78d8df1718e77741e03fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="release-notes"></a>Notas de versão 
 
@@ -36,7 +36,7 @@ Algumas das APIs que ainda estavam em versão Beta na V1.0 estão agora na fase 
 
  Algumas partes da biblioteca ainda estão em Versão Prévia. Consulte a tabela abaixo para saber o estado atual das bibliotecas:
 
-Serviço ou recurso | Disponível como Disponibilidade Geral (GA) | Disponível como Versão Prévia  | Em breve |
+Serviço ou recurso | Disponível como Disponibilidade Geral (GA) | Disponível como versão prévia  | Em breve |
 ---------|---------|---------|---------|
 Computação  | Máquinas virtuais e extensões de VM, conjuntos de dimensionamento de máquina virtual, discos gerenciados   | Serviço de contêiner do Azure, registro de contêiner do Azure |    |
 Armazenamento   |  Contas de armazenamento       |         |   Criptografia      |
@@ -51,7 +51,7 @@ Conceitos básicos     |   Autenticação - básica, assíncrona       |      | 
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
-    <version>1.1.2</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 

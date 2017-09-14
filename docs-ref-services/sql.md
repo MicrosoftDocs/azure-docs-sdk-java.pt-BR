@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: sql-database
-ms.openlocfilehash: 332bfa45b41f7b183e5c35ec9a1f3537f7d849ba
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: 4c16d602d33b8d2c75e2b9de8f5f11ace138c25d
+ms.sourcegitcommit: ae39830d5a54fedceac78d8df1718e77741e03fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="azure-sql-database-libraries-for-java"></a>Bibliotecas de Banco de Dados SQL do Azure para Java
 
@@ -64,12 +64,12 @@ Criar e gerenciar recursos do Banco de Dados SQL do Azure em sua assinatura com 
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-mgmt-sql</artifactId>
-    <version>1.1.2</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de Gerenciamento](/java/api/overview/azure/sql/managementapi)
+> [Explorar as APIs de gerenciamento](/java/api/overview/azure/sql/managementapi)
 
 ### <a name="example"></a>Exemplo
 

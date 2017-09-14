@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: java
 ms.service: multiple
 ms.assetid: b1e10b79-f75e-4605-aecd-eed64873e2d3
-ms.openlocfilehash: 4278a777178f0848d27fd6173efcf920e9a4884c
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: c9b654ea927563e8255f5d189ddc84733a1202e2
+ms.sourcegitcommit: 30d502b3150fa14bcc1251f5f88c7c0dd83e531e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="get-started-with-the-azure-libraries-for-java"></a>Introdução às bibliotecas do Azure para Java
 
@@ -26,7 +26,7 @@ Este guia orienta você na configuração de um ambiente de desenvolvimento com 
 
 - Uma conta do Azure. Se você não tiver uma, [obtenha uma avaliação gratuita](https://azure.microsoft.com/free/)
 - [Azure Cloud Shell](https://docs.microsoft.coms/azure/cloud-shell/quickstart) ou [CLI do Azure 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2).
-- [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (incluído no Azure Cloud Shell)
+- [Java 8](https://www.azul.com/downloads/zulu/) (incluído no Azure Cloud Shell)
 - [Maven 3](http://maven.apache.org/download.cgi) (incluído no Azure Cloud Shell)
 
 ## <a name="set-up-authentication"></a>Configurar a autenticação
@@ -97,7 +97,7 @@ Isso cria um projeto Maven básico na pasta `testAzureApp`. Adicione as seguinte
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
-    <version>1.1.2</version>
+    <version>1.2.1</version>
 </dependency>
 <dependency>
     <groupId>com.microsoft.azure</groupId>

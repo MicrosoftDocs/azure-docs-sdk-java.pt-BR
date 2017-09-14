@@ -10,11 +10,11 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: 10073a1b2250a37347128dd9c8faf1375b2ab6ae
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: 02500ff538402b39a74d032584ac4c0898f60cda
+ms.sourcegitcommit: ae39830d5a54fedceac78d8df1718e77741e03fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="azure-libraries-for-java"></a>Bibliotecas do Azure para Java
 
@@ -23,7 +23,7 @@ As bibliotecas do Azure o ajudam a consumir os serviços do Azure em seus aplica
 | | | | |
 |:-------------:|:----------:|:----:|:---:|
 | [Armazenamento do Azure](#azure-storage) | [Banco de Dados SQL](#sql-database)  | [Cache Redis](#redis-cache)   | [DocumentDB](#documentdb) |
-| [Barramento de Serviço](#servicebus)  | [Azure Active Directory](#azuread) | [Cofre de Chaves](#keyvault)  | [Hub de Evento](#eventhub)
+| [Barramento de Serviço](#servicebus)  | [Active Directory do Azure](#azuread) | [Cofre de Chaves](#keyvault)  | [Hub de Evento](#eventhub)
 | [Serviço de IoT](#iotservice) | [Dispositivo IoT](#iotdevice) | [Data Lake](#datalake)  | [AppInsights](#appinsights) | 
 | [Batch](#batch) | [Gerenciar recursos do Azure](#management) |
 
@@ -37,7 +37,7 @@ Por exemplo, para incluir a versão mais recente das [bibliotecas de gerenciamen
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
-    <version>1.1.2</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 
@@ -131,7 +131,7 @@ Banco de dados NoSQL escalonável com documentos JSON e uma sintaxe de consulta 
   
 <a name="azuread"></a>
 
-### <a name="azure-active-directoryazureactive-directoryactive-directory-whatis"></a>[Azure Active Directory](/azure/active-directory/active-directory-whatis)   
+### <a name="azure-active-directoryazureactive-directoryactive-directory-whatis"></a>[Active Directory do Azure](/azure/active-directory/active-directory-whatis)   
 
 Gerenciamento de identidade e logon seguro em seus aplicativos.
 
@@ -267,7 +267,7 @@ Criar, atualizar e excluir recursos do Azure do seu código do aplicativo.
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
-    <version>1.1.2</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 

@@ -10,11 +10,11 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 4/10/2017
 ms.author: routlaw;asirveda
-ms.openlocfilehash: 01fe31f2c59810f972875331d49ce5130755c8f2
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: ce0b003cc7c48c8690f4236547ddec36e6ea9d53
+ms.sourcegitcommit: ae39830d5a54fedceac78d8df1718e77741e03fa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="azure-tools-for-java-developers"></a>Ferramentas do Azure para desenvolvedores Java
 
@@ -26,7 +26,7 @@ Conectar-se aos serviços e gerenciar recursos do Azure a partir de seus aplicat
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
-    <version>1.1.2</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 
@@ -34,7 +34,7 @@ Exibição da [lista completa das bibliotecas](java-sdk-azure-install.md) e [int
 
 ## <a name="eclipse-and-intellij-plugins"></a>Plug-ins Eclipse e IntelliJ
 
-Gerenciar recursos do Azure e implantar aplicativos do seu IDE com o kit de ferramentas do Azure para [Eclipse](https://docs.microsoft.com/azure/azure-toolkit-for-eclipse) e [IntelliJ](https://docs.microsoft.com/azure/azure-toolkit-for-intellij).   
+Gerenciar recursos do Azure e implantar aplicativos do seu IDE com o kit de ferramentas do Azure para [Eclipse](eclipse/azure-toolkit-for-eclipse.md) e [IntelliJ](intellij/azure-toolkit-for-intellij.md).   
 
 ![Kit de ferramentas de IntelliJ mostrando o Gerenciador do Azure](media/intelliJ-azure-explorer.png)
 
