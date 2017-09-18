@@ -1,11 +1,11 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: <span data-ttu-id="7038e-101">Azure para desenvolvedores Java</span><span class="sxs-lookup"><span data-stu-id="7038e-101">Azure for Java developers</span></span>
+title: <span data-ttu-id="6c6b1-101">Azure para desenvolvedores Java</span><span class="sxs-lookup"><span data-stu-id="6c6b1-101">Azure for Java developers</span></span>
 metadata:
   document_id: 1152a217-eb0e-45e9-b01b-bd27080d615e
-  title: '<span data-ttu-id="7038e-102">Azure para desenvolvedores Java - Tutoriais, Referência de API</span><span class="sxs-lookup"><span data-stu-id="7038e-102">Azure for Java developers - Tutorials, API Reference</span></span>'
-  description: <span data-ttu-id="7038e-103">Comece a desenvolver aplicativos com o Azure usando os recursos a seguir para localizar ótimos tutoriais e ferramentas para desenvolvedores Java.</span><span class="sxs-lookup"><span data-stu-id="7038e-103">Get started developing apps with Azure using the resources below to find great tutorials and tools for Java developers.</span></span>
-  keywords: '<span data-ttu-id="7038e-104">Azure, Java, SDK, API, Maven, Spring</span><span class="sxs-lookup"><span data-stu-id="7038e-104">Azure, Java, SDK, API, Maven, Spring</span></span>'
+  title: '<span data-ttu-id="6c6b1-102">Azure para desenvolvedores Java - Tutoriais, Referência de API</span><span class="sxs-lookup"><span data-stu-id="6c6b1-102">Azure for Java developers - Tutorials, API Reference</span></span>'
+  description: <span data-ttu-id="6c6b1-103">Comece a desenvolver aplicativos com o Azure usando os recursos a seguir para localizar ótimos tutoriais e ferramentas para desenvolvedores Java.</span><span class="sxs-lookup"><span data-stu-id="6c6b1-103">Get started developing apps with Azure using the resources below to find great tutorials and tools for Java developers.</span></span>
+  keywords: '<span data-ttu-id="6c6b1-104">Azure, Java, SDK, API, Maven, Spring</span><span class="sxs-lookup"><span data-stu-id="6c6b1-104">Azure, Java, SDK, API, Maven, Spring</span></span>'
   author: rloutlaw
   ms.author: routlaw
   manager: douge
@@ -19,7 +19,7 @@ sections:
   - items:
       - type: markdown
         text: |
-          <span data-ttu-id="7038e-105">Comece a desenvolver aplicativos com o Azure usando os recursos a seguir para localizar ótimos tutoriais e ferramentas para desenvolvedores Java.</span><span class="sxs-lookup"><span data-stu-id="7038e-105">Get started developing apps with Azure using the resources below to find great tutorials and tools for Java developers.</span></span>
+          <span data-ttu-id="6c6b1-105">Comece a desenvolver aplicativos com o Azure usando os recursos a seguir para localizar ótimos tutoriais e ferramentas para desenvolvedores Java.</span><span class="sxs-lookup"><span data-stu-id="6c6b1-105">Get started developing apps with Azure using the resources below to find great tutorials and tools for Java developers.</span></span>
   - items:
       - type: list
         style: cards
@@ -27,29 +27,29 @@ sections:
         columns: 2
         items:
           - href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-java'
-            html: <p><span data-ttu-id="7038e-106">Implantar seu primeiro aplicativo Web no Azure</span><span class="sxs-lookup"><span data-stu-id="7038e-106">Deploy your first web app to Azure</span></span></p>
+            html: <p><span data-ttu-id="6c6b1-106">Implantar seu primeiro aplicativo Web no Azure</span><span class="sxs-lookup"><span data-stu-id="6c6b1-106">Deploy your first web app to Azure</span></span></p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-            title: <span data-ttu-id="7038e-107">Introdução</span><span class="sxs-lookup"><span data-stu-id="7038e-107">Get Started</span></span>
+            title: <span data-ttu-id="6c6b1-107">Introdução</span><span class="sxs-lookup"><span data-stu-id="6c6b1-107">Get Started</span></span>
           - href: 'https://azure.microsoft.com/resources/samples/?platform=java&view=azure-java'
-            html: <p><span data-ttu-id="7038e-108">Exemplos de código do Azure usando Java</span><span class="sxs-lookup"><span data-stu-id="7038e-108">Azure code samples using Java</span></span></p>
+            html: <p><span data-ttu-id="6c6b1-108">Exemplos de código do Azure usando Java</span><span class="sxs-lookup"><span data-stu-id="6c6b1-108">Azure code samples using Java</span></span></p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
-            title: <span data-ttu-id="7038e-109">Exemplos de código</span><span class="sxs-lookup"><span data-stu-id="7038e-109">Code Samples</span></span>
+            title: <span data-ttu-id="6c6b1-109">Exemplos de código</span><span class="sxs-lookup"><span data-stu-id="6c6b1-109">Code Samples</span></span>
           - href: java-azure-tools.md
-            html: <p><span data-ttu-id="7038e-110">Ferramentas de desenvolvedor</span><span class="sxs-lookup"><span data-stu-id="7038e-110">Developer tools</span></span></p>
+            html: <p><span data-ttu-id="6c6b1-110">Ferramentas de desenvolvedor</span><span class="sxs-lookup"><span data-stu-id="6c6b1-110">Developer tools</span></span></p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_download-install.svg'
-            title: <span data-ttu-id="7038e-111">Ferramentas &amp; do SDK</span><span class="sxs-lookup"><span data-stu-id="7038e-111">SDK &amp; Tools</span></span>
+            title: <span data-ttu-id="6c6b1-111">Ferramentas de &amp; plugins do IDE</span><span class="sxs-lookup"><span data-stu-id="6c6b1-111">IDE plugins &amp; Tools</span></span>
           - href: java-sdk-azure-install.md
-            html: <p><span data-ttu-id="7038e-112">Bibliotecas do Azure para Java</span><span class="sxs-lookup"><span data-stu-id="7038e-112">Azure Libraries for Java</span></span></p>
+            html: <p><span data-ttu-id="6c6b1-112">Bibliotecas do Azure para Java</span><span class="sxs-lookup"><span data-stu-id="6c6b1-112">Azure Libraries for Java</span></span></p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
-            title: <span data-ttu-id="7038e-113">Referência de API</span><span class="sxs-lookup"><span data-stu-id="7038e-113">API Reference</span></span>
-  - title: <span data-ttu-id="7038e-114">Guia de início rápido de 5 minutos</span><span class="sxs-lookup"><span data-stu-id="7038e-114">5-Minute Quickstarts</span></span>
+            title: <span data-ttu-id="6c6b1-113">Referência de API</span><span class="sxs-lookup"><span data-stu-id="6c6b1-113">API Reference</span></span>
+  - title: <span data-ttu-id="6c6b1-114">Guia de início rápido de 5 minutos</span><span class="sxs-lookup"><span data-stu-id="6c6b1-114">5-Minute Quickstarts</span></span>
     items:
       - type: paragraph
-        text: <span data-ttu-id="7038e-115">Aprenda a criar aplicativos Java com os serviços do Azure.</span><span class="sxs-lookup"><span data-stu-id="7038e-115">Learn how to build Java apps with Azure services.</span></span>
+        text: <span data-ttu-id="6c6b1-115">Aprenda a criar aplicativos Java com os serviços do Azure.</span><span class="sxs-lookup"><span data-stu-id="6c6b1-115">Learn how to build Java apps with Azure services.</span></span>
       - type: list
         style: cards
         className: cardsM
@@ -57,25 +57,25 @@ sections:
         items:
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/app-service-web.svg'
-            title: <span data-ttu-id="7038e-116">Implantar seu primeiro aplicativo Web no Azure</span><span class="sxs-lookup"><span data-stu-id="7038e-116">Deploy your first web app to Azure</span></span>
+            title: <span data-ttu-id="6c6b1-116">Implantar seu primeiro aplicativo Web no Azure</span><span class="sxs-lookup"><span data-stu-id="6c6b1-116">Deploy your first web app to Azure</span></span>
             href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-java'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/MySQL.svg'
-            title: <span data-ttu-id="7038e-117">Conectar-se ao Banco de Dados do Azure para MySQL</span><span class="sxs-lookup"><span data-stu-id="7038e-117">Connect to Azure Database for MySQL</span></span>
+            title: <span data-ttu-id="6c6b1-117">Conectar-se ao Banco de Dados do Azure para MySQL</span><span class="sxs-lookup"><span data-stu-id="6c6b1-117">Connect to Azure Database for MySQL</span></span>
             href: 'https://docs.microsoft.com/azure/mysql/connect-java'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/CosmosDB_rgb_ui_lighttheme.svg'
-            title: <span data-ttu-id="7038e-118">Compilar um aplicativo Web com o Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="7038e-118">Build a web app with Cosmos DB</span></span>
+            title: <span data-ttu-id="6c6b1-118">Compilar um aplicativo Web com o Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="6c6b1-118">Build a web app with Cosmos DB</span></span>
             href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-java'
           - image:
               src: 'https://docs.microsoft.com/java/docs-ref-conceptual/media/jenkins_logo.svg'
-            title: <span data-ttu-id="7038e-119">CI/CD para Serviço de Aplicativo com Jenkins®</span><span class="sxs-lookup"><span data-stu-id="7038e-119">CI/CD to App Service with Jenkins®</span></span>
+            title: <span data-ttu-id="6c6b1-119">CI/CD para Serviço de Aplicativo com Jenkins®</span><span class="sxs-lookup"><span data-stu-id="6c6b1-119">CI/CD to App Service with Jenkins®</span></span>
             href: 'https://docs.microsoft.com/azure/jenkins/java-deploy-webapp-tutorial'
-  - title: <span data-ttu-id="7038e-120">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7038e-120">Samples</span></span>
+  - title: <span data-ttu-id="6c6b1-120">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6c6b1-120">Samples</span></span>
     items:
       - type: list
         style: unordered
         items:
-          - html: '<span data-ttu-id="7038e-121"><a href="https://github.com/Azure-Samples/mysql-spring-boot-todo">Criar um aplicativo Web com Spring Boot e MySQL</a></span><span class="sxs-lookup"><span data-stu-id="7038e-121"><a href="https://github.com/Azure-Samples/mysql-spring-boot-todo">Create a web app with Spring Boot and MySQL</a></span></span>'
-          - html: '<span data-ttu-id="7038e-122"><a href="https://azure.microsoft.com/resources/samples/storage-blob-java-getting-started/">Armazenamento de Blobs do Azure com Java</a></span><span class="sxs-lookup"><span data-stu-id="7038e-122"><a href="https://azure.microsoft.com/resources/samples/storage-blob-java-getting-started/">Azure Blob Storage with Java</a></span></span>'
-          - html: '<span data-ttu-id="7038e-123"><a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-java-getting-started/">Conectar-se ao Azure Cosmos DB com a API do MongoDB</a></span><span class="sxs-lookup"><span data-stu-id="7038e-123"><a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-java-getting-started/">Connect to Azure Cosmos DB with the MongoDB API</a></span></span>'
+          - html: '<span data-ttu-id="6c6b1-121"><a href="https://github.com/Azure-Samples/mysql-spring-boot-todo">Criar um aplicativo Web com Spring Boot e MySQL</a></span><span class="sxs-lookup"><span data-stu-id="6c6b1-121"><a href="https://github.com/Azure-Samples/mysql-spring-boot-todo">Create a web app with Spring Boot and MySQL</a></span></span>'
+          - html: '<span data-ttu-id="6c6b1-122"><a href="https://azure.microsoft.com/resources/samples/storage-blob-java-getting-started/">Armazenamento de Blobs do Azure com Java</a></span><span class="sxs-lookup"><span data-stu-id="6c6b1-122"><a href="https://azure.microsoft.com/resources/samples/storage-blob-java-getting-started/">Azure Blob Storage with Java</a></span></span>'
+          - html: '<span data-ttu-id="6c6b1-123"><a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-java-getting-started/">Conectar-se ao Azure Cosmos DB com a API do MongoDB</a></span><span class="sxs-lookup"><span data-stu-id="6c6b1-123"><a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-java-getting-started/">Connect to Azure Cosmos DB with the MongoDB API</a></span></span>'
