@@ -318,7 +318,7 @@ O plug-in do Azure para Eclipse, CTP de dezembro de 2011 foi lançado. Os novos 
 <!-- URL List -->
 
 [Kit de Ferramentas do Azure para IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
-[Instalação do Kit de Ferramentas do Azure para o Eclipse]: azure-toolkit-for-eclipse-installation.md
+[Instalação do Kit de Ferramentas do Azure para Eclipse]: azure-toolkit-for-eclipse-installation.md
 
 [Instruções de entrada no Azure para o Kit de Ferramentas do Azure para Eclipse]: azure-toolkit-for-eclipse-sign-in-instructions.md
 [Como publicar um aplicativo Web como um contêiner do Docker usando o Kit de ferramentas do Azure para Eclipse]: ./azure-toolkit-for-eclipse-publish-as-docker-container.md
@@ -345,7 +345,7 @@ O plug-in do Azure para Eclipse, CTP de dezembro de 2011 foi lançado. Os novos 
 [Afinidade da sessão]: http://go.microsoft.com/fwlink/?LinkID=699548
 [Descarregamento de SSL]: http://go.microsoft.com/fwlink/?LinkID=699549
 [Para criar uma nova conta de armazenamento]: http://go.microsoft.com/fwlink/?LinkID=699528#create_new
-[Tamanhos de máquinas virtuais e serviços de nuvem do Azure]: http://go.microsoft.com/fwlink/?LinkId=466520
+[Tamanhos de máquina virtual e serviço de nuvem para o Azure]: http://go.microsoft.com/fwlink/?LinkId=466520
 
 <!-- IMG List -->
 
