@@ -113,12 +113,12 @@ Para saber mais sobre os tamanhos, preços e contas de armazenamento do Azure, v
 
 <!-- URL List -->
 
-[Instruções de entrada para o Kit de ferramentas do Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
+[Instruções de conexão para o Kit de ferramentas do Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
 [Introdução ao Armazenamento do Microsoft Azure]: /azure/storage/storage-introduction
 [Sobre as contas de armazenamento do Azure]: /azure/storage/storage-create-storage-account
-[Replicação de Armazenamento do Azure]: /azure/storage/storage-redundancy
+[Replicação do Armazenamento do Azure]: /azure/storage/storage-redundancy
 [Metas de desempenho e escalabilidade do Armazenamento do Azure]: /azure/storage/storage-scalability-targets
-[Nomeando e referenciando contêineres, blobs e metadados]: http://go.microsoft.com/fwlink/?LinkId=255555
+[Nomenclatura e referência de contêineres, blobs e metadados]: http://go.microsoft.com/fwlink/?LinkId=255555
 
 [Tamanhos das contas de armazenamento do Windows no Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamanhos das contas de armazenamento do Linux no Azure]: /azure/virtual-machines/virtual-machines-linux-sizes

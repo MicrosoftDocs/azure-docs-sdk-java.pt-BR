@@ -93,14 +93,14 @@ Para saber mais sobre caches redis, configurações e preços do Azure, veja os 
 
 * [Cache Redis do Azure]
 * [Documentação do Cache Redis]
-* [Preços do Cache Redis]
+* [Preço do Cache Redis]
 * [Como configurar o Cache Redis do Azure]
 
 [!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)]
 
 <!-- URL List -->
 
-[Preços do Cache Redis]: https://azure.microsoft.com/pricing/details/cache/
+[Preço do Cache Redis]: https://azure.microsoft.com/pricing/details/cache/
 [Cache Redis do Azure]: https://azure.microsoft.com/services/cache/
 [Documentação do Cache Redis]: /azure/redis-cache/
 [Como configurar o Cache Redis do Azure]: /azure/redis-cache/cache-configure
