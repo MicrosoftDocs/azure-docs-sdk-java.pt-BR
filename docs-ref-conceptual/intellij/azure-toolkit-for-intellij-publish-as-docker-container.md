@@ -105,7 +105,7 @@ Contêineres do Docker são um método amplamente usado para implantar aplicativ
 
         a. Na guia **Credenciais de VM** forneça as seguintes informações para as credenciais de logon da máquina virtual de seu host do Docker: * **Nome de usuário**: insira o nome de usuário para as credenciais de logon da máquina virtual.
              * **Senha** e **Confirmar**: especifica a senha para as credenciais de logon da máquina virtual.
-             * **SSH**: insira as configurações de SSH (Secure Shell) para o host do Docker. Você pode selecionar uma das seguintes opções: * **Nenhum** : especifica que a sua máquina virtual não permite conexões SSH.
+             * **SSH**: insira as configurações de SSH (Secure Shell) para o host do Docker. Você pode selecionar uma das seguintes opções: * **Nenhum**: especifica que a sua máquina virtual não permite conexões SSH.
                 * **Gerar automaticamente**: cria automaticamente as configurações necessárias para conectar-se via SSH.
                 * **Importar do diretório**: permite que você especifique um diretório que contém um conjunto de configurações de SSH salvas anteriormente. O diretório deve conter os dois arquivos a seguir:
                 
@@ -188,7 +188,7 @@ Para obter recursos adicionais para o Docker, consulte o [site do Docker] oficia
 
 <!-- URL List -->
 
-[Site do Docker]: https://www.docker.com/
+[site do Docker]: https://www.docker.com/
 [Configurar artefatos]: https://www.jetbrains.com/help/idea/2016.1/configuring-artifacts.html
 
 <!-- IMG List -->
