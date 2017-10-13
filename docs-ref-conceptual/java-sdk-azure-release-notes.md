@@ -10,25 +10,25 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: c0d5c4b3702d3bee4e93de51cec36e72aeaf598f
-ms.sourcegitcommit: ae39830d5a54fedceac78d8df1718e77741e03fa
+ms.openlocfilehash: 015cb0615c28711ebb8feb5cea584a8a3779fa54
+ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="release-notes"></a>Notas de versão 
 
-## <a name="june-30-2017---110"></a>30 de junho de 2017 - 1.1.0 
+## <a name="october-5-2017---130"></a>5 de outubro de 2017 - 1.3.0 
 
-A V1.1 é retrocompatível com a V1.0 nas APIs destinadas a uso público que atingiram o estágio de disponibilidade geral (estável) na V1.0.
+A versão 1.3.0 é compatível com versões anteriores para serviços e uso em destaque que atingiram o estágio de disponibilidade geral (estável) em versões anteriores.
 
-Algumas alterações foram introduzidas em APIs marcadas com a anotação @Beta na V.0
+As alterações de última hora de versões de visualização para esses serviços são marcadas com a anotação @Beta.
 
-Se você estiver migrando seu código para a versão 1.1.0, você pode usar [estas notas](https://github.com/Azure/azure-sdk-for-java/blob/master/notes/prepare-for-1.1.0.md) para preparar o seu código para a versão 1.1.0 a partir da versão 1.0.0.
+Se você estiver migrando seu código para a versão 1.3.0, pode usar [estas notas](https://github.com/Azure/azure-sdk-for-java/blob/master/notes/prepare-for-1.3.0.md) para preparar o seu código existente para a versão 1.3.
 
-### <a name="generally-availabile-in-v11"></a>Geralmente disponível na V1.1
+### <a name="generally-availabile-in-v13"></a>Geralmente disponível na V1.3
 
-Algumas das APIs que ainda estavam em versão Beta na V1.0 estão agora na fase de Disponibilidade Geral (GA) na V1.1, em particular:
+Algumas das APIs que ainda estavam em versões Beta anteriores estão agora na fase de Disponibilidade Geral (GA), em particular:
 
 - métodos assíncronos
 - todos os métodos na CDN que estavam anteriormente na versão Beta
@@ -36,14 +36,16 @@ Algumas das APIs que ainda estavam em versão Beta na V1.0 estão agora na fase 
 
  Algumas partes da biblioteca ainda estão em Versão Prévia. Consulte a tabela abaixo para saber o estado atual das bibliotecas:
 
-Serviço ou recurso | Disponível como Disponibilidade Geral (GA) | Disponível como versão prévia  | Em breve |
----------|---------|---------|---------|
-Computação  | Máquinas virtuais e extensões de VM, conjuntos de dimensionamento de máquina virtual, discos gerenciados   | Serviço de contêiner do Azure, registro de contêiner do Azure |    |
-Armazenamento   |  Contas de armazenamento       |         |   Criptografia      |
-Banco de dados SQL  | Bancos de dados, firewalls, pools elásticos        |         |   Mais recursos      |
-Rede    |  Redes virtuais, interfaces de rede, endereços IP, tabelas de roteamento, grupos de segurança de rede, DNS, gerenciadores de tráfego, gateways de aplicativo  |    Balanceadores de carga     |   VPN, observadores de rede   |
-Mais serviços    |  Gerenciador de Recursos, Cofre de Chaves, Redis, CDN, Lote       |  Aplicativos Web, Aplicativos de Funções, Barramento de Serviço, Grafo RBAC, DocumentDB   | Monitor, Agendador, gerenciamento de Funções, Pesquisa, mais recursos do Grafo RBAC        |
-Conceitos básicos     |   Autenticação - básica, assíncrona       |      |         |
+Serviço ou recurso | Disponível como Disponibilidade Geral (GA) | Disponível como versão prévia 
+---------|---------|---------|-
+Computação  | Máquinas virtuais e extensões de VM, conjuntos de dimensionamento de máquina virtual, discos gerenciados   | Serviço de contêiner do Azure, registro de contêiner do Azure 
+Armazenamento   |  Contas de armazenamento       |    Criptografia     
+Banco de dados SQL  | Bancos de dados, firewalls, pools elásticos              
+Rede    |  Redes virtuais, interfaces de rede, endereços IP, tabelas de roteamento, grupos de segurança de rede, DNS, gerenciadores de tráfego, gateways de aplicativo  |    Balanceadores de carga, Emparelhamento de rede, Gateway de Rede Virtual, Inspetores de rede 
+Mais serviços    |  Gerenciador de Recursos, Cofre de Chaves, Redis, CDN, Lote       |  Aplicativos Web, Aplicativos de funções, Barramento de Serviço, Gráfico RBAC, Cosmos DB, Pesquisar  
+Conceitos básicos     |   Autenticação - núcleo, métodos assíncronos, identidade de serviço gerenciado      |      |
+
+> Os recursos de visualização são marcados com uma anotação `@Beta` no nível de classe, interface ou método em bibliotecas. Esses recursos estão sujeitos a alterações. Eles podem ser modificados de alguma forma, ou até mesmo removidos, no futuro.
 
 ### <a name="import-with-maven"></a>Importar com Maven
 
@@ -51,16 +53,12 @@ Conceitos básicos     |   Autenticação - básica, assíncrona       |      | 
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
 </dependency>
 ```
 
 ### <a name="get-help-and-give-feedback"></a>Obter ajuda e fazer comentários
 
 Confira a comunidade de [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-java-sdk) para obter ajuda usando as bibliotecas em seu próprio código. Se você encontrar quaisquer bugs ou tiver sugestões para melhorar essas bibliotecas, arquive todas as questões através do [GitHub](https://github.com/Azure/azure-sdk-for-java/issues).
-
-### <a name="migrate-from-previous-releases"></a>Migrar de versões anteriores
-
-[Migrar da versão 1.0.0-beta5](https://github.com/Azure/azure-sdk-for-java/blob/master/notes/prepare-for-1.0.0.md) [Migrar da versão 1.1.0  ](https://github.com/Azure/azure-sdk-for-java/blob/master/notes/prepare-for-1.1.0.md)
 
 
