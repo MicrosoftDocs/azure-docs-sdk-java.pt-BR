@@ -11,15 +11,15 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: iot-hub
-ms.openlocfilehash: b386612741e222fcaeb7b6c38753d0cb7d616239
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: c1af3dae0fe37eb4919db02da87beed193c547a7
+ms.sourcegitcommit: acc83bb537d77568b2a5427479d6354d6ae30885
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="azure-iot-libraries-for-java"></a>Bibliotecas de IoT do Azure para Java
 
-Conecte, monitore e controle ativos de Internet das Coisas com o [Hub IoT do Azure](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-what-is-iot-hub).
+Conecte, monitore e controle ativos de Internet das Coisas com o [Hub IoT do Azure](https://docs.microsoft.com/azure/iot-hub/iot-hub-what-is-iot-hub).
 
 Para se familiarizar com o Hub IoT do Azure, consulte [Conectar seu dispositivo ao seu hub IoT usando Java](/azure/iot-hub/iot-hub-java-java-getstarted).
 
@@ -52,7 +52,7 @@ Enviar mensagens para a nuvem e receber mensagens em dispositivos usando a bibli
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de Cliente](/java/api/overview/azure/iot/clientlibrary)   
+> [Explorar as APIs de cliente](/java/api/overview/azure/iot/clientlibrary)   
 
 ## <a name="example"></a>Exemplo
 
