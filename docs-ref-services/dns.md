@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: dns
-ms.openlocfilehash: c29403713b1271091b7c37b796a0e8d65a337a7d
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: adac8e21a401bc91490b92fc5ccf90443eea569f
+ms.sourcegitcommit: f6bf497d9b98f0608aefacf1e914d8be52964234
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="azure-traffic-manager-libraries-for-java"></a>Bibliotecas do Gerenciador de Tráfego do Azure para Java
 
@@ -60,3 +60,5 @@ rootDnsZone = rootDnsZone.update()
 [Hospedar e gerenciar seus domínios com DNS do Azure](https://github.com/Azure-Samples/dns-java-host-and-manage-your-domains)
 
 Explorar mais [exemplos de código Java para o DNS do Azure](https://azure.microsoft.com/resources/samples/?platform=java&term=dns) que você pode usar em seus aplicativos.
+
+<!---Loc Comment: Please, refer to conversation section to check the issue. Thanks.--->
