@@ -12,20 +12,20 @@ ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: Java
 ms.topic: article
-ms.date: 10/19/2017
+ms.date: 11/01/2017
 ms.author: robmcm;asirveda
-ms.openlocfilehash: d3f91a7b501adfd9496991e955024298b637b90d
-ms.sourcegitcommit: 7f8538e41c833deb69c300ad3431a431136a1f3e
+ms.openlocfilehash: f94900ab5fa25a5d9dac19f665705b970db7c8b7
+ms.sourcegitcommit: 062e07cbd42cda74f02c82b933ce90da646a50a0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="azure-toolkit-for-eclipse"></a>Kit de ferramentas do Azure para Eclipse
-O Kit de Ferramentas do Azure para Eclipse fornece modelos e funcionalidades que podem ser usadas para criar, desenvolver, testar e implantar aplicativos do Azure com facilidade usando o IDE (ambiente de desenvolvimento integrado) do Eclipse. Ele é um projeto de software livre, cujo código-fonte está disponível de acordo com a [licença do MIT no site do projeto](https://github.com/microsoft/azure-tools-for-java).
+O Kit de Ferramentas do Azure para Eclipse fornece modelos e funcionalidades que podem ser usadas para criar, desenvolver, testar e implantar aplicativos do Azure com facilidade usando o IDE (ambiente de desenvolvimento integrado) do Eclipse.
 
 > [!NOTE]
-> Há também um kit de ferramentas do Azure para o IDE do IntelliJ. Para obter mais informações, confira [Kit de Ferramentas do Azure para IntelliJ](../intellij/azure-toolkit-for-intellij.md).
 > 
+> Há também um kit de ferramentas do Azure para o IDE do IntelliJ. Para obter mais informações, confira [Kit de Ferramentas do Azure para IntelliJ](../intellij/azure-toolkit-for-intellij.md).
 > 
 
 ## <a name="get-started-with-the-azure-toolkit-for-eclipse"></a>Introdução ao Kit de Ferramentas do Azure para Eclipse
@@ -67,7 +67,12 @@ Para obter mais informações sobre o Kit de Ferramentas do Azure para Eclipse, 
 
 Para saber mais sobre como usar o Java com o Azure, confira o [Centro de Desenvolvedores Java do Azure](https://azure.microsoft.com/develop/java/) e as [Ferramentas Java para Visual Studio Team Services](https://java.visualstudio.com/).
 
-<!-- [!INCLUDE [azure-toolkit-additional-resources](../includes/azure-toolkit-additional-resources.md)] -->
+<!-- [!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)] -->
+
+> [!NOTE]
+> 
+> O Kit de Ferramentas do Azure para Eclipse é um projeto de fonte aberta, cujo código-fonte está disponível sob a [licença MIT no site do projeto](https://github.com/microsoft/azure-tools-for-java).
+> 
 
 <!-- URL List -->
 
