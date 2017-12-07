@@ -14,11 +14,11 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 11/01/2017
 ms.author: robmcm;asirveda;martinsawicki
-ms.openlocfilehash: 128995cfd9122bbd6e32f2a31c35f206b5108ad6
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.openlocfilehash: 666401b88c937909dc01d74fe204bb0099ebf55c
+ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="whats-new-in-the-azure-toolkit-for-eclipse"></a>Novidades no Kit de Ferramentas do Azure para Eclipse
 
@@ -155,7 +155,7 @@ O Kit de Ferramentas do Azure para Eclipse, versão de outubro de 2014, inclui o
 O Kit de Ferramentas do Azure para Eclipse, versão de agosto de 2014, inclui os seguintes aprimoramentos
 
 * **Suporte para o SDK do Azure 2.4.** Versões mais antigas do Kit de Ferramentas do Eclipse não funcionarão com esse SDK recém-lançado.
-* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6, 1.7 e v1.8.** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
+* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6, 1.7 e v1.8..** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
 * **Versão atualizada do pacote de Bibliotecas do Azure para a biblioteca de APIs de cliente Java.** Para saber mais, confira a [API de cliente do Microsoft Azure].
 * **Suporte para o formato de arquivo de configurações de publicação mais recente.** Adição do suporte para a versão 2.0 do formato do arquivo de Configurações de publicação.
 * **Alterações de arquitetura por trás do recurso Publicar na nuvem.** Agora, o Kit de Ferramentas está usando a recém-lançada API de cliente do Microsoft Azure para Java para seu suporte de publicação na nuvem.
@@ -165,7 +165,7 @@ O Kit de Ferramentas do Azure para Eclipse, versão de agosto de 2014, inclui os
 O Kit de Ferramentas do Azure para Eclipse, versão de junho de 2014, é uma pequena atualização de serviço que fornece os seguintes aprimoramentos:
 
 * **Suporte para o pacote do Zulu OpenJDK v1.8.** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
-* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6 e 1.7.** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
+* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6 e 1.7..** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
 * **Versão atualizada do pacote de Bibliotecas do Azure para a biblioteca de APIs de cliente Java.** Para saber mais, confira a [API de cliente do Microsoft Azure].
 * **Correções de bug.** Esta versão contém várias correções de bugs solicitadas pelo usuário.
 
@@ -328,7 +328,7 @@ O plug-in do Azure para Eclipse, CTP de dezembro de 2011 foi lançado. Os novos 
 [Gerenciar contas de armazenamento usando o Azure Explorer para Eclipse]: ./azure-toolkit-for-eclipse-managing-storage-accounts-using-azure-explorer.md
 [Gerenciar Máquinas Virtuais usando o Azure Explorer para Eclipse]: ./azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md
 
-[Azure Java Developer Center]: https://docs.microsoft.com/java/azure
+[Azure for Java Developers]: https://docs.microsoft.com/java/azure
 
 [página da Web do Azul Systems para o Zulu OpenJDK]: http://go.microsoft.com/fwlink/?LinkId=402457
 [Ponto de extremidade de serviço do Azure]: http://go.microsoft.com/fwlink/?LinkID=699526

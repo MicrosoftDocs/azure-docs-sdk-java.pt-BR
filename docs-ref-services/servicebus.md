@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: service-bus
-ms.openlocfilehash: f7c2b1fd35fbb9dbdc782577c3464b7a38977254
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: 6fccbc76a3600e2bbe43e4332c6146d2be81b6c9
+ms.sourcegitcommit: fcf1189ede712ae30f8c7626bde50c9b8bb561bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="service-bus-libraries-for-java"></a>Bibliotecas de Barramento de Serviço para Java
 
@@ -29,7 +29,7 @@ Focado em um sistema de mensagens duráveis confiáveis e de alta disponibilidad
 
 O Barramento de Serviço Premium é uma oferta totalmente gerenciada com capacidade dedicada reservada para cada locatário que gera um desempenho previsível com um modelo de preço simples e orientado à capacidade e a um custo geral muito menor do que os agentes comerciais locais. Para muitos clientes, o Barramento de Serviço Premium pode atualmente substituir clusters de sistemas de mensagens locais dedicados, mesmo se as cargas de trabalho anexadas não forem executadas na nuvem. 
 
-Saiba mais sobre conceitos de Barramento de Serviço [na seção de documentação do sistema de mensagens](https://docs.microsoft.com/en-us/azure/service-bus-messaging/) 
+Saiba mais sobre conceitos de Barramento de Serviço [na seção de documentação do sistema de mensagens](https://docs.microsoft.com/azure/service-bus-messaging/) 
 
 Para desenvolvedores de Java, o Barramento de serviço fornece uma API nativa compatível com a Microsoft e o Barramento de Serviço também pode ser usado com bibliotecas compatíveis do AMQP 1.0 como o provedor JMS do Apache Qpid Proton.
 
