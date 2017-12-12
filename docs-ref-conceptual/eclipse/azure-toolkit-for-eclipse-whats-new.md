@@ -155,7 +155,7 @@ O Kit de Ferramentas do Azure para Eclipse, versão de outubro de 2014, inclui o
 O Kit de Ferramentas do Azure para Eclipse, versão de agosto de 2014, inclui os seguintes aprimoramentos
 
 * **Suporte para o SDK do Azure 2.4.** Versões mais antigas do Kit de Ferramentas do Eclipse não funcionarão com esse SDK recém-lançado.
-* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6, 1.7 e v1.8..** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
+* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6, 1.7 e v1.8.** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
 * **Versão atualizada do pacote de Bibliotecas do Azure para a biblioteca de APIs de cliente Java.** Para saber mais, confira a [API de cliente do Microsoft Azure].
 * **Suporte para o formato de arquivo de configurações de publicação mais recente.** Adição do suporte para a versão 2.0 do formato do arquivo de Configurações de publicação.
 * **Alterações de arquitetura por trás do recurso Publicar na nuvem.** Agora, o Kit de Ferramentas está usando a recém-lançada API de cliente do Microsoft Azure para Java para seu suporte de publicação na nuvem.
@@ -165,7 +165,7 @@ O Kit de Ferramentas do Azure para Eclipse, versão de agosto de 2014, inclui os
 O Kit de Ferramentas do Azure para Eclipse, versão de junho de 2014, é uma pequena atualização de serviço que fornece os seguintes aprimoramentos:
 
 * **Suporte para o pacote do Zulu OpenJDK v1.8.** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
-* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6 e 1.7..** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
+* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6 e 1.7.** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
 * **Versão atualizada do pacote de Bibliotecas do Azure para a biblioteca de APIs de cliente Java.** Para saber mais, confira a [API de cliente do Microsoft Azure].
 * **Correções de bug.** Esta versão contém várias correções de bugs solicitadas pelo usuário.
 
