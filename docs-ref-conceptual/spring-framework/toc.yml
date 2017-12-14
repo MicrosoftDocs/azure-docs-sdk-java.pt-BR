@@ -1,27 +1,51 @@
-- name: Spring Framework no Azure
+- name: Spring no Azure
   href: ./index.yml
   items:
-    - name: Introdução
+    - name: Guias de introdução
       items:
-        - name: Implantar um aplicativo Spring Boot no Serviço de Aplicativo do Azure
-          href: deploy-spring-boot-java-web-app-on-azure.md
-        - name: Usar o plug-in do Maven para os Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Azure
-          href: deploy-spring-boot-java-app-with-maven-plugin.md
+        - name: Spring Initializr
+          href: spring-boot-starters-for-azure.md
+        - name: Armazenamento do Azure
+          href: configure-spring-boot-starter-java-app-with-azure-storage.md
+        - name: Azure Active Directory
+          href: configure-spring-boot-starter-java-app-with-azure-active-directory.md
+        - name: Cofre da Chave do Azure
+          href: configure-spring-boot-starter-java-app-with-azure-key-vault.md
     - name: Tutoriais
       items:
-        - name: Implantar um Aplicativo Spring Boot no Kubernetes no Serviço de Contêiner do Azure
-          href: deploy-spring-boot-java-app-on-kubernetes.md
-        - name: Implantar um aplicativo Web Spring Boot no Linux no Serviço de Contêiner do Azure
-          href: deploy-spring-boot-java-app-on-linux.md
-        - name: Implantar um aplicativo Spring Boot usando o plug-in Fabric8 Maven
-          href: deploy-spring-boot-java-app-using-fabric8-maven-plugin.md
-    - name: Instruções
-      items:
-        - name: Configurar um aplicativo Inicializador do Spring Boot com o Cache Redis
+        - name: Cache Redis do Azure
           href: configure-spring-boot-initializer-java-app-with-redis-cache.md
-        - name: Usar o Inicializador do Spring Boot com um Azure Cosmos DB
+        - name: Azure Cosmos DB
           href: configure-spring-boot-starter-java-app-with-cosmos-db.md
-        - name: Usar o plug-in do Maven dos Aplicativos Web do Azure para implantar um aplicativo Spring Boot em contêineres no Azure
+        - name: Implantar o Serviço de Aplicativo com Maven
+          href: deploy-spring-boot-java-app-with-maven-plugin.md
+        - name: Implantar para o Kubernetes
+          href: deploy-spring-boot-java-app-on-kubernetes.md
+        - name: Implantar o aplicativo Web para contêineres
+          href: deploy-spring-boot-java-app-on-linux.md
+        - name: Implantar ao Kubernetes com Fabric8
+          href: deploy-spring-boot-java-app-using-fabric8-maven-plugin.md
+        - name: Implantar um contêiner do Docker com Maven
           href: deploy-containerized-spring-boot-java-app-with-maven-plugin.md
-        - name: Usar o plug-in do Maven dos Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Registro de Contêiner do Azure para o Serviço de Aplicativo do Azure
+        - name: Implantar a partir do Registro de Contêiner do Azure
           href: deploy-spring-boot-java-app-from-container-registry-using-maven-plugin.md
+    - name: Exemplos
+      items:
+        - name: Lista de tarefas pendentes do Cosmos DB
+          href: 'https://github.com/Microsoft/todo-app-java-on-azure/'
+        - name: Lista de tarefas pendentes com MySQL
+          href: 'https://github.com/Azure-Samples/mysql-spring-boot-todo'
+        - name: Spring Initializr
+          href: 'https://start.spring.io/'
+    - name: Referência
+      items:
+        - name: Spring Framework
+          href: 'https://spring.io/'
+        - name: Aprenda sobre o Spring
+          href: 'https://spring.io/docs'
+        - name: Spring Boot
+          href: 'https://projects.spring.io/spring-boot/'
+        - name: Referências do projeto Spring
+          href: 'https://spring.io/docs/reference'
+        - name: Iniciadores do Spring Boot para Azure
+          href: 'https://github.com/Microsoft/azure-spring-boot/'
