@@ -10,27 +10,13 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 4/10/2017
 ms.author: routlaw;asirveda
-ms.openlocfilehash: ff3ea805daefb3c0a413b109e431d2235a5dc5b8
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: 425d4c3a5a347e4706e9c37ebd7247cf0d8c9846
+ms.sourcegitcommit: f0dadb22efb191182c3b79dcaa97a76cfcdcc324
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="azure-tools-for-java-developers"></a>Ferramentas do Azure para desenvolvedores Java
-
-## <a name="client-and-management-libraries"></a>Bibliotecas de cliente e gerenciamento
-
-Conectar-se aos serviços e gerenciar recursos do Azure a partir de seus aplicativos com as bibliotecas do Azure para Java. Importar as bibliotecas de gerenciamento para seus projetos Maven adicionando essa dependência ao seu projeto *pom.xml*.
-
-```XML
-<dependency>
-    <groupId>com.microsoft.azure</groupId>
-    <artifactId>azure</artifactId>
-    <version>1.3.0</version>
-</dependency>
-```
-
-Exibição da [lista completa das bibliotecas](java-sdk-azure-install.md) e [introdução](java-sdk-azure-get-started.md) para as bibliotecas do Azure para Java.
 
 ## <a name="eclipse-and-intellij-plugins"></a>Plug-ins Eclipse e IntelliJ
 
@@ -39,6 +25,13 @@ Gerenciar recursos do Azure e implantar aplicativos do seu IDE com o kit de ferr
 ![Kit de ferramentas de IntelliJ mostrando o Gerenciador do Azure](media/intelliJ-azure-explorer.png)
 
 [Introdução ao kit de ferramentas do Azure para Eclipse](https://docs.microsoft.com/azure/app-service-web/app-service-web-eclipse-create-hello-world-web-app) | [Introdução ao kit de ferramentas do Azure para IntelliJ](https://docs.microsoft.com/azure/app-service-web/app-service-web-intellij-create-hello-world-web-app) 
+
+## <a name="visual-studio-code"></a>Visual Studio Code
+
+O VS Code é um editor de código simples e poderoso disponível para MacOS, Windows e Linux. O VS Code oferece suporte a um fluxo de trabalho simples e moderno de desenvolvimento Java por meio de um conjunto de extensões que oferece suporte a projeto, preenchimento de código, depuração, uso de Lint e navegação.
+
+[Introdução ao VS Code e Java](https://code.visualstudio.com/docs/java)
+[Pacote de extensão Java para VS Code](https://code.visualstudio.com/docs/java/extensions)  
 
 ## <a name="azure-cli-20"></a>CLI do Azure 2.0
 

@@ -14,20 +14,31 @@
           href: /azure/postgresql/connect-java
         - name: Banco de Dados Cosmos
           href: /azure/cosmos-db/create-documentdb-java
-    - name: Introdução ao Java
-      href: java-sdk-azure-get-started.md
+        - name: Bibliotecas do Azure para Java
+          items:
+            - name: Maven
+              href: java-sdk-azure-get-started.md
+            - name: Eclipse
+              href: eclipse/java-sdk-azure-get-started-eclipse.md
+            - name: IntelliJ
+              href: intellij/java-sdk-azure-get-started-intellij.md
     - name: Ferramentas
+      expanded: true
       href: java-azure-tools.md
       items:
+        - name: Spring
+          href: /java/azure/spring-framework/index
         - name: IntelliJ
           href: intellij/azure-toolkit-for-intellij.md
         - name: Eclipse
           href: eclipse/azure-toolkit-for-eclipse.md
-        - name: Plugins Maven
+        - name: Maven
           href: 'https://github.com/Microsoft/azure-maven-plugins'
           items:
             - name: 'Aplicativos Web do Azure '
               href: 'https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin'
+        - name: Spring no Azure
+          href: spring-framework/index.yml
     - name: Tutoriais de Java
       items:
         - name: Spring Boot + MySQL

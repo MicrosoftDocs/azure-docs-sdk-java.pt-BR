@@ -13,6 +13,6 @@ Para obter mais informações sobre os kits de ferramentas do Azure para os IDEs
 
 Para obter mais informações sobre como usar o Java com o Azure, consulte os links a seguir: 
 
-* [Central de desenvolvimento Java do Azure](https://azure.microsoft.com/develop/java/) 
+* [Azure para desenvolvedores Java](https://docs.microsoft.com/java/azure/) 
 * [Ferramentas Java para Visual Studio Team Services](https://java.visualstudio.com/) 
 <!-- TODO: Add URLs for Java in VSCode here --> 

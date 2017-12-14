@@ -6,31 +6,30 @@ documentationcenter: java
 author: rmcmurray
 manager: routlaw
 editor: 
-keywords: Spring, Spring Boot, Spring Framework, Maven
 ms.assetid: 
 ms.service: multiple
 ms.workload: web
 ms.tgt_pltfrm: multiple
 ms.devlang: java
 ms.topic: article
-ms.date: 11/01/2017
+ms.date: 12/01/2017
 ms.author: robmcm;kevinzha
-ms.openlocfilehash: 548c294bd576b00b62994c09d82ec21ad72f4dbd
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.openlocfilehash: 7fa375ca805ddd037173f9dbd26b6631021e60a3
+ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-spring-boot-app-in-azure-container-registry-to-azure-app-service"></a>Como usar o Plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Registro de Contêiner do Azure ao Serviço de Aplicativo do Azure
 
-**[Spring Framework]** é um framework de software livre popular que ajuda os desenvolvedores de Java a criar aplicativos de API, Web e móveis. Este tutorial usa um aplicativo de exemplo criado usando o [Spring Boot], uma abordagem controlada por convenção para o uso do Spring para começar rapidamente.
-
-Este artigo demonstra como implantar um exemplo de aplicativo Spring Boot no Registro de Contêiner do Azure e, depois, usar o plug-in do Maven para Aplicativos Web do Azure a fim de implantar seu aplicativo nos Serviço de Aplicativo do Azure.
+Este artigo demonstra como implantar um exemplo de aplicativo [Spring Boot] no Registro de Contêiner do Azure e, depois, usar o plug-in do Maven para Aplicativos Web do Azure a fim de implantar seu aplicativo nos Serviço de Aplicativo do Azure.
 
 > [!NOTE]
->
+> 
+> O Plug-in do Maven para Aplicativos Web do Azure para [Apache Maven](http://maven.apache.org/) fornece uma integração perfeita do Serviço de Aplicativo do Azure em projetos Maven e simplifica o processo para os desenvolvedores implantarem aplicativos Web no Serviço de Aplicativo do Azure.
+> 
 > O plug-in do Maven para Aplicativos Web do Azure está disponível no momento como uma versão prévia. Por enquanto, há suporte somente para a publicação FTP, embora existam planos para recursos adicionais futuros.
->
+> 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -94,7 +93,7 @@ Nesta seção, você clonará um aplicativo Spring Boot em contêineres e o test
 
 > [!NOTE]
 >
-> Quando você estiver usando o Docker localmente, verá um erro informando que não pode conectar o host local na porta 2375. Se isso acontecer, você precisará habilitar o uso do Docker localmente sem TLS. Para tanto, abra as configurações do Docker e marque a opção para **Expor o Daemon do Docker em TCP://localhost:2375 sem TLS**.
+> Quando você estiver usando o Docker localmente, verá um erro informando que não pode conectar o host local na porta 2375. Se isso acontecer, você precisará habilitar o uso do Docker localmente sem TLS. Para tanto, abra as configurações do Docker e marque a opção para **Expor o Daemon em TCP://localhost:2375 sem TLS**.
 >
 > ![Expor o daemon do Docker na porta TCP 2375 local][TL01]
 
@@ -383,7 +382,7 @@ Para saber mais sobre as diversas tecnologias discutidas neste artigo, veja os a
 
 [CLI (interface de linha de comando) do Azure]: /cli/azure/overview
 [Azure Container Service (AKS)]: https://azure.microsoft.com/services/container-service/
-[Azure Java Developer Center]: https://azure.microsoft.com/develop/java/
+[Azure for Java Developers]: https://docs.microsoft.com/java/azure/
 [Portal do Azure]: https://portal.azure.com/
 [Plug-in do Maven para Aplicativos Web do Azure]: https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin
 [Create a private Docker container registry using the Azure portal]: /azure/container-registry/container-registry-get-started-portal

@@ -6,26 +6,23 @@ documentationcenter: java
 author: rmcmurray
 manager: routlaw
 editor: 
-keywords: Spring, Spring Boot, Spring Framework
 ms.assetid: 
 ms.service: multiple
 ms.workload: na
 ms.tgt_pltfrm: multiple
 ms.devlang: java
 ms.topic: article
-ms.date: 11/01/2017
+ms.date: 12/01/2017
 ms.author: asirveda;robmcm
-ms.openlocfilehash: 7a4234aefd4eb33f80c1978fb84721f2dbcb2e4f
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.openlocfilehash: b520cc80360f8162c929bb2cc88c24311a7e20f8
+ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="deploy-a-spring-boot-application-to-the-azure-app-service"></a>Implantar um aplicativo Spring Boot no Serviço de Aplicativo do Azure
 
-O **[Spring Framework]** é uma solução de software livre que ajuda os desenvolvedores de Java a criar aplicativos de nível empresarial. Um dos projetos mais populares que se baseia nessa plataforma é o [Spring Boot], que fornece uma abordagem simplificada para a criação de aplicativos Java autônomos.
-
-Este tutorial o orientará durante a criação do aplicativo Web de exemplo Spring Boot Getting Started e o implantará no [Serviço de Aplicativo do Azure].
+Este tutorial o orientará durante a criação de um aplicativo Web de exemplo [Spring Boot] Getting Started e o implantará no [Serviço de Aplicativo do Azure].
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
@@ -199,7 +196,7 @@ Para obter mais informações sobre como usar aplicativos Spring Boot no Azure, 
 
 * [Implantar um Aplicativo Spring Boot em um Cluster Kubernetes no Serviço de Contêiner do Azure](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para saber mais sobre como usar o Azure com Java, confira o [Centro de Desenvolvedores Java do Azure] e as [Ferramentas Java para Visual Studio Team Services].
+Para saber mais sobre como usar o Azure com o Java, consulte [Azure para desenvolvedores Java] e as [Ferramentas Java para Visual Studio Team Services].
 
 Para obter informações adicionais sobre a implantação dos aplicativos Web no Azure usando o FTP, confira [Implantar o aplicativo no Serviço de Aplicativo do Azure usando FTP/S].
 
@@ -213,7 +210,7 @@ Para obter mais informações sobre como definir configurações adicionais para
 
 [Serviço de Aplicativo do Azure]: https://azure.microsoft.com/services/app-service/
 [Azure Container Service]: https://azure.microsoft.com/services/container-service/
-[Centro de Desenvolvedores Java do Azure]: https://azure.microsoft.com/develop/java/
+[Azure para desenvolvedores Java]: https://docs.microsoft.com/java/azure/
 [Portal do Azure]: https://portal.azure.com/
 [Configurar aplicativos Web no Serviço de Aplicativo do Azure]: /azure/app-service/web-sites-configure
 [Implantar o aplicativo no Serviço de Aplicativo do Azure usando FTP/S]: https://docs.microsoft.com/azure/app-service/app-service-deploy-ftp

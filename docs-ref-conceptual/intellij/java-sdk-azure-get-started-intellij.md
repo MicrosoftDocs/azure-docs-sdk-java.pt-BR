@@ -1,39 +1,37 @@
 ---
-title: "Introdução às bibliotecas do Azure para Java"
-description: "Saiba como criar recursos de nuvem do Azure, conectá-los e usá-los em seus aplicativos Java."
+title: "Introdução ao Azure para Java usando o Intellij"
+description: "Introdução ao uso básico das bibliotecas do Azure para Java com sua própria assinatura do Azure."
 keywords: "Azure, Java, SDK, API, autenticar, introdução"
-author: rloutlaw
-ms.author: routlaw
-manager: douge
-ms.date: 04/16/2017
+author: roygara
+ms.author: v-rogara
+manager: timlt
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: multiple
-ms.assetid: b1e10b79-f75e-4605-aecd-eed64873e2d3
-ms.openlocfilehash: 2f40fa22244e5ffa3be76d4de579959dcb5591d6
-ms.sourcegitcommit: 0676cbb530207544090c1fd051a2f09760873cd8
+ms.openlocfilehash: 1e10a7c5a46ed0e36143fd4a99decc037c04e1fe
+ms.sourcegitcommit: fcf1189ede712ae30f8c7626bde50c9b8bb561bc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="get-started-with-cloud-development-using-the-azure-libraries-for-java"></a>Introdução ao desenvolvimento em nuvem usando as bibliotecas do Azure para Java
+# <a name="get-started-with-the-azure-libraries-using-intellij"></a>Introdução às bibliotecas do Azure usando o Intellij
 
-Este guia orienta em relação à configuração de um ambiente de desenvolvimento para o desenvolvimento do Azure em Java. Você vai criar alguns recursos do Azure e conectá-los para executar algumas tarefas básicas, como carregar um arquivo ou implantar um aplicativo Web. Quando terminar, você estará pronto para começar a usar os serviços do Azure em seus próprios aplicativos Java.
+Este guia orienta em relação à configuração de um ambiente de desenvolvimento e ao uso de bibliotecas do Azure para Java. Você vai criar uma entidade de serviço para autenticar com o Azure e executar um código de exemplo que cria e usa recursos do Azure em sua assinatura. Usar o Intellij é opcional para desenvolvimento Java com o Azure. Qualquer IDE que tenha integração com o Maven funciona. Como alternativa, você pode executar o código a partir da linha de comando usando Maven, caso prefira não usar nenhum IDE.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 - Uma conta do Azure. Se você não tiver uma, [obtenha uma avaliação gratuita](https://azure.microsoft.com/free/)
 - [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/quickstart) ou [CLI do Azure 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2).
-- [Java 8](https://www.azul.com/downloads/zulu/) (incluído no Azure Cloud Shell)
-- [Maven 3](http://maven.apache.org/download.cgi) (incluído no Azure Cloud Shell)
+- A última versão estável do [Intellij](https://www.jetbrains.com/idea/)
 
 ## <a name="set-up-authentication"></a>Configurar a autenticação
 
-Seu aplicativo Java precisa ler e criar permissões em sua assinatura do Azure para executar o exemplo de código neste tutorial. Criar uma entidade de serviço e configurar seu aplicativo para ser executado com suas credenciais. As entidades de serviço fornecem uma maneira de criar uma conta não interativa associada à sua identidade para a qual você concede apenas os privilégios que seu aplicativo precisa para ser executado.
+Seu aplicativo Java precisa ler e criar permissões em sua assinatura do Azure para executar o exemplo de código neste tutorial. Criar uma entidade de serviço e configurar seu aplicativo para ser executado com suas credenciais. As entidades de serviço fornecem uma maneira de criar uma conta não interativa associada à sua identidade para a qual você concede apenas os privilégios de que seu aplicativo precisa para ser executado.
 
-[Criar uma entidade de serviço usando a CLI do Azure 2.0](/cli/azure/create-an-azure-service-principal-azure-cli) e capturar a saída. Forneça uma [senha segura](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-policy) no argumento de senha, em vez de `MY_SECURE_PASSWORD`. A senha deve ter de 8 a 16 caracteres e satisfazer pelo menos 3 dos 4 critérios a seguir:
+[Criar uma entidade de serviço](/cli/azure/create-an-azure-service-principal-azure-cli) para conceder ao seu código permissão para criar e atualizar recursos em sua assinatura sem usar diretamente as credenciais de conta. Verifique se capturou a saída. Forneça uma [senha segura](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-policy) no argumento de senha, em vez de `MY_SECURE_PASSWORD`. A senha deve ter de 8 a 16 caracteres e satisfazer pelo menos 3 dos 4 critérios a seguir:
 
 * Incluir caracteres minúsculos
 * Incluir caracteres maiúsculos
@@ -78,9 +76,9 @@ Substitua os quatro valores principais pelo seguinte:
 - chave: usar o valor da *senha* da saída da entidade de serviço.
 - locatário: usar o valor do *locatário* da saída da entidade de serviço.
 
-Salve esse arquivo em um local seguro no sistema onde o seu código possa lê-lo. Você pode usar esse arquivo para um código futuro, então é recomendável armazená-lo em algum lugar externo ao aplicativo neste artigo.
+Salve esse arquivo em um local seguro no sistema onde o seu código possa lê-lo. Você pode usar esse arquivo para um código futuro, então é recomendável armazená-lo em algum lugar externo ao aplicativo neste artigo. 
 
-Defina uma variável de ambiente `AZURE_AUTH_LOCATION` com o caminho completo para o arquivo de autenticação no seu shell.   
+Defina uma variável de ambiente `AZURE_AUTH_LOCATION` com o caminho completo para o arquivo de autenticação no seu shell.  
 
 ```bash
 export AZURE_AUTH_LOCATION=/Users/raisa/azureauth.properties
@@ -97,18 +95,16 @@ Se estiver trabalhando em um ambiente Windows, adicione a variável às propried
 > [!NOTE]
 > Este guia usa a ferramenta de compilação Maven para compilar e executar o exemplo de código, mas outras ferramentas de compilação como Gradle também funcionam com as bibliotecas do Azure para Java. 
 
-Crie um projeto Maven a partir da linha de comando em um novo diretório no seu sistema:
+Abra Intellij e selecione Arquivo > Novo > Projeto... Depois prossiga para a próxima tela.
 
-```
-mkdir java-azure-test
-cd java-azure-test
-mvn archetype:generate -DgroupId=com.fabrikam -DartifactId=AzureApp  \ 
--DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-```
+Insira "com.fabrikam" para a groupID e insira uma artifactID de sua escolha.
 
-Isso cria um projeto Maven básico na pasta `testAzureApp`. Adicione as seguintes entradas no projeto `pom.xml` para importar as bibliotecas usadas no exemplo de código neste tutorial.
+Vá para a tela final e conclua a criação do projeto.
+
+Agora abra o arquivo pom.xml. E adicione o código a seguir:
 
 ```XML
+<dependencies>
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure</artifactId>
@@ -124,35 +120,34 @@ Isso cria um projeto Maven básico na pasta `testAzureApp`. Adicione as seguinte
     <artifactId>mssql-jdbc</artifactId>
     <version>6.2.1.jre8</version>
 </dependency>
+</dependencies>
 ```
 
-Adicionar uma entrada `build` sob o elemento `project` de nível superior para usar o [maven-exec-plugin](http://www.mojohaus.org/exec-maven-plugin/) para executar os exemplos:
-
-```XML
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <configuration>
-                <mainClass>com.fabrikam.AzureApp</mainClass>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
- ```
+Salve o arquivo pom.xml.
    
+## <a name="install-the-azure-toolkit-for-intellij"></a>Instalar o kit de ferramentas do Azure para IntelliJ
+
+O [Kit de ferramentas do Azure](azure-toolkit-for-intellij-installation.md) é necessário caso você vá implantar aplicativos Web ou APIs de forma programática, mas não está sendo usado para outros tipos de desenvolvimento. A seguir há um resumo dos processos de instalação. Para obter etapas detalhadas, visite [Instalação do Kit de ferramentas do Azure para o IntelliJ](azure-toolkit-for-intellij-installation.md).
+
+Selecione o menu **Arquivo** e depois **Configurações...**. 
+
+Selecione **Repositórios de navegador...** e depois pesquise por "Azure" e instale o **Kit de ferramentas do Azure para o Intellij**.
+
+Reinicie o IntelliJ.
+
 ## <a name="create-a-linux-virtual-machine"></a>Criar uma máquina virtual Linux
 
-Crie um novo arquivo denominado `AzureApp.java` no diretório `src/main/java/com/fabirkam` do projeto e cole-o no seguinte bloco de código. Atualize as variáveis `userName` e `sshKey` com valores reais para a sua máquina. O código cria uma nova VM do Linux com o nome `testLinuxVM` em um grupo de recursos `sampleResourceGroup` em execução na região Leste dos EUA do Azure.
+Crie um novo arquivo denominado `AzureApp.java` no diretório `src/main/java` do projeto e cole-o no seguinte bloco de código. Atualize as variáveis `userName` e `sshKey` com valores reais para a sua máquina. O código cria uma nova VM do Linux com o nome `testLinuxVM` em um grupo de recursos `sampleResourceGroup` em execução na região Leste dos EUA do Azure.
+
+Para criar um `sshkey`, abra o Azure Cloud Shell e insira `ssh-keygen -t rsa -b 2048`. Insira um nome para o arquivo, depois acesse o arquivo .public para obter a chave, a qual é usada no código a seguir, e copie e cole em toda a sua variável `sshKey`.
 
 ```java
-package com.fabrikam;
 
 import com.microsoft.azure.management.Azure;
 import com.microsoft.azure.management.compute.VirtualMachine;
 import com.microsoft.azure.management.compute.KnownLinuxVirtualMachineImage;
 import com.microsoft.azure.management.compute.VirtualMachineSizeTypes;
+import com.microsoft.azure.management.appservice.PricingTier;
 import com.microsoft.azure.management.appservice.WebApp;
 import com.microsoft.azure.management.storage.StorageAccount;
 import com.microsoft.azure.management.storage.SkuName;
@@ -172,6 +167,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.List;
 
 public class AzureApp {
 
@@ -212,11 +208,6 @@ public class AzureApp {
 }
 ```
 
-Execute o exemplo a partir da linha de comando:
-
-```
-mvn compile exec:java
-```
 
 Você verá algumas solicitações REST e respostas no console conforme o SDK faz as chamadas subjacentes para a API REST do Azure para configuração da máquina virtual e dos seus recursos. Quando o programa for concluído, verifique se a máquina virtual em sua assinatura com a CLI do Azure 2.0:
 
@@ -266,16 +257,11 @@ Substitua o método principal em `AzureApp.java` pelo mostrado abaixo, atualizan
 
 Execute o código como antes usando Maven:
 
-```
-mvn clean compile exec:java
-```
-
 Abra um navegador apontado para o aplicativo usando a CLI:
 
 ```azurecli-interactive
 az appservice web browse --resource-group sampleWebResourceGroup --name YOUR_APP_NAME
 ```
-
 Remova o aplicativo Web e o plano da sua assinatura depois de verificar a implantação.
 
 ```azurecli-interactive
@@ -417,10 +403,6 @@ public static void main(String[] args) {
 
 Execute o exemplo a partir da linha de comando:
 
-```
-mvn clean compile exec:java
-```
-
 Você pode procurar o arquivo `helloazure.txt` em sua conta de armazenamento por meio do portal do Azure ou com o [Azure Storage Explorer](https://docs.microsoft.com/azure/vs-azure-tools-storage-explorer-blobs).
 
 Limpar a conta de armazenamento usando a CLI:
@@ -431,7 +413,7 @@ az group delete --name sampleStorageResourceGroup
 
 ## <a name="explore-more-samples"></a>Explorar mais exemplos
 
-Para saber mais sobre como usar as bibliotecas de gerenciamento do Azure para Java para gerenciar recursos e automatizar tarefas, confira o nosso exemplo de código para [máquinas virtuais](java-sdk-azure-virtual-machine-samples.md), [aplicativos Web](java-sdk-azure-web-apps-samples.md) e [banco de dados SQL](java-sdk-azure-sql-database-samples.md) .
+Para saber mais sobre como usar as bibliotecas de gerenciamento do Azure para Java para gerenciar recursos e automatizar tarefas, confira o nosso exemplo de código para [máquinas virtuais](../java-sdk-azure-virtual-machine-samples.md), [aplicativos Web](../java-sdk-azure-web-apps-samples.md) e [banco de dados SQL](../java-sdk-azure-sql-database-samples.md) .
 
 ## <a name="reference-and-release-notes"></a>Referência e notas de versão
 
