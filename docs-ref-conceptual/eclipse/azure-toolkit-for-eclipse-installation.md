@@ -1,6 +1,6 @@
 ---
-title: "Instalação do Kit de Ferramentas do Azure para o Eclipse"
-description: Saiba como instalar o Kit de Ferramentas do Azure para o Eclipse.
+title: Instalar o Kit de Ferramentas do Azure para Eclipse
+description: Saiba como instalar o Kit de Ferramentas do Azure para o plug-in Eclipse para criar e implantar aplicativos de nuvem no Azure.
 services: 
 documentationcenter: java
 author: rmcmurray
@@ -14,15 +14,15 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: 1f06b02a4c0b23d98ecd394d42f41f7148b6c8e8
-ms.sourcegitcommit: 062e07cbd42cda74f02c82b933ce90da646a50a0
+ms.openlocfilehash: 54f636f1291832702bfed2b49888b531d358cb73
+ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="installing-the-azure-toolkit-for-eclipse"></a>Instalação do Kit de Ferramentas do Azure para o Eclipse
+# <a name="install-the-azure-toolkit-for-eclipse"></a>Instalar o Kit de Ferramentas do Azure para Eclipse
 
-O Kit de Ferramentas do Azure para Eclipse fornece modelos e funcionalidade que permitem criar, desenvolver, testar e implantar com facilidade aplicativos Azure usando o ambiente de desenvolvimento do Eclipse.
+O Kit de Ferramentas do Azure para Eclipse fornece modelos e funcionalidade que permitem criar, desenvolver, testar e implantar facilmente aplicativos de nuvem ao Azure a partir do ambiente de desenvolvimento do Eclipse.
 
 > [!NOTE] 
 > 
@@ -51,7 +51,7 @@ As etapas a seguir mostram como instalar o Kit de Ferramentas do Azure para o Ec
 
 1. Se você expandir o **Kit de Ferramentas do Azure para Eclipse**, verá uma lista de componentes que serão instalados; por exemplo:
 
-   | Recurso | Descrição | 
+   | Recurso | DESCRIÇÃO | 
    |---|---| 
    | **Plug-in do Application Insights para Java** | Permite que você use os serviços de registro em log e análise de telemetria do Azure para seus aplicativos e instâncias do servidor. | 
    | **Plug-in Comum do Azure** | fornece a funcionalidade comum necessária para outros componentes do kit de ferramentas. | 
@@ -61,7 +61,7 @@ As etapas a seguir mostram como instalar o Kit de Ferramentas do Azure para o Ec
    | **Microsoft JDBC Driver 6.1 para SQL Server** | Fornece a API JDBC para o SQL Server e o Banco de Dados SQL do Microsoft Azure para o Java Platform Enterprise Edition 8. | 
    | **Pacote para as Bibliotecas do Microsoft Azure para Java** | Fornece APIs para acessar os serviços do Microsoft Azure, como armazenamento, barramento de serviço, execução do serviço etc. | 
 
-1. Clique em **Avançar**. (Se você experimentar atrasos incomuns ao instalar o kit de ferramentas, certifique-se de que a opção **Contatar todos os sites de atualização durante a instalação para encontrar o software necessário** está desmarcada.)
+1. Clique em **Próximo**. (Se você experimentar atrasos incomuns ao instalar o kit de ferramentas, certifique-se de que a opção **Contatar todos os sites de atualização durante a instalação para encontrar o software necessário** está desmarcada.)
 
 1. No diálogo **Instalar Detalhes**, clique em **Avançar**.
    

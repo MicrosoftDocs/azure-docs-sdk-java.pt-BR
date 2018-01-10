@@ -1,6 +1,6 @@
 ---
-title: "Executar um aplicativo da web Olá, Mundo em um contêiner do Linux usando o Kit de Ferramentas do Azure para IntelliJ"
-description: "Saiba como criar um aplicativo Web básico do Olá, Mundo em um contêiner do Linux e publicá-lo no Azure usando o Kit de Ferramentas do Azure para IntelliJ."
+title: "Implantar um aplicativo Web Olá, Mundo sendo executado em um contêiner do Linux na nuvem usando o Kit de Ferramentas do Azure para IntelliJ"
+description: "Executar um aplicativo Web Olá, Mundo em um contêiner do Linux e implantá-lo na nuvem usando o Kit de Ferramentas do Azure para IntelliJ."
 services: app-service\web
 documentationcenter: java
 author: rmcmurray
@@ -14,13 +14,13 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: 421241b12d8bd9027d4bef8564e1c1ab5a01993a
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.openlocfilehash: fdf41d6e8b23a6b7d6217ec626480e6c72e13969
+ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="run-a-hello-world-web-app-in-a-linux-container-by-using-the-azure-toolkit-for-intellij"></a>Executar um aplicativo da web Olá, Mundo em um contêiner do Linux usando o Kit de Ferramentas do Azure para IntelliJ
+# <a name="deploy-a-hello-world-web-app-to-a-linux-container-in-the-cloud-using-the-azure-toolkit-for-intellij"></a>Implantar um aplicativo Web Olá, Mundo em um contêiner do Linux na nuvem usando o Kit de Ferramentas do Azure para IntelliJ
 
 Contêineres do [Docker] são um método amplamente usado para implantar aplicativos Web. Com os contêineres do Docker, os desenvolvedores podem consolidar todos os arquivos de projeto e dependências em um único pacote para implantação em um servidor. O Kit de Ferramentas do Azure para IntelliJ simplifica o processo para desenvolvedores de Java adicionando recursos para implantação de contêineres no Microsoft Azure.
 

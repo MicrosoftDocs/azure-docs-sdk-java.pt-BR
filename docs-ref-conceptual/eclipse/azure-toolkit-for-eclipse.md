@@ -1,6 +1,6 @@
 ---
 title: Kit de ferramentas do Azure para Eclipse
-description: "Conheça o Kit de Ferramentas do Azure para Eclipse."
+description: Saiba como o Kit de Ferramentas do Azure para o plug-in Eclipse pode ajudar a criar e implantar aplicativos de nuvem no Azure.
 services: 
 documentationcenter: java
 author: rmcmurray
@@ -14,14 +14,15 @@ ms.devlang: Java
 ms.topic: article
 ms.date: 11/01/2017
 ms.author: robmcm;asirveda
-ms.openlocfilehash: 1cd0430a6649b1c979da5650b4d817bfb35b5f8c
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.openlocfilehash: 21b757f961096970b7560beac9f15f216f072516
+ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="azure-toolkit-for-eclipse"></a>Kit de ferramentas do Azure para Eclipse
-O Kit de Ferramentas do Azure para Eclipse fornece modelos e funcionalidades que podem ser usadas para criar, desenvolver, testar e implantar aplicativos do Azure com facilidade usando o IDE (ambiente de desenvolvimento integrado) do Eclipse.
+
+O Kit de Ferramentas do Azure para Eclipse fornece modelos e funcionalidades que podem ser usadas para criar, desenvolver, testar e implantar aplicativos de nuvem do Azure com facilidade de dentro do ambiente de desenvolvimento integrado (IDE) do Eclipse.
 
 > [!NOTE]
 > 

@@ -1,6 +1,6 @@
 ---
-title: "Implantar um aplicativo Spring Boot no Serviço de Aplicativo do Azure"
-description: "Este tutorial orientará os desenvolvedores sobre as etapas para implantar o aplicativo Web Spring Boot Getting Started para o Serviço de Aplicativo do Azure."
+title: "Implantar um aplicativo Spring Boot na nuvem com o Serviço de Aplicativo do Azure"
+description: "Este tutorial orientará os desenvolvedores sobre as etapas para implantar um aplicativo de introdução ao Web Spring Boot para a nuvem usando o Serviço de Aplicativo do Azure."
 services: app-service
 documentationcenter: java
 author: rmcmurray
@@ -14,17 +14,17 @@ ms.devlang: java
 ms.topic: article
 ms.date: 12/01/2017
 ms.author: asirveda;robmcm
-ms.openlocfilehash: b520cc80360f8162c929bb2cc88c24311a7e20f8
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.openlocfilehash: 4dba6a6cbce2c8f6d4956717b3358c4e5b501e71
+ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="deploy-a-spring-boot-application-to-the-azure-app-service"></a>Implantar um aplicativo Spring Boot no Serviço de Aplicativo do Azure
+# <a name="deploy-a-spring-boot-application-to-the-cloud-with-azure-app-service"></a>Implantar um aplicativo Spring Boot na nuvem com o Serviço de Aplicativo do Azure
 
 Este tutorial o orientará durante a criação de um aplicativo Web de exemplo [Spring Boot] Getting Started e o implantará no [Serviço de Aplicativo do Azure].
 
-### <a name="prerequisites"></a>Pré-requisitos
+### <a name="prerequisites"></a>pré-requisitos
 
 Para concluir as etapas deste tutorial, você precisa ter o seguinte:
 
@@ -160,7 +160,7 @@ As etapas a seguir explicarão as etapas para implantar o aplicativo Web Spring 
    </configuration>
    ```
 
-1. Depois de salvar o arquivo *web.config* no sistema e conecte-se ao aplicativo Web por meio do FTP usando a URL, o nome de usuário e a senha da seção anterior deste tutorial. Por exemplo:
+1. Depois de salvar o arquivo *web.config* no sistema e conecte-se ao aplicativo Web por meio do FTP usando a URL, o nome de usuário e a senha da seção anterior deste tutorial. Por exemplo: 
    ```
    ftp
    open waws-prod-sn0-000.ftp.azurewebsites.windows.net
@@ -168,7 +168,7 @@ As etapas a seguir explicarão as etapas para implantar o aplicativo Web Spring 
    pass ********
    ```
 
-1. Altere o diretório remoto para a pasta raiz do aplicativo Web (em */site/wwwroot*), copie o arquivo JAR do aplicativo Spring Boot e o *web.config* anteriores. Por exemplo:
+1. Altere o diretório remoto para a pasta raiz do aplicativo Web (em */site/wwwroot*), copie o arquivo JAR do aplicativo Spring Boot e o *web.config* anteriores. Por exemplo: 
    ```
    cd site/wwwroot
    put gs-spring-boot-0.1.0.jar
