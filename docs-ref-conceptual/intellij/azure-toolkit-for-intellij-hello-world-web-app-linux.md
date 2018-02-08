@@ -7,133 +7,133 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: fdf41d6e8b23a6b7d6217ec626480e6c72e13969
-ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: c430581a9a67365430d87c1af925c1f4d27eca2b
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/03/2018
 ---
-# <a name="deploy-a-hello-world-web-app-to-a-linux-container-in-the-cloud-using-the-azure-toolkit-for-intellij"></a><span data-ttu-id="18d02-103">Implantar um aplicativo Web Olá, Mundo em um contêiner do Linux na nuvem usando o Kit de Ferramentas do Azure para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="18d02-103">Deploy a Hello World web app to a Linux container in the cloud using the Azure Toolkit for IntelliJ</span></span>
+# <a name="deploy-a-hello-world-web-app-to-a-linux-container-in-the-cloud-using-the-azure-toolkit-for-intellij"></a><span data-ttu-id="82585-103">Implantar um aplicativo Web Olá, Mundo em um contêiner do Linux na nuvem usando o Kit de Ferramentas do Azure para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="82585-103">Deploy a Hello World web app to a Linux container in the cloud using the Azure Toolkit for IntelliJ</span></span>
 
-<span data-ttu-id="18d02-104">Contêineres do [Docker] são um método amplamente usado para implantar aplicativos Web.</span><span class="sxs-lookup"><span data-stu-id="18d02-104">[Docker] containers are a widely used method for deploying web applications.</span></span> <span data-ttu-id="18d02-105">Com os contêineres do Docker, os desenvolvedores podem consolidar todos os arquivos de projeto e dependências em um único pacote para implantação em um servidor.</span><span class="sxs-lookup"><span data-stu-id="18d02-105">By using Docker containers, developers can consolidate all their project files and dependencies into a single package for deployment to a server.</span></span> <span data-ttu-id="18d02-106">O Kit de Ferramentas do Azure para IntelliJ simplifica o processo para desenvolvedores de Java adicionando recursos para implantação de contêineres no Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="18d02-106">The Azure Toolkit for IntelliJ simplifies this process for Java developers by adding features for to deploy containers to Microsoft Azure.</span></span>
+<span data-ttu-id="82585-104">Contêineres do [Docker] são um método amplamente usado para implantar aplicativos Web.</span><span class="sxs-lookup"><span data-stu-id="82585-104">[Docker] containers are a widely used method for deploying web applications.</span></span> <span data-ttu-id="82585-105">Com os contêineres do Docker, os desenvolvedores podem consolidar todos os arquivos de projeto e dependências em um único pacote para implantação em um servidor.</span><span class="sxs-lookup"><span data-stu-id="82585-105">By using Docker containers, developers can consolidate all their project files and dependencies into a single package for deployment to a server.</span></span> <span data-ttu-id="82585-106">O Kit de Ferramentas do Azure para IntelliJ simplifica o processo para desenvolvedores de Java adicionando recursos para implantação de contêineres no Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="82585-106">The Azure Toolkit for IntelliJ simplifies this process for Java developers by adding features for to deploy containers to Microsoft Azure.</span></span>
 
-<span data-ttu-id="18d02-107">Este artigo demonstra as etapas que são necessárias para criar um aplicativo Web Olá, Mundo básico e publicar seu aplicativo Web em um contêiner do Linux no Azure usando o Kit de Ferramentas do Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="18d02-107">This article demonstrates the steps that are required to create a basic Hello World web app and publish your web app in a Linux container to Azure by using the Azure Toolkit for IntelliJ.</span></span>
+<span data-ttu-id="82585-107">Este artigo demonstra as etapas que são necessárias para criar um aplicativo Web Olá, Mundo básico e publicar seu aplicativo Web em um contêiner do Linux no Azure usando o Kit de Ferramentas do Azure para IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="82585-107">This article demonstrates the steps that are required to create a basic Hello World web app and publish your web app in a Linux container to Azure by using the Azure Toolkit for IntelliJ.</span></span>
 
 [!INCLUDE [azure-toolkit-for-intellij-prerequisites](../includes/azure-toolkit-for-intellij-prerequisites.md)]
-* <span data-ttu-id="18d02-108">Um cliente do [Docker].</span><span class="sxs-lookup"><span data-stu-id="18d02-108">A [Docker] client.</span></span>
+* <span data-ttu-id="82585-108">Um cliente do [Docker].</span><span class="sxs-lookup"><span data-stu-id="82585-108">A [Docker] client.</span></span>
 
 > [!NOTE]
 >
-> <span data-ttu-id="18d02-109">Para concluir as etapas neste tutorial, você precisa configurar o [Docker] para expor o daemon na porta 2375 sem TLS.</span><span class="sxs-lookup"><span data-stu-id="18d02-109">To complete the steps in this tutorial, you need to configure [Docker] to expose the daemon on port 2375 without TLS.</span></span> <span data-ttu-id="18d02-110">Você pode definir essa configuração ao instalar o Docker ou por meio do menu de configurações do Docker.</span><span class="sxs-lookup"><span data-stu-id="18d02-110">You can configure this setting when installing Docker, or through the Docker settings menu.</span></span>
+> <span data-ttu-id="82585-109">Para concluir as etapas neste tutorial, você precisa configurar o [Docker] para expor o daemon na porta 2375 sem TLS.</span><span class="sxs-lookup"><span data-stu-id="82585-109">To complete the steps in this tutorial, you need to configure [Docker] to expose the daemon on port 2375 without TLS.</span></span> <span data-ttu-id="82585-110">Você pode definir essa configuração ao instalar o Docker ou por meio do menu de configurações do Docker.</span><span class="sxs-lookup"><span data-stu-id="82585-110">You can configure this setting when installing Docker, or through the Docker settings menu.</span></span>
 >
 > ![Menu de configurações do Docker][docker-settings-menu]
 >
 
-## <a name="create-a-new-web-app-project"></a><span data-ttu-id="18d02-112">Criar um novo projeto do aplicativo Web</span><span class="sxs-lookup"><span data-stu-id="18d02-112">Create a new web app project</span></span>
+## <a name="create-a-new-web-app-project"></a><span data-ttu-id="82585-112">Criar um novo projeto do aplicativo Web</span><span class="sxs-lookup"><span data-stu-id="82585-112">Create a new web app project</span></span>
 
-1. <span data-ttu-id="18d02-113">Inicie o IntelliJ e entre em sua conta do Azure usando as etapas no artigo [Instruções de entrada para o Kit de Ferramentas do Azure para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="18d02-113">Start IntelliJ and sign in to your Azure account using the steps in the [Sign In Instructions for the Azure Toolkit for IntelliJ] article.</span></span>
+1. <span data-ttu-id="82585-113">Inicie o IntelliJ e entre em sua conta do Azure usando as etapas no artigo [Instruções de entrada para o Kit de Ferramentas do Azure para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="82585-113">Start IntelliJ and sign in to your Azure account using the steps in the [Sign In Instructions for the Azure Toolkit for IntelliJ] article.</span></span>
 
-1. <span data-ttu-id="18d02-114">Clique menu **Arquivo**, clique em **Novo** e em **Projeto**.</span><span class="sxs-lookup"><span data-stu-id="18d02-114">Click the **File** menu, then click **New**, and then click **Project**.</span></span>
+1. <span data-ttu-id="82585-114">Clique menu **Arquivo**, clique em **Novo** e em **Projeto**.</span><span class="sxs-lookup"><span data-stu-id="82585-114">Click the **File** menu, then click **New**, and then click **Project**.</span></span>
    
    ![Criar um novo projeto][file-new-project]
 
-1. <span data-ttu-id="18d02-116">Na caixa de diálogo **Novo Projeto**, selecione **Maven**, em seguida, **maven-archetype-webapp** e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="18d02-116">In the **New Project** dialog box, select **Maven**, then **maven-archetype-webapp**, and then click **Next**.</span></span>
+1. <span data-ttu-id="82585-116">Na caixa de diálogo **Novo Projeto**, selecione **Maven**, em seguida, **maven-archetype-webapp** e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="82585-116">In the **New Project** dialog box, select **Maven**, then **maven-archetype-webapp**, and then click **Next**.</span></span>
    
    ![Escolha o aplicativo Web do modelo Maven][maven-archetype-webapp]
    
-1. <span data-ttu-id="18d02-118">Especifique o **GroupId** e **ArtifactId** para seu aplicativo Web e depois clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="18d02-118">Specify the **GroupId** and **ArtifactId** for your web app, and then click **Next**.</span></span>
+1. <span data-ttu-id="82585-118">Especifique o **GroupId** e **ArtifactId** para seu aplicativo Web e depois clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="82585-118">Specify the **GroupId** and **ArtifactId** for your web app, and then click **Next**.</span></span>
    
    ![Especifique GroupId e ArtifactId][groupid-and-artifactid]
 
-1. <span data-ttu-id="18d02-120">Personalize as configurações de Maven ou aceite os padrões e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="18d02-120">Customize any Maven settings or accept the defaults, and then click **Next**.</span></span>
+1. <span data-ttu-id="82585-120">Personalize as configurações de Maven ou aceite os padrões e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="82585-120">Customize any Maven settings or accept the defaults, and then click **Next**.</span></span>
    
    ![Especifique as configurações de Maven][maven-options]
 
-1. <span data-ttu-id="18d02-122">Especifique um nome de projeto e local e, em seguida, clique em **Concluir**.</span><span class="sxs-lookup"><span data-stu-id="18d02-122">Specify your project name and location, and then click **Finish**.</span></span>
+1. <span data-ttu-id="82585-122">Especifique um nome de projeto e local e, em seguida, clique em **Concluir**.</span><span class="sxs-lookup"><span data-stu-id="82585-122">Specify your project name and location, and then click **Finish**.</span></span>
    
    ![Especifique o nome do projeto][project-name]
 
-## <a name="create-an-azure-container-registry-to-use-as-a-private-docker-registry"></a><span data-ttu-id="18d02-124">Criar um Registro de Contêiner do Azure para usar como um registro do Docker privado</span><span class="sxs-lookup"><span data-stu-id="18d02-124">Create an Azure Container Registry to use as a private Docker registry</span></span>
+## <a name="create-an-azure-container-registry-to-use-as-a-private-docker-registry"></a><span data-ttu-id="82585-124">Criar um Registro de Contêiner do Azure para usar como um registro do Docker privado</span><span class="sxs-lookup"><span data-stu-id="82585-124">Create an Azure Container Registry to use as a private Docker registry</span></span>
 
-<span data-ttu-id="18d02-125">As etapas a seguir orientam você no uso do portal do Azure para criar um Registro de contêiner do Azure.</span><span class="sxs-lookup"><span data-stu-id="18d02-125">The following steps walk you through using the Azure portal to create an Azure Container Registry.</span></span>
+<span data-ttu-id="82585-125">As etapas a seguir orientam você no uso do portal do Azure para criar um Registro de contêiner do Azure.</span><span class="sxs-lookup"><span data-stu-id="82585-125">The following steps walk you through using the Azure portal to create an Azure Container Registry.</span></span>
 
 > [!NOTE]
 >
-> <span data-ttu-id="18d02-126">Se você quiser usar a CLI do Azure, em vez do Portal do Azure, siga as etapas em [Criar um registro de contêiner do Docker privado usando a CLI do Azure 2.0][Create Docker Registry using Azure CLI].</span><span class="sxs-lookup"><span data-stu-id="18d02-126">If you want to use the Azure CLI instead of the Azure portal, follow the steps in [Create a private Docker container registry using the Azure CLI 2.0][Create Docker Registry using Azure CLI].</span></span>
+> <span data-ttu-id="82585-126">Se você quiser usar a CLI do Azure, em vez do Portal do Azure, siga as etapas em [Criar um registro de contêiner do Docker privado usando a CLI do Azure 2.0][Create Docker Registry using Azure CLI].</span><span class="sxs-lookup"><span data-stu-id="82585-126">If you want to use the Azure CLI instead of the Azure portal, follow the steps in [Create a private Docker container registry using the Azure CLI 2.0][Create Docker Registry using Azure CLI].</span></span>
 >
 
-1. <span data-ttu-id="18d02-127">Navegue até o [portal do Azure] e conecte-se.</span><span class="sxs-lookup"><span data-stu-id="18d02-127">Browse to the [Azure portal] and sign in.</span></span>
+1. <span data-ttu-id="82585-127">Navegue até o [portal do Azure] e conecte-se.</span><span class="sxs-lookup"><span data-stu-id="82585-127">Browse to the [Azure portal] and sign in.</span></span>
 
-   <span data-ttu-id="18d02-128">Depois de entrar em sua conta no portal do Azure, você pode seguir as etapas no artigo [Criar um registro de contêiner privado do Docker usando o portal do Azure], que foram parafraseadas nas etapas a seguir para fins de conveniência.</span><span class="sxs-lookup"><span data-stu-id="18d02-128">Once you have signed in to your account on the Azure portal, you can follow the steps in the [Create a private Docker container registry using the Azure portal] article, which are paraphrased in the following steps for the sake of expediency.</span></span>
+   <span data-ttu-id="82585-128">Depois de entrar em sua conta no portal do Azure, você pode seguir as etapas no artigo [Criar um registro de contêiner privado do Docker usando o portal do Azure], que foram parafraseadas nas etapas a seguir para fins de conveniência.</span><span class="sxs-lookup"><span data-stu-id="82585-128">Once you have signed in to your account on the Azure portal, you can follow the steps in the [Create a private Docker container registry using the Azure portal] article, which are paraphrased in the following steps for the sake of expediency.</span></span>
 
-1. <span data-ttu-id="18d02-129">Clique no ícone do menu para **+ Novo** e, em seguida, clique em **Contêineres** e em **Registro de Contêiner do Azure**.</span><span class="sxs-lookup"><span data-stu-id="18d02-129">Click the menu icon for **+ New**, then click **Containers**, and then click **Azure Container Registry**.</span></span>
+1. <span data-ttu-id="82585-129">Clique no ícone do menu para **+ Novo** e, em seguida, clique em **Contêineres** e em **Registro de Contêiner do Azure**.</span><span class="sxs-lookup"><span data-stu-id="82585-129">Click the menu icon for **+ New**, then click **Containers**, and then click **Azure Container Registry**.</span></span>
    
    ![Criar um novo Registro de Contêiner do Azure][AR01]
 
-1. <span data-ttu-id="18d02-131">Quando a página de informações para o modelo de Registro de Contêiner do Azure for exibida, clique em **Criar**.</span><span class="sxs-lookup"><span data-stu-id="18d02-131">When the information page for the Azure Container Registry template is displayed, click **Create**.</span></span> 
+1. <span data-ttu-id="82585-131">Quando a página de informações para o modelo de Registro de Contêiner do Azure for exibida, clique em **Criar**.</span><span class="sxs-lookup"><span data-stu-id="82585-131">When the information page for the Azure Container Registry template is displayed, click **Create**.</span></span> 
 
    ![Criar um novo Registro de Contêiner do Azure][AR02]
 
-1. <span data-ttu-id="18d02-133">Quando a página **Criar registro de contêiner** for exibida, insira seu **Nome do registro** e **Grupo de recursos**, escolha **Habilitar** para o **Usuário administrador** e clique em **Criar**.</span><span class="sxs-lookup"><span data-stu-id="18d02-133">When the **Create container registry** page is displayed, enter your **Registry name** and **Resource group**, choose **Enable** for the **Admin user**, and then click **Create**.</span></span>
+1. <span data-ttu-id="82585-133">Quando a página **Criar registro de contêiner** for exibida, insira seu **Nome do registro** e **Grupo de recursos**, escolha **Habilitar** para o **Usuário administrador** e clique em **Criar**.</span><span class="sxs-lookup"><span data-stu-id="82585-133">When the **Create container registry** page is displayed, enter your **Registry name** and **Resource group**, choose **Enable** for the **Admin user**, and then click **Create**.</span></span>
 
    ![Definir configurações do registro de contêiner do Azure][AR03]
 
-1. <span data-ttu-id="18d02-135">Quando o registro de contêiner tiver sido criado, navegue até o registro de contêiner no portal do Azure e, em seguida, clique em **Chaves de Acesso**.</span><span class="sxs-lookup"><span data-stu-id="18d02-135">Once your container registry has been created, navigate to your container registry in the Azure portal, and then click **Access Keys**.</span></span> <span data-ttu-id="18d02-136">Anote o nome de usuário e a senha para as próximas etapas.</span><span class="sxs-lookup"><span data-stu-id="18d02-136">Take note of the username and password for the next steps.</span></span>
+1. <span data-ttu-id="82585-135">Quando o registro de contêiner tiver sido criado, navegue até o registro de contêiner no portal do Azure e, em seguida, clique em **Chaves de Acesso**.</span><span class="sxs-lookup"><span data-stu-id="82585-135">Once your container registry has been created, navigate to your container registry in the Azure portal, and then click **Access Keys**.</span></span> <span data-ttu-id="82585-136">Anote o nome de usuário e a senha para as próximas etapas.</span><span class="sxs-lookup"><span data-stu-id="82585-136">Take note of the username and password for the next steps.</span></span>
 
    ![Chaves de acesso do Registro de Contêiner do Azure][AR04]
 
-## <a name="deploy-your-web-app-in-a-docker-container"></a><span data-ttu-id="18d02-138">Implante seu aplicativo Web em um contêiner do Docker</span><span class="sxs-lookup"><span data-stu-id="18d02-138">Deploy your web app in a Docker container</span></span>
+## <a name="deploy-your-web-app-in-a-docker-container"></a><span data-ttu-id="82585-138">Implante seu aplicativo Web em um contêiner do Docker</span><span class="sxs-lookup"><span data-stu-id="82585-138">Deploy your web app in a Docker container</span></span>
 
-1. <span data-ttu-id="18d02-139">Clique com o botão direito do mouse no seu projeto no explorador de projeto, escolha **Azure** e, em seguida, clique em **Adicionar suporte do Docker**.</span><span class="sxs-lookup"><span data-stu-id="18d02-139">Right-click your project in the project explorer, choose **Azure**, and then click **Add Docker Support**.</span></span>
+1. <span data-ttu-id="82585-139">Clique com o botão direito do mouse no seu projeto no explorador de projeto, escolha **Azure** e, em seguida, clique em **Adicionar suporte do Docker**.</span><span class="sxs-lookup"><span data-stu-id="82585-139">Right-click your project in the project explorer, choose **Azure**, and then click **Add Docker Support**.</span></span>
 
-   <span data-ttu-id="18d02-140">Isso criará automaticamente um arquivo do Docker com uma configuração padrão.</span><span class="sxs-lookup"><span data-stu-id="18d02-140">This will automatically create a Docker file with a default configuration.</span></span>
+   <span data-ttu-id="82585-140">Isso criará automaticamente um arquivo do Docker com uma configuração padrão.</span><span class="sxs-lookup"><span data-stu-id="82585-140">This will automatically create a Docker file with a default configuration.</span></span>
 
    ![Adicionar suporte ao Docker][add-docker-support]
 
-1. <span data-ttu-id="18d02-142">Após ter adicionado o suporte do Docker, clique com o botão direito do mouse no seu projeto no explorador de projeto, escolha **Azure** e, em seguida, clique em **Executar no aplicativo Web (Linux)**.</span><span class="sxs-lookup"><span data-stu-id="18d02-142">After you have added Docker support, right-click your project in the project explorer, choose **Azure**, and then click **Run on Web App (Linux)**.</span></span>
+1. <span data-ttu-id="82585-142">Após ter adicionado o suporte do Docker, clique com o botão direito do mouse no seu projeto no explorador de projeto, escolha **Azure** e, em seguida, clique em **Executar no aplicativo Web (Linux)**.</span><span class="sxs-lookup"><span data-stu-id="82585-142">After you have added Docker support, right-click your project in the project explorer, choose **Azure**, and then click **Run on Web App (Linux)**.</span></span>
 
    ![Executar no aplicativo Web (Linux)][run-on-web-app-linux]
 
-1. <span data-ttu-id="18d02-144">Quando a caixa de diálogo **Executar no aplicativo Web (Linux)** for exibida, preencha as informações necessárias:</span><span class="sxs-lookup"><span data-stu-id="18d02-144">When the **Run on Web App (Linux)** dialog box is displayed, fill in the requisite information:</span></span>
+1. <span data-ttu-id="82585-144">Quando a caixa de diálogo **Executar no aplicativo Web (Linux)** for exibida, preencha as informações necessárias:</span><span class="sxs-lookup"><span data-stu-id="82585-144">When the **Run on Web App (Linux)** dialog box is displayed, fill in the requisite information:</span></span>
 
-   * <span data-ttu-id="18d02-145">**Nome**: especifica o nome amigável que é exibido no Kit de Ferramentas do Azure.</span><span class="sxs-lookup"><span data-stu-id="18d02-145">**Name**: This specifies the friendly name which is displayed in the Azure Toolkit.</span></span> 
+   * <span data-ttu-id="82585-145">**Nome**: especifica o nome amigável que é exibido no Kit de Ferramentas do Azure.</span><span class="sxs-lookup"><span data-stu-id="82585-145">**Name**: This specifies the friendly name which is displayed in the Azure Toolkit.</span></span> 
 
-   * <span data-ttu-id="18d02-146">**URL do servidor**: especifica a URL para o registro de contêiner da seção anterior deste artigo. Geralmente usará a sintaxe a seguir: "*registry*.azurecr.io".</span><span class="sxs-lookup"><span data-stu-id="18d02-146">**Server URL**: This specifies the URL for your container registry from the previous section of this article; typically this will use the following syntax: "*registry*.azurecr.io".</span></span> 
+   * <span data-ttu-id="82585-146">**URL do servidor**: especifica a URL para o registro de contêiner da seção anterior deste artigo. Geralmente usará a sintaxe a seguir: "*registry*.azurecr.io".</span><span class="sxs-lookup"><span data-stu-id="82585-146">**Server URL**: This specifies the URL for your container registry from the previous section of this article; typically this will use the following syntax: "*registry*.azurecr.io".</span></span> 
 
-   * <span data-ttu-id="18d02-147">**Nome de usuário** e **senha**: especifica as chaves de acesso para o registro de contêiner da seção anterior deste artigo.</span><span class="sxs-lookup"><span data-stu-id="18d02-147">**Username** and **Password**: Specifies the access keys for your container registry from the previous section of this article.</span></span> 
+   * <span data-ttu-id="82585-147">**Nome de usuário** e **senha**: especifica as chaves de acesso para o registro de contêiner da seção anterior deste artigo.</span><span class="sxs-lookup"><span data-stu-id="82585-147">**Username** and **Password**: Specifies the access keys for your container registry from the previous section of this article.</span></span> 
 
-   * <span data-ttu-id="18d02-148">**Imagem e marca**: especifica o nome da imagem de contêiner. Geralmente usará a sintaxe a seguir: "*registry*.azurecr.io/*appname*:latest", em que:</span><span class="sxs-lookup"><span data-stu-id="18d02-148">**Image and tag**: Specifies the container image name; typically this will use the following syntax: "*registry*.azurecr.io/*appname*:latest", where:</span></span> 
-      * <span data-ttu-id="18d02-149">*registry* é o registro de contêiner da seção anterior deste artigo</span><span class="sxs-lookup"><span data-stu-id="18d02-149">*registry* is your container registry from the previous section of this article</span></span> 
-      * <span data-ttu-id="18d02-150">*appname* é o nome do seu aplicativo Web</span><span class="sxs-lookup"><span data-stu-id="18d02-150">*appname* is the name of your web app</span></span> 
+   * <span data-ttu-id="82585-148">**Imagem e marca**: especifica o nome da imagem de contêiner. Geralmente usará a sintaxe a seguir: "*registry*.azurecr.io/*appname*:latest", em que:</span><span class="sxs-lookup"><span data-stu-id="82585-148">**Image and tag**: Specifies the container image name; typically this will use the following syntax: "*registry*.azurecr.io/*appname*:latest", where:</span></span> 
+      * <span data-ttu-id="82585-149">*registry* é o registro de contêiner da seção anterior deste artigo</span><span class="sxs-lookup"><span data-stu-id="82585-149">*registry* is your container registry from the previous section of this article</span></span> 
+      * <span data-ttu-id="82585-150">*appname* é o nome do seu aplicativo Web</span><span class="sxs-lookup"><span data-stu-id="82585-150">*appname* is the name of your web app</span></span> 
 
-   * <span data-ttu-id="18d02-151">**Usar aplicativo Web existente** ou **Criar novo aplicativo Web**: especifica se você implantará o contêiner em um aplicativo Web existente ou criará um novo aplicativo Web.</span><span class="sxs-lookup"><span data-stu-id="18d02-151">**Use Existing Web App** or **Create New Web App**: Specifies whether you will deploy your container to an existing web app or create a new web app.</span></span> 
+   * <span data-ttu-id="82585-151">**Usar aplicativo Web existente** ou **Criar novo aplicativo Web**: especifica se você implantará o contêiner em um aplicativo Web existente ou criará um novo aplicativo Web.</span><span class="sxs-lookup"><span data-stu-id="82585-151">**Use Existing Web App** or **Create New Web App**: Specifies whether you will deploy your container to an existing web app or create a new web app.</span></span> 
 
-   * <span data-ttu-id="18d02-152">**Grupo de recursos**: especifica se você criará um novo grupo de recursos ou usará um existente.</span><span class="sxs-lookup"><span data-stu-id="18d02-152">**Resource Group**: Specifies whether you will use an existing or create a new resource group.</span></span> 
+   * <span data-ttu-id="82585-152">**Grupo de recursos**: especifica se você criará um novo grupo de recursos ou usará um existente.</span><span class="sxs-lookup"><span data-stu-id="82585-152">**Resource Group**: Specifies whether you will use an existing or create a new resource group.</span></span> 
 
-   * <span data-ttu-id="18d02-153">**Plano do Serviço de Aplicativo**: especifica se você criará um novo plano de serviço de aplicativo ou usará um existente.</span><span class="sxs-lookup"><span data-stu-id="18d02-153">**App Service Plan**: Specifies whether you willuse an existing or create a new app service plan.</span></span> 
+   * <span data-ttu-id="82585-153">**Plano do Serviço de Aplicativo**: especifica se você criará um novo plano de serviço de aplicativo ou usará um existente.</span><span class="sxs-lookup"><span data-stu-id="82585-153">**App Service Plan**: Specifies whether you willuse an existing or create a new app service plan.</span></span> 
 
-1. <span data-ttu-id="18d02-154">Quando terminar de definir as configurações listadas acima, clique em **Executar**.</span><span class="sxs-lookup"><span data-stu-id="18d02-154">When you have finished configuring the settings listed above, click **Run**.</span></span>
+1. <span data-ttu-id="82585-154">Quando terminar de definir as configurações listadas acima, clique em **Executar**.</span><span class="sxs-lookup"><span data-stu-id="82585-154">When you have finished configuring the settings listed above, click **Run**.</span></span>
 
    ![Criar um aplicativo Web][create-web-app]
 
-1. <span data-ttu-id="18d02-156">Depois de publicar seu aplicativo Web, as configurações serão salvas como padrão e você poderá executar seu aplicativo no Azure clicando no ícone de seta verde na barra de ferramentas.</span><span class="sxs-lookup"><span data-stu-id="18d02-156">After you have published your web app, your settings will be saved as the default, and you can run your application on Azure by clicking the green arrow icon on the toolbar.</span></span> <span data-ttu-id="18d02-157">Você pode modificar essas configurações clicando no menu suspenso para seu aplicativo Web e clicando em **Editar Configurações**.</span><span class="sxs-lookup"><span data-stu-id="18d02-157">You can modify these settings by clicking the drop-down menu for your web app and click **Edit Configurations**.</span></span>
+1. <span data-ttu-id="82585-156">Depois de publicar seu aplicativo Web, as configurações serão salvas como padrão e você poderá executar seu aplicativo no Azure clicando no ícone de seta verde na barra de ferramentas.</span><span class="sxs-lookup"><span data-stu-id="82585-156">After you have published your web app, your settings will be saved as the default, and you can run your application on Azure by clicking the green arrow icon on the toolbar.</span></span> <span data-ttu-id="82585-157">Você pode modificar essas configurações clicando no menu suspenso para seu aplicativo Web e clicando em **Editar Configurações**.</span><span class="sxs-lookup"><span data-stu-id="82585-157">You can modify these settings by clicking the drop-down menu for your web app and click **Edit Configurations**.</span></span>
 
    ![Menu Editar configuração][edit-configuration-menu]
 
-1. <span data-ttu-id="18d02-159">Quando a caixa de diálogo **Configurações de execução/depuração** for exibida, você poderá modificar as configurações padrão e, em seguida, clicar em **OK**.</span><span class="sxs-lookup"><span data-stu-id="18d02-159">When the **Run/Debug Configurations** dialog box is displayed, you can modify any of the default settings, and then click **OK**.</span></span>
+1. <span data-ttu-id="82585-159">Quando a caixa de diálogo **Configurações de execução/depuração** for exibida, você poderá modificar as configurações padrão e, em seguida, clicar em **OK**.</span><span class="sxs-lookup"><span data-stu-id="82585-159">When the **Run/Debug Configurations** dialog box is displayed, you can modify any of the default settings, and then click **OK**.</span></span>
 
    ![Caixa de diálogo Editar configuração][edit-configuration-dialog]
 
-## <a name="next-steps"></a><span data-ttu-id="18d02-161">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="18d02-161">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="82585-161">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="82585-161">Next steps</span></span>
 
-<span data-ttu-id="18d02-162">Para obter recursos adicionais para o Docker, consulte o [site oficial do Docker][Docker].</span><span class="sxs-lookup"><span data-stu-id="18d02-162">For additional resources for Docker, see the official [Docker website][Docker].</span></span>
+<span data-ttu-id="82585-162">Para obter recursos adicionais para o Docker, consulte o [site oficial do Docker][Docker].</span><span class="sxs-lookup"><span data-stu-id="82585-162">For additional resources for Docker, see the official [Docker website][Docker].</span></span>
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
