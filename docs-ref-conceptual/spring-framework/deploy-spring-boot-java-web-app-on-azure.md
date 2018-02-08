@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: asirveda;robmcm
-ms.openlocfilehash: 4dba6a6cbce2c8f6d4956717b3358c4e5b501e71
-ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: adf779e2ba6ca73ea3a2406613f9622cc9ecbf99
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="deploy-a-spring-boot-application-to-the-cloud-with-azure-app-service"></a>Implantar um aplicativo Spring Boot na nuvem com o Serviço de Aplicativo do Azure
 
@@ -177,7 +177,7 @@ As etapas a seguir explicarão as etapas para implantar o aplicativo Web Spring 
 
 1. Depois de implantar os arquivos JAR e *web.config* no aplicativo Web, você precisa reiniciar o aplicativo Web usando o Portal do Azure:
 
-   ![][AZ10]
+   ![Reiniciar seu aplicativo Web][AZ10]
 
 1. Teste o aplicativo Web navegando até a URL do aplicativo Web com um navegador da Web ou use a sintaxe semelhante ao seguinte exemplo, se você tiver o curl disponível:
    ```
@@ -196,7 +196,7 @@ Para obter mais informações sobre como usar aplicativos Spring Boot no Azure, 
 
 * [Implantar um Aplicativo Spring Boot em um Cluster Kubernetes no Serviço de Contêiner do Azure](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para saber mais sobre como usar o Azure com o Java, consulte [Azure para desenvolvedores Java] e as [Ferramentas Java para Visual Studio Team Services].
+Para obter mais informações sobre como usar o Azure com o Java, veja os documentos [Azure para desenvolvedores Java] e [Ferramentas Java para Visual Studio Team Services].
 
 Para obter informações adicionais sobre a implantação dos aplicativos Web no Azure usando o FTP, confira [Implantar o aplicativo no Serviço de Aplicativo do Azure usando FTP/S].
 

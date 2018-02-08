@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: ee87b73841013eafb47d00e0cf5028d6b3ff932c
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: 498a22c455e54b8038169cf4e9f6ac7d7287c0bb
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="azure-sign-in-instructions-for-the-azure-toolkit-for-eclipse"></a>Instruções de entrada no Azure para o Kit de Ferramentas do Azure para Eclipse
 
@@ -47,7 +47,7 @@ As etapas a seguir lhe orientarão na criação de um arquivo de credenciais que
 
 1. Quando a caixa de diálogo **Logon no Azure** for exibida, digite as credenciais do Azure e, em seguida, clique em **Entrar**.
 
-   ![Caixa de diálogo Logon no Azure][A03]
+   ![Caixa de Diálogo de Logon do Azure][A03]
 
 1. Quando a caixa de diálogo **Criar Arquivos de Autenticação** for exibida, selecione as assinaturas que deseja usar, escolha o diretório de destino e, em seguida, clique em **Iniciar**.
 
@@ -59,7 +59,7 @@ As etapas a seguir lhe orientarão na criação de um arquivo de credenciais que
 
 1. Quando a caixa de diálogo **Entrar no Azure** for exibida, clique em **Entrar**.
 
-   ![Caixa de diálogo Logon no Azure][A06]
+   ![Caixa de Diálogo de Logon do Azure][A06]
 
 1. Quando a caixa de diálogo **Selecionar Assinaturas** for exibida, selecione as assinaturas que deseja usar e, em seguida, clique em **OK**.
 
@@ -97,7 +97,7 @@ Se você sair do Azure quando você estiver usando o Eclipse, você precisará r
 
 1. Quando a caixa de diálogo **Entrar no Azure** for exibida, clique em **Entrar**.
 
-   ![Caixa de diálogo Logon no Azure][A06]
+   ![Caixa de Diálogo de Logon do Azure][A06]
 
 1. Quando a caixa de diálogo **Selecionar Assinaturas** for exibida, selecione as assinaturas que deseja usar e, em seguida, clique em **OK**.
 
@@ -119,7 +119,7 @@ As etapas a seguir ilustrarão como se inscrever no Azure inserindo manualmente 
 
 1. Quando a caixa de diálogo **Logon no Azure** for exibida, digite as credenciais do Azure e, em seguida, clique em **Entrar**.
 
-   ![Caixa de diálogo Logon no Azure][I03]
+   ![Caixa de Diálogo de Logon do Azure][I03]
 
 1. Quando a caixa de diálogo **Selecionar Assinaturas** for exibida, selecione as assinaturas que deseja usar e, em seguida, clique em **OK**.
 

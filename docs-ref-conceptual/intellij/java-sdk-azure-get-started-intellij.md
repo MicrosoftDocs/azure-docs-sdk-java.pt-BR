@@ -2,26 +2,30 @@
 title: "Introdução ao Azure para Java usando o Intellij"
 description: "Introdução ao uso básico das bibliotecas do Azure para Java com sua própria assinatura do Azure."
 keywords: "Azure, Java, SDK, API, autenticar, introdução"
+services: 
+documentationcenter: java
 author: roygara
-ms.author: v-rogara
 manager: timlt
-ms.date: 10/30/2017
-ms.topic: get-started-article
-ms.prod: azure
-ms.technology: azure
+editor: 
+ms.assetid: 
+ms.author: v-rogara
+ms.date: 02/01/2018
 ms.devlang: java
+ms.prod: azure
 ms.service: multiple
-ms.openlocfilehash: 1e10a7c5a46ed0e36143fd4a99decc037c04e1fe
-ms.sourcegitcommit: fcf1189ede712ae30f8c7626bde50c9b8bb561bc
+ms.topic: get-started-article
+ms.technology: azure
+ms.openlocfilehash: 0a059366f7cdc139dcb5a8e7e9ca78254384d19e
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="get-started-with-the-azure-libraries-using-intellij"></a>Introdução às bibliotecas do Azure usando o Intellij
 
 Este guia orienta em relação à configuração de um ambiente de desenvolvimento e ao uso de bibliotecas do Azure para Java. Você vai criar uma entidade de serviço para autenticar com o Azure e executar um código de exemplo que cria e usa recursos do Azure em sua assinatura. Usar o Intellij é opcional para desenvolvimento Java com o Azure. Qualquer IDE que tenha integração com o Maven funciona. Como alternativa, você pode executar o código a partir da linha de comando usando Maven, caso prefira não usar nenhum IDE.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>pré-requisitos
 
 - Uma conta do Azure. Se você não tiver uma, [obtenha uma avaliação gratuita](https://azure.microsoft.com/free/)
 - [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/quickstart) ou [CLI do Azure 2.0](https://docs.microsoft.com/cli/azure/install-az-cli2).

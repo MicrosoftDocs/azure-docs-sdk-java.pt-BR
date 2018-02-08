@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: a2aa6b0aa0689893143073be94539345e229e5f2
-ms.sourcegitcommit: 062e07cbd42cda74f02c82b933ce90da646a50a0
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: b54c10dc33324d902a0e778770df8ec4d71dc9a1
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse"></a>Publicar um aplicativo Spring Boot como um contêiner do Docker usando o Kit de Ferramentas do Azure para Eclipse
 
@@ -48,7 +48,7 @@ As etapas a seguir explicam a clonagem do repositório do Spring Boot Docker par
 
    b. Selecione **Projetos do Git**.
    
-   c. Clique em **Avançar**.
+   c. Clique em **Próximo**.
 
    ![Caixa de diálogo de Importação][CL02]
 
@@ -56,7 +56,7 @@ As etapas a seguir explicam a clonagem do repositório do Spring Boot Docker par
 
    a. Selecione **Clonar URI**.
    
-   b. Clique em **Avançar**.
+   b. Clique em **Próximo**.
 
    ![Página Selecionar Origem do Repositório][CL03]
 
@@ -66,7 +66,7 @@ As etapas a seguir explicam a clonagem do repositório do Spring Boot Docker par
    
    b. O repositório Spring Boot é público, assim, você não precisa inserir seu nome de usuário e senha do Git.
    
-   c. Clique em **Avançar**.
+   c. Clique em **Próximo**.
 
    ![Página Repositório Git de Origem][CL04]
 
@@ -78,7 +78,7 @@ As etapas a seguir explicam a clonagem do repositório do Spring Boot Docker par
 
    a. Especifique a pasta local em que você deseja colocar seu repositório local.
    
-   b. Clique em **Avançar**.
+   b. Clique em **Próximo**.
 
    ![Página Destino Local][CL06]
 
@@ -86,7 +86,7 @@ As etapas a seguir explicam a clonagem do repositório do Spring Boot Docker par
 
    a. Selecione **Importar como um projeto geral**.
    
-   b. Clique em **Avançar**.
+   b. Clique em **Próximo**.
 
    ![Página “Selecionar um assistente a ser usado para a importação de projetos”][CL07]
 
@@ -116,7 +116,7 @@ O repositório do Spring Boot Docker contém um projeto completo do Maven, que s
    
    b. Selecione **Projetos Existentes do Maven**.
    
-   c. Clique em **Avançar**.
+   c. Clique em **Próximo**.
 
    ![Caixa de diálogo de Importação][MV01]
 

@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: d0fe2a90fd12d2badf277659c7ce4ee768f6943c
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: 213efa7fc31705b0ffcba6f2fe40e7186a365fae
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-intellij"></a>Gerenciar máquinas virtuais usando o Azure Explorer para IntelliJ
 
@@ -61,7 +61,7 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
    ![A janela Selecionar uma Imagem de Máquina Virtual][CR03]
 
-5. Clique em **Avançar**. 
+5. Clique em **Próximo**. 
 
 6. Na janela **Configurações Básicas de Máquina Virtual**, insira as seguintes informações:
 
@@ -75,7 +75,7 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
    ![A janela Configurações Básicas de Máquina Virtual][CR04]
 
-7. Clique em **Avançar**. 
+7. Clique em **Próximo**. 
 
 8. Na janela **Recursos Associados**, insira as informações a seguir:
 

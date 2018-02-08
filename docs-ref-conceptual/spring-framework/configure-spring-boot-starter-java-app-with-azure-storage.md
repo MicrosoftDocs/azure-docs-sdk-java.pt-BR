@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: storage
-ms.workload: storage
-ms.tgt_pltfrm: na
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: yungez;robmcm
-ms.openlocfilehash: 0979c810711a01464c0b2c6e12a582a3f5eefef1
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: storage
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.workload: storage
+ms.openlocfilehash: 50c8475c66250c8e872849007349277fd3fe797b
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>Como usar o iniciador do Spring Boot para Armazenamento do Azure
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 12/06/2017
 
 Este artigo orienta em relação à criação de um aplicativo personalizado usando o **Spring Initializr** e depois usando esse aplicativo para acessar o Armazenamento do Azure.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>pré-requisitos
 
 Os seguintes pré-requisitos são obrigatórios para que você siga as etapas neste artigo:
 
@@ -132,7 +132,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    az storage account create --name wingtiptoysstorage --resource-group wingtiptoysresources --location westus --sku Standard_LRS
    ```
    Em que:
-   | Parâmetro | Descrição |
+   | Parâmetro | DESCRIÇÃO |
    |---|---|
    | `name` | Especifica um nome exclusivo para sua conta de armazenamento. |
    | `resource-group` | Especifica o nome do grupo de recursos que você criou na etapa anterior. |
@@ -161,7 +161,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    az storage account show-connection-string --name wingtiptoysstorage --resource-group wingtiptoysresources
    ```
    Em que:
-   | Parâmetro | Descrição |
+   | Parâmetro | DESCRIÇÃO |
    | ---|---|
    | `name` | Especifica um nome exclusivo da conta de armazenamento que você criou nas etapas anteriores. |
    | `resource-group` | Especifica o nome do grupo de recursos que você criou em etapas anteriores. |
@@ -176,9 +176,9 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
 ## <a name="configure-and-compile-your-spring-boot-application"></a>Configurar e compilar seu aplicativo Spring Boot
 
-1. Extraia os arquivos do arquivo de projeto baixado em um diretório.
+1. Extraia em um diretório os arquivos do projeto baixado.
 
-1. Navegue até a pasta *src/main/resources* no seu projeto e abra o arquivo *application.properties* no editor de texto.
+1. Navegue até a pasta *src/main/resources* no seu projeto e abra o arquivo *application.properties* em um editor de texto.
 
 1. Adicione a chave da sua conta de armazenamento. Por exemplo:
    ```yaml

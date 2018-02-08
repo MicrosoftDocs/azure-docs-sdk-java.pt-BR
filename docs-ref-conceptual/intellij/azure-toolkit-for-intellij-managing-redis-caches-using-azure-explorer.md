@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm
-ms.openlocfilehash: b715ffb97a4ca2b13e8020d354341139be4be45b
-ms.sourcegitcommit: 613c1ffd2e0279fc7a96fca98aa1809563f52ee1
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: 046ae0428d50a7f173f5ad15be53ffd8e66c11c5
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="managing-redis-caches-using-the-azure-explorer-for-intellij"></a>Gerenciar Caches Redis utilizando o Azure Explorer para IntelliJ
 
@@ -52,7 +52,7 @@ As etapas a seguir guiarão você pelas etapas para criar um Cache Redis utiliza
 
    d. **Localização**: especifica a localização em que seu cache redis será criado; por exemplo, *Oeste dos EUA*.
 
-   e. **Tipo de Preços**: especifica qual tipo de preço seu cache redis utiliza; essa configuração determina o número de conexões do cliente. (Para saber mais, veja [Preço do Cache Redis]).
+   e. **Tipo de Preços**: especifica qual tipo de preço seu cache redis utiliza; essa configuração determina o número de conexões do cliente. (Para saber mais, veja [Preços do Cache Redis]).
 
    f. **Porta não SSL**: especifica se o cache redis permite conexões não SSL; por padrão, apenas as conexões SSL são permitidas.
 
@@ -93,14 +93,14 @@ Para saber mais sobre caches redis, configurações e preços do Azure, veja os 
 
 * [Cache Redis do Azure]
 * [Documentação do Cache Redis]
-* [Preço do Cache Redis]
+* [Preços do Cache Redis]
 * [Como configurar o Cache Redis do Azure]
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
 <!-- URL List -->
 
-[Preço do Cache Redis]: https://azure.microsoft.com/pricing/details/cache/
+[Preços do Cache Redis]: https://azure.microsoft.com/pricing/details/cache/
 [Cache Redis do Azure]: https://azure.microsoft.com/services/cache/
 [Documentação do Cache Redis]: /azure/redis-cache
 [Como configurar o Cache Redis do Azure]: /azure/redis-cache/cache-configure
