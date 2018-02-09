@@ -7,28 +7,28 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: key-vault
-ms.workload: identity
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 11/29/2017
 ms.author: robmcm
-ms.openlocfilehash: 165a108147ef5ef7575820bbb6c2ee526888f722
-ms.sourcegitcommit: 558d875e9a255deb5b83b3f1646bd1dd9eee0a0d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: key-vault
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: identity
+ms.openlocfilehash: 52e7dc3f84ea96f22d8e478a597452c76ed8bf22
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Como usar o iniciador do Spring Boot para o Azure Key Vault
 
 ## <a name="overview"></a>Visão geral
 
-Este artigo demonstra como criar um aplicativo com o **[Spring Initializr]**, o qual usa o iniciador do Spring Boot para o Azure Key Vault para recuperar uma cadeia de conexão armazenada como um segredo no cofre de chaves.
+Este artigo demonstra como criar um aplicativo com o **[Spring Initializr]**, o qual usa o iniciador do Spring Boot para o Azure Key Vault para recuperar uma cadeia de conexão armazenada como um segredo em um cofre de chaves.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>pré-requisitos
 
-Os seguintes pré-requisitos são obrigatórios para que você siga as etapas neste artigo:
+Os seguintes pré-requisitos são obrigatórios para você concluir as etapas neste artigo:
 
 * Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [benefício de assinante do MSDN] ou inscrever-se para uma [conta gratuita do Azure].
 * Um [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/) versão 1.7 ou posterior.
@@ -85,9 +85,8 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
        }
      }
    ]
-   ```
 
-1. Especifique o GUID para a conta que quer usar no Azure; por exemplo:
+1. Specify the GUID for the account you want to use with Azure; for example:
 
    ```azurecli
    az account set -s ssssssss-ssss-ssss-ssss-ssssssssssss
@@ -124,9 +123,10 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    ```shell
    az ad sp create-for-rbac --name "wingtiptoysuser"
    ```
-   | Parâmetro | Descrição |
+   Em que:
+   | Parâmetro | DESCRIÇÃO |
    |---|---|
-   | `id` | Especifica o GUID de seu registro de aplicativo anterior. |
+   | `name` | Especifica o nome para a entidade de serviço do Azure. |
 
    A CLI do Azure retornará uma mensagem de status do JSON que contém o *appId* e a *senha*, o que será usado posteriormente como a ID e senha do cliente. Por exemplo:
 
@@ -170,7 +170,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    |---|---|
    | `name` | Especifica o nome do cofre de chaves de antes. |
    | `secret-permission` | Especifica as [políticas de segurança](https://docs.microsoft.com/en-us/cli/azure/keyvault) do seu cofre de chaves. |
-   | `object-id` | Especifica o GUID do seu registro de aplicativo de antes. |
+   | `spn` | Especifica o GUID do seu registro de aplicativo de antes. |
 
    A CLI do Azure exibirá os resultados da criação da política de segurança. Por exemplo:  
 

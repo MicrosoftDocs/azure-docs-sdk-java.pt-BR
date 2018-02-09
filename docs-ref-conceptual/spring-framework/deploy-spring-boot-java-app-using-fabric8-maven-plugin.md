@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: yuwzho;robmcm
-ms.openlocfilehash: 6e33c43d3fb4b63cff1f1c7c04cbf9523aa97770
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: 396d0ecfb051109924f09ae8b5d9b8074e49c404
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="deploy-a-spring-boot-app-using-the-fabric8-maven-plugin"></a>Implantar um aplicativo Spring Boot usando o plug-in Fabric8 Maven
 
@@ -26,7 +26,7 @@ O **[Fabric8]** é uma solução de software livre baseada em **[Kubernetes]**, 
 
 Este tutorial mostra como usar o plug-in Fabric8 do Maven para desenvolver e implantar um aplicativo em um host do Linux no [AKS (Serviço de Contêiner do Azure)].
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>pré-requisitos
 
 Para concluir as etapas deste tutorial, você precisa ter os seguintes pré-requisitos:
 
@@ -253,10 +253,12 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    ```azurecli
    az acr create --admin-enabled --resource-group wingtiptoys-kubernetes --location westeurope --name wingtiptoysregistry --sku Basic
    ```
-   Em que:  
-      * *wingtiptoys kubernetes* é o nome do seu grupo de recursos de antes neste artigo  
-      * *wingtiptoysregistry* é um nome exclusivo para o Registro privado
-      * *westeurope* é uma localização geográfica apropriada para seu aplicativo  
+   Em que:
+   | Parâmetro | DESCRIÇÃO |
+   |---|---|
+   | `wingtiptoys-kubernetes` | Especifica o nome do seu grupo de recursos referido anteriormente neste artigo. |
+   | `wingtiptoysregistry` | Especifica um nome exclusivo para o seu registro privado. |
+   | `westeurope` | Especifica uma localização geográfica apropriada para seu aplicativo. |
 
    A CLI do Azure exibirá os resultados da criação do Registro, por exemplo:  
 
@@ -509,7 +511,7 @@ Para obter mais informações sobre como usar aplicativos Spring Boot no Azure, 
 * [Implantar um aplicativo Spring Boot no Linux no Serviço de Contêiner do Azure](deploy-spring-boot-java-app-on-linux.md)
 * [Implantar um Aplicativo Spring Boot em um Cluster Kubernetes no Serviço de Contêiner do Azure](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para saber mais sobre como usar o Azure com o Java, consulte [Azure para desenvolvedores Java] e as [Ferramentas Java para Visual Studio Team Services].
+Para obter mais informações sobre como usar o Azure com o Java, veja os documentos [Azure para desenvolvedores Java] e [Ferramentas Java para Visual Studio Team Services].
 
 Para obter mais detalhes sobre o Spring Boot no projeto de exemplo do Docker, consulte [Introdução ao Spring Boot no Docker].
 

@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: app-service
-ms.workload: web
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: robmcm;kevinzha
-ms.openlocfilehash: 656e4dcc5b2510bb14fd79ed5da8a3dfd7fc08da
-ms.sourcegitcommit: 9c354a65b0f8ad49a528f40ddee647b091f7d246
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: app-service
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: web
+ms.openlocfilehash: 17c358317d1b96521de87f263a92fa2d7c0ff26c
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="deploy-a-spring-boot-app-to-the-cloud-using-the-maven-plugin-for-azure-web-apps"></a>Implantar um aplicativo Spring Boot para a nuvem usando o plug-in Maven para Aplicativos Web do Azure
 
@@ -143,13 +143,13 @@ Nesta seção, você usará os valores de sua entidade de serviço do Azure para
    </servers>
    ```
    Em que:
-   Elemento | DESCRIÇÃO
-   ---|---|---
-   `<id>` | Especifica um nome exclusivo usado pelo Maven para analisar suas configurações de segurança durante a implantação de seu aplicativo Web no Azure.
-   `<client>` | Contém o valor `appId` de sua entidade de serviço.
-   `<tenant>` | Contém o valor `tenant` de sua entidade de serviço.
-   `<key>` | Contém o valor `password` de sua entidade de serviço.
-   `<environment>` | Define o ambiente de nuvem do Azure de destino, que é `AZURE` neste exemplo. (Uma lista completa dos ambientes está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure])
+   | Elemento | DESCRIÇÃO |
+   |---|---|
+   | `<id>` | Especifica um nome exclusivo usado pelo Maven para analisar suas configurações de segurança durante a implantação de seu aplicativo Web no Azure. |
+   | `<client>` | Contém o valor `appId` de sua entidade de serviço. |
+   | `<tenant>` | Contém o valor `tenant` de sua entidade de serviço. |
+   | `<key>` | Contém o valor `password` de sua entidade de serviço. |
+   | `<environment>` | Define o ambiente de nuvem do Azure de destino, que é `AZURE` neste exemplo. (Uma lista completa dos ambientes está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure].) |
 
 1. Salve e feche o arquivo *settings.xml*.
 
@@ -193,16 +193,16 @@ Abra o arquivo `pom.xml` de seu aplicativo Spring Boot em um editor de texto e l
 
 Você pode modificar diversos valores do plug-in do Maven, e há uma descrição detalhada de cada um desses elementos disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]. Dito isso, vale a pena destacar diversos valores neste artigo:
 
-Elemento | DESCRIÇÃO
----|---|---
-`<version>` | Especifica a versão do [Plug-in do Maven para Aplicativos Web do Azure]. Você deve verificar a versão listada no [Repositório Central do Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22) para garantir que esteja usando a versão mais recente.
-`<authentication>` | Especifica as informações de autenticação do Azure, que, neste exemplo, contêm um elemento `<serverId>` contendo `azure-auth`; o Maven usa esse valor para procurar os valores de entidade de serviço do Azure em seu arquivo *settings.xml* do Maven, que você definiu em uma seção anterior deste artigo.
-`<resourceGroup>` | Especifica o grupo de recursos de destino, que é `maven-plugin` neste exemplo. Esse grupo de recursos é criado durante a implantação, caso ainda não exista.
-`<appName>` | Especifica o nome de destino de seu aplicativo Web. Neste exemplo, o nome de destino é `maven-web-app-${maven.build.timestamp}`, no qual o sufixo `${maven.build.timestamp}` é acrescentado neste exemplo para evitar conflitos. (O carimbo de data/hora é opcional; você pode especificar qualquer cadeia de caracteres exclusiva para o nome do aplicativo).
-`<region>` | Especifica a região de destino, que neste exemplo é `westus`. (Uma lista completa está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]).
-`<javaVersion>` | Especifica a versão de tempo de execução Java para seu aplicativo Web. (Uma lista completa está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]).
-`<deploymentType>` | Especifica o tipo de implantação para seu aplicativo Web. Por enquanto, somente o `ftp` tem suporte, embora o suporte para outros tipos de implantação esteja em desenvolvimento.
-`<resources>` | Especifica os recursos e os destinos que o Maven usa durante a implantação de seu aplicativo Web no Azure. Neste exemplo, dois elementos `<resource>` especificam que o Maven implantará o arquivo JAR para seu aplicativo Web e o arquivo *Web.config* do projeto Spring Boot.
+| Elemento | DESCRIÇÃO |
+|---|---|
+| `<version>` | Especifica a versão do [Plug-in do Maven para Aplicativos Web do Azure]. Você deve verificar a versão listada no [Repositório Central do Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22) para garantir que esteja usando a versão mais recente. |
+| `<authentication>` | Especifica as informações de autenticação do Azure, que, neste exemplo, contêm um elemento `<serverId>` contendo `azure-auth`; o Maven usa esse valor para procurar os valores de entidade de serviço do Azure em seu arquivo *settings.xml* do Maven, que você definiu em uma seção anterior deste artigo. |
+| `<resourceGroup>` | Especifica o grupo de recursos de destino, que é `maven-plugin` neste exemplo. Esse grupo de recursos é criado durante a implantação, caso ainda não exista. |
+| `<appName>` | Especifica o nome de destino de seu aplicativo Web. Neste exemplo, o nome de destino é `maven-web-app-${maven.build.timestamp}`, no qual o sufixo `${maven.build.timestamp}` é acrescentado neste exemplo para evitar conflitos. (O carimbo de data/hora é opcional; você pode especificar qualquer cadeia de caracteres exclusiva para o nome do aplicativo). |
+| `<region>` | Especifica a região de destino, que neste exemplo é `westus`. (Uma lista completa está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]). |
+| `<javaVersion>` | Especifica a versão de tempo de execução Java para seu aplicativo Web. (Uma lista completa está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]). |
+| `<deploymentType>` | Especifica o tipo de implantação para seu aplicativo Web. Por enquanto, somente o `ftp` tem suporte, embora o suporte para outros tipos de implantação esteja em desenvolvimento. |
+| `<resources>` | Especifica os recursos e os destinos que o Maven usa durante a implantação de seu aplicativo Web no Azure. Neste exemplo, dois elementos `<resource>` especificam que o Maven implantará o arquivo JAR para seu aplicativo Web e o arquivo *Web.config* do projeto Spring Boot. |
 
 ## <a name="build-and-deploy-your-web-app-to-azure"></a>Criar e implantar seu aplicativo Web do Azure
 

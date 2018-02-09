@@ -7,18 +7,18 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: multiple
-ms.workload: web
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: robmcm;kevinzha
-ms.openlocfilehash: 7fa375ca805ddd037173f9dbd26b6631021e60a3
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: web
+ms.openlocfilehash: 8e8e1b5d599f77edf227d2c187225f6ac530b62b
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-spring-boot-app-in-azure-container-registry-to-azure-app-service"></a>Como usar o Plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Registro de Contêiner do Azure ao Serviço de Aplicativo do Azure
 
@@ -31,7 +31,7 @@ Este artigo demonstra como implantar um exemplo de aplicativo [Spring Boot] no R
 > O plug-in do Maven para Aplicativos Web do Azure está disponível no momento como uma versão prévia. Por enquanto, há suporte somente para a publicação FTP, embora existam planos para recursos adicionais futuros.
 > 
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>pré-requisitos
 
 Para concluir as etapas deste tutorial, você precisa ter os seguintes pré-requisitos:
 
@@ -113,7 +113,11 @@ Nesta seção, você criará uma entidade de serviço do Azure que será usada p
    ```azurecli
    az ad sp create-for-rbac --name "uuuuuuuu" --password "pppppppp"
    ```
-   Onde `uuuuuuuu` é o nome de usuário e `pppppppp` é a senha para a entidade de serviço.
+   Em que:
+   | Parâmetro | DESCRIÇÃO |
+   |---|---|
+   | `uuuuuuuu` | Especifica o nome de usuário para a entidade de serviço. |
+   | `pppppppp` | Especifica a senha para a entidade de serviço. |
 
 1. O Azure responde com um JSON parecido com o exemplo a seguir:
    ```json
@@ -184,11 +188,11 @@ Nesta seção, você criará uma entidade de serviço do Azure que será usada p
    </servers>
    ```
    Em que:
-   Elemento | Descrição
-   ---|---|---
-   `<id>` | Contém o nome de seu Registro de Contêiner privado do Azure.
-   `<username>` | Contém o nome de seu Registro de Contêiner privado do Azure.
-   `<password>` | Contém a senha que você recuperou na seção anterior deste artigo.
+   | Elemento | DESCRIÇÃO |
+   |---|---|
+   | `<id>` | Contém o nome de seu Registro de Contêiner privado do Azure. |
+   | `<username>` | Contém o nome de seu Registro de Contêiner privado do Azure. |
+   | `<password>` | Contém a senha que você recuperou na seção anterior deste artigo. |
 
 1. Adicione as configurações de sua entidade de serviço do Azure de uma seção anterior deste artigo à coleção `<servers>` no arquivo *settings.xml*; por exemplo:
 
@@ -206,13 +210,13 @@ Nesta seção, você criará uma entidade de serviço do Azure que será usada p
    </servers>
    ```
    Em que:
-   Elemento | Descrição
-   ---|---|---
-   `<id>` | Especifica um nome exclusivo usado pelo Maven para analisar suas configurações de segurança durante a implantação de seu aplicativo Web no Azure.
-   `<client>` | Contém o valor `appId` de sua entidade de serviço.
-   `<tenant>` | Contém o valor `tenant` de sua entidade de serviço.
-   `<key>` | Contém o valor `password` de sua entidade de serviço.
-   `<environment>` | Define o ambiente de nuvem do Azure de destino, que é `AZURE` neste exemplo. (Uma lista completa dos ambientes está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure])
+   | Elemento | DESCRIÇÃO |
+   |---|---|
+   | `<id>` | Especifica um nome exclusivo usado pelo Maven para analisar suas configurações de segurança durante a implantação de seu aplicativo Web no Azure. |
+   | `<client>` | Contém o valor `appId` de sua entidade de serviço. |
+   | `<tenant>` | Contém o valor `tenant` de sua entidade de serviço. |
+   | `<key>` | Contém o valor `password` de sua entidade de serviço. |
+   | `<environment>` | Define o ambiente de nuvem do Azure de destino, que é `AZURE` neste exemplo. (Uma lista completa dos ambientes está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]) |
 
 1. Salve e feche o arquivo *settings.xml*.
 
@@ -231,12 +235,12 @@ Nesta seção, você criará uma entidade de serviço do Azure que será usada p
    </properties>
    ```
    Em que:
-   Elemento | Descrição
-   ---|---|---
-   `<azure.containerRegistry>` | Especifica o nome de seu Registro de Contêiner privado do Azure.
-   `<docker.image.prefix>` | Especifica a URL de seu Registro de Contêiner privado do Azure, que é derivado acrescentando ".azurecr.io" ao nome de seu registro de contêiner privado.
+   | Elemento | DESCRIÇÃO |
+   |---|---|
+   | `<azure.containerRegistry>` | Especifica o nome de seu Registro de Contêiner privado do Azure. |
+   | `<docker.image.prefix>` | Especifica a URL de seu Registro de Contêiner privado do Azure, que é derivado acrescentando ".azurecr.io" ao nome de seu registro de contêiner privado. |
 
-1. Verifique se `<plugin>` para o plug-in do Docker em seu arquivo *pom.xml* contém as propriedades corretas para o endereço do servidor de logon e nome do registro da etapa anterior neste tutorial. Por exemplo:
+1. Verifique se `<plugin>` para o plug-in do Docker em seu arquivo *pom.xml* contém as propriedades corretas para o endereço do servidor de logon e nome do registro da etapa anterior neste tutorial. Por exemplo: 
 
    ```xml
    <plugin>
@@ -259,10 +263,10 @@ Nesta seção, você criará uma entidade de serviço do Azure que será usada p
    </plugin>
    ```
    Em que:
-   Elemento | Descrição
-   ---|---|---
-   `<serverId>` | Especifica a propriedade que contém o nome de seu Registro de Contêiner privado do Azure.
-   `<registryUrl>` | Especifica a propriedade que contém a URL de seu Registro de Contêiner privado do Azure.
+   | Elemento | DESCRIÇÃO |
+   |---|---|
+   | `<serverId>` | Especifica a propriedade que contém o nome de seu Registro de Contêiner privado do Azure. |
+   | `<registryUrl>` | Especifica a propriedade que contém a URL de seu Registro de Contêiner privado do Azure. |
 
 1. Navegue até o diretório de projeto completo para o seu aplicativo Spring Boot e execute o seguinte comando para recompilar o aplicativo e fazer o push do contêiner ao registro de contêiner do Azure:
 
@@ -307,15 +311,15 @@ Abra o arquivo `pom.xml` de seu aplicativo Spring Boot em um editor de texto e l
 
 Você pode modificar diversos valores do plug-in do Maven, e há uma descrição detalhada de cada um desses elementos disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]. Dito isso, vale a pena destacar diversos valores neste artigo:
 
-Elemento | Descrição
----|---|---
-`<version>` | Especifica a versão do [Plug-in do Maven para Aplicativos Web do Azure]. Você deve verificar a versão listada no [Repositório Central do Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22) para garantir que esteja usando a versão mais recente.
-`<authentication>` | Especifica as informações de autenticação do Azure, que, neste exemplo, contêm um elemento `<serverId>` contendo `azure-auth`; o Maven usa esse valor para procurar os valores de entidade de serviço do Azure em seu arquivo *settings.xml* do Maven, que você definiu em uma seção anterior deste artigo.
-`<resourceGroup>` | Especifica o grupo de recursos de destino, que é `wingtiptoysresources` neste exemplo. Esse grupo de recursos será criado durante a implantação, caso ainda não exista.
-`<appName>` | Especifica o nome de destino de seu aplicativo Web. Neste exemplo, o nome de destino é `maven-linux-app-${maven.build.timestamp}`, no qual o sufixo `${maven.build.timestamp}` é acrescentado neste exemplo para evitar conflitos. (O carimbo de data/hora é opcional; você pode especificar qualquer cadeia de caracteres exclusiva para o nome do aplicativo).
-`<region>` | Especifica a região de destino, que neste exemplo é `westus`. (Uma lista completa está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure])
-`<containerSettings>` | Especifica as propriedades que contêm o nome e a URL de seu contêiner.
-`<appSettings>` | Especifica quaisquer configurações exclusivas para o Maven usar ao implantar seu aplicativo Web no Azure. Neste exemplo, um elemento `<property>` contém um par de nome/valor de elementos filho que especifique a porta para o seu aplicativo.
+| Elemento | DESCRIÇÃO |
+|---|---|
+| `<version>` | Especifica a versão do [Plug-in do Maven para Aplicativos Web do Azure]. Você deve verificar a versão listada no [Repositório Central do Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22) para garantir que esteja usando a versão mais recente. |
+| `<authentication>` | Especifica as informações de autenticação do Azure, que, neste exemplo, contêm um elemento `<serverId>` contendo `azure-auth`; o Maven usa esse valor para procurar os valores de entidade de serviço do Azure em seu arquivo *settings.xml* do Maven, que você definiu em uma seção anterior deste artigo. |
+| `<resourceGroup>` | Especifica o grupo de recursos de destino, que é `wingtiptoysresources` neste exemplo. Esse grupo de recursos será criado durante a implantação, caso ainda não exista. |
+| `<appName>` | Especifica o nome de destino de seu aplicativo Web. Neste exemplo, o nome de destino é `maven-linux-app-${maven.build.timestamp}`, no qual o sufixo `${maven.build.timestamp}` é acrescentado neste exemplo para evitar conflitos. (O carimbo de data/hora é opcional; você pode especificar qualquer cadeia de caracteres exclusiva para o nome do aplicativo). |
+| `<region>` | Especifica a região de destino, que neste exemplo é `westus`. (Uma lista completa está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]). |
+| `<containerSettings>` | Especifica as propriedades que contêm o nome e a URL de seu contêiner. |
+| `<appSettings>` | Especifica quaisquer configurações exclusivas para o Maven usar ao implantar seu aplicativo Web no Azure. Neste exemplo, um elemento `<property>` contém um par de nome/valor de elementos filho que especifique a porta para o seu aplicativo. |
 
 > [!NOTE]
 >

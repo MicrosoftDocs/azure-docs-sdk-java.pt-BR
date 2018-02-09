@@ -1,34 +1,34 @@
 ---
 title: Como usar o iniciador do Spring Boot para o Azure Active Directory
-description: Saiba como configurar um aplicativo inicializador do Spring Boot com o iniciador do Azure Active Directory.
+description: Descubra como configurar um aplicativo inicializador do Spring Boot com o iniciador do Azure Active Directory.
 services: active-directory
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 
-ms.service: active-directory
-ms.workload: identity
-ms.tgt_pltfrm: multiple
-ms.devlang: java
-ms.topic: article
-ms.date: 12/01/2017
 ms.author: robmcm
-ms.openlocfilehash: a999e33674ea01e776db10186e8af83ce157ef20
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: java
+ms.service: active-directory
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: identity
+ms.openlocfilehash: cf1cad0b87626058f7204a6565d09fb8901b7ce4
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-active-directory"></a>Como usar o iniciador do Spring Boot para o Azure Active Directory
 
 ## <a name="overview"></a>Visão geral
 
-Este artigo demonstra como criar um aplicativo com o **[Spring Initializr]** do iniciador do Spring Boot do Azure Active Directory (Azure AD).
+Este artigo demonstra como criar um aplicativo com o **[Spring Initializr]**, que é o iniciador do Spring Boot do Azure Active Directory (Azure AD).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>pré-requisitos
 
-Os seguintes pré-requisitos são obrigatórios para que você siga as etapas neste artigo:
+Os seguintes pré-requisitos são obrigatórios para você concluir as etapas neste artigo:
 
 * Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [benefício de assinante do MSDN] ou inscrever-se para uma [conta gratuita do Azure].
 * Um [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/) versão 1.7 ou posterior.
@@ -66,7 +66,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
    ![Criar uma nova instância do Azure Active Directory][directory-01]
 
-1. Insira o **Nome da organização** e seu **Nome de domínio inicial** e depois clique em **Criar**.
+1. Preencha os campos **Nome da organização** e **Nome de domínio inicial** e clique em **Criar**.
 
    ![Especificar nomes do Azure Active Directory][directory-02]
 
@@ -74,9 +74,9 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
    ![Escolher seu Azure Active Directory][directory-03]
 
-### <a name="add-an-application-registration-for-your-spring-boot-app"></a>Adicionar um registro de aplicativo para seu aplicativo Spring Boot
+### <a name="add-an-application-registration-for-your-spring-boot-app"></a>Adicionar um registro de aplicativo para seu aplicativo do Spring Boot
 
-1. Selecione **Azure Active Directory** no menu do portal, clique em **Visão geral** e depois em **Registro de aplicativo**.
+1. Selecione **Azure Active Directory** no menu do portal, clique em **Visão geral**, depois, em **Registros de aplicativo**.
 
    ![Adicionar um novo registro de aplicativo][directory-04]
 
@@ -88,11 +88,11 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
    ![Selecione o registro de aplicativo][directory-06]
 
-1. Quando estiver na página do registro de aplicativo, copie a **ID do aplicativo** para mais tarde, depois clique em **Chaves**.
+1. Quando estiver na página do registro do aplicativo, anote a **ID do aplicativo** para usar mais tarde e clique em **Chaves**.
 
    ![Criar chaves do registro de aplicativo][directory-07]
 
-1. Adicione uma **Descrição**, especifique a **Duração** de uma nova chave e clique em **Salvar**; o valor da chave será preenchido automaticamente ao clicar no ícone **Salvar**, e você precisa anotar o valor da chave para uso posterior. (Você não conseguirá recuperar esse valor depois.)
+1. Adicione uma **Descrição**, especifique a **Duração** de uma nova chave e clique em **Salvar**. O valor da chave será preenchido automaticamente quando você clicar no ícone **Salvar**. Anote esse valor, ele será necessário posteriormente. (Você não conseguirá recuperar esse valor depois.)
 
    ![Especificar parâmetros da chave de registro do aplicativo][directory-08]
 
@@ -114,7 +114,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
 ## <a name="configure-and-compile-your-spring-boot-application"></a>Configurar e compilar seu aplicativo Spring Boot
 
-1. Extraia os arquivos do arquivo de projeto baixado em um diretório.
+1. Extraia em um diretório os arquivos do projeto baixado.
 
 1. Navegue até a pasta pai no seu projeto e abra o arquivo *pom.xml* em um editor de texto.
 
@@ -129,7 +129,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
 1. Salve e feche o arquivo *pom.xml*.
 
-1. Navegue até a pasta *src/main/resources* no seu projeto e abra o arquivo *application.properties* no editor de texto.
+1. Navegue até a pasta *src/main/resources* no seu projeto e abra o arquivo *application.properties* em um editor de texto.
 
 1. Adicione a chave para sua conta de armazenamento usando os valores anteriores. Por exemplo:
 
@@ -144,18 +144,18 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    azure.activedirectory.activeDirectoryGroups=Users
    ```
    Em que:
-   Parâmetro | Descrição
-   ---|---|---
-   `azure.activedirectory.clientId` | Contém a **ID do aplicativo** de momento anterior.
-   `azure.activedirectory.clientSecret` | Contém o valor da chave do registro de aplicativo que você preencheu anteriormente.
-   `azure.activedirectory.activeDirectoryGroups` | Contém uma lista de grupos do Active Directory para usar para autenticação.
+   | Parâmetro | Descrição |
+   |---|---|
+   | `azure.activedirectory.clientId` | Contém a **ID do aplicativo**, que foi anotada anteriormente. |
+   | `azure.activedirectory.clientSecret` | Contém o valor da chave do registro de aplicativo que você preencheu anteriormente. |
+   | `azure.activedirectory.activeDirectoryGroups` | Contém uma lista dos grupos do Active Directory a serem usados para autenticação. |
 
 
 1. Salve e feche o arquivo *application.properties*.
 
 1. Crie uma pasta chamada *controller* na pasta de origem do Java para o seu aplicativo. Por exemplo: *src/main/java/com/wingtiptoys/security/controller*.
 
-1. Crie um novo arquivo Java chamado *HelloController.java* na pasta *controller* e abra-o em um editor de texto.
+1. Crie um arquivo Java chamado *HelloController.java* na pasta *controller* e abra-o em um editor de texto.
 
 1. Insira o código a seguir, depois salve e feche o arquivo:
 
@@ -222,7 +222,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    mvn clean package
    ```
 
-   ![][build-application]
+   ![Crie seu aplicativo][build-application]
 
 1. Crie seu aplicativo Spring Boot com Maven e execute-o; por exemplo:
 
@@ -231,13 +231,11 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    mvn spring-boot:run
    ```
 
-
-
 1. Depois que seu aplicativo for criado e iniciado pelo Maven, abra <http://localhost:8080> em um navegador da Web.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para obter mais informações sobre o Azure Active Directory, consulte os seguintes artigos:
+Para obter mais informações sobre como usar o Azure Active Directory, veja estes artigos:
 
 * [Documentação do Azure Active Directory].
 
@@ -247,7 +245,7 @@ Para obter mais informações sobre como usar aplicativos Spring Boot no Azure, 
 
 * [Executando um Aplicativo Spring Boot em um Cluster Kubernetes no Serviço de Contêiner do Azure](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para saber mais sobre como usar o Azure com o Java, consulte [Azure para desenvolvedores Java] e as [Ferramentas Java para Visual Studio Team Services].
+Para obter mais informações sobre como usar o Azure com o Java, veja os documentos [Azure para desenvolvedores Java] e [Ferramentas Java para Visual Studio Team Services].
 
 O **[Spring Framework]** é uma solução de software livre que ajuda os desenvolvedores Java criar aplicativos de nível empresarial. Um dos projetos mais populares que é criado com base nessa plataforma é o [Spring Boot], que fornece uma abordagem simplificada para a criação de aplicativos Java autônomos. Para ajudar os desenvolvedores a começarem a usar o Spring Boot, vários exemplos de pacotes do Spring Boot estão disponíveis em <https://github.com/spring-guides/>. Além de escolher na lista de projetos básicos do Spring Boot, o  **[Spring Initializr]** ajuda os desenvolvedores a começarem a criar aplicativos personalizados do Spring Boot.
 

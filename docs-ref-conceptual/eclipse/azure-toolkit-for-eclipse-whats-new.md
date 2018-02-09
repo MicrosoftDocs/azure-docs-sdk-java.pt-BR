@@ -7,312 +7,311 @@ author: rmcmurray
 manager: routlaw
 editor: 
 ms.assetid: 16b066ea-aae7-4c30-9a12-fa0c3711b93e
-ms.service: multiple
-ms.workload: na
-ms.tgt_pltfrm: multiple
-ms.devlang: Java
-ms.topic: article
-ms.date: 11/01/2017
 ms.author: robmcm;asirveda;martinsawicki
-ms.openlocfilehash: 666401b88c937909dc01d74fe204bb0099ebf55c
-ms.sourcegitcommit: fc48e038721e6910cb8b1f8951df765d517e504d
+ms.date: 02/01/2018
+ms.devlang: Java
+ms.service: multiple
+ms.tgt_pltfrm: multiple
+ms.topic: article
+ms.workload: na
+ms.openlocfilehash: e993fd09e555274f51a500408efbffc4ac5df394
+ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="whats-new-in-the-azure-toolkit-for-eclipse"></a>Novidades no Kit de Ferramentas do Azure para Eclipse
 
-## <a name="azure-toolkit-for-eclipse-releases"></a>Versões do Kit de Ferramentas do Azure para Eclipse
-Este artigo contém informações sobre as várias versões e atualizações mais recentes do Kit de Ferramentas do Azure para Eclipse.
+A página da Web a seguir contém informações sobre as várias versões e atualizações mais recentes do Kit de Ferramentas do Azure para Eclipse.
+
+<https://github.com/Microsoft/azure-tools-for-java/releases>
+
+> [!NOTE] 
+> Há também um kit de ferramentas do Azure para o IDE do IntelliJ. Para obter mais informações, confira [Kit de Ferramentas do Azure para IntelliJ]. 
+> 
+
+<!--
+
+### April 14, 2017
+The Azure Toolkit for Eclipse - April 2017 release includes the following enhancements:
+
+* **Improved Azure Sign In Experience**: The Azure Toolkit for Eclipse now supports two methods of logging into your Azure account: *Interactive* and *Automated*. For more information, see [Azure Sign In Instructions for the Azure Toolkit for Eclipse].
+* **Publishing using Docker Containers**: You can now publish your web applications as Docker Containers using Azure Toolkit for Eclipse. For more information, see [How to publish a Web App as a Docker Container using the Azure Toolkit for Eclipse].
+* **Storage Account Management**: The Azure Toolkit for Eclipse now supports managing your storage accounts from the Azure Explorer View. For more information, see [Managing Storage Accounts using the Azure Explorer for Eclipse].
+* **Virtual Machine Management**: The Azure Toolkit for Eclipse now supports managing your virtual machines from the Azure Explorer View. For more information, see [Managing Virtual Machines using the Azure Explorer for Eclipse].
+* **Removal of Remote Debugging Support**. Remote debugging of Java web apps on Azure App Service has been removed from the Azure Toolkit for Eclipse; this was necessary to resolve some problems which customers were experiencing when using the toolkit.
+
+### August 26, 2016
+The Azure Toolkit for Eclipse - August 2016 release includes the following enhancements:
+
+* **Custom JDK Distributions**. The Azure Toolkit for Eclipse now supports specifying and deploying an arbitrary JDK version to your Azure WebApp container:
+  * In addition to the JDKs provided by Azure, you can also choose from a wide selection of Zulu OpenJDK versions made available on Azure by Azul Systems.
+  * You can also specify your own JDK distribution if you upload it as a ZIP file to your storage account.
+* **Enhancements to the Azure Explorer view**:
+  * Support for Virtual Machine management using Azure's new Resource Manager model: you can list, create and delete resource manager-based virtual machines without leaving the IDE.
+  * Support for Storage Account blob management using Azure's Resource Manager, which complements the existing functionality for managing "classic" storage accounts.
+* **Microsoft JDBC Driver 6.0 for SQL Server**. This update includes the latest JDBC driver for Microsoft SQL Server (v6.0), which is now included as a library that you can easily add to your Java projects, thereby replacing the older version.
+
+### June 29, 2016
+The Azure Toolkit for Eclipse - June 2016 release includes the following enhancements:
+
+* **Java 8 Requirement**. The Azure Toolkit for Eclipse now requires Java 8, although this requirement is only for the toolkit - your applications can continue to use all versions of Java that are supported by Azure.
+* **Support for the latest Java JDKs**. The latest versions of the Java JDKs are now supported by the Azure Toolkit for Eclipse.
+* **Support for Azure SDK v2.9.1**. The latest version of the Azure SDK is now the minimum pre-requisite for the Azure Toolkit for Eclipse.
+* **Integrated Samples**. The Azure Toolkit for Eclipse now features several sample applications to help developers get started.
+* **HDInsight Tool Integration**. Azure's HDInsight Tools are now bundled with the Azure Toolkit for Eclipse. For more information, see [HDInsight Tools Plugin for Eclipse].
+* **Remote Debugging of Java Web Apps**. The Azure Toolkit for Eclipse now supports remote debugging of Java web apps on Azure App Service.
+* **Support for the Eclipse Luna release.** The new minimum required Eclipse IDE version is Luna.
+
+### April 12, 2016
+The Azure Toolkit for Eclipse - April 2016 release includes the following enhancements:
+
+* **Support for Azure SDK v2.9.0**. The latest version of the Azure SDK is now the minimum pre-requisite for the Azure Toolkit for Eclipse.
+* **Miscellaneous usability, responsiveness and performance improvements related to Azure Web App support**. A number of performance optimizations in how the Toolkit communicates with Azure result in a more responsive UI.
+* **Ability to delete an existing Web Application container in Azure from within Eclipse**. The Azure Toolkit for Eclipse now allows you to delete an existing Azure Web container without leaving Eclipse.
+
+### March 7, 2016
+The Azure Toolkit for Eclipse - March 2016 release includes the following enhancements:
+
+* **Support for quick deployment of lightweight Java applications**. The Azure Toolkit for Eclipse now supports the rapid deployment of lightweight Java applications into Azure Web App Containers, so deploying Java applications now takes seconds instead of minutes.
+* **Support for Web App management using the Azure Explorer view**. The Azure Explorer view in the toolkit now supports for listing, starting and stopping Azure Web Apps.
+* **Updated Tomcat, Jetty, and Zulu OpenJDK distributions**. The Azure Toolkit for Eclipse provides support for updated versions of Tomcat, Jetty and Zulu OpenJDK for Java deployments into Azure cloud services.
+
+### January 4, 2016
+The Azure Toolkit for Eclipse - January 2016 release includes the following enhancements:
+
+* **Support for the Zulu OpenJDK updates**. For more information, see the [Azul Systems web page for the Zulu OpenJDK].
+* **Updated Tomcat and Jetty distributions**. The Jetty and Tomcat distributions which are available on Microsoft Azure for use with the Azure Toolkit for Eclipse have been updated.
+* **Feature Parity between Eclipse and IntelliJ Toolkits for Azure**. The Azure Toolkit for Eclipse and the [Azure Toolkit for IntelliJ] now support the same set of features.
+
+### September 1, 2015
+The Azure Toolkit for Eclipse - September 2015 release includes the following enhancements:
+
+* **Support for the Zulu OpenJDK updates**. For more information, see the [Azul Systems web page for the Zulu OpenJDK].
+* **Updated Tomcat and Jetty distributions**. The Jetty and Tomcat distributions which are available on Microsoft Azure for use with the Azure Toolkit for Eclipse have been updated. (These distributions allows developers to create quick development and test projects with the Azure Toolkit for Eclipse.
+* **Support for automatically updated Tomcat and Jetty references**. In addition to the specific versions of Tomcat and Jetty which are available on Azure, developers can now reference a distribution referred to as the "Latest (auto-updated)", which will automatically update to the latest distribution of each major version of Jetty or Tomcat the next time your role instances are recycled. (Recycling occurs automatically, but developers can manually trigger a recycle through the Azure portal.) This new feature means that developers do not have to redeploy their application to be able to have their server software updated. (
+* This functionality is currently intended only for development and test purposes or non-mission-critical applications, and is not recommended for production.)
+* **Azure Explorer view for blobs, queues and tables in Azure storage**. This allows developers to perform a set of common tasks with their storage artifacts directly from the Eclipse IDE. For example: deleting, uploading or downloading blobs.
+
+### August 1, 2015
+The Azure Toolkit for Eclipse - August 2015 release includes the following enhancements:
+
+* **Application Insights Instrumentation Key Management**. This update allows you to acquire, create and manage your Application Insights instrumentation keys directly from the Eclipse IDE.
+* **Microsoft JDBC Driver 4.1 for SQL Server**. This update includes support for the latest JDBC driver for Microsoft SQL Server.
+* **Version 2.7 of the Azure SDK**. This most recent update to the Azure SDK is the new pre-requisite for the Toolkit when installed on Windows. (Note this is not needed on non-Windows operating systems.)
+* **Support for the Zulu OpenJDK v7 update**. For more information, see the [Azul Systems web page for the Zulu OpenJDK].
+
+### May 1, 2015
+The Azure Toolkit for Eclipse - May 2015 release includes the following enhancements:
+
+* **Improved Server Selection UI**. This release simplifies the use of the toolkit on non-Windows operating systems.
+* **Support for Maven Projects**. This release supports Maven Projects as applications, which the toolkit can deploy to Azure and configure Application Insights.
+* **Version 2.6 of the Azure SDK**. This most recent update to the Azure SDK is the new pre-requisite for the Toolkit when installed on Windows. (Note this is not needed on non-Windows operating systems.)
+* **Deployment Upgrade Instead of Republish**. If you are republishing a deployment project when the previous version is already live, the toolkit now uses Azure's deployment upgrade functionality instead of shutting down the previous deployment and republishing from scratch as it did in the past. This enables your cloud service to run without interruption whenever possible, helping achieve high availability even during an update, and speeds up the re-publishing process.
+* **Support for the latest Zulu OpenJDK v8 - update 40**. For more information, see the [Azul Systems web page for the Zulu OpenJDK].
+
+### March 9, 2015
+The Azure Toolkit for Eclipse - March 2015 release includes the following enhancements:
+
+* **Support for Mac, Ubuntu and additional Linux flavors**. This release of the Azure Toolkit for Eclipse adds support for Mac OS and several Unix platforms, so developers can install the toolkit to create, configure and publish Java projects to Azure Cloud Services (PaaS) from Eclipse running on operating systems other than Windows.
 
 > [!NOTE]
-> Confira a seguinte página da Web para obter as informações mais recentes:
-> 
-> <https://github.com/Microsoft/azure-tools-for-java/releases>
-
-> [!NOTE]
-> Há também um kit de ferramentas do Azure para o IDE do IntelliJ. Para obter mais informações, confira [Kit de Ferramentas do Azure para IntelliJ].
+> This capability is in preview, and it is not recommended for use in production environments. There is no customer support Service Level Agreement (SLA), but all feedback is appreciated and encouraged.
 > 
 > 
 
-### <a name="april-14-2017"></a>14 de abril de 2017
-O Kit de Ferramentas do Azure para Eclipse, versão de abril de 2017, inclui as seguintes melhorias:
+* **New Application Insights plugin**. Developers are now able to configure automatic server telemetry using Application Insights on Azure.
+* **Ant-based command line deployment automation**. This feature enables developers to automate the publishing for newer versions of their deployments using Ant outside of Eclipse. A pre-generated script is automatically configured for a project after the first time it is deployed from Eclipse, and subsequent deployments can use the script to fully automate deployments via the command line only.
+* **Tomcat and Jetty availability on Azure for simpler, faster deployment**. Developers can now reference various Tomcat and Jetty versions that are available on Azure directly instead of having to upload a Java server to their accounts (or via the Toolkit), so there is no need to upload a Java server for quick, getting-started scenarios.
+* **Shortcut method for publishing Java web apps to Azure cloud services**. To reduce the learning curve for simple development and test scenarios, developers can now publish Java applications more directly to Azure. Instead of having to go through the process of creating and configuring an Azure deployment project, applications will be deployed with a default instance of Tomcat v8 and Zulu JVM (OpenJDK).
 
-* **Experiência aprimorada de entrada no Azure**: o Kit de Ferramentas do Azure para Eclipse agora dá suporte a dois métodos para fazer logon em sua conta do Azure: *Interativo* e *Automatizado*. Para obter mais informações, consulte [Instruções de entrada no Azure para o Kit de Ferramentas do Azure para Eclipse].
-* **Publicando usando contêineres do Docker**: agora você pode publicar seus aplicativos Web como contêineres do Docker usando o Kit de ferramentas do Azure para Eclipse. Para obter mais informações, consulte [Como publicar um aplicativo Web como um contêiner do Docker usando o Kit de ferramentas do Azure para Eclipse].
-* **Gerenciamento de Conta de Armazenamento**: o Kit de ferramentas do Azure para Eclipse agora dá suporte ao gerenciamento de suas contas de armazenamento na Exibição do Azure Explorer. Para obter mais informações, consulte [Gerenciar contas de armazenamento usando o Azure Explorer para Eclipse].
-* **Gerenciamento de Máquina Virtual**: o Kit de ferramentas do Azure para Eclipse agora dá suporte ao gerenciamento de suas máquinas virtuais na Exibição do Azure Explorer. Para obter mais informações, consulte [Gerenciar Máquinas Virtuais usando o Azure Explorer para Eclipse].
-* **Remoção de suporte a depuração remota**. A depuração remota de aplicativos Web Java no Serviço de Aplicativo do Azure foi removida do Kit de ferramentas do Azure para Eclipse; isso foi necessário para resolver alguns problemas que os clientes estavam tendo ao usar o Kit de ferramentas.
+### January 30, 2015
+The Azure Toolkit for Eclipse - January 2015 release includes the following enhancements:
 
-### <a name="august-26-2016"></a>26 de agosto de 2016
-O Kit de Ferramentas do Azure para Eclipse, versão de agosto de 2016, inclui os seguintes aprimoramentos:
+* **Support for IBM® WebSphere® Application Server Liberty Core**. This release adds the IBM WebSphere Application Server Liberty Core to the list of supported application servers from which the toolkit is able to deploy to Azure. This latest addition expands the current list of application servers that are supported &quot;out-of-the-box&quot; by the Toolkit, which already included various versions of Tomcat, Jetty, JBoss and GlassFish.
+* **Inclusion of Application Insights SDK**. This newly-released client API library (v0.9.0) is now part of the Package for Azure Libraries for Java.
+* **Updated Package for Azure Libraries for Java**. This update includes Azure Libraries for Java v0.7.0 and Storage Client API v2.0.0, as well as the newly-released Application Insights SDK v0.9.0.
 
-* **Distribuições personalizadas do JDK**. Agora, o Kit de Ferramentas do Azure para Eclipse oferece suporte à especificação e à implantação de uma versão do JDK arbitrária para o contêiner WebApp do Azure:
-  * Além dos JDKs fornecidos pelo Azure, também é possível escolher dentre uma ampla seleção de versões do Zulu OpenJDK disponibilizadas no Azure pelo Azul Systems.
-  * Você também pode especificar sua própria distribuição JDK se carregar um arquivo ZIP em sua conta de armazenamento.
-* **Aprimoramentos no modo de exibição do Azure Explorer**:
-  * Suporte para gerenciamento de máquinas virtuais usando o novo modelo de Resource Manager do Azure: você pode listar, criar e excluir máquinas virtuais baseadas no resource manager sem sair do IDE.
-  * Suporte para gerenciamento de blobs da Conta de armazenamento usando o Resource Manager do Azure, que complementa a funcionalidade existente para gerenciar contas de armazenamento "clássico".
-* **Microsoft JDBC Driver 6.0 para SQL Server**. Esta atualização inclui o driver JDBC do Microsoft SQL Server (v 6.0), que é agora incluído como uma biblioteca que você pode adicionar facilmente aos seus projetos Java, substituindo a versão mais antiga.
+### November 12, 2014
+The Azure Toolkit for Eclipse - November 2014 release includes the following enhancements:
 
-### <a name="june-29-2016"></a>29 de junho de 2016
-O Kit de Ferramentas do Azure para Eclipse, versão de junho de 2016, inclui os seguintes aprimoramentos:
+* **Support for Azure SDK 2.5**. This most recent update to the Azure SDK is the new pre-requisite for the Toolkit.
+* **Support for updated version of the Zulu OpenJDK v1.8, v1.7 and v1.6 packages**. For more information, see the [Azul Systems web page for the Zulu OpenJDK].
+* **Support for the new Standard D sizes for cloud services**, which offer increased performance and additional memory resources. For more information, see [Virtual Machine and Cloud Service Sizes for Azure].
 
-* **Requisito do Java 8**. O Kit de ferramentas do Azure para Eclipse agora exige o Java 8, embora esse requisito seja somente para o kit de ferramentas - seus aplicativos podem continuar a usar todas as versões do Java com suporte do Azure.
-* **Suporte para os JDKs do Java mais recentes**. Agora há suporte para as versões mais recentes de JDKs do Java pelo Kit de Ferramentas do Azure para Eclipse.
-* **Suporte para o SDK do Azure v2.9.1**. A versão mais recente do SDK do Azure agora é o pré-requisito mínimo para o Kit de Ferramentas do Azure para Eclipse.
-* **Exemplos Integrados**. O Kit de Ferramentas do Azure para Eclipse agora apresenta vários aplicativos de exemplo para ajudar os desenvolvedores a começar.
-* **Integração de Ferramentas HDInsight**. As Ferramentas de HDInsight do Azure agora estão incluídas no Kit de Ferramentas do Azure para Eclipse. Para saber mais, confira [Plug-in das Ferramentas do HDInsight para Eclipse].
-* **Depuração remota de aplicativos Web do Java**. O Kit de Ferramentas do Azure para Eclipse agora dá suporte a depuração remota de aplicativos Web do Java no Serviço de Aplicativo do Azure.
-* **Suporte para a versão Luna do Eclipse.** A nova versão mínima exigida pelo IDE do Eclipse é a Luna.
+### October 17, 2014
+The Azure Toolkit for Eclipse - October 2014 release includes the following enhancements:
 
-### <a name="april-12-2016"></a>12 de abril de 2016
-O Kit de Ferramentas do Azure para Eclipse, versão de abril de 2016, inclui as seguintes melhorias:
+* **Performance improvements in the Publish to Cloud scenarios**. Loading of subscription information is much faster when users have multiple subscriptions and storage accounts.
+* **Support for updated version of the Zulu OpenJDK v1.8 package**. For more information, see the [Azul Systems web page for the Zulu OpenJDK].
+* **Support for deprecating older versions of 3rd party JDKs**. Deprecated JDK packages will no longer show up in the dropdown menu for new deployment projects. Existing projects referencing deprecated JDK packages will continue being able to do so for the time being, but it is recommended to upgrade such projects to rely on the latest.
+* **Updated version of the Package for Azure Libraries for Java client API library**. For more information, see the [Microsoft Azure Client API].
+* **Bug Fixes.** This release contains a number of miscellaneous bug fixes which were based on user reports and testing.
 
-* **Suporte para o SDK do Azure v2.9.0**. A versão mais recente do SDK do Azure agora é o pré-requisito mínimo para o Kit de Ferramentas do Azure para Eclipse.
-* **Diversas melhorias de usabilidade, capacidade de resposta e desempenho relacionadas ao suporte do aplicativo Web do Azure**. Uma série de otimizações de desempenho na forma como o Kit de Ferramentas se comunica com o Azure resulta em uma interface do usuário mais dinâmica.
-* **Capacidade de excluir um contêiner do aplicativo Web existente no Azure por meio do Eclipse**. O Kit de Ferramentas do Azure para Eclipse agora permite a exclusão de um contêiner da Web existente do Azure sem a necessidade de sair do Eclipse.
+### August 5, 2014
+The Azure Toolkit for Eclipse - August 2014 release includes the following enhancements
 
-### <a name="march-7-2016"></a>7 de março de 2016
-O Kit de Ferramentas do Azure para Eclipse, versão de março de 2016, inclui os seguintes aprimoramentos:
+* **Support for Azure SDK 2.4.** Older versions of the Eclipse Toolkit will not work with this newly released SDK.
+* **Updated versions of the Zulu OpenJDK v1.6, 1.7 and v1.8 packages.** For more information, see the [Azul Systems web page for the Zulu OpenJDK].
+* **Updated version of the Package for Azure Libraries for Java client API library.** For more information, see the [Microsoft Azure Client API].
+* **Support for Latest Publish Settings File Format.** Support was added for version 2.0 of the Publish Settings file format.
+* **Architectural changes behind the Publish to Cloud feature.** The Toolkit is now using the newly released Microsoft Azure Client API for Java for its publish-to-cloud support.
+* **Bug Fixes.** This release contains a number of user-requested bug fixes.
 
-* **Suporte para implantação rápida de aplicativos Java leves**. O Kit de Ferramentas do Azure para Eclipse agora dá suporte à implantação rápida de aplicativos Java leves em contêineres de aplicativos Web do Azure, por isso, implantar aplicativos Java agora leva apenas segundos em vez de minutos.
-* **Suporte para gerenciamento de aplicativo Web usando a exibição do Azure Explorer**. A exibição do Azure Explorer no Kit de Ferramentas agora dá suporte para listar, iniciar e interromper aplicativos Web do Azure.
-* **Distribuições atualizadas Tomcat, Jetty e Zulu OpenJDK**. O Kit de Ferramentas do Azure para Eclipse dá suporte para versões atualizadas do Tomcat, Jetty e Zulu OpenJDK para implantações de Java em serviços de nuvem do Azure.
+### June 12, 2014
+The Azure Toolkit for Eclipse - June 2014 release is a minor servicing update which provides the following enhancements:
 
-### <a name="january-4-2016"></a>4 de janeiro de 2016
-O Kit de Ferramentas do Azure para Eclipse, versão de janeiro de 2016, inclui os seguintes aprimoramentos:
+* **Support for the Zulu OpenJDK package v1.8.** For more information, see the [Azul Systems web page for the Zulu OpenJDK].
+* **Updated versions of the Zulu OpenJDK v1.6 and 1.7 packages.** For more information, see the [Azul Systems web page for the Zulu OpenJDK].
+* **Updated version of the Package for Azure Libraries for Java client API library.** For more information, see the [Microsoft Azure Client API].
+* **Bug Fixes.** This release contains a number of user-requested bug fixes.
 
-* **Suporte para as atualizações do Zulu OpenJDK**. Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
-* **Distribuições do Tomcat e Jetty atualizadas**. As distribuições do Jetty e Tomcat, disponíveis no Microsoft Azure para uso com o Kit de Ferramentas do Azure para Eclipse, foram atualizadas.
-* **Paridade de Recursos entre os Kits de Ferramentas para o Eclipse e para o IntelliJ do Azure**. O Kit de Ferramentas do Azure para o Eclipse e o [Kit de Ferramentas do Azure para IntelliJ] agora dão suporte ao mesmo conjunto de recursos.
+### April 4, 2014
+The Azure Plugin for Eclipse - April 2014 release has released. This is an update accompanying the release of the Azure SDK 2.3, which is a pre-requisite and will be downloaded automatically when you install the plugin. This update includes new features, bug fixes, and some feedback-driven usability enhancements since the February 2014 Preview:
 
-### <a name="september-1-2015"></a>1º de setembro de 2015
-O Kit de Ferramentas do Azure para Eclipse, versão de setembro de 2015, inclui os seguintes aprimoramentos:
+* **Support for the Azure SDK 2.3 release.** The Azure Plugin for Eclipse - April 2014 release requires Azure SDK 2.3. When using the new plugin, if you do not already have Azure SDK 2.3, you will be prompted to allow its installation. Do not use Azure SDK 2.3 with earlier versions of the plugin.
+* **Upgrading of applications without complete package deployment.** When deploying Java applications that are part of your project, the plugin now automatically uploads them into your selected storage account so that you can update it and recycle the role instances to deploy the latest application bits without having to rebuild and redeploy the entire package.
+* **Tomcat 8 now is a recognized application server.** If you select a Tomcat 8 installation directory on your machine in the **Server** tab of the **Azure Deployment Project** dialog, the plugin will now automatically detect it and be able to deploy Tomcat 8 in an automated fashion, similar to the older versions of Tomcat already in the list.
+* **Azul Zulu OpenJDK package updates: v1.7 update 51 and v1.6 update 47.** Effective with this release, Azul System's Zulu Open JDK v7 package update 51 is available. Also, Zulu Open JDK v6 packages start being available, beginning with update 47. These updates are in addition to the previously available Zulu Open JDK v7 package update 45, update 40 and update 25.
+* **Support for A8 and A9 Microsoft Azure Virtual Machine size.** You can now deploy a cloud service to the high memory A8 and A9 Virtual Machine sizes. For more information about these VM sizes, see [Virtual Machine and Cloud Service Sizes for Azure].
+* **Automatic redirection from HTTP to HTTPS for SSL-enabled roles.** When your cloud service contains only HTTPS role(s), if the user request specifies HTTP, it will automatically redirect to HTTPS. There is no need to create a separate role to handle the HTTP requests.
+* **Express Emulator used for local emulation.** The Azure Express Emulator is now used as the emulator when debugging your applications locally.
+* **Azure has been rebranded as Microsoft Azure.** UI screens now reflect that Azure has been rebranded and no longer called Azure.
 
-* **Suporte para as atualizações do Zulu OpenJDK**. Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
-* **Distribuições do Tomcat e Jetty atualizadas**. As distribuições do Jetty e Tomcat, disponíveis no Microsoft Azure para uso com o Kit de Ferramentas do Azure para Eclipse, foram atualizadas. (Essas distribuições permitem aos desenvolvedores criar projetos rápidos de desenvolvimento e teste com o Kit de Ferramentas do Azure para Eclipse.
-* **Suporte para referências automaticamente atualizadas do Tomcat e Jetty**. Além das versões específicas do Tomcat e do Jetty que estão disponíveis no Azure, agora os desenvolvedores podem fazer referencia a uma distribuição conhecida como a "Mais recente (atualização automática)", que será atualizada automaticamente para a distribuição mais recente de cada versão principal do Jetty ou do Tomcat na próxima vez que as instâncias de função forem recicladas. (A reciclagem ocorre automaticamente, mas os desenvolvedores podem dispará-la manualmente pelo Portal do Azure.) Esse novo recurso significa que os desenvolvedores não precisam reimplantar seus aplicativos para atualizarem o software do servidor. (
-* Atualmente, essa funcionalidade é destinada apenas para fins de desenvolvimento e teste ou para aplicativos não essenciais, e não é recomendada para produção.)
-* **Exibição do Azure Explorer para blobs, filas e tabelas no armazenamento do Azure**. Isso permite que os desenvolvedores realizem um conjunto de tarefas comuns com seus artefatos de armazenamento diretamente do IDE do Eclipse. Por exemplo: excluir, carregar ou baixar blobs.
+### February 6, 2014
+The Azure Plugin for Eclipse - February 2014 Preview has released. This update includes new features, bug fixes, and some feedback-driven usability enhancements since the October 2013 Preview:
 
-### <a name="august-1-2015"></a>1º de agosto de 2015
-O Kit de Ferramentas do Azure para Eclipse, versão de agosto de 2015, inclui os seguintes aprimoramentos:
+* **Support for SSL offloading.** Secure Sockets Layer (SSL) offloading has been added as a feature, allowing you to easily enable Hypertext Transfer Protocol Secure (HTTPS) support in your Java deployment on Azure, without requiring you to configure SSL in your Java application server. This is particularly relevant in Session Affinity and/or authenticated communication scenarios. For example, when using the Access Control Service (ACS) Filter, which is already supported by the toolkit. For more information, see [SSL Offloading] and [How to Use SSL Offloading].
+* **GlassFish 4 now is a recognized application server.** If you select a GlassFish 4 installation directory on your machine in the **Server** tab of the **Azure Deployment Project** dialog, the plugin will now automatically detect it and be able to deploy GlassFish OSE 4 in an automated fashion, similar to the GlassFish OSE 3 version already in the list.
+* **Azul Zulu OpenJDK package update 45.** Effective with this release, Azul System's Zulu (Open JDK v7 package) update 45 is now available; this is in addition to the previously available update 40 and update 25.
+* **Support for 'auto' for private endpoint ports.** You can set a private port to automatic for input endpoints and internal endpoints to let Azure assign a port to that endpoint automatically. Previously you could only assign a specific port number.
+* **Support for customizing the certificate name (CN) in the self-signed certificate creation UI.** Previously, the same hard-coded name was used for all new certificates; now you can specify your own certificate name to help distinguish among multiple certificates in the Azure portal used for different purposes.
+* **Azure toolbar:** The Azure toolbar has an updated with the following changes: 
+  * ![][ic710876] This icon was added for the **New Azure Deployment Project**.
+  * ![][ic710877] This icon was added as a shortcut to the self-signed certificate creation dialog.
+* **Support for A5 Azure Virtual Machine size.** You can now deploy a cloud service to the high memory A5 Virtual Machine size. For more information about this VM size, see [Virtual Machine and Cloud Service Sizes for Azure].
+* **Support for Microsoft Windows Server 2012 R2.** You can now select Windows Server 2012 R2 as the cloud operating system.
 
-* **Gerenciamento de chave de instrumentação do Application Insights**. Esta atualização permite que você adquira, crie e gerencie suas chaves de instrumentação do Application Insights diretamente do IDE do Eclipse.
-* **Microsoft JDBC Driver 4.1 para SQL Server**. Esta atualização inclui suporte para o driver JDBC mais recente do Microsoft SQL Server.
-* **Versão 2.7 do SDK do Azure**. Esta atualização mais recente para o SDK do Azure é o novo pré-requisito para o Kit de Ferramentas, quando é instalado no Windows. (Observe que isso não é necessário em sistemas operacionais diferente do Windows).
-* **Suporte para a atualização do Zulu OpenJDK v7**. Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
+### October 22, 2013
+The Azure Plugin for Eclipse - October 2013 Preview has released. This update includes new features, bug fixes, and some feedback-driven usability enhancements since the September 2013 Preview:
 
-### <a name="may-1-2015"></a>1º de maio de 2015
-O Kit de Ferramentas do Azure para Eclipse, versão de maio de 2015, inclui os seguintes aprimoramentos:
+* **Support for the Azure SDK 2.2 release.** The Azure Plugin for Eclipse - October 2013 Preview supports Azure SDK 2.2. The plugin will still work with Azure SDK 2.1, and will automatically install Azure SDK 2.2 if you do not already have at least Azure SDK 2.1 installed.
+* **Azul Zulu OpenJDK package update 40.** As announced for the September 2013 Preview, the plugin now enables using a third party-provided JDK directly on Azure, without requiring you to upload your own JDK. In the October 2013 release, Azul System's Zulu (Open JDK v7 package) update 40 is now available; this is in addition to the originally published update 25.
+* **Cloud deployment link in the Activity Log.** Within the Azure Activity Log, when your deployment has a status of **Published**, you can click **Published** since it is now a link to your deployment; your deployment will then be opened in your browser. (The status of **Published** was previously labeled **Running**.)
+* **Target OS selection available at publish time.** The **Publish to Azure** dialog contains a new field, **Target OS**, which provides a more discoverable way for you to set your target operating system.
+* **Auto-overwrite previous deployment.** The **Publish to Azure** dialog contains a new checkbox, **Overwrite previous deployment**. If this option is checked, when your new deployment is published it will automatically overwrite the previous deployment; you would not experience &quot;409 conflict&quot; issues when publishing to the same location without first unpublishing the previous deployment.
+* **Jetty 9 now is a recognized application server.** If you select a Jetty 9 installation directory on your machine in the **Server** tab of the **Azure Deployment Project** dialog, the plugin will now automatically detect it and be able to deploy Jetty 9 in an automated fashion, similar to the older versions of Jetty already in the list.
+* **Add a role from the Project context menu.** The **Azure** project context menu now contains a new menu item, **Add Role**, which provides a quicker and more discoverable way for you to add a new role to your Azure project.
+* **An update to the Package for the Azure Libraries for Java library.** This is based on version 0.4.6 of the [Microsoft Azure Client API].
 
-* **Interface de usuário aprimorada para seleção de servidor**. Esta versão simplifica o uso do kit de ferramentas em sistemas operacionais diferentes do Windows.
-* **Suporte para projetos Maven**. Esta versão oferece suporte a projetos Maven como aplicativos, que o kit de ferramentas no Azure pode implantar e configurar o Application Insights.
-* **Versão 2.6 do SDK do Azure**. Esta atualização mais recente para o SDK do Azure é o novo pré-requisito para o Kit de Ferramentas, quando é instalado no Windows. (Observe que isso não é necessário em sistemas operacionais diferente do Windows).
-* **Atualização da implantação em vez de republicar**. Se você estiver republicando um projeto de implantação com a versão anterior já ativa, você poderá usar o kit de ferramenta que agora usa a funcionalidade de atualização de implantação do Azure em vez de desligar a implantação anterior e republicar do zero, como era feito no passado. Isso permite que seu serviço de nuvem seja executado sem interrupção sempre que possível, ajudando a alcançar alta disponibilidade até mesmo durante uma atualização e a acelerar o processo de republicação.
-* **Suporte para o Zulu OpenJDK v8 mais recente - atualização 40**. Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
+### September 25, 2013
+The Azure Plugin for Eclipse - September 2013 Preview has released. This update includes new features, bug fixes, and some feedback-driven usability enhancements since the August 2013 Preview:
 
-### <a name="march-9-2015"></a>9 de março de 2015
-O Kit de Ferramentas do Azure para Eclipse, versão de março de 2015, inclui os seguintes aprimoramentos:
+* **Ability to deploy the Azul Zulu OpenJDK package available on Azure.** A new option has been added when specifying the JDK to use with your Azure deployment. Using this option, you can deploy a third party JDK package directly on the Azure cloud, without having to upload your own. Azul Systems is providing the first such package called Zulu, based on the OpenJDK, which can now be deployed using this option.
+* **An update to the Package for the Azure Libraries for Java library.** This is based on version 0.4.5 of the [Microsoft Azure Client API].
 
-* **Suporte para Mac, Ubuntu e tipos adicionais de Linux**. Esta versão do Kit de Ferramentas do Azure para Eclipse acrescenta suporte para Mac OS e várias plataformas Unix, para que os desenvolvedores possam instalar o kit de ferramentas e criar, configurar e publicar projetos Java nos Serviços de Nuvem do Azure (PaaS) do Eclipse em execução em sistemas operacionais diferentes do Windows.
+### August 1, 2013
+The Azure Plugin for Eclipse - August 2013 Preview has released. This is an update accompanying the release of the Azure SDK 2.1, which is a pre-requisite and will be downloaded automatically when you install the plugin. This update includes new features, bug fixes, and some feedback-driven usability enhancements since the July 2013 Preview:
 
-> [!NOTE]
-> Esse recurso está no modo de visualização e não é recomendado para uso em ambientes de produção. Não há SLA (Contrato de nível de serviço) para suporte ao cliente, mas todos os comentários são bem-vindos e incentivados.
-> 
-> 
+* **Removal of options to include the local JDK and local application server as part of the deployment package.** Downloading the JDK and application server from cloud storage during the deployment is preferable to embedding these components in the package, since downloading the items results in smaller deployment package size, faster deployment times, and easier maintenance. As a result, the options to include the JDK and application server in the deployment package have been removed. Existing projects that were configured to include the local JDK and local application server as part of the deployment package will automatically be converted to auto-upload the JDK and application server to cloud storage.
+* **Support for the Azure SDK 2.1 release.** The Azure Plugin for Eclipse - August 2013 Preview requires Azure SDK 2.1. Do not use the August 2013 preview with earlier versions of the Azure SDK, and do not use Azure SDK 2.1 with earlier versions of the Azure Plugin for Eclipse.
+* **Support for the Eclipse Kepler release.** Related to this, the new minimum required Eclipse IDE version is Indigo. The Azure Plugin for Eclipse is no longer officially tested on Helios.
 
-* **Novo plug-in do Application Insights**. Agora, os desenvolvedores podem configurar a telemetria automática de servidor usando o Application Insights no Azure.
-* **Automação de implantação de linha de comando baseada em Ant**. Esse recurso permite aos desenvolvedores automatizar a publicação de versões mais recentes de suas implantações usando o Ant fora do Eclipse. Um script pré-gerado é configurado automaticamente para um projeto após sua primeira implantação a partir do Eclipse, e as implantações subsequentes podem usar o script para automatizar totalmente as implantações somente pela linha de comando.
-* **Disponibilidade do Tomcat e do Jetty no Azure para implantação mais simples e rápidas**. Agora, os desenvolvedores podem fazer referência direta a várias versões do Tomcat e do Jetty disponíveis no Azure, em vez de precisarem carregar um servidor Java em suas contas (ou pelo Kit de ferramentas), portanto, não é necessário carregar um servidor Java para cenários iniciais rápidos.
-* **Método de atalho para publicar aplicativos web Java nos serviços de nuvem do Azure**. Para reduzir a curva de aprendizado para cenários simples de teste e desenvolvimento, agora os desenvolvedores podem publicar aplicativos Java diretamente no Azure. Em vez de ter que passar por todo o processo de criação e configuração de um projeto de implantação do Azure, os aplicativos serão implantados com uma instância padrão do Tomcat v8 e do Zulu JVM (OpenJDK).
+### July 3, 2013
+The Azure Plugin for Eclipse - July 2013 Preview has released. This update includes new features, bug fixes, and some feedback-driven usability enhancements since the May 2013 Preview:
 
-### <a name="january-30-2015"></a>30 de janeiro de 2015
-O Kit de Ferramentas do Azure para Eclipse, versão de janeiro de 2015, inclui os seguintes aprimoramentos:
+* **Ability to create a new storage account.** A **New** button has been added to the **Add Storage Account** dialog. This allows you to create a storage account within the Eclipse plugin, without requiring you to log in to the Azure Management Portal. (You must already have an Azure subscription to use this feature.) For more information about creating a new storage account, see [To create a new storage account].
+* **New &quot;(auto)&quot; option for storage account used for automatic deployment of JDK and server, and for caching.** When using the **Automatically upload** option for the JDK and application server, you can now specify **(auto)** for the URL and storage account to use when uploading the JDK and application server, or when using Azure Caching. Then, these features will automatically use the same storage account as the one that you select in the **Publish to Azure** dialog. The [Creating a Hello World Application for Azure in Eclipse] tutorial has been updated to use the new **(auto)** option.
+* **Ability to set your Azure service endpoints.** Specify the service endpoints that determine whether your application is deployed to and managed by the global Azure platform, Azure operated by 21Vianet in China, or a private Azure platform. For more information, see [Azure Service Endpoints].
+* **Large deployments can specify a local storage resource.** In the event that your deployment is too large to be contained in the default approot folder, you can now specify a local storage resource as the deployment destination for your JDK and application server. For more information, see [Deploying Large Deployments].
+* **Support for A6 and A7 Azure Virtual Machine sizes.** You can now deploy a cloud service to the high memory A6 and A7 Virtual Machine sizes. For more information about these sizes, see [Virtual Machine and Cloud Service Sizes for Azure].
+* **An update to the Package for the Azure Libraries for Java library.** This is based on version 0.4.4 of the [Microsoft Azure Client API].
 
-* **Suporte para IBM® WebSphere® Application Server Liberty Core**. Essa versão adiciona o IBM WebSphere Application Server Liberty Core à lista de servidores de aplicativos com suporte a partir dos quais o Kit de ferramentas é capaz de implantar no Azure. Esta adição mais recente expande a lista atual de servidores de aplicativos que têm suporte &quot;nativo&quot; do Kit de ferramentas, que já inclui várias versões do Tomcat, Jetty, JBoss e GlassFish.
-* **Inclusão do SDK do Application Insights**. Essa biblioteca de API do cliente lançada recentemente (v0.9.0) agora faz parte do Pacote para Bibliotecas do Azure para Java.
-* **Pacote atualizado para Bibliotecas do Azure para Java**. Esta atualização inclui Bibliotecas do Azure para Java v0.7.0 e API do Cliente de Armazenamento v2.0.0, bem como o SDK do Application Insights v0.9.0 lançado recentemente.
+### May 1, 2013
+The Azure Plugin for Eclipse - May 2013 Preview has released. This is a major update accompanying the release of the Azure SDK 2.0, which is a pre-requisite and will be downloaded automatically when you install the plugin. This release includes new features, bug fixes, and some feedback-driven usability enhancements since the February 2013 Preview:
 
-### <a name="november-12-2014"></a>12 de novembro de 2014
-O Kit de Ferramentas do Azure para Eclipse, versão de novembro de 2014, inclui os seguintes aprimoramentos:
+* **Automatic upload of the JDK and application server to, and deployment from, Azure storage.** A new option which automatically uploads the selected JDK and application server, when needed, to a specified Azure storage account and deploys these components from there, instead of embedding in the deployment package or having the user upload then manually. This commonly requested feature can greatly enhance the ease of deploying the JDK and server components, especially for novice users. For a walk-through that uses these options, see [Creating a Hello World Application for Azure in Eclipse].
+* **Centralized storage account tracking and ability to reference storage accounts more easily (via a dropdown control).** This applies to multiple features that rely on storage, such as JDK and server component deployment, and caching. For more information, see [Azure Storage Account List].
+* **Simplified Remote Access setup in the Publish to Cloud wizard.** All you need to do is type in a user name and password to enable remote access, or leave it blank to keep remote access disabled.
+* **An update to the Package for the Azure Libraries for Java library.** This is based on version 0.4.2 of the [Microsoft Azure Client API].
+* **Support for sticky sessions on Windows Server 2012.** Previously, sticky sessions worked only on Windows Server 2008 R2, now both cloud operating system targets support session affinity.
+* **Package upload performance improvements.** Even when the JDK and application server are embedded in the deployment package, the upload portion of the deployment process can be approximately twice as fast as compared to previous versions.
 
-* **Suporte para o SDK do Azure 2.5**. Esta atualização mais recente para o SDK do Azure é o novo pré-requisito para o Kit de Ferramentas.
-* **Suporte para a versão atualizada dos pacotes Zulu OpenJDK v1.8, v1.7 e v1.6**. Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
-* **Suporte para os novos tamanhos Standard D de serviços de nuvem**, que oferecem mais desempenho e recursos de memória. Para obter mais informações, veja [Tamanhos de máquina virtual e serviço de nuvem para o Azure].
+### February 8, 2013
+The Azure Plugin for Eclipse - February 2013 Preview has released. This is a minor update which includes bug fixes, feedback-driven usability enhancements and some new features since the November 2012 Preview:
 
-### <a name="october-17-2014"></a>17 de outubro de 2014
-O Kit de Ferramentas do Azure para Eclipse, versão de outubro de 2014, inclui os seguintes aprimoramentos:
+* Support for deploying JDKs, application servers, and arbitrary other components from public or private Azure blob storage downloads instead of including them in the deployment package when deploying to the cloud.
+* Ability to change the order in which user-defined components of a role are processed, through the addition of **Move Up** and **Move Down** buttons in the **Components** section of the **Azure Role Properties**.
+* An update to the **Package for the Azure Libraries for Java** library, based on version 0.4.0 of the [Microsoft Azure Client API].
 
-* **Aprimoramentos de desempenho nos cenários de Publicação na nuvem**. O carregamento de informações de assinatura é muito mais rápido quando os usuários têm várias assinaturas e contas de armazenamento.
-* **Suporte para a versão atualizada do pacote Zulu OpenJDK v1.8**. Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
-* **Suporte para versões mais antigas e obsoletas de JDKs de terceiros**. Os pacotes de JDK obsoletos não aparecerão mais no menu suspenso dos novos projetos de implantação. Os projetos existentes que fazem referência a pacotes JDK obsoletos ainda poderão fazer isso no momento, mas recomendamos a atualização desses projetos para que dependam da versão mais recente.
-* **Versão atualizada do pacote de Bibliotecas do Azure para a biblioteca de APIs de cliente Java**. Para saber mais, confira a [API de cliente do Microsoft Azure].
-* **Correções de bug.** Esta versão contém diversas correções de bugs baseadas em relatórios e testes de usuários.
+### November 5, 2012
+The Azure Plugin for Eclipse - November 2012 Preview has released. This is a major update which includes a number of new features, as well as additional bug fixes and feedback-driven usability enhancements since the September 2012 Preview:
 
-### <a name="august-5-2014"></a>5 de agosto de 2014
-O Kit de Ferramentas do Azure para Eclipse, versão de agosto de 2014, inclui os seguintes aprimoramentos
+* Support for Microsoft Windows Server 2012 as the cloud operating system.
+* Support for Azure co-located caching support for memcached clients.
+* Inclusion of the Apache Qpid JMS client libraries for taking advantage of Azure AMQP-based messaging.
+* An improved **New Project** wizard, with a new page at the end that provides users with the ability to quickly enable several common key features in their project: sticky sessions, caching and remote debugging.
+* Automatic reduction of role instances to 1 when running in the compute emulator, to avoid port binding conflicts between server instances.
 
-* **Suporte para o SDK do Azure 2.4.** Versões mais antigas do Kit de Ferramentas do Eclipse não funcionarão com esse SDK recém-lançado.
-* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6, 1.7 e v1.8.** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
-* **Versão atualizada do pacote de Bibliotecas do Azure para a biblioteca de APIs de cliente Java.** Para saber mais, confira a [API de cliente do Microsoft Azure].
-* **Suporte para o formato de arquivo de configurações de publicação mais recente.** Adição do suporte para a versão 2.0 do formato do arquivo de Configurações de publicação.
-* **Alterações de arquitetura por trás do recurso Publicar na nuvem.** Agora, o Kit de Ferramentas está usando a recém-lançada API de cliente do Microsoft Azure para Java para seu suporte de publicação na nuvem.
-* **Correções de bug.** Esta versão contém várias correções de bugs solicitadas pelo usuário.
+### September 28, 2012
+The Azure Plugin for Eclipse - September 2012 Preview has released. This service update includes a number of additional bug fixes since the August 2012 Preview, as well as some feedback-driven usability enhancements in existing features:
 
-### <a name="june-12-2014"></a>12 de junho de 2014
-O Kit de Ferramentas do Azure para Eclipse, versão de junho de 2014, é uma pequena atualização de serviço que fornece os seguintes aprimoramentos:
+* Support for Microsoft Windows 8 and Microsoft Windows Server 2012 as the development operating system, resolving issues that previously prevented the plugin from working properly on those operating systems.
+* Improved support for specifying endpoint port ranges.
+* Bug fixes related to file paths containing spaces.
+* Role context menu improvements for faster access to role-specific configuration settings.
+* Minor refinements in the **Publish to cloud** wizard and a number of additional bug fixes.
 
-* **Suporte para o pacote do Zulu OpenJDK v1.8.** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
-* **Versões atualizadas dos pacotes Zulu OpenJDK v1.6 e 1.7.** Para saber mais, consulte a [página da Web do Azul Systems para o Zulu OpenJDK].
-* **Versão atualizada do pacote de Bibliotecas do Azure para a biblioteca de APIs de cliente Java.** Para saber mais, confira a [API de cliente do Microsoft Azure].
-* **Correções de bug.** Esta versão contém várias correções de bugs solicitadas pelo usuário.
+### August 28, 2012
+The Azure Plugin for Eclipse - August 2012 Preview has released. This service update includes additional bug fixes since the July 2012 Preview, as well as several feedback-driven usability enhancements for existing features:
 
-### <a name="april-4-2014"></a>4 de abril de 2014
-O plug-in do Azure para Eclipse, versão de abril de 2014, foi lançado. Esta é uma atualização que acompanha a versão do SDK 2.3 do Azure, que é um pré-requisito, e será baixada automaticamente quando você instalar o plug-in. Esta atualização inclui novos recursos, correções de bugs e alguns aprimoramentos de uso gerados por comentários desde a versão de Visualização de fevereiro de 2014:
+* Within the Azure Access Control Services Filter dialog:
+  * **Option to embed the signing certificate** in your application's WAR file, to simplify cloud deployment.
+  * **Option to create a self-signed certificate** within the ACS filter UI. For additional information about the Azure Access Control Services Filter, see [How to Authenticate Web Users with Azure Access Control Service Using Eclipse].
+* Within the Azure Deployment Project wizard (also applies to the role's Server Configuration property page):
+  * **Automatic discovery of the JDK location** on your computer (which you can override if desired).
+  * **Automatic detection of the server type** when you select the application server installation directory.
 
-* **Suporte para a versão 2.3 do SDK do Azure.** O Plug-in do Azure para Eclipse, versão de abril de 2014, exige o SDK 2.3 do Azure. Ao usar o novo plug-in, se você ainda não tiver o SDK 2.3 do Azure, você receberá uma solicitação para permitir sua instalação. Não use o SDK 2.3 do Azure com versões anteriores do plug-in.
-* **Atualização de aplicativos sem a implantação completa do pacote.** Agora, ao implantar aplicativos Java que fazem parte de seu projeto, o plug-in os carrega automaticamente em sua conta de armazenamento selecionada para que você possa atualizá-la e reciclar as instâncias de função a fim de implantar os bits de aplicativo mais recentes sem precisar recompilar e reimplantar todo o pacote.
-* **Agora, o Tomcat 8 é um servidor de aplicativos reconhecido.** Se você selecionar um diretório de instalação do Tomcat 8 em seu computador na guia **Servidor** da caixa de diálogo **Projeto de Implantação do Azure**, o plug-in o detectará automaticamente e será capaz de implantar o Tomcat 8 de modo automatizado, semelhante às versões mais antigas do Tomcat que já estão na lista.
-* **Atualizações do pacote do Azul Zulu OpenJDK: atualização 51 da v1.7 e atualização 47 da v1.6.** A partir desta versão, atualização de pacote 51 do Zulu Open JDK v7 do Azul System está disponível. Além disso, os pacotes do Zulu Open JDK v6 estão começando a ficar disponíveis, começando com a atualização 47. Essas atualizações são acréscimos às atualizações 45, 40 e 25 disponíveis do pacote Zulu Open JDK v7.
-* **Suporte para tamanhos A8 e A9 de máquina virtual do Microsoft Azure.** Agora você pode implantar um serviço de nuvem no tamanho de máquina virtual A8 e A9 de memória alta. Para saber mais sobre tamanhos de VM, confira [Tamanhos de máquina virtual e serviço de nuvem para o Azure].
-* **Redirecionamento automático de HTTP para HTTPS para funções habilitadas para SSL.** Quando o serviço de nuvem contiver somente funções HTTPS, se a solicitação do usuário especificar HTTP, ele será automaticamente redirecionado para HTTPS. Não é necessário criar uma função separada para manipular as solicitações HTTP.
-* **Emulador Express usado para a emulação local.** O Emulador Express do Azure agora é usado como emulador ao depurar seus aplicativos localmente.
-* **O Azure foi rebatizado como Microsoft Azure.** As telas de interface do usuário agora refletem que o Azure foi rebatizado e não é mais chamado de Azure.
+### July 15, 2012
+The Azure Plugin for Eclipse - July 2012 Preview, which addresses a number of the highest priority bugs found and/or reported by users after the June 2012 release, has released. This is a service update only, no new features are contained.
 
-### <a name="february-6-2014"></a>6 de fevereiro 2014
-Plug-in do Azure para Eclipse, versão de Visualização de fevereiro de 2014, foi lançado. Esta atualização inclui novos recursos, correções de bugs e alguns aprimoramentos de uso gerados por comentários desde a versão de Visualização de outubro de 2013:
+### June 7, 2012
+Azure Plugin for Eclipse - June 2012 CTP has released. New features include:
 
-* **Suporte para o descarregamento de SSL.** O descarregamento de SSL (Secure Sockets Layer) foi adicionado como um recurso, permitindo o suporte ao protocolo HTTPS (Hypertext Transfer Protocol Secure) em sua implantação Java no Azure, sem a necessidade de configurar SSL em seu servidor de aplicativo Java. Isso é particularmente relevante em cenários de afinidade de sessão e/ou comunicação autenticada. Por exemplo, ao usar o Filtro ACS (Serviço de Controle de Acesso), que já recebe suporte do kit de ferramentas. Para saber mais, confira [Descarregamento de SSL] e [Como usar o descarregamento de SSL].
-* **Agora, o GlassFish 4 é um servidor de aplicativos reconhecido.** Se você selecionar um diretório de instalação do GlassFish 4 em seu computador na guia **Servidor** da caixa de diálogo **Projeto de Implantação do Azure**, o plug-in o detectará automaticamente e será capaz de implantar o GlassFish OSE 4 de modo automatizado, semelhante à versão OSE 3 do GlassFish que já está na lista.
-* **Atualização de pacote 45 do Azul Zulu OpenJDK.** A partir desta versão, a atualização 45 do Zulu (pacote Open JDK v7) do Azul System está disponível. Esse é um acréscimo às atualizações 40 e 25 disponíveis anteriormente.
-* **Suporte para “automática” para portas de ponto de extremidade privadas.** Você pode definir uma porta privada como automática para pontos de extremidade de entrada e pontos de extremidade internos a fim de permitir que o Azure atribua automaticamente uma porta a esse ponto de extremidade. Anteriormente, era possível atribuir apenas um número de porta específico.
-* **Suporte para personalização do nome do certificado (CN) na interface de usuário de criação de certificado autoassinado.** Anteriormente, o mesmo nome codificado era usado para todos os novos certificados; agora, você pode especificar seu próprio nome de certificado para ajudar a distinguir vários certificados no Portal do Azure usados para finalidades diferentes.
-* **Barra de ferramentas do azure:** a barra de ferramentas do Azure foi atualizada com as seguintes alterações: 
-  * ![][ic710876] Este ícone foi adicionado ao **Novo projeto de implantação do Azure**.
-  * ![][ic710877] Este ícone foi adicionado como um atalho para a caixa de diálogo de criação de certificado autoassinado.
-* **Suporte para tamanho A5 de máquina virtual do Azure.** Agora você pode implantar um serviço de nuvem no tamanho da máquina virtual A5 de memória alta. Para saber mais sobre esse tamanho de VM, confira [Tamanhos de máquina virtual e serviço de nuvem para o Azure].
-* **Suporte para Microsoft Windows Server 2012 R2.** Agora, você pode selecionar o Windows Server 2012 R2 como o sistema operacional em nuvem.
+* **New Azure Deployment Project wizard:** Enables you to select your JDK, Java application server, and Java applications directly in the improved wizard UI. Included in the list of out-of-the-box server configurations to choose from are Tomcat 6, Tomcat 7, GlassFish OSE 3, Jetty 7, Jetty 8, JBoss 6, and JBoss 7 (stand-alone). Additionally, you can customize the list of server configurations. This UI improvement is an alternative to dragging and dropping compressed files and copying over startup scripts, which was previously the main approach. That method still works fine, but will likely be used only for more advanced scenarios.
+* **Server Configuration role property page:** Enables you to easily switch the JDKs, Java application servers and applications associated with your deployment after you have created the project. For more information, see [Server configuration properties].
+* **&quot;Publish to cloud&quot; wizard:** Provides an easy way to deploy your project to Azure directly from Eclipse, automating the previously manual heavy-lifting of fetching credentials, signing in to the Azure Management Portal, uploading a package, etc. For an example of how to directly deploy your project to Azure, see [Creating a Hello World Application for Azure in Eclipse].
+* **Azure toolbar:** An Azure toolbar is now available in Eclipse which contains buttons that invoke the following features:
+  * ![][ic710879] **Run in Azure Emulator**: Runs your project in the emulator.
+  * ![][ic710880] **Reset Azure Emulator**: Resets the emulator.
+  * ![][ic710881] **Build Cloud Package for Azure**: Compiles your package for deployment.
+  * ![][ic710876] **New Azure Deployment Project**: Creates a new Azure deployment project.
+  * ![][ic710882] **Publish to Azure Cloud**: Publishes your project to Azure.
+  * ![][ic710883] **Unpublish**: Deletes your deployment.
+  * Many of these Azure toolbar buttons are used in [Creating a Hello World Application for Azure in Eclipse].
+* **Azure Libraries for Java:** Now available as part of the single Package for Azure Libraries for Java library in Eclipse, accompanying the plugin installation and containing all of the necessary dependencies as well. Just add one reference to the library in your Java project and you don't need to download anything separately. For more information, see [Installing the Azure Toolkit for Eclipse].
+* **Microsoft JDBC Driver 4.0 for SQL Server available during plugin installation:** During installation of the new plugin, the newest version of the Microsoft JDBC Driver for SQL Server can be installed.
+* **Azure Access Control Service Filter available during plugin installation:** This new component, included as an Eclipse library in the toolkit, enables your Java web application to seamlessly take advantage of Azure Access Control Service (ACS) authentication using various identity providers, such as Google, Live.com, and Yahoo!. You won't need to write authentication logic yourself, just configure a few options and let the filter do the heavy lifting of enabling users to sign in using ACS. You can just focus on writing the code that gives users access to resources based on their identity, as returned to your application by the filter inside the Request object. For a tutorial on using the ACS filter, see [How to Authenticate Web Users with Azure Access Control Service Using Eclipse].
+* **Automatic detection of the Azure SDK 1.7 prerequisite:** When you create a new Azure Deployment Project, Azure SDK 1.7 will be automatically downloaded if it is not already installed.
+* **Instance endpoints:** Allows direct port endpoint access for communication with load balanced role instances. Instance endpoints can be added through the endpoints UI, available through the [Endpoints properties] page. This helps enable remote debugging and JMX diagnostics for specific compute instances running in the cloud in scenarios with multi -instance deployments. 
+* **Components UI:** Makes it easier for advanced users to set up project dependencies between individual Azure roles in the project and other external resources such as Java application projects; also makes it easy to describe their deployment logic. For more information, see [Components properties].
+* **Automatic upgrade of previous versions of projects:** When you open a workspace that has Azure project created with a previous version of the plugin, the old projects will be shown in Eclipse as closed, because previous versions of projects are not compatible with the new release. If you attempt to open one of these old projects, an upgrade wizard will start. If you agree to the upgrade, a new project, with **_Upgraded** appended to the name, will be created and automatically updated to work with the new release. You can rename the new project as needed. As part of the upgrade, your original project will not be modified (and will remain closed).
 
-### <a name="october-22-2013"></a>22 de outubro de 2013
-O Plug-in do Azure para Eclipse, versão de Visualização de outubro de 2013, foi lançado. Esta atualização inclui novos recursos, correções de bugs e alguns aprimoramentos de uso gerados por comentários desde a versão de Visualização de setembro de 2013:
+### December 10, 2011
+Azure Plugin for Eclipse - December 2011 CTP has released. New features include:
 
-* **Suporte para a versão 2.2 do SDK do Azure.** O Plug-in do Azure para Eclipse, versão de Visualização de outubro de 2013, oferece suporte ao SDK 2.2 do Azure. O plug-in ainda funcionará com o SDK 2.1 do Azure e instalará automaticamente o SDK 2.2 do Azure se você ainda não tiver pelo menos o SDK 2.1 do Azure instalado.
-* **Atualização de pacote 40 do Azul Zulu OpenJDK.** Conforme anunciado na versão de Visualização de setembro de 2013, o plug-in agora permite o uso de um JDK fornecido por terceiros diretamente no Azure, sem a necessidade de carregar seu próprio JDK. Na versão de outubro de 2013, a atualização 40 do Zulu (pacote Open JDK v7) do Azul System está disponível. Esse é um acréscimo à atualização 25 publicada originalmente.
-* **Link de implantação em nuvem no Log de atividades.** Quando sua implantação apresenta um status de **Publicada** no Log de atividades do Azure, você pode clicar em **Publicada**, que agora é um link para sua implantação, e abri-la em seu navegador. (Antes, o status de **Publicada** era rotulado **Executando**.)
-* **Seleção do sistema operacional de destino disponível no momento da publicação.** A caixa de diálogo **Publicar no Azure** contém um novo campo, **SO de Destino**, que fornece uma maneira mais detectável de definição de seu sistema operacional de destino.
-* **Substituir automaticamente a implantação anterior.** A caixa de diálogo **Publicar no Azure** contém uma nova caixa de seleção, **Substituir implantação anterior**. Se esta opção estiver marcada, quando a nova implantação for publicada ela substituirá automaticamente a implantação anterior; você não enfrentará problemas de &quot;409 conflict&quot; ao publicar no mesmo local sem antes cancelar a publicação da implantação anterior.
-* **Agora, o Jetty 9 é um servidor de aplicativos reconhecido.** Se você selecionar um diretório de instalação do Jetty 9 em seu computador na guia **Servidor** da caixa de diálogo **Projeto de Implantação do Azure**, o plug-in o detectará automaticamente e será capaz de implantar o Jetty 9 de modo automatizado, semelhante às versões do Jetty que já estão na lista.
-* **Adicionar uma função no menu de contexto do projeto.** Agora, o menu de contexto do projeto **Azure** contém um novo item de menu, **Adicionar Função**, que fornece uma maneira mais rápida e detectável para adicionar uma nova função ao seu projeto do Azure.
-* **Uma atualização ao pacote para as Bibliotecas do Azure para a biblioteca Java.** Isso tem base na versão 0.4.6 da [API de cliente do Microsoft Azure].
+* **Session affinity (&quot;sticky sessions&quot;) support:** Helping enable stateful, clustered Java applications with just a single checkbox. For more information, see [Session Affinity].
+* **Pre-made startup script samples:** For the most popular Java servers (Tomcat, Jetty, JBoss, GlassFish), that you can just copy/paste from your project's samples directory into your startup script.
+* **Emulator startup output in real time:** You can now watch the execution of all the steps from your startup script in a dedicated console window, showing you the progress and failures in your script as it is executed by Azure.
+* **Automatic, light-weight java.exe monitoring:** That will force a role recycle when java.exe stops running, using a lightweight, pre-made script automatically included in your deployment.
+* **Remote Java app debugging configuration UI:** Allows you to easily enable Eclipse's remote debugger to access your Java app running in the Emulator or the Azure cloud, so you can step through and debug your Java code in real time. For more information, see [Debugging Azure Applications in Eclipse].
+* **Local storage resource configuration UI:** So you no longer have to configure local resources by manipulating the XML directly. This feature also enables you to access to the effective file path of your local resource after it's deployed via an environment variable you can reference directly from your startup script. For more information, see [Local storage properties].
+* **Environment variable configuration UI:** So you no longer have to set environment variables via manual editing of the configuration XML. For more information, see [Environment variables properties].
+* **JDBC driver for SQL Azure:** Gets installed via the plugin as a seamlessly integrated Eclipse library, enabling easier programming against SQL Azure. 
+* **Quick context-menu access to role configuration UI**: Just right-click on the role folder, and click **Properties**.
+* **Custom Azure project and role folder icons:** For better visibility and easier navigation within your workspace and project.
 
-### <a name="september-25-2013"></a>25 de setembro de 2013
-O Plug-in do Azure para Eclipse, versão de Visualização de setembro de 2013, foi lançado. Esta atualização inclui novos recursos, correções de bugs e alguns aprimoramentos de uso gerados por comentários desde a versão de Visualização de agosto de 2013:
-
-* **Capacidade de implantar o pacote Azul Zulu OpenJDK disponível no Azure.** Uma nova opção foi adicionada ao especificar o JDK a ser usado com sua implantação do Azure. Com essa opção, você pode implantar um pacote JDK de terceiros diretamente na nuvem do Azure, sem a necessidade de carregar o seu próprio. O Azul Systems está fornecendo o primeiro pacote desse tipo, chamado Zulu, com base em OpenJDK, que agora pode ser implantado usando essa opção.
-* **Uma atualização ao pacote para as Bibliotecas do Azure para a biblioteca Java.** Isso tem base na versão 0.4.5 da [API de cliente do Microsoft Azure].
-
-### <a name="august-1-2013"></a>1º de agosto de 2013
-O Plug-in do Azure para Eclipse, versão de Visualização de agosto de 2013, foi lançado. Esta é uma atualização que acompanha a versão do SDK 2.1 do Azure, que é um pré-requisito, e será baixada automaticamente quando você instalar o plug-in. Esta atualização inclui novos recursos, correções de bugs e alguns aprimoramentos de uso gerados por comentários desde a versão de Visualização de julho de 2013:
-
-* **Remoção de opções para incluir o JDK local e o servidor de aplicativos local como parte do pacote de implantação.** É preferível baixar o JDK e o servidor de aplicativos do armazenamento em nuvem durante a implantação a fim de incorporar esses componentes no pacote, pois o download dos itens resulta em um pacote de implantação menor, mais rapidez na implantação e facilidade de manutenção. Como resultado, as opções para incluir o JDK e o servidor de aplicativos no pacote de implantação foram removidas. Projetos existentes que foram configurados para incluir o JDK local e o servidor de aplicativos local como parte do pacote de implantação serão automaticamente convertidos a fim de carregarem automaticamente o JDK e o servidor de aplicativos para armazenamento em nuvem.
-* **Suporte para a versão 2.1 do SDK do Azure.** O Plug-in do Azure para Eclipse, versão de Visualização de agosto de 2013 exige o SDK 2.1 do Azure. Não use a visualização de agosto de 2013 com versões anteriores do SDK do Azure, e não usar o SDK 2.1 do Azure com versões anteriores do Plug-in do Azure para Eclipse.
-* **Suporte para a versão Kepler do Eclipse.** Com relação a isso, a nova versão mínima exigida pelo IDE do Eclipse é a Indigo. O Plug-in do Azure para Eclipse não é mais oficialmente testado em Helios.
-
-### <a name="july-3-2013"></a>3 de julho de 2013
-O Plug-in do Azure para Eclipse, versão de Visualização de julho de 2013, foi lançado. Esta atualização inclui novos recursos, correções de bugs e alguns aprimoramentos de uso gerados por comentários desde a versão de Visualização de maio de 2013:
-
-* **Capacidade para criar uma nova conta de armazenamento.** Um botão **Novo** foi adicionado à caixa de diálogo **Adicionar Conta de Armazenamento**. Isso permite que você crie uma conta de armazenamento dentro do plug-in do Eclipse, sem exigir o logon no Portal de Gerenciamento do Azure. (Você já deve ter uma assinatura do Azure para usar esse recurso.) Para saber mais sobre como criar uma nova conta de armazenamento, confira [Para criar uma nova conta de armazenamento].
-* **Nova opção &quot;(automática)&quot; para conta de armazenamento usada para a implantação automática do JDK e do servidor, e para caching.** Ao usar a opção **Carregar automaticamente** para o JDK e servidor de aplicativos, é possível especificar o uso da opção **(automática)** na URL e na conta de armazenamento ao carregar o JDK e o servidor de aplicativos, ou ao usar o Caching do Azure. Assim, esses recursos utilizarão automaticamente a mesma conta de armazenamento que você seleciona na caixa de diálogo **Publicar no Azure** . O tutorial [Criação de um aplicativo Hello World do Azure no Eclipse] foi atualizada para usar a nova opção **(automática)** .
-* **Capacidade de definir os pontos de extremidade de serviço do Azure.** Especifique os pontos de extremidade de serviço que determinam se o aplicativo será implantado e gerenciado pela plataforma global do Azure, operado pelo Azure pela 21Vianet na China ou por uma plataforma privada do Azure. Para saber mais, confira [Ponto de extremidade de serviço do Azure].
-* **Implantações de grande porte podem especificar um recurso de armazenamento local.** Agora, caso sua implantação seja muito grande para caber na pasta approot padrão, você pode especificar um recurso de armazenamento local como o destino de implantação para seu JDK e servidor de aplicativos. Para saber mais, confira [Implantações de grande porte].
-* **Suporte para tamanhos A6 e A7 de máquina virtual do Azure.** Agora você pode implantar um serviço de nuvem no tamanho de máquina virtual A6 e A7 de memória alta. Para saber mais sobre esses tamanhos, confira [Tamanhos de máquina virtual e serviço de nuvem para o Azure].
-* **Uma atualização ao pacote para as Bibliotecas do Azure para a biblioteca Java.** Isso tem base na versão 0.4.4 da [API de cliente do Microsoft Azure].
-
-### <a name="may-1-2013"></a>1º de maio de 2013
-O Plug-in do Azure para Eclipse, versão de Visualização de maio de 2013, foi lançado. Esta é uma atualização importante que acompanha a versão do SDK 2.0 do Azure, que é um pré-requisito, e será baixada automaticamente quando você instalar o plug-in. Esta versão inclui novos recursos, correções de bugs e alguns aprimoramentos de uso gerados por comentários desde a versão de Visualização de fevereiro de 2013:
-
-* **Carregamento automático do JDK e do servidor de aplicativos no Azure e implantação a partir do Azure.** Uma nova opção que carrega automaticamente, quando necessário, o JDK e o servidor de aplicativos selecionados em uma conta de armazenamento do Azure especificada, e implanta esses componentes a partir dessa conta, em vez de incorporá-los no pacote de implantação ou exigir que o usuário os carreguem manualmente. Esse recurso normalmente solicitados podem melhorar bastante a facilidade de implantação dos componentes de servidor e do JDK, especialmente para usuários menos experientes. Para obter uma orientação que usa essas opções, confira [Criação de um aplicativo Hello World do Azure no Eclipse].
-* **Controle centralizado de conta de armazenamento e capacidade de fazer referência às contas de armazenamento com mais facilidade (por meio de um controle suspenso).** Isso se aplica a vários recursos que dependem do armazenamento, como a implantação do JDK e de componentes do servidor, e caching. Para saber mais, confira [Lista de contas de armazenamento do Azure].
-* **Configuração simplificada do Acesso Remoto no assistente Publicar na Nuvem.** Basta digitar um nome de usuário e senha para habilitar o acesso remoto, ou deixar em branco para manter o acesso remoto desabilitado.
-* **Uma atualização ao pacote para as Bibliotecas do Azure para a biblioteca Java.** Isso tem base na versão 0.4.2 da [API de cliente do Microsoft Azure].
-* **Suporte a sessões temporárias no Windows Server 2012.** Anteriormente, as sessões temporárias funcionavam apenas no Windows Server 2008 R2. Agora, os dois destinos de sistema operacionais em nuvem oferecem suporte à afinidade de sessão.
-* **Aprimoramentos de desempenho de carregamento do pacote.** Mesmo quando o JDK e o servidor de aplicativos são incorporados ao pacote de implantação, a parte de carregamento do processo de implantação pode ser quase duas vezes mais rápida quando comparado com versões anteriores.
-
-### <a name="february-8-2013"></a>8 de fevereiro de 2013
-O Plug-in do Azure para Eclipse, versão de Visualização de fevereiro de 2013, foi lançado. Esta é uma atualização secundária que inclui correções de bugs, aprimoramentos de uso gerados por comentários e alguns recursos novos desde a versão de Visualização de novembro de 2012:
-
-* Suporte para implantação de JDKs, servidores de aplicativos e outros componentes aleatórios de downloads de armazenamento de blobs público ou privado do Azure em vez de incluí-los no pacote de implantação ao implantar na nuvem.
-* Capacidade de alterar a ordem na qual os componentes de uma função definidos pelo usuário são processados, por meio da adição de botões **Mover para cima** e **Mover para baixo** na seção **Componentes** das **Propriedades de Função do Azure**.
-* Uma atualização para o **Pacote para bibliotecas do Azure para Java** , com base na versão 0.4.0 da [API de cliente do Microsoft Azure].
-
-### <a name="november-5-2012"></a>5 de novembro de 2012
-O Plug-in do Azure para Eclipse, versão de Visualização de novembro de 2012, foi lançado. Esta é uma atualização importante que inclui vários recursos novos, bem como correções de bugs adicionais e aprimoramentos de uso gerados por comentários desde a versão de Visualização de setembro de 2012:
-
-* Suporte para Microsoft Windows Server 2012 como o sistema operacional em nuvem.
-* Suporte para caching colocalizado do Azure para clientes em cache de memória.
-* Inclusão de bibliotecas de cliente Apache Qpid JMS para aproveitar as mensagens com base em AMQP do Azure.
-* Um assistente aprimorado de **Novo Projeto** , com uma nova página no final que fornece aos usuários a capacidade de habilitar rapidamente vários recursos importantes comuns em seu projeto: sessões temporárias, caching e depuração remota.
-* Redução automática de instâncias de função para 1 em execução no emulador de computação, a fim de evitar conflitos de associação de porta entre instâncias do servidor.
-
-### <a name="september-28-2012"></a>28 de setembro de 2012
-O Plug-in do Azure para Eclipse, versão de Visualização de setembro de 2012, foi lançado. Essa atualização de serviço inclui várias correções de bugs adicionais desde a versão de Visualização de agosto de 2012, bem como alguns aprimoramentos de uso gerados por comentários em recursos existentes:
-
-* Suporte para Microsoft Windows 8 e Microsoft Windows Server 2012 como o sistema operacional de desenvolvimento, solucionando problemas que anteriormente impediam o funcionamento correto do plug-in nesses sistemas operacionais.
-* Suporte aprimorado para especificar os intervalos de porta de ponto de extremidade.
-* Correções de bugs relacionados aos caminhos de arquivos que contenham espaços.
-* Aprimoramentos no menu de contexto de função para acesso mais rápido a configurações específicas de função.
-* Aprimoramentos secundários no assistente **Publicar na nuvem** e diversas correções de bugs adicionais.
-
-### <a name="august-28-2012"></a>28 de agosto 2012
-O Plug-in do Azure para Eclipse, versão de Visualização de agosto de 2012, foi lançado. Essa atualização de serviço inclui correções de bugs adicionais desde a versão de Visualização de julho de 2012, bem como alguns aprimoramentos de uso gerados por comentários para recursos existentes:
-
-* Na caixa de diálogo Filtro de Serviços de Controle de Acesso do Azure:
-  * **Opção para incorporar o certificado de autenticação** em seu arquivo WAR do aplicativo, para simplificar a implantação em nuvem.
-  * **Opção para criar um certificado autoassinado** na interface de usuário do filtro ACS. Para saber mais sobre o Filtro de Serviços de Controle de Acesso do Azure, confira [Como autenticar usuários da Web com o Serviço de Controle de Acesso do Azure usando o Eclipse].
-* No assistente de Projeto de Implantação do Azure (também se aplica à página de propriedades de Configuração do Servidor da função):
-  * **Descoberta automática do local do JDK** em seu computador (que pode ser substituído se for desejado).
-  * **Detecção automática de tipo de servidor** quando você seleciona o diretório de instalação do servidor de aplicativo.
-
-### <a name="july-15-2012"></a>15 de julho de 2012
-O Plug-in do Azure para Eclipse, versão de Visualização de julho de 2012, que soluciona vários bugs de prioridade mais altas encontrados e/ou relatados por usuários após a versão de junho de 2012, foi lançado. Essa é apenas uma atualização de serviço e não há qualquer recurso novo.
-
-### <a name="june-7-2012"></a>7 de junho de 2012
-O Plug-in do Azure para Eclipse, CTP de junho de 2012, foi lançado. Os novos recursos incluem:
-
-* **Novo assistente de projeto de implantação do Azure:** permite que você selecione seu JDK, servidor de aplicativos Java e aplicativos Java diretamente na interface de usuário aprimorada do assistente. Foram incluídos na lista de configurações do servidor nativas para sua escolha o Tomcat 6, Tomcat 7, GlassFish OSE 3, Jetty 7, Jetty 8, JBoss 6 e JBoss 7 (autônomo). Além disso, você pode personalizar a lista de configurações do servidor. Esse aprimoramento da interface de usuário é uma alternativa à ação de arrastar e soltar arquivos compactados e copiar os scripts de inicialização, que era a abordagem principal. Esse método ainda funciona bem, mas provavelmente será usado apenas para cenários mais avançados.
-* **Página de propriedades de função do Servidor de Configuração:** permite que você alterne facilmente os JDKs, servidores de aplicativos Java e aplicativos associados à sua implantação após a criação do projeto. Para saber mais, confira [Propriedades de configuração do servidor].
-* **Assistente &quot;Publicar em nuvem&quot;:** fornece uma maneira fácil de implantar seu projeto no Azure diretamente do Eclipse, automatizando o trabalho manual pesado de obtenção de credenciais, entrada no Portal de Gerenciamento do Azure, carregamento de um pacote etc. Para obter um exemplo de como implantar o projeto diretamente no Azure, confira [Criação de um aplicativo Hello World do Azure no Eclipse].
-* **Barra de ferramentas do Azure:** agora uma barra de ferramentas do Azure está disponível no Eclipse contendo botões que chamam os seguintes recursos:
-  * ![][ic710879] **Executar no Emulador do Azure**: executa o projeto no emulador.
-  * ![][ic710880] **Redefinir Emulador do Azure**: redefine o emulador.
-  * ![][ic710881] **Compilar pacote para nuvem do Azure**: compila o pacote para implantação.
-  * ![][ic710876] **Novo projeto de implantação do Azure**: cria um novo projeto de implantação do Azure.
-  * ![][ic710882] **Publicar na Nuvem do Azure**: publica seu projeto no Azure.
-  * ![][ic710883] **Cancelar publicação**: exclui a implantação.
-  * Muitos desses botões da barra de ferramentas do Azure são usados na [Criação de um aplicativo Hello World do Azure no Eclipse].
-* **Bibliotecas do Azure para Java:** agora estão disponíveis como parte do Pacote individual para Bibliotecas do Azure para a biblioteca Java no Eclipse, acompanhando a instalação do plug-in e contendo todas as dependências necessárias. Basta adicionar uma referência à biblioteca em seu projeto Java, e não é necessário baixar nada separadamente. Para saber mais, confira [Instalação do Kit de Ferramentas do Azure para Eclipse].
-* **Microsoft JDBC Driver 4.0 para SQL Server disponível durante a instalação do plug-in:** durante a instalação do novo plug-in, a versão mais recente do Microsoft JDBC Driver para SQL Server pode ser instalada.
-* **Filtro do Serviço de Controle de Acesso do Azure disponível durante a instalação do plug-in:** esse novo componente, incluído como uma biblioteca do Eclipse no kit de ferramentas, permite que seu aplicativo Web Java aproveite perfeitamente a autenticação ACS (Serviço de Controle de Acesso) do Azure usando vários provedores de identidade, como Google, Live.com e Yahoo!. Você não precisa escrever uma lógica de autenticação por conta própria, apenas configurar algumas opções e deixar o filtro fazer o trabalho pesado de permitir que os usuários façam logon usando ACS. Você pode se concentrar apenas em escrever o código que fornece aos usuários acesso aos recursos com base na identidade deles, conforme retorna ao seu aplicativo pelo filtro dentro do objeto de solicitação. Para obter um tutorial sobre como usar o filtro, confira [Como autenticar usuários da Web com o Serviço de Controle de Acesso do Azure usando o Eclipse].
-* **Detecção automática do pré-requisito do SDK 1.7 do Azure:** quando você cria um novo projeto de implantação do Azure, o SDK 1.7 do Azure é baixado automaticamente, caso ainda não esteja instalado.
-* **Pontos de extremidade de instância:** permite acesso direto ao ponto de extremidade de porta para comunicação com instâncias de função com carga balanceada. Os pontos de extremidade de instância podem ser adicionados pela interface de usuário dos pontos de extremidade, disponível na página [Propriedades de pontos de extremidade] . Isso ajuda a habilitar a depuração remota e o diagnóstico de JMX para determinadas instâncias de computação em execução na nuvem em cenários de implantações com várias instâncias. 
-* **Interface de usuário dos componentes:** facilita, para os usuários avançados, a configuração de dependências de projeto entre funções individuais do Azure no projeto e outros recursos externos, como projetos de aplicativo Java; também facilita a descrição de suas lógicas de implantação. Para saber mais, consulte as [Propriedades dos componentes].
-* **Atualização automática de versões anteriores de projetos:** quando você abre um espaço de trabalho que possui um projeto do Azure criado com uma versão anterior do plug-in, os projetos antigos aparecerão no Eclipse como fechados, pois as versões anteriores dos projetos não são compatíveis com a nova versão. Se você tentar abrir um desses projetos antigos, um assistente de atualização será iniciado. Se você concordar com a atualização, um novo projeto com **_Upgraded** anexado ao nome será criado e atualizado automaticamente a fim de funcionar com a nova versão. Você pode renomear o novo projeto conforme o necessário. Como parte da atualização, seu projeto original não será modificado (e permanecerá fechado).
-
-### <a name="december-10-2011"></a>10 de dezembro de 2011
-O plug-in do Azure para Eclipse, CTP de dezembro de 2011 foi lançado. Os novos recursos incluem:
-
-* **Suporte para afinidade da sessão (&quot;sessão temporária&quot;):** ajudando a habilitar aplicativos Java com estado e em cluster com apenas uma caixa de seleção. Para saber mais, confira [Afinidade da sessão].
-* **Exemplos de script de inicialização pré-criados :** para os servidores Java mais populares (Tomcat, Jetty, JBoss, GlassFish), que você pode simplesmente copiar/colar do diretório de exemplos do projeto em seu script de inicialização.
-* **Saída de inicialização do emulador em tempo real:** agora você pode assistir à execução de todas as etapas de seu script de inicialização em uma janela de console dedicada, mostrando o andamento e as falhas no script conforme ele é executado pelo Azure.
-* **Monitoramento leve e automático de java.exe:** que forçará uma reciclagem de função quando o java.exe deixar de ser executado, usando um script leve e predefinido incluído automaticamente em sua implantação.
-* **Interface de usuário de configuração remota de depuração do aplicativo Java:** com ela você pode permitir facilmente o acesso do depurador remoto do Eclipse ao seu aplicativo Java em execução no Emulador ou na nuvem do Azure, para que você consiga percorrer e depurar seu código Java em tempo real. Para saber mais, confira [Debugging Azure Applications in Eclipse].
-* **Interface de usuário de configuração do recurso de armazenamento local:** para que você não precise mais configurar recursos locais manipulando diretamente o XML. Este recurso também permite que você acesse o caminho do arquivo efetivo de seu recurso local após a implantação por meio de uma variável de ambiente, à qual você pode fazer referência diretamente de seu script de inicialização. Para saber mais, confira [Propriedades de armazenamento local].
-* **Interface do usuário de configuração da variável do ambiente:** para que você não precise mais definir variáveis do ambiente por meio da edição manual do XML de configuração. Para saber mais, confira [Propriedades de variáveis do ambiente].
-* **Driver JDBC para o SQL Azure:** é instalado por meio do plug-in como uma biblioteca do Eclipse totalmente integrada, permitindo uma programação mais fácil no SQL Azure. 
-* **Acesso rápido de menu de contexto à interface de usuário de configuração de função**: apenas clique com o botão direito na pasta da função e clique em **Propriedades**.
-* **Ícones personalizados de pasta de função e de projeto do Azure:** para obter melhor visibilidade e facilitar a navegação em seu espaço de trabalho e projeto.
+-->
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -321,34 +320,35 @@ O plug-in do Azure para Eclipse, CTP de dezembro de 2011 foi lançado. Os novos 
 <!-- URL List -->
 
 [Kit de Ferramentas do Azure para IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
-[Instalação do Kit de Ferramentas do Azure para Eclipse]: azure-toolkit-for-eclipse-installation.md
+[Installing the Azure Toolkit for Eclipse]: azure-toolkit-for-eclipse-installation.md
 
-[Instruções de entrada no Azure para o Kit de Ferramentas do Azure para Eclipse]: azure-toolkit-for-eclipse-sign-in-instructions.md
-[Como publicar um aplicativo Web como um contêiner do Docker usando o Kit de ferramentas do Azure para Eclipse]: ./azure-toolkit-for-eclipse-publish-as-docker-container.md
-[Gerenciar contas de armazenamento usando o Azure Explorer para Eclipse]: ./azure-toolkit-for-eclipse-managing-storage-accounts-using-azure-explorer.md
-[Gerenciar Máquinas Virtuais usando o Azure Explorer para Eclipse]: ./azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md
+[Azure Sign In Instructions for the Azure Toolkit for Eclipse]: azure-toolkit-for-eclipse-sign-in-instructions.md
+[How to publish a Web App as a Docker Container using the Azure Toolkit for Eclipse]: ./azure-toolkit-for-eclipse-publish-as-docker-container.md
+[Managing Storage Accounts using the Azure Explorer for Eclipse]: ./azure-toolkit-for-eclipse-managing-storage-accounts-using-azure-explorer.md
+[Managing Virtual Machines using the Azure Explorer for Eclipse]: ./azure-toolkit-for-eclipse-managing-virtual-machines-using-azure-explorer.md
+
+<!-- URL List -->
 
 [Azure for Java Developers]: https://docs.microsoft.com/java/azure
-
-[página da Web do Azul Systems para o Zulu OpenJDK]: http://go.microsoft.com/fwlink/?LinkId=402457
-[Ponto de extremidade de serviço do Azure]: http://go.microsoft.com/fwlink/?LinkID=699526
-[Lista de contas de armazenamento do Azure]: http://go.microsoft.com/fwlink/?LinkID=699528
-[Propriedades dos componentes]: http://go.microsoft.com/fwlink/?LinkID=699525#components_properties
-[Criação de um aplicativo Hello World do Azure no Eclipse]: http://go.microsoft.com/fwlink/?LinkID=699533
+[Azul Systems web page for the Zulu OpenJDK]: http://go.microsoft.com/fwlink/?LinkId=402457
+[Azure Service Endpoints]: http://go.microsoft.com/fwlink/?LinkID=699526
+[Azure Storage Account List]: http://go.microsoft.com/fwlink/?LinkID=699528
+[Components properties]: http://go.microsoft.com/fwlink/?LinkID=699525#components_properties
+[Creating a Hello World Application for Azure in Eclipse]: http://go.microsoft.com/fwlink/?LinkID=699533
 [Debugging Azure Applications in Eclipse]: http://go.microsoft.com/fwlink/?LinkID=699535
-[Implantações de grande porte]: http://go.microsoft.com/fwlink/?LinkID=699536
-[Propriedades de pontos de extremidade]: http://go.microsoft.com/fwlink/?LinkID=699525#endpoints_properties
-[Propriedades de variáveis do ambiente]: http://go.microsoft.com/fwlink/?LinkID=699525#environment_variables_properties
-[Plug-in das Ferramentas do HDInsight para Eclipse]: /azure/hdinsight/hdinsight-apache-spark-eclipse-tool-plugin
-[Como autenticar usuários da Web com o Serviço de Controle de Acesso do Azure usando o Eclipse]: http://go.microsoft.com/fwlink/?LinkID=264703
-[Como usar o descarregamento de SSL]: http://go.microsoft.com/fwlink/?LinkID=699545
-[Propriedades de armazenamento local]: http://go.microsoft.com/fwlink/?LinkID=699525#local_storage_properties
-[API de cliente do Microsoft Azure]: http://go.microsoft.com/fwlink/?LinkId=280397
-[Propriedades de configuração do servidor]: http://go.microsoft.com/fwlink/?LinkID=699525#server_configuration_properties
-[Afinidade da sessão]: http://go.microsoft.com/fwlink/?LinkID=699548
-[Descarregamento de SSL]: http://go.microsoft.com/fwlink/?LinkID=699549
-[Para criar uma nova conta de armazenamento]: http://go.microsoft.com/fwlink/?LinkID=699528#create_new
-[Tamanhos de máquina virtual e serviço de nuvem para o Azure]: http://go.microsoft.com/fwlink/?LinkId=466520
+[Deploying Large Deployments]: http://go.microsoft.com/fwlink/?LinkID=699536
+[Endpoints properties]: http://go.microsoft.com/fwlink/?LinkID=699525#endpoints_properties
+[Environment variables properties]: http://go.microsoft.com/fwlink/?LinkID=699525#environment_variables_properties
+[HDInsight Tools Plugin for Eclipse]: /azure/hdinsight/hdinsight-apache-spark-eclipse-tool-plugin
+[How to Authenticate Web Users with Azure Access Control Service Using Eclipse]: http://go.microsoft.com/fwlink/?LinkID=264703
+[How to Use SSL Offloading]: http://go.microsoft.com/fwlink/?LinkID=699545
+[Local storage properties]: http://go.microsoft.com/fwlink/?LinkID=699525#local_storage_properties
+[Microsoft Azure Client API]: http://go.microsoft.com/fwlink/?LinkId=280397
+[Server configuration properties]: http://go.microsoft.com/fwlink/?LinkID=699525#server_configuration_properties
+[Session Affinity]: http://go.microsoft.com/fwlink/?LinkID=699548
+[SSL Offloading]: http://go.microsoft.com/fwlink/?LinkID=699549
+[To create a new storage account]: http://go.microsoft.com/fwlink/?LinkID=699528#create_new
+[Virtual Machine and Cloud Service Sizes for Azure]: http://go.microsoft.com/fwlink/?LinkId=466520
 
 <!-- IMG List -->
 
