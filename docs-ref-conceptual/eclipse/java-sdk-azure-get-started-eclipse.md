@@ -14,11 +14,11 @@ ms.prod: azure
 ms.technology: azure
 ms.topic: get-started-article
 ms.service: multiple
-ms.openlocfilehash: 7903b84f013fea07feee04419b1773f38494d4d0
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: 740679197981f49d99b8d8251e257963d3030fb1
+ms.sourcegitcommit: 720c2eaf66532d277015610ec375c71e934d9ee6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="get-started-with-the-azure-libraries-using-eclipse"></a>Introdução às bibliotecas do Azure usando o Eclipse
 
@@ -87,10 +87,10 @@ Defina uma variável de ambiente `AZURE_AUTH_LOCATION` com o caminho completo pa
 export AZURE_AUTH_LOCATION=/Users/raisa/azureauth.properties
 ```
 
-Se estiver trabalhando em um ambiente Windows, adicione a variável às propriedades do sistema. Abra o PowerShell e, depois de substituir a segunda variável pelo caminho do seu arquivo, insira o seguinte comando:
+Se estiver trabalhando em um ambiente Windows, adicione a variável às propriedades do sistema. Abra uma janela do PowerShell com privilégios de administrador e, depois de substituir a segunda variável pelo caminho do seu arquivo, insira o seguinte comando:
 
 ```powershell
-[Environment]::SetEnvironmentVariable("AZURE_AUTH_LOCATION", "C:\<fullpath>\azureauth.properties", "Machine")
+setx AZURE_AUTH_LOCATION "C:\<fullpath>\azureauth.properties" /m
 ```
 
 ## <a name="create-a-new-maven-project"></a>Criar um novo projeto Maven
