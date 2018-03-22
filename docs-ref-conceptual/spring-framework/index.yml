@@ -4,27 +4,28 @@ title: Spring no Azure
 metadata:
   document_id: 
   title: Spring no Azure
-  description: "Introdução ao uso do Spring para desenvolver aplicativos no Azure."
+  description: Introdução ao uso do Spring para desenvolver aplicativos no Azure.
   keywords: Azure, Java, Maven, Spring, Boot
   author: rmcmurray
   ms.author: robmcm
   manager: routlaw
   ms.date: 02/01/2018
-  ms.topic: article
+  ms.topic: landing-page
   ms.prod: azure
   ms.technology: azure
   ms.devlang: java
   ms.service: multiple
-  ms.openlocfilehash: 60889d150a6ac3c73441aacb053e1f33ccc3fb88
-  ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+  ms.openlocfilehash: b949afbe05c2e79d5a1eff952e34c52f7a663b91
+  ms.sourcegitcommit: 02b70b9f5d34415c337601f0b818f7e0985fd884
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 02/03/2018
+  ms.lasthandoff: 03/22/2018
 sections:
 - items:
   - type: markdown
-    text: "[Spring](http://spring.io/) é uma estrutura de aplicativo de software livre desenvolvida por [Pivotal](https://pivotal.io) que fornece uma abordagem simplificada e modular para a criação de aplicativos Java.  Os guias de início rápido e tutoriais neste site mostram como desenvolver e implantar aplicativos Spring à nuvem.\n"
-- title: "Guias de introdução"
+    text: >
+      [Spring](http://spring.io/) é uma estrutura de aplicativo de software livre desenvolvida por [Pivotal](https://pivotal.io) que fornece uma abordagem simplificada e modular para a criação de aplicativos Java.  Os guias de início rápido e tutoriais neste site mostram como desenvolver e implantar aplicativos Spring à nuvem.
+- title: Guias de introdução
   items:
   - type: list
     style: icon48
@@ -48,7 +49,7 @@ sections:
 - title: Tutoriais Passo a Passo
   items:
   - type: markdown
-    text: "Saiba como integrar aplicativos Spring Boot a serviços do Azure."
+    text: Saiba como integrar aplicativos Spring Boot a serviços do Azure.
   - type: list
     style: unordered
     className: spaced noBullet
@@ -56,11 +57,11 @@ sections:
     - html: <a href="configure-spring-boot-initializer-java-app-with-redis-cache.md">Como configurar o aplicativo Inicializador do Spring Boot para usar o Cache Redis</a>
     - html: <a href="configure-spring-boot-starter-java-app-with-cosmos-db.md">Como usar o Iniciador do Spring Boot com uma API do DocumentDB do Azure Cosmos DB</a>
     - html: <a href="deploy-spring-boot-java-app-with-maven-plugin.md">Como usar o plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Azure</a>
-    - html: "<a href=\"deploy-spring-boot-java-app-on-kubernetes.md\">Implantar um Aplicativo Spring Boot no Kubernetes no Serviço de Contêiner do Azure</a>"
-    - html: "<a href=\"deploy-spring-boot-java-app-on-linux.md\">Implantar um aplicativo Web Spring Boot no Linux no Serviço de Contêiner do Azure</a>"
+    - html: <a href="deploy-spring-boot-java-app-on-kubernetes.md">Implantar um Aplicativo Spring Boot no Kubernetes no Serviço de Contêiner do Azure</a>
+    - html: <a href="deploy-spring-boot-java-app-on-linux.md">Implantar um aplicativo Web Spring Boot no Linux no Serviço de Contêiner do Azure</a>
     - html: <a href="deploy-spring-boot-java-app-using-fabric8-maven-plugin.md">Implantar um aplicativo Spring Boot usando o plug-in Fabric8 Maven</a>
-    - html: "<a href=\"deploy-containerized-spring-boot-java-app-with-maven-plugin.md\">Como usar o plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot em contêineres no Azure</a>"
-    - html: "<a href=\"deploy-spring-boot-java-app-from-container-registry-using-maven-plugin.md\">Como usar o Plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Registro de Contêiner do Azure ao Serviço de Aplicativo do Azure</a>"
+    - html: <a href="deploy-containerized-spring-boot-java-app-with-maven-plugin.md">Como usar o plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot em contêineres no Azure</a>
+    - html: <a href="deploy-spring-boot-java-app-from-container-registry-using-maven-plugin.md">Como usar o Plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Registro de Contêiner do Azure ao Serviço de Aplicativo do Azure</a>
 - title: Exemplos
   items:
   - type: list
@@ -69,13 +70,13 @@ sections:
     items:
     - html: <a href="https://github.com/Microsoft/azure-spring-boot/tree/master/azure-spring-boot-samples">Exemplos do Spring Boot para Azure</a>
     - html: <a href="https://github.com/spring-guides/">Guias do Spring </a>
-- title: "Referência"
+- title: Referência
   items:
   - type: list
     style: cards
     className: cardsD
     items:
     - title: Spring Framework
-      html: "<p><a href=\"https://spring.io/\">Spring Framework</a></p><p><a href=\"https://spring.io/docs\">Aprenda sobre o Spring</a></p><p><a href=\"https://spring.io/docs/reference\">Documentação de Referência</a></p>"
+      html: <p><a href="https://spring.io/">Spring Framework</a></p><p><a href="https://spring.io/docs">Aprenda sobre o Spring</a></p><p><a href="https://spring.io/docs/reference">Documentação de Referência</a></p>
     - title: Spring Boot
       html: <p><a href="https://projects.spring.io/spring-boot/">Spring Boot</a></p><p><a href="http://start.spring.io/">Spring Initializr</a></p>
