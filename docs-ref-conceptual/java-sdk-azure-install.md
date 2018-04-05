@@ -1,7 +1,7 @@
 ---
 title: Azure para desenvolvedores de Java Microsoft Docs
-description: "Java SDK e referência da API para Azure"
-keywords: "Java do Azure, referência de API de Java do Azure, biblioteca de classes Java do Azure, SDK do Azure"
+description: Java SDK e referência da API para Azure
+keywords: Java do Azure, referência de API de Java do Azure, biblioteca de classes Java do Azure, SDK do Azure
 author: routlaw
 manager: douge
 ms.assetid: 7b92e776-959b-4632-8b1d-047ce1417616
@@ -10,11 +10,11 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: 570f820e1349e1dfd01a6c7f323b5312c14c40c6
-ms.sourcegitcommit: 4b63ecd2c92a9115dfae018618e4e4046b061b3e
+ms.openlocfilehash: 5c8bb4b81080461285551573eefc0d76b47b2d3d
+ms.sourcegitcommit: 61030d025614b084e897809e603b2ec79900ec8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="azure-libraries-for-java"></a>Bibliotecas do Azure para Java
 
@@ -22,8 +22,8 @@ As bibliotecas do Azure o ajudam a consumir os serviços do Azure em seus aplica
 
 | | | | |
 |:-------------:|:----------:|:----:|:---:|
-| [Armazenamento do Azure](#azure-storage) | [Banco de Dados SQL](#sql-database)  | [Cache Redis](#redis-cache)   | [DocumentDB](#documentdb) |
-| [Barramento de Serviço](#servicebus)  | [Active Directory do Azure](#azuread) | [Cofre de Chaves](#keyvault)  | [Hub de Evento](#eventhub)
+| [Armazenamento do Azure](#azure-storage) | [Banco de Dados SQL](#sql-database)  | [Cache Redis](#redis-cache)   | [Azure Cosmos DB](#cosmos-db) |
+| [Barramento de Serviço](#servicebus)  | [Azure Active Directory](#azuread) | [Key Vault](#keyvault)  | [Hub de Evento](#eventhub)
 | [Serviço de IoT](#iotservice) | [Dispositivo IoT](#iotdevice) | [Data Lake](#datalake)  | [AppInsights](#appinsights) | 
 | [Batch](#batch) | [Gerenciar recursos do Azure](#management) |
 
@@ -97,9 +97,9 @@ Repositório de chave-valor de baixa latência e de alto desempenho.
 
 [Exemplos](/azure/redis-cache/cache-java-get-started) | [Referência](http://xetorthio.github.io/jedis)  | [GitHub](https://github.com/xetorthio/jedis)  | [Notas de versão](https://github.com/xetorthio/jedis/releases)  
 
-<a name="documentdb"></a>
+<a name="cosmos-db"></a>
 
-### <a name="cosmos-dbazuredocumentdbdocumentdb-introduction"></a>[Banco de Dados Cosmos](/azure/documentdb/documentdb-introduction)
+### <a name="azure-cosmos-dbazurecosmos-dbintroduction"></a>[Azure Cosmos DB](/azure/cosmos-db/introduction)
 
 Banco de dados NoSQL escalonável com documentos JSON e uma sintaxe de consulta SQL ou JavaScript.   
 
@@ -111,7 +111,7 @@ Banco de dados NoSQL escalonável com documentos JSON e uma sintaxe de consulta 
 </dependency>
 ```
 
-[Exemplos](/azure/documentdb/documentdb-java-application) | [Referência](http://azure.github.io/azure-documentdb-java/) | [GitHub](https://github.com/Azure/azure-documentdb-java)   | [Notas de versão](https://github.com/Azure/azure-documentdb-java/blob/master/changelog.md)
+[Exemplos](/azure/cosmos-db/sql-api-java-application) | [Referência](http://azure.github.io/azure-documentdb-java/) | [GitHub](https://github.com/Azure/azure-documentdb-java)   | [Notas de versão](https://github.com/Azure/azure-documentdb-java/blob/master/changelog.md)
 
 <a name="servicebus"></a>
  
@@ -131,7 +131,7 @@ Banco de dados NoSQL escalonável com documentos JSON e uma sintaxe de consulta 
   
 <a name="azuread"></a>
 
-### <a name="azure-active-directoryazureactive-directoryactive-directory-whatis"></a>[Active Directory do Azure](/azure/active-directory/active-directory-whatis)   
+### <a name="azure-active-directoryazureactive-directoryactive-directory-whatis"></a>[Azure Active Directory](/azure/active-directory/active-directory-whatis)   
 
 Gerenciamento de identidade e logon seguro em seus aplicativos.
 
@@ -147,7 +147,7 @@ Gerenciamento de identidade e logon seguro em seus aplicativos.
  
 <a name="keyvault"></a>
 
-### <a name="key-vaultazurekey-vault"></a>[Cofre de Chaves](/azure/key-vault) 
+### <a name="key-vaultazurekey-vault"></a>[Key Vault](/azure/key-vault) 
 
 Acessar com segurança as chaves e segredos de seus aplicativos. 
 
