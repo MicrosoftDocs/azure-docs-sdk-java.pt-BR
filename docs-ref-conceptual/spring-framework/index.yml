@@ -15,11 +15,11 @@ metadata:
   ms.technology: azure
   ms.devlang: java
   ms.service: multiple
-  ms.openlocfilehash: b949afbe05c2e79d5a1eff952e34c52f7a663b91
-  ms.sourcegitcommit: 02b70b9f5d34415c337601f0b818f7e0985fd884
+  ms.openlocfilehash: ff5b387bbfba864ffed28ef6671180fa48aa4733
+  ms.sourcegitcommit: 61030d025614b084e897809e603b2ec79900ec8d
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 03/22/2018
+  ms.lasthandoff: 04/03/2018
 sections:
 - items:
   - type: markdown
@@ -55,7 +55,7 @@ sections:
     className: spaced noBullet
     items:
     - html: <a href="configure-spring-boot-initializer-java-app-with-redis-cache.md">Como configurar o aplicativo Inicializador do Spring Boot para usar o Cache Redis</a>
-    - html: <a href="configure-spring-boot-starter-java-app-with-cosmos-db.md">Como usar o Iniciador do Spring Boot com uma API do DocumentDB do Azure Cosmos DB</a>
+    - html: <a href="configure-spring-boot-starter-java-app-with-cosmos-db.md">Como usar o Inicializador do Spring Boot com a API SQL do Azure Cosmos DB</a>
     - html: <a href="deploy-spring-boot-java-app-with-maven-plugin.md">Como usar o plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Azure</a>
     - html: <a href="deploy-spring-boot-java-app-on-kubernetes.md">Implantar um Aplicativo Spring Boot no Kubernetes no Serviço de Contêiner do Azure</a>
     - html: <a href="deploy-spring-boot-java-app-on-linux.md">Implantar um aplicativo Web Spring Boot no Linux no Serviço de Contêiner do Azure</a>
