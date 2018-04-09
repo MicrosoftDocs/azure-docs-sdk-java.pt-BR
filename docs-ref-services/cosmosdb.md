@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas do Azure Cosmos DB para Java
-description: "Documentação de referência para as bibliotecas de cliente de Java para o Azure Cosmos DB"
-keywords: Azure, Java, SDK, API, SQL, banco de dados, MongoDB, Cosmos DB, NoSQL, DocumentDB
+description: Documentação de referência para as bibliotecas de cliente de Java para o Azure Cosmos DB
+keywords: Azure, Java, SDK, API, SQL, banco de dados, MongoDB, Cosmos DB, NoSQL
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -11,23 +11,23 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: cosmosdb
-ms.openlocfilehash: 393f57df0ea2076c6ee7045b56883ee088716fad
-ms.sourcegitcommit: 93107ca9ed76a29573a5faf8f39737c85e6bbaff
+ms.openlocfilehash: 845106b773de03aba8dd5edb9a18c6b036cf3215
+ms.sourcegitcommit: 61030d025614b084e897809e603b2ec79900ec8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="azure-cosmos-db-libraries-for-java"></a>Bibliotecas do Azure Cosmos DB para Java
 
 ## <a name="overview"></a>Visão geral
 
-Armazenar e consultar chave-valor, documento JSON, grafo e dados de colunas em um banco de dados globalmente distribuído com [Cosmos DB](/azure/cosmos-db/introduction).
+Armazenar e consultar o valor-chave, documento JSON, gráfico e dados de colunas em um banco de dados globalmente distribuído com o [Azure Cosmos DB](/azure/cosmos-db/introduction).
 
-Para começar a usar o Cosmos DB, consulte [Azure Cosmos DB: Criar um aplicativo de API com o Java e o portal do Azure](/azure/cosmos-db/create-documentdb-java).
+Para começar a usar o Azure Cosmos DB, consulte [Azure Cosmos DB: Criar um aplicativo de API com o Java e o Portal do Azure](/azure/cosmos-db/create-sql-api-java).
 
 ## <a name="client-library"></a>Biblioteca do cliente
 
-Conectar-se ao Cosmos DB usando a biblioteca de cliente [DocumentDB](/azure/cosmos-db/documentdb-introduction) para trabalhar com dados JSON com [sintaxe de consulta SQL](/azure/cosmos-db/documentdb-sql-query).
+Conecte o Azure Cosmos DB usando a biblioteca de clientes [API do SQL](/azure/cosmos-db/sql-api-introduction) para trabalhar com os dados JSON e a [sintaxe de consulta do SQL](/azure/cosmos-db/sql-api-sql-query).
 
 [Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a biblioteca do cliente de Cosmos DB em seu projeto.
 
@@ -65,7 +65,7 @@ List<Document> results = client.queryDocuments("dbs/" + DATABASE_ID + "/colls/" 
 
 [Desenvolver um aplicativo Java usando a API do MongoDB do Azure Cosmos DB][2]   
 [Desenvolver um aplicativo Java usando a API do Graph do Azure Cosmos DB][3]   
-[Desenvolver um aplicativo Java usando a API do DocumentDB do Azure Cosmos DB][4]        
+[Desenvolver um aplicativo Java usando a API SQL do Azure Cosmos DB][4]        
 
 Explore mais [exemplos de código Java para o Azure Cosmos DB](https://azure.microsoft.com/resources/samples/?platform=java&term=cosmos) que você pode usar em seus aplicativos.
 
