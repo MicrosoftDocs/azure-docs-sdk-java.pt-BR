@@ -1,12 +1,12 @@
 ---
-title: Como usar o Iniciador do Spring Boot com uma API do DocumentDB do Azure Cosmos DB
-description: Saiba como configurar um aplicativo criado com o inicializador do Spring Boot com a API do DocumentDB do Azure Cosmos DB.
+title: Como usar o Inicializador do Spring Boot com a API SQL do Azure Cosmos DB
+description: Saiba como configurar um aplicativo criado com o Inicializador do Spring Boot com a API SQL do Azure Cosmos DB.
 services: cosmos-db
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm;yungez;kevinzha
 ms.date: 02/01/2018
 ms.devlang: java
@@ -14,19 +14,19 @@ ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: 8190a7c45443ead9855d5a62194e02d7e9a919ee
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: 85494fc310e2bb31cfe8636b5e866bb3f4856cd4
+ms.sourcegitcommit: 3a746e8ae9ef0e6e82fccf9aca54eae8c9c1cdca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 04/08/2018
 ---
-# <a name="how-to-use-the-spring-boot-starter-with-azure-cosmos-db-documentdb-api"></a>Como usar o Iniciador do Spring Boot com uma API do DocumentDB do Azure Cosmos DB
+# <a name="how-to-use-the-spring-boot-starter-with-the-azure-cosmos-db-sql-api"></a>Como usar o Inicializador do Spring Boot com a API SQL do Azure Cosmos DB
 
 ## <a name="overview"></a>Visão geral
 
-O Azure Cosmos DB é um serviço de banco de dados distribuído globalmente que permite aos desenvolvedores trabalhar com os dados usando uma variedade de APIs padrão, como DocumentDB, MongoDB, Graph e APIs de Tabela. O Iniciador do Spring Boot da Microsoft permite aos desenvolvedores usar aplicativos Spring Boot que se integrem facilmente ao Azure Cosmos DB por meio de APIs do DocumentDB.
+O Azure Cosmos DB é um serviço de banco de dados distribuído globalmente que permite aos desenvolvedores trabalhar com os dados usando várias APIs padrão, como as APIs SQL, MongoDB, Graph e de Tabela. O Inicializador do Spring Boot da Microsoft permite aos desenvolvedores usar aplicativos Spring Boot que se integram facilmente ao Azure Cosmos DB por meio da API SQL.
 
-Este artigo demonstra como criar um Azure Cosmos DB usando o portal do Azure, depois usando o **[Spring Initializr]** para criar um aplicativo Java personalizado e adicionando a funcionalidade Spring Boot ao seu aplicativo personalizado para armazenar e recuperar dados de seu Azure Cosmos DB usando a API do DocumentDB.
+Este artigo demonstra como criar um Azure Cosmos DB usando o Portal do Azure, então, usar o **[Spring Initializr]** para criar um aplicativo java personalizado e adicionar a funcionalidade do Inicializador do Spring Boot ao seu aplicativo personalizado para armazenar e recuperar dados em seu Azure Cosmos DB usando a API SQL.
 
 ## <a name="prerequisites"></a>pré-requisitos
 
@@ -38,7 +38,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
 ## <a name="create-an-azure-cosmos-db-by-using-the-azure-portal"></a>Criar um Azure Cosmos DB usando o portal do Azure
 
-1. Navegue até o portal do Azure em <https://portal.azure.com/> e clique em **+Novo**.
+1. Navegue até o Portal do Azure em <https://portal.azure.com/> e clique em **+Novo**.
 
    ![Portal do Azure][AZ01]
 
@@ -295,7 +295,7 @@ Para obter mais informações sobre como usar o Azure Cosmos DB e Java, consulte
 
 * [Documentação do Azure Cosmos DB].
 
-* [Azure Cosmos DB: crie um aplicativo de API do DocumentDB com Java e o portal do Azure][Build a DocumentDB API app with Java]
+* [Azure Cosmos DB: Criar um banco de dados de documento usando o Java e o Portal do Azure][Build a SQL API app with Java]
 
 Para obter mais informações sobre como usar aplicativos Spring Boot no Azure, confira os seguintes artigos:
 
@@ -313,7 +313,7 @@ O **[Spring Framework]** é uma solução de software livre que ajuda os desenvo
 
 [Documentação do Azure Cosmos DB]: /azure/cosmos-db/
 [Azure para desenvolvedores Java]: https://docs.microsoft.com/java/azure/
-[Build a DocumentDB API app with Java]: https://docs.microsoft.com/azure/cosmos-db/create-documentdb-java
+[Build a SQL API app with Java]: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-java 
 [conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
 [Ferramentas Java para Visual Studio Team Services]: https://java.visualstudio.com/
 [benefício de assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/

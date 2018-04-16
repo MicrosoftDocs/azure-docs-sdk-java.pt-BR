@@ -4,6 +4,12 @@
     - name: Guias de início rápido de Java
       expanded: true
       items:
+        - name: Service Fabric
+          items:
+            - name: Spring Boot
+              href: /azure/service-fabric/service-fabric-quickstart-java-spring-boot
+            - name: Reliable Services
+              href: /azure/service-fabric/service-fabric-quickstart-java-reliable-services
         - name: Aplicativos Web
           href: /azure/app-service-web/app-service-web-get-started-java
         - name: Banco de dados SQL
@@ -45,6 +51,8 @@
       href: /java/azure/spring-framework/index
     - name: Tutoriais de Java
       items:
+        - name: Implantar microsserviços com o Service Fabric
+          href: /azure/service-fabric/service-fabric-tutorial-create-java-app
         - name: Spring Boot + MySQL
           href: /azure/app-service-web/app-service-web-tutorial-java-mysql
         - name: Jenkins CI/CD para Serviço de Aplicativo
@@ -65,6 +73,8 @@
               href: java-sdk-azure-concepts.md
         - name: Spring Boot
           items:
+            - name: Implantar no Service Fabric
+              href: /azure/service-fabric/service-fabric-quickstart-java-spring-boot
             - name: Implantar com Docker e Kubernetes
               href: /azure/container-service/container-service-deploy-spring-boot-app-on-kubernetes
               maintainContext: true
@@ -75,6 +85,8 @@
           href: /azure/app-service-web/app-service-web-deploy-spring-boot-app-with-maven-plugin
     - name: Exemplos de código Java
       items:
+        - name: Service Fabric
+          href: 'https://azure.microsoft.com/resources/samples/service-fabric-java-getting-started/'
         - name: Máquinas virtuais
           href: java-sdk-azure-virtual-machine-samples.md
         - name: Aplicativos Web
