@@ -3,8 +3,8 @@ documentType: LandingData
 title: Azure para desenvolvedores Java
 metadata:
   document_id: 1152a217-eb0e-45e9-b01b-bd27080d615e
-  title: "Azure para desenvolvedores Java - Tutoriais, Referência de API"
-  description: "Comece a desenvolver aplicativos para a nuvem com esses ótimos tutoriais e ferramentas para desenvolvedores Java."
+  title: Azure para desenvolvedores Java - Tutoriais, Referência de API
+  description: Comece a desenvolver aplicativos para a nuvem com esses ótimos tutoriais e ferramentas para desenvolvedores Java.
   keywords: Azure, Java, SDK, API, Maven, Spring
   author: rloutlaw
   ms.author: routlaw
@@ -15,11 +15,11 @@ metadata:
   ms.technology: azure
   ms.devlang: java
   ms.service: multiple
-  ms.openlocfilehash: 41bed73d4d1315354cd27ee9e531baf8630af68c
-  ms.sourcegitcommit: 8962fd9a028de0197c72fd89c6c9b2a8f38abc66
+  ms.openlocfilehash: c84ab6296031b17542c36f42a6224f40fceb0dad
+  ms.sourcegitcommit: 3a746e8ae9ef0e6e82fccf9aca54eae8c9c1cdca
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 01/06/2018
+  ms.lasthandoff: 04/08/2018
 sections:
 - items:
   - type: markdown
@@ -35,26 +35,26 @@ sections:
       html: <p>Implantar seu primeiro aplicativo Web no Azure</p>
       image:
         src: https://docs.microsoft.com/media/common/i_get-started.svg
-      title: "Introdução"
+      title: Introdução
     - href: https://azure.microsoft.com/resources/samples/?platform=java&view=azure-java
-      html: "<p>Exemplos de código do Azure usando Java</p>"
+      html: <p>Exemplos de código do Azure usando Java</p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
-      title: "Exemplos de código"
+      title: Exemplos de código
     - href: java-azure-tools.md
       html: <p>Ferramentas de &amp; plugins do IDE</p>
       image:
         src: https://docs.microsoft.com/media/common/i_download-install.svg
-      title: "Plug-ins IntelliJ, Maven, Eclipse e Código VS"
+      title: Plug-ins IntelliJ, Maven, Eclipse e Código VS
     - href: java-sdk-azure-install.md
-      html: "<p>Referência de API</p>"
+      html: <p>Referência de API</p>
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: Bibliotecas do Azure para Java
-- title: "Guias de introdução"
+- title: Guias de introdução
   items:
   - type: paragraph
-    text: "Saiba como usar Java com serviços do Azure."
+    text: Saiba como usar Java com serviços do Azure.
   - type: list
     style: cards
     className: cardsM
@@ -70,7 +70,7 @@ sections:
       href: https://docs.microsoft.com/java/azure/spring-framework/deploy-containerized-spring-boot-java-app-with-maven-plugin
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
-      title: "Criar uma função Java sem servidor"
+      title: Criar uma função Java sem servidor
       href: https://docs.microsoft.com/azure/azure-functions/functions-create-first-java-maven
     - image:
         src: https://docs.microsoft.com/javascript/azure/media/k8s_logo.svg
@@ -78,11 +78,11 @@ sections:
       href: https://docs.microsoft.com/azure/container-service/kubernetes/container-service-deploy-spring-boot-app-on-kubernetes
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/fabric.svg
-      title: "Microsserviços com o Service Fabric"
+      title: Microsserviços com o Service Fabric
       href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-java-spring-boot
     - image:
         src: https://docs.microsoft.com/java/docs-ref-conceptual/media/jenkins_logo.svg
-      title: "CI/CD para Serviço de Aplicativo com Jenkins®"
+      title: CI/CD para Serviço de Aplicativo com Jenkins®
       href: https://docs.microsoft.com/azure/jenkins/java-deploy-webapp-tutorial
 - title: Exemplos
   items:
@@ -92,3 +92,4 @@ sections:
     - html: <a href="https://github.com/Azure-Samples/mysql-spring-boot-todo">Criar um aplicativo Web com Spring Boot e MySQL</a>
     - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-java-getting-started/">Armazenamento de Blobs do Azure com Java</a>
     - html: <a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-java-getting-started/">Conectar-se ao Azure Cosmos DB com a API do MongoDB</a>
+    - html: <a href="https://azure.microsoft.com/resources/samples/service-fabric-java-getting-started/">Microsserviços Java com o Service Fabric</a>
