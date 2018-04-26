@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas do Azure Active Directory para Java
-description: "Documentação de referência para as bibliotecas de gerenciamento e de cliente de Java para o Azure Active Directory"
-keywords: "Azure, Java, SDK, API, SQL, autenticação, AAD, Active Directory, Graph, OAuth 2.0"
+description: Documentação de referência para as bibliotecas de gerenciamento e de cliente de Java para o Azure Active Directory
+keywords: Azure, Java, SDK, API, SQL, autenticação, AAD, Active Directory, Graph, OAuth 2.0
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: active-directory
-ms.openlocfilehash: 081b8455a6cd8f26ce714328d10ce25ea6a07e3b
-ms.sourcegitcommit: 4b63ecd2c92a9115dfae018618e4e4046b061b3e
+ms.openlocfilehash: 28063a1a4299fd78ba76533d0ffdc0346434eea2
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-active-directory-libraries-for-java"></a>Bibliotecas do Azure Active Directory para Java
 
@@ -55,7 +55,7 @@ System.out.println("Refresh Token - " + result.getRefreshToken());
 System.out.println("ID Token - " + result.getIdToken());
 ```
 
-## <a name="management-api"></a>API de Gerenciamento
+## <a name="management-api"></a>API de gerenciamento
 
 Configurar [controle de acesso baseado em função](/azure/active-directory/role-based-access-control-what-is) e atribuir identidades (como usuários e [entidades de serviço](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)) para essas funções com a API de gerenciamento. 
 
@@ -86,7 +86,7 @@ RoleAssignment roleAssignment2 = authenticated.roleAssignments()
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de gerenciamento](/java/api/overview/azure/activedirectory/managementapi)
+> [Explorar as APIs de gerenciamento](/java/api/overview/azure/activedirectory/management)
 
 
 ## <a name="samples"></a>Exemplos

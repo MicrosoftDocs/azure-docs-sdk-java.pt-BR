@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas de DNS do Azure para Java
-description: "Documentação de referência para as bibliotecas de gerenciamento de Java de DNS do Azure"
-keywords: "Azure, Java, SDK, API, domínios, DNS, nome, service, serviço de nome de domínio"
+description: Documentação de referência para as bibliotecas de gerenciamento de Java de DNS do Azure
+keywords: Azure, Java, SDK, API, domínios, DNS, nome, service, serviço de nome de domínio
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: dns
-ms.openlocfilehash: adac8e21a401bc91490b92fc5ccf90443eea569f
-ms.sourcegitcommit: f6bf497d9b98f0608aefacf1e914d8be52964234
+ms.openlocfilehash: 2cd8fe7ee4d6a87da32a349fe8f1d2815d3fd36d
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-traffic-manager-libraries-for-java"></a>Bibliotecas do Gerenciador de Tráfego do Azure para Java
 
@@ -25,7 +25,7 @@ Fornecer resolução de nome de domínio e gerenciar seus registros DNS usando a
 
 Para começar a usar o DNS do Azure, consulte [Introdução ao DNS do Azure usando a CLI do Azure 2.0](/azure/dns/dns-getstarted-cli).
 
-## <a name="management-api"></a>API de Gerenciamento
+## <a name="management-api"></a>API de gerenciamento
 
 Criar zonas de DNS e adicionar registros às zonas com a API de gerenciamento.
 
@@ -53,7 +53,7 @@ rootDnsZone = rootDnsZone.update()
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de gerenciamento](/java/api/overview/azure/dns/managementapi)
+> [Explorar as APIs de gerenciamento](/java/api/overview/azure/dns/management)
 
 ## <a name="samples"></a>Exemplos
 

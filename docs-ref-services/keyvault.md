@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas do Azure Key Vault para Java
-description: "Visão geral das bibliotecas do Azure Key Vault para Java"
+description: Visão geral das bibliotecas do Azure Key Vault para Java
 keywords: Azure, Java, SDK, API, keyvault, seguro, chaves, segredos, cofre
 author: rloutlaw
 ms.author: routlaw
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: keyvault
-ms.openlocfilehash: 51ac51f5436397a0c9f1a4572dcf79a40f10b538
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: 396d02b8bba5878ffb24f5f8994ae29aef36cfdc
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-key-vault-libraries-for-java"></a>Bibliotecas do Azure Key Vault para Java
 
@@ -45,15 +45,15 @@ Recuperar uma [chave da Web JSON](https://tools.ietf.org/html/draft-ietf-jose-js
 
 ```java
 KeyVaultClient kvc = new KeyVaultClient(credentials);
-KeyBundle returnedKeyBundle = getKey(vaultUrl, keyName);
+KeyBundle returnedKeyBundle = kvc.getKey(vaultUrl, keyName);
 JsonWebKey jsonKey = returnedKeyBundle.key();
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de Cliente](/java/api/overview/azure/keyvault/clientlibrary)
+> [Explorar as APIs de cliente](/java/api/overview/azure/keyvault/client)
 
 
-## <a name="management-api"></a>API de Gerenciamento
+## <a name="management-api"></a>API de gerenciamento
 
 Use as bibliotecas de gerenciamento do Azure Key Vault para criar cofres de chaves, autorizar aplicativos e gerenciar permissões. 
 
@@ -83,7 +83,7 @@ vault1 = vault1.update()
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de gerenciamento](/java/api/overview/azure/keyvault/managementapi)
+> [Explorar as APIs de gerenciamento](/java/api/overview/azure/keyvault/management)
 
 
 ## <a name="samples"></a>Exemplos

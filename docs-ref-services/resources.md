@@ -1,6 +1,6 @@
 ---
 title: Biblioteca do Azure Resource Manager para Java
-description: "Documentação de referência para as bibliotecas do Gerenciador de Recursos de Java"
+description: Documentação de referência para as bibliotecas do Gerenciador de Recursos de Java
 keywords: Azure, Java, SDK, API, grupos de recursos, arm, gerenciador de recursos
 author: rloutlaw
 ms.author: routlaw
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: data-lake-store
-ms.openlocfilehash: 56199b87fa64e9cbf0a14716a58c01f11f0e433b
-ms.sourcegitcommit: 4b63ecd2c92a9115dfae018618e4e4046b061b3e
+ms.openlocfilehash: 326357e5b4667cc06a6058cb29e9685428174dee
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-resource-manager-libraries-for-java"></a>Biblioteca do Azure Resource Manager para Java
 
@@ -23,7 +23,7 @@ ms.lasthandoff: 10/14/2017
 
 Implantar, monitorar e gerenciar recursos em grupos com o [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
 
-## <a name="management-api"></a>API de Gerenciamento
+## <a name="management-api"></a>API de gerenciamento
 
 Use a API de gerenciamento para criar grupos de recursos e implantar recursos de modelos.
 
@@ -49,7 +49,7 @@ ResourceGroup resourceGroup = azure.resourceGroups().define("myResourceGroup")
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de gerenciamento](/java/api/overview/azure/resources/managementapi)
+> [Explorar as APIs de gerenciamento](/java/api/overview/azure/resources/management)
 
 ## <a name="samples"></a>Exemplos
 

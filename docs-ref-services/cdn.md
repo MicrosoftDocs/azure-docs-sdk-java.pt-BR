@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas CDN do Azure para Java
-description: "Documentação de referência para as bibliotecas de gerenciamento CDN de Java"
-keywords: "Azure, Java, SDK, API, conteúdo, distribuição, rede, CDN"
+description: Documentação de referência para as bibliotecas de gerenciamento CDN de Java
+keywords: Azure, Java, SDK, API, conteúdo, distribuição, rede, CDN
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: cdn
-ms.openlocfilehash: 91df958d2d78fb4fd959c228b28c6ae003716be6
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: 199e9b4b2b2431e23954d24e4adeb4326eb4741c
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-cdn-libraries-for-java"></a>Bibliotecas CDN do Azure para Java
 
@@ -25,7 +25,7 @@ Armazenar em cache conteúdo Web estático em locais estrategicamente posicionad
 
 Para começar a usar a CDN do Azure, consulte [Introdução à CDN do Azure](/azure/cdn/cdn-create-new-endpoint).
 
-## <a name="management-api"></a>API de Gerenciamento
+## <a name="management-api"></a>API de gerenciamento
 
 Criar perfis CDN, definir pontos de extremidade e adicionar conteúdo à CDN usando a API de gerenciamento.
 
@@ -62,7 +62,7 @@ for (CdnEndpoint endpoint : profile.endpoints().values()) {
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de gerenciamento](/java/api/overview/azure/cdn/managementapi)
+> [Explorar as APIs de gerenciamento](/java/api/overview/azure/cdn/management)
 
 ## <a name="samples"></a>Exemplos
 

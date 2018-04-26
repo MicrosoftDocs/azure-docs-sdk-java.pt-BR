@@ -1,7 +1,7 @@
 ---
-title: "Bibliotecas de Serviço de Aplicativo do Azure para Java"
-description: "Implantação automática de aplicativos Web no Serviço de Aplicativo do Azure usando as APIs de gerenciamento do Azure."
-keywords: "Azure, Java, SDK, API, aplicativos Web, móvel, Serviço de Aplicativo"
+title: Bibliotecas de Serviço de Aplicativo do Azure para Java
+description: Implantação automática de aplicativos Web no Serviço de Aplicativo do Azure usando as APIs de gerenciamento do Azure.
+keywords: Azure, Java, SDK, API, aplicativos Web, móvel, Serviço de Aplicativo
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: appservice
-ms.openlocfilehash: 7e1d7eed9d8fa8d2f872f2902e2ce3f2b3dab7b6
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: adbb527666553ecc3039ce35c035d017f502c801
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-app-service-libraries-for-java"></a>Bibliotecas de Serviço de Aplicativo do Azure para Java
 
@@ -25,7 +25,7 @@ Implantar e gerenciar sites, aplicativos Web e APIs REST com o [Serviço de Apli
 
 Para começar a usar o Serviço de Aplicativo do Azure, consulte [Criar seu primeiro aplicativo Web Java no Azure](/azure/app-service-web/app-service-web-get-started-java).
 
-## <a name="management-api"></a>API de Gerenciamento
+## <a name="management-api"></a>API de gerenciamento
 
 Implantar, dimensionar e configurar aplicativos no Serviço de Aplicativo do Azure com a API de gerenciamento.
 
@@ -40,7 +40,7 @@ Implantar, dimensionar e configurar aplicativos no Serviço de Aplicativo do Azu
 ```   
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de gerenciamento](/java/api/overview/azure)
+> [Explorar as APIs de gerenciamento](/java/api/overview/azure/appservice/management)
 
 ### <a name="example"></a>Exemplo
 

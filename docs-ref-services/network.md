@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de Rede do Azure para Java
-description: "Documentação de referência para as bibliotecas de gerenciamento de Rede do Azure de Java"
+description: Documentação de referência para as bibliotecas de gerenciamento de Rede do Azure de Java
 keywords: Azure, Java, SDK, API, rede, balanceamento de carga, rede virtual, sub-rede
 author: rloutlaw
 ms.author: routlaw
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: networking
-ms.openlocfilehash: 6eed6f45ee239db1286e94f210341febb189378d
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: bb74ccd8826df7b627e0b5f4e4ffd2da44b2642d
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-network-libraries-for-java"></a>Bibliotecas de Rede do Azure para Java
 
@@ -25,7 +25,7 @@ Conectar recursos do Azure, filtrar e balancear o tráfego e gerenciar o roteame
 
 Para começar a usar a Rede do Azure, consulte [Criar sua primeira rede virtual](/azure/virtual-network/virtual-network-get-started-vnet-subnet).
 
-## <a name="management-api"></a>API de Gerenciamento
+## <a name="management-api"></a>API de gerenciamento
 
 Criar e gerenciar [redes virtuais](/azure/virtual-network/virtual-networks-overview) do Azure , [ExpressRoutes](/azure/expressroute/) , e [Gateways de Aplicativo](/azure/application-gateway/) com a API de gerenciamento.
 
@@ -55,7 +55,7 @@ Network virtualNetwork1 = azure.networks().define(vnetName1)
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de gerenciamento](/java/api/overview/azure/networking/managementapi)
+> [Explorar as APIs de gerenciamento](/java/api/overview/azure/networking/management)
 
 ## <a name="samples"></a>Exemplos
 

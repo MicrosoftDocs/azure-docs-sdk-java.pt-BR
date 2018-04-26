@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas do Azure Application Insights para Java
-description: "Documentação de referência para a API de gerenciamento de Java para o Azure Application Insights"
-keywords: "Azure, Java, SDK, API, AppInsights, telemetria, diagnósticos, rastreamento, logs, desempenho"
+description: Documentação de referência para a API de gerenciamento de Java para o Azure Application Insights
+keywords: Azure, Java, SDK, API, AppInsights, telemetria, diagnósticos, rastreamento, logs, desempenho
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: appinsights
-ms.openlocfilehash: 9f943dc87d9e9b3e015407eea4dfd2900040da37
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.openlocfilehash: d881ff66ad806e13f7d2cbafff6ce85c23240304
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-application-insights-libraries-for-java"></a>Bibliotecas do Azure Application Insights para Java
 
@@ -51,7 +51,7 @@ Criar uma nova entrada de métrica e registrar um valor para ela.
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de cliente](/java/api/overview/azure/appinsights/clientlibrary)
+> [Explorar as APIs de cliente](/java/api/overview/azure/appinsights/client)
 
 ## <a name="samples"></a>Exemplos
 

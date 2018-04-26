@@ -1,7 +1,7 @@
 ---
-title: "Bibliotecas de Máquina Virtual do Azure para Java"
-description: 
-keywords: "Azure, Java, SDK, API, Computação, Máquinas Virtuais"
+title: Bibliotecas de Máquina Virtual do Azure para Java
+description: ''
+keywords: Azure, Java, SDK, API, Computação, Máquinas Virtuais
 author: douge
 ms.author: douge
 manager: douge
@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: compute
-ms.openlocfilehash: f9a816d5787e41a4ee4643b1bc66bf21192ea298
-ms.sourcegitcommit: 634ab7578c73a219f8f3a2a6d43999d9d372cb43
+ms.openlocfilehash: a54bc40e1d28ba6ee1d8b0638cb259adbb69d78d
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-virtual-machine-libraries"></a>Bibliotecas de máquina virtual do Azure
 
@@ -25,7 +25,7 @@ Recursos de computação escalonáveis, sob demanda que executam Linux ou Window
 
 Para começar a usar máquinas virtuais do Azure, consulte [Criar uma máquina virtual Linux com o portal do Azure](/azure/virtual-machines/linux/quick-create-portal).
 
-## <a name="management-api"></a>API de Gerenciamento
+## <a name="management-api"></a>API de gerenciamento
 
 Criar, configurar e expandir máquinas virtuais Windows e Linux no Azure a partir do seu código com a API de gerenciamento.
 
@@ -59,7 +59,7 @@ VirtualMachine newLinuxVm = azure.virtualMachines().define(linuxVmName)
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar as APIs de gerenciamento](/java/api/overview/azure/virtualmachines/managementapi)
+> [Explorar as APIs de gerenciamento](/java/api/overview/azure/virtualmachines/management)
 
 
 ## <a name="samples"></a>Exemplos
