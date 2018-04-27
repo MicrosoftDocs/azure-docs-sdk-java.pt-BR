@@ -14,11 +14,11 @@ ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: 85494fc310e2bb31cfe8636b5e866bb3f4856cd4
-ms.sourcegitcommit: 3a746e8ae9ef0e6e82fccf9aca54eae8c9c1cdca
+ms.openlocfilehash: 6cf999f3db397760709476dae1f5c0fd83503725
+ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-spring-boot-starter-with-the-azure-cosmos-db-sql-api"></a>Como usar o Inicializador do Spring Boot com a API SQL do Azure Cosmos DB
 
@@ -297,9 +297,11 @@ Para obter mais informações sobre como usar o Azure Cosmos DB e Java, consulte
 
 * [Azure Cosmos DB: Criar um banco de dados de documento usando o Java e o Portal do Azure][Build a SQL API app with Java]
 
+* [Spring Data para a API do SQL do Azure Cosmos DB]
+
 Para obter mais informações sobre como usar aplicativos Spring Boot no Azure, confira os seguintes artigos:
 
-* [Iniciador do DocumenDB do Spring Boot para Azure](https://github.com/Microsoft/azure-spring-boot-starters/tree/master/azure-documentdb-spring-boot-starter-sample)
+* [Iniciador do DocumenDB do Spring Boot para Azure]
 
 * [Implantar um aplicativo Spring Boot no Serviço de Aplicativo do Azure](deploy-spring-boot-java-web-app-on-azure.md)
 
@@ -314,6 +316,8 @@ O **[Spring Framework]** é uma solução de software livre que ajuda os desenvo
 [Documentação do Azure Cosmos DB]: /azure/cosmos-db/
 [Azure para desenvolvedores Java]: https://docs.microsoft.com/java/azure/
 [Build a SQL API app with Java]: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-java 
+[Spring Data para a API do SQL do Azure Cosmos DB]: https://azure.microsoft.com/blog/spring-data-azure-cosmos-db-nosql-data-access-on-azure/
+[Iniciador do DocumenDB do Spring Boot para Azure]:https://github.com/Microsoft/azure-spring-boot-starters/tree/master/azure-documentdb-spring-boot-starter-sample
 [conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
 [Ferramentas Java para Visual Studio Team Services]: https://java.visualstudio.com/
 [benefício de assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
