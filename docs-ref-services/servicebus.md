@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: service-bus
-ms.openlocfilehash: 7468d9b920debc778e7e3d298fbcb913add6afdd
-ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
+ms.openlocfilehash: ed830b4f7ffa104174205f75ea2923235029ea80
+ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="service-bus-libraries-for-java"></a>Bibliotecas de Barramento de Serviço para Java
 
@@ -33,15 +33,18 @@ Saiba mais sobre conceitos de Barramento de Serviço [na seção de documentaç�
 
 Para desenvolvedores de Java, o Barramento de serviço fornece uma API nativa compatível com a Microsoft e o Barramento de Serviço também pode ser usado com bibliotecas compatíveis do AMQP 1.0 como o provedor JMS do Apache Qpid Proton.
 
-O cliente oficial do Barramento de Serviço está disponível no [formulário de código-fonte no GitHub](https://github.com/azure/azure-service-bus-java) e os binários e pacotes de códigos-fontes [estão disponíveis na Central de Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-servicebus%22). 
-
-
 ## <a name="client-library"></a>Biblioteca do cliente
 
+O cliente oficial do Barramento de Serviço está disponível no [formulário de código-fonte no GitHub](https://github.com/azure/azure-service-bus-java) e os binários e pacotes de códigos-fontes [estão disponíveis na Central de Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-servicebus%22).
+
+**O [repositório de código de exemplo](https://github.com/Azure/azure-service-bus/blob/master/samples/Java/) contém amostras para:**
+* Como usar o [QueueClient](https://github.com/Azure/azure-service-bus/blob/master/samples/Java/src/com/microsoft/azure/servicebus/samples/BasicSendReceiveWithQueueClient.java)
+* Como usar o [TopicClient e SubscriptionClient](https://github.com/Azure/azure-service-bus/blob/master/samples/Java/src/com/microsoft/azure/servicebus/samples/BasicSendReceiveWithTopicSubscriptionClient.java)
+* Como usar mensagens do [MessageSender e MessageReceiver](https://github.com/Azure/azure-service-bus/blob/master/samples/Java/src/com/microsoft/azure/servicebus/samples/SendReceiveWithMessageSenderReceiver.java) a partir do barramento de serviço.
 
 Adicionar uma dependência ao arquivo `pom.xml` do seu projeto Maven para usar a biblioteca em seu próprio projeto. Especifique a versão desejada.
 
-[Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a biblioteca do cliente em seu projeto.   
+[Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a biblioteca do cliente em seu projeto.
 
 ```XML
 <dependency>
@@ -50,11 +53,6 @@ Adicionar uma dependência ao arquivo `pom.xml` do seu projeto Maven para usar a
     <version>1.0.0</version>
 </dependency>
 ```
-
-## <a name="examples"></a>Exemplos
-
-O [repositório de exemplos de código](https://github.com/Azure/azure-service-bus/blob/master/samples/Java/) contém exemplos de [QueueClient](https://github.com/Azure/azure-service-bus/blob/master/samples/Java/src/com/microsoft/azure/servicebus/samples/BasicSendReceiveWithQueueClient.java) e [TopicClient e SubscriptionClient](https://github.com/Azure/azure-service-bus/blob/master/samples/Java/src/com/microsoft/azure/servicebus/samples/BasicSendReceiveWithTopicSubscriptionClient.java) e [MessageSender e MessageReceiver](https://github.com/Azure/azure-service-bus/blob/master/samples/Java/src/com/microsoft/azure/servicebus/samples/SendReceiveWithMessageSenderReceiver.java) de mensagens do Barramento de Serviço.
-
 
 ```java
 public class BasicSendReceiveWithQueueClient {
@@ -117,11 +115,18 @@ public class BasicSendReceiveWithQueueClient {
 
 > [!div class="nextstepaction"]
 > [Explorar as APIs de cliente](/java/api/overview/azure/servicebus/client)
+> [Encontre mais exemplos aqui (veja também acima para obter mais detalhes)](https://github.com/Azure/azure-service-bus/blob/master/samples/Java/)
 
 ## <a name="management-api"></a>API de gerenciamento
 
 Criar e gerenciar namespaces, tópicos, filas e assinaturas com a API de gerenciamento.
 
+**Veja alguns exemplos aqui:**
+* [Gerenciar filas do Barramento de Serviço](https://github.com/Azure-Samples/service-bus-java-manage-queue-with-basic-features)
+* [Criar e assinar tópicos do Barramento de Serviço](https://github.com/Azure-Samples/service-bus-java-manage-publish-subscribe-with-basic-features)
+
+**Use a API de gerenciamento em seu projeto:**
+\
 [Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a API de gerenciamento em seu projeto.  
 
 ```XML
@@ -134,11 +139,5 @@ Criar e gerenciar namespaces, tópicos, filas e assinaturas com a API de gerenci
 
 > [!div class="nextstepaction"]
 > [Explorar as APIs de gerenciamento](/java/api/overview/azure/servicebus/management)
-
-
-## <a name="examples"></a>Exemplos
-
-[Gerenciar filas do Barramento de Serviço](https://github.com/Azure-Samples/service-bus-java-manage-queue-with-basic-features)
-[Criar e assinar tópicos do Barramento de Serviço](https://github.com/Azure-Samples/service-bus-java-manage-publish-subscribe-with-basic-features)
 
 Explorar mais [exemplos de código Java para o Barramento de Serviço do Azure](https://azure.microsoft.com/resources/samples/?platform=java&term=bus) que você pode usar em seus aplicativos.
