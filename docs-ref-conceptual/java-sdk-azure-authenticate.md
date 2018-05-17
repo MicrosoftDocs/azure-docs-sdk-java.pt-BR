@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: java
 ms.service: multiple
 ms.assetid: 10f457e3-578b-4655-8cd1-51339226ee7d
-ms.openlocfilehash: 3808c6d56b04f28c84a89a25219e4ec523f87964
-ms.sourcegitcommit: 61030d025614b084e897809e603b2ec79900ec8d
+ms.openlocfilehash: 1d556955fcc5b73f1ba099a0b846b571ba64ccff
+ms.sourcegitcommit: 107c3c5ed8c6991c751f95bcaf3757220940df9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="authenticate-with-the-azure-libraries-for-java"></a>Autenticar com as bibliotecas do Azure para Java 
 
@@ -90,7 +90,7 @@ Azure azure = Azure
 
 Os valores `client`, `tenant` e `key` são os mesmos valores de entidade de serviço usados na [autenticação baseada em arquivo](#mgmt-file). O valor `AzureEnvironment.AZURE` cria as credenciais na nuvem pública do Azure. Altere para um valor diferente se você precisar acessar outra nuvem (por exemplo, `AzureEnvironment.AZURE_GERMANY`).  
 
- Leia os valores da entidade de serviço de variáveis de ambiente ou de um repositório de gerenciamento de segredo como o [Cofre de Chaves](/azure/key-vault/key-vault-whatis.md). Evite definir esses valores como cadeias de caracteres de texto não criptografado em seu código para evitar expor acidentalmente credenciais no seu histórico de controle de versão.   
+ Leia os valores da entidade de serviço de variáveis de ambiente ou de um repositório de gerenciamento de segredo como o [Cofre de Chaves](/azure/key-vault/key-vault-whatis). Evite definir esses valores como cadeias de caracteres de texto não criptografado em seu código para evitar expor acidentalmente credenciais no seu histórico de controle de versão.   
 
 <a name="mgmt-file"></a>
 
