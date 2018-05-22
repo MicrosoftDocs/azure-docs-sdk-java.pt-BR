@@ -1,12 +1,12 @@
 ---
-title: "Instruções de entrada para o Kit de Ferramentas do Azure para Eclipse"
+title: Instruções de entrada para o Kit de Ferramentas do Azure para Eclipse
 description: Saiba como se inscrever no Microsoft Azure usando o Kit de ferramentas do Azure para Eclipse.
-services: 
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: Java
@@ -14,11 +14,11 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 498a22c455e54b8038169cf4e9f6ac7d7287c0bb
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: eb6099ab0c19bf3588cb7fd668f070771e58fe74
+ms.sourcegitcommit: 8230cf6b15ac51a9f8a209e9b76411a0385029aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="azure-sign-in-instructions-for-the-azure-toolkit-for-eclipse"></a>Instruções de entrada no Azure para o Kit de Ferramentas do Azure para Eclipse
 
@@ -91,7 +91,7 @@ Se você sair do Azure quando você estiver usando o Eclipse, você precisará r
 
    ![Caixa de diálogo Entrar][A02]
 
-1. Quando a caixa de diálogo **Selecionar Arquivo Autenticado** for exibida, selecione um arquivo de credenciais que você criou anteriormente e, em seguida, clique em **Selecionar**.
+1. Quando a caixa de diálogo **Selecionar Arquivo Autenticado** for exibida, selecione um arquivo de credenciais criado anteriormente e clique em **Abrir**.
 
    ![Caixa de diálogo Entrar][A08]
 
