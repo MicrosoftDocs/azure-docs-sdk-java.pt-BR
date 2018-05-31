@@ -11,11 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: event-hub
-ms.openlocfilehash: 076906ff3cafcb4eba97b0a022e5214d7834517c
-ms.sourcegitcommit: 02b70b9f5d34415c337601f0b818f7e0985fd884
+ms.openlocfilehash: b6646ef27edace4247090e749c9a52cd6a33a82c
+ms.sourcegitcommit: 3d3460289ab6b9165c2cf6a3dd56eafd0692501e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34283020"
 ---
 # <a name="azure-event-hub-libraries-for-java"></a>Bibliotecas do Hub de Eventos do Azure para Java
 
@@ -30,40 +31,44 @@ Para começar a usar os Hubs de Eventos do Azure, consulte [Receber eventos de H
 
 Enviar eventos para um Hub de Eventos do Azure e consumir e processar eventos de um Hub de Eventos usando a biblioteca de cliente de Hubs de Eventos.
 
-[Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a biblioteca do cliente em seu projeto.  
-
-```XML
-<dependency>
-    <groupId>com.microsoft.azure</groupId>
-    <artifactId>azure-eventhubs</artifactId>
-    <version>0.14.3</version>
-</dependency>
-```   
+[Adicione uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a [biblioteca de clientes](https://mvnrepository.com/artifact/com.microsoft.azure/azure-eventhubs) em seu projeto.
+ 
 
 ## <a name="example"></a>Exemplo
 
 Enviar um evento para um hub de eventos.
 
 ```java
-ConnectionStringBuilder connStr = new ConnectionStringBuilder(namespaceName, eventHubName,sasKeyName, sasKey);
+final ConnectionStringBuilder connStr = new ConnectionStringBuilder()
+                                            .setNamespaceName(namespaceName)
+                                            .setEventHubName(eventHubName)
+                                            .setSasKeyName(sasKeyName)
+                                            .setSasKey(sasKey);
+final EventHubClient ehClient = EventHubClient.createSync(connStr.toString());
 
-byte[] payloadBytes = "Test AMQP message from JMS".getBytes("UTF-8");
-EventData sendEvent = new EventData(payloadBytes);
-EventHubClient ehClient = EventHubClient.createFromConnectionStringSync(connStr.toString());
+final byte[] payloadBytes = "Test AMQP message".getBytes("UTF-8");
+final EventData sendEvent = new EventData(payloadBytes);
+
 ehClient.sendSync(sendEvent);
 ```
 
+
 > [!div class="nextstepaction"]
-> [Explorar as APIs de cliente](/java/api/overview/azure/eventhub/client)
+> [Explorar as APIs de cliente](/java/api/overview/azure/eventhubs/client)
+
 
 
 ## <a name="samples"></a>Exemplos
 
-[Gravar no Hub de Eventos por meio do JMS e ler do Apache Storm][1]
-[Leitura e gravação de Hubs de Eventos usando uma topologia de .NET/Java híbrida][2] 
+[Explorar a API do plano de dados do Hub de Eventos usando exemplos][1]
 
-[1]: https://github.com/Azure-Samples/event-hubs-java-storm-sender-jms-receiver
-[2]: https://github.com/Azure-Samples/hdinsight-dotnet-java-storm-eventhub
+[Gravar no Hub de Eventos por meio do JMS ler a partir do Apache Storm][2]
+
+[Ler e gravar a partir dos Hubs de Eventos usando uma topologia .NET/Java híbrida][3] 
+
+[1]: https://github.com/Azure/azure-event-hubs/tree/master/samples/Java
+[2]: https://github.com/Azure-Samples/event-hubs-java-storm-sender-jms-receiver
+[3]: https://github.com/Azure-Samples/hdinsight-dotnet-java-storm-eventhub
 
 Explorar mais [exemplos de código Java para os Hubs de Eventos do Azure](https://azure.microsoft.com/resources/samples/?platform=java&term=event) que você pode usar em seus aplicativos.
 
