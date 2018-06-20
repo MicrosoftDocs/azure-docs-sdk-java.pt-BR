@@ -1,12 +1,12 @@
 ---
-title: "Implantar um Aplicativo Web Spring Boot no Linux no Serviço de Contêiner do Azure"
-description: "Este tutorial orienta você pelas etapas de implantar um aplicativo Spring Boot como um aplicativo Web do Linux no Microsoft Azure."
+title: Implantar um Aplicativo Web Spring Boot no Linux no Serviço de Contêiner do Azure
+description: Este tutorial orienta você pelas etapas de implantar um aplicativo Spring Boot como um aplicativo Web do Linux no Microsoft Azure.
 services: container-service
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: asirveda;robmcm
 ms.date: 02/01/2018
 ms.devlang: java
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954747"
 ---
 # <a name="deploy-a-spring-boot-application-on-linux-in-the-azure-container-service"></a>Implantar um aplicativo Spring Boot no Linux no Serviço de Contêiner do Azure
 

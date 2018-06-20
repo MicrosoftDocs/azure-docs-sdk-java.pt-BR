@@ -1,7 +1,7 @@
 ---
-title: "Bibliotecas de gerenciamento do Azure para exemplos de máquina virtual de Java"
-description: "Obter o exemplo de código para criação e atualização de máquinas virtuais do Azure usando as bibliotecas de gerenciamento do Azure para Java"
-keywords: "Azure, Java, SDK, API, Maven, Gradle, máquinas virtuais"
+title: Bibliotecas de gerenciamento do Azure para exemplos de máquina virtual de Java
+description: Obter o exemplo de código para criação e atualização de máquinas virtuais do Azure usando as bibliotecas de gerenciamento do Azure para Java
+keywords: Azure, Java, SDK, API, Maven, Gradle, máquinas virtuais
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21930802"
 ---
 # <a name="azure-management-libraries-for-java-samples-for-virtual-machines"></a>Bibliotecas de gerenciamento do Azure para exemplos de Java para máquinas virtuais
 

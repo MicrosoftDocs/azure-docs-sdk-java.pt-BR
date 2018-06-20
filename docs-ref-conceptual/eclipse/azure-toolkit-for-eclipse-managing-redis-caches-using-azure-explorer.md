@@ -1,12 +1,12 @@
 ---
 title: Gerenciar Caches Redis utilizando o Azure Explorer para Eclipse
 description: Saiba como gerenciar seus caches redis do Azure utilizando o Azure Explorer para Eclipse.
-services: 
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: Java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954817"
 ---
 # <a name="managing-redis-caches-using-the-azure-explorer-for-eclipse"></a>Gerenciar Caches Redis utilizando o Azure Explorer para Eclipse
 

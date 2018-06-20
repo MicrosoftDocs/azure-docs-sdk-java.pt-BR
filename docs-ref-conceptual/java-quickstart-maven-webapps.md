@@ -2,10 +2,10 @@
 title: Implantar um aplicativo Web Java no Azure em cinco minutos com Maven | Microsoft Docs
 description: Criar e implantar um aplicativo Java compilado com o Maven para o Azure
 services: app-service\web
-documentationcenter: 
+documentationcenter: ''
 author: rloutlaw
 manager: douge
-editor: 
+editor: ''
 ms.service: app-service-web
 ms.workload: web
 ms.tgt_pltfrm: na
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 30d502b3150fa14bcc1251f5f88c7c0dd83e531e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/12/2017
+ms.locfileid: "22033628"
 ---
 # <a name="create-and-deploy-a-java-app-to-azure-with-maven"></a>Criar e implantar um aplicativo Java no Azure com Maven
 

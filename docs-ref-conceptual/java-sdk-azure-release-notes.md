@@ -1,7 +1,7 @@
 ---
-title: "Notas de versão de bibliotecas de gerenciamento do Azure para Java | Microsoft Docs"
-description: "Veja o que há de novo e fique de olho em alterações significativas nas bibliotecas de gerenciamento do Azure para Java"
-keywords: "Azure, Java, API, referência, anotações, atualizações, substituir, obsoleto"
+title: Notas de versão de bibliotecas de gerenciamento do Azure para Java | Microsoft Docs
+description: Veja o que há de novo e fique de olho em alterações significativas nas bibliotecas de gerenciamento do Azure para Java
+keywords: Azure, Java, API, referência, anotações, atualizações, substituir, obsoleto
 author: routlaw
 manager: douge
 ms.assetid: 1f128cf9-f747-4344-84e1-f9964709deb8
@@ -15,6 +15,7 @@ ms.sourcegitcommit: acc83bb537d77568b2a5427479d6354d6ae30885
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/03/2017
+ms.locfileid: "23982158"
 ---
 # <a name="release-notes"></a>Notas de versão 
 

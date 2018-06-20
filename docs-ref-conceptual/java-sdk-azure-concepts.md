@@ -1,7 +1,7 @@
 ---
-title: "Bibliotecas de Gerenciamento do Azure para Java – guia do desenvolvedor"
-description: "Padrões e conceitos para uso das bibliotecas de gerenciamento Java para Java para gerenciar recursos de nuvem no Azure."
-keywords: "Azure, Java, SDK, API, Maven, Gradle, autenticação, active directory, entidade de serviço"
+title: Bibliotecas de Gerenciamento do Azure para Java – guia do desenvolvedor
+description: Padrões e conceitos para uso das bibliotecas de gerenciamento Java para Java para gerenciar recursos de nuvem no Azure.
+keywords: Azure, Java, SDK, API, Maven, Gradle, autenticação, active directory, entidade de serviço
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 1f6a80e067a8bdbbb4b2da2e2145fda73d5fe65a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2017
+ms.locfileid: "26184640"
 ---
 # <a name="patterns-and-best-practices-for-development-with-the-azure-libraries-for-java"></a>Padrões e melhores práticas de desenvolvimento com as bibliotecas do Azure para Java 
 

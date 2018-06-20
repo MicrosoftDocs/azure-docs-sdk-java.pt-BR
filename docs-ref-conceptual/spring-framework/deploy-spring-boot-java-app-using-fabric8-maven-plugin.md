@@ -1,12 +1,12 @@
 ---
 title: Implantar um aplicativo Spring Boot usando o plug-in Fabric8 Maven
-description: "Este tutorial orienta você pelas etapas para implantar um aplicativo Spring Boot no Microsoft Azure usando o plug-in Fabric8 para Apache Maven."
+description: Este tutorial orienta você pelas etapas para implantar um aplicativo Spring Boot no Microsoft Azure usando o plug-in Fabric8 para Apache Maven.
 services: container-service
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: yuwzho;robmcm
 ms.date: 02/01/2018
 ms.devlang: java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954887"
 ---
 # <a name="deploy-a-spring-boot-app-using-the-fabric8-maven-plugin"></a>Implantar um aplicativo Spring Boot usando o plug-in Fabric8 Maven
 

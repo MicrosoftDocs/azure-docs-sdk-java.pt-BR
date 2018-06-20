@@ -16,6 +16,7 @@ ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823749"
 ---
 # <a name="azure-virtual-machine-libraries"></a>Bibliotecas de máquina virtual do Azure
 

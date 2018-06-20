@@ -1,11 +1,11 @@
 ---
-title: "Criar um aplicativo Web Olá, Mundo para o Azure usando o IntelliJ"
+title: Criar um aplicativo Web Olá, Mundo para o Azure usando o IntelliJ
 description: Este tutorial mostra como usar o Kit de Ferramentas do Azure para IntelliJ para criar um aplicativo Web Hello World para o Azure.
 services: app-service
 documentationcenter: java
 author: selvasingh
 manager: routlaw
-editor: 
+editor: ''
 ms.assetid: 75ce7b36-e3ae-491d-8305-4b42ce37db4e
 ms.author: robmcm;asirveda
 ms.date: 02/01/2018
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954187"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-intellij"></a>Criar um aplicativo Web Olá, Mundo para o Azure usando o IntelliJ
 

@@ -1,11 +1,11 @@
 ---
-title: "Instalação do Kit de Ferramentas do Azure para IntelliJ"
+title: Instalação do Kit de Ferramentas do Azure para IntelliJ
 description: Saiba como instalar o Kit de Ferramentas do Azure para o plug-in IntelliJ para criar e implantar aplicativos de nuvem no Azure.
-services: 
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
+editor: ''
 ms.assetid: c6817c7b-f28c-4c06-8216-41c7a8117de3
 ms.author: robmcm
 ms.date: 02/01/2018
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954167"
 ---
 # <a name="installing-the-azure-toolkit-for-intellij"></a>Instalação do Kit de Ferramentas do Azure para IntelliJ
 

@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas do Banco de Dados do Azure para MySQL para Java
-description: "Documentação de referência para as bibliotecas de cliente de Java para o Banco de Dados do Azure para MySQL"
+description: Documentação de referência para as bibliotecas de cliente de Java para o Banco de Dados do Azure para MySQL
 keywords: Azure, Java, SDK, API, SQL, banco de dados, PostGres, MySQL
 author: rloutlaw
 ms.author: routlaw
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931012"
 ---
 # <a name="azure-database-for-mysql-libraries-for-java"></a>Bibliotecas do Banco de Dados do Azure para MySQL para Java
 

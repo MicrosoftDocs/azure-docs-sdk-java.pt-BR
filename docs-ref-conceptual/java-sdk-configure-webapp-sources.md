@@ -1,6 +1,6 @@
 ---
-title: "Configurar implantações de aplicativo Web usando Java | Microsoft Docs"
-description: "Exemplo de código de Java para configurar implantações de Git ou FTP do Serviço de Aplicativo do Azure usando o SDK do Azure para Java"
+title: Configurar implantações de aplicativo Web usando Java | Microsoft Docs
+description: Exemplo de código de Java para configurar implantações de Git ou FTP do Serviço de Aplicativo do Azure usando o SDK do Azure para Java
 author: rloutlaw
 manager: douge
 ms.assetid: 833e9c78-1e50-4c23-a611-f73a2f0c2983
@@ -14,6 +14,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931182"
 ---
 # <a name="configure-azure-app-service-deployment-sources-from-your-java-applications"></a>Configurar fontes de implantação do Serviço de Aplicativo do Azure a partir dos seus aplicativos Java
 

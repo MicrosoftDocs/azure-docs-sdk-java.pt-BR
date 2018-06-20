@@ -1,6 +1,6 @@
 ---
 title: Gerenciar contas de armazenamento do Azure com Java | Microsoft Docs
-description: "Exemplo de código para gerenciar as contas de armazenamento do Azure usando o SDK do Azure para Java"
+description: Exemplo de código para gerenciar as contas de armazenamento do Azure usando o SDK do Azure para Java
 author: rloutlaw
 manager: douge
 ms.assetid: 49be8b66-3b56-4c10-8f14-9d326d815cb4
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931052"
 ---
 # <a name="manage-azure-storage-accounts-from-your-java-applications"></a>Gerenciar contas de armazenamento do Azure a partir dos seus aplicativos Java
 
