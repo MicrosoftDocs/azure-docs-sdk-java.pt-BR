@@ -16,6 +16,7 @@ ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823819"
 ---
 # <a name="azure-key-vault-libraries-for-java"></a><span data-ttu-id="cb970-104">Bibliotecas do Azure Key Vault para Java</span><span class="sxs-lookup"><span data-stu-id="cb970-104">Azure Key Vault libraries for Java</span></span>
 

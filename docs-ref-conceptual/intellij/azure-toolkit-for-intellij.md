@@ -1,11 +1,11 @@
 ---
 title: Kit de Ferramentas do Azure para IntelliJ
-description: "Conheça o Kit de Ferramentas do Azure para IntelliJ."
-services: 
+description: Conheça o Kit de Ferramentas do Azure para IntelliJ.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
+editor: ''
 ms.assetid: 115a095d-1b70-41d6-adb4-78f24b2a4451
 ms.author: robmcm;asirveda
 ms.date: 02/01/2018
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954787"
 ---
 # <a name="azure-toolkit-for-intellij"></a><span data-ttu-id="549c8-103">Kit de Ferramentas do Azure para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="549c8-103">Azure Toolkit for IntelliJ</span></span>
 <span data-ttu-id="549c8-104">O Kit de Ferramentas do Azure para IntelliJ fornece modelos e funcionalidades que podem ser usadas para criar, desenvolver, testar e implantar aplicativos do Azure com facilidade usando o IDE (ambiente de desenvolvimento integrado) do IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="549c8-104">The Azure Toolkit for IntelliJ provides templates and functionality that you can use to easily create, develop, test, and deploy Azure applications by using the IntelliJ integrated development environment (IDE).</span></span>

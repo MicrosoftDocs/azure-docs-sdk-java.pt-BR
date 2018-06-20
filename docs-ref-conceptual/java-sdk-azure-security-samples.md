@@ -1,7 +1,7 @@
 ---
 title: Exemplos de Java para Azure Active Directory
-description: "Obter o exemplo de código para trabalhar com o Azure Active Directory a partir de seus aplicativos Java."
-keywords: "Azure, Java, SDK, API, active directory, Azure AD, AAD, segurança, login, autenticação, SSO, SAML"
+description: Obter o exemplo de código para trabalhar com o Azure Active Directory a partir de seus aplicativos Java.
+keywords: Azure, Java, SDK, API, active directory, Azure AD, AAD, segurança, login, autenticação, SSO, SAML
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21930792"
 ---
 # <a name="java-samples-for-azure-active-directory"></a><span data-ttu-id="48523-104">Exemplos de Java para Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="48523-104">Java samples for Azure Active Directory</span></span>
 

@@ -1,6 +1,6 @@
 ---
-title: "Gerenciar conjuntos de dimensionamento de máquinas virtuais com Java | Microsoft Docs"
-description: "Exemplo de código para gerenciar os conjuntos de dimensionamento das máquinas virtuais do Azure usando o SDK do Azure para Java"
+title: Gerenciar conjuntos de dimensionamento de máquinas virtuais com Java | Microsoft Docs
+description: Exemplo de código para gerenciar os conjuntos de dimensionamento das máquinas virtuais do Azure usando o SDK do Azure para Java
 author: rloutlaw
 manager: douge
 ms.assetid: b55923b7-d60a-460d-b77c-af5fac67f1cc
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931152"
 ---
 # <a name="manage-azure-virtual-machine-scale-sets-from-your-java-applications"></a><span data-ttu-id="6282e-103">Gerenciar conjuntos de dimensionamento das máquinas virtuais do Azure a partir dos seus aplicativos Java</span><span class="sxs-lookup"><span data-stu-id="6282e-103">Manage Azure virtual machine scale sets from your Java applications</span></span>
 

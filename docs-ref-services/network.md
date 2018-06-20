@@ -16,6 +16,7 @@ ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823599"
 ---
 # <a name="azure-network-libraries-for-java"></a><span data-ttu-id="ee9ab-104">Bibliotecas de Rede do Azure para Java</span><span class="sxs-lookup"><span data-stu-id="ee9ab-104">Azure Network libraries for Java</span></span>
 

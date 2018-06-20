@@ -1,12 +1,12 @@
 ---
 title: Iniciadores do Spring Boot para Azure
-description: "Este artigo descreve os vários iniciadores do Spring Boot disponíveis para o Azure."
-services: 
+description: Este artigo descreve os vários iniciadores do Spring Boot disponíveis para o Azure.
+services: ''
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm
 ms.date: 02/01/2018
 ms.devlang: java
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/03/2018
+ms.locfileid: "28954437"
 ---
 # <a name="spring-boot-starters-for-azure"></a><span data-ttu-id="cad7a-103">Iniciadores do Spring Boot para Azure</span><span class="sxs-lookup"><span data-stu-id="cad7a-103">Spring Boot Starters for Azure</span></span>
 
@@ -237,9 +238,12 @@ ms.lasthandoff: 02/03/2018
 <!-- URL List -->
 
 [Azure para desenvolvedores Java]: https://docs.microsoft.com/java/azure/
+[Azure for Java Developers]: https://docs.microsoft.com/java/azure/
 [Ferramentas Java para Visual Studio Team Services]: https://java.visualstudio.com/
+[Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring no Azure]: https://docs.microsoft.com/java/azure/spring-framework/
+[Spring on Azure]: https://docs.microsoft.com/java/azure/spring-framework/
 [Spring Framework]: https://spring.io/
 [Spring Initializr]: https://start.spring.io/
 

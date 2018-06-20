@@ -16,6 +16,7 @@ ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33887756"
 ---
 # <a name="service-bus-libraries-for-java"></a><span data-ttu-id="c4430-104">Bibliotecas de Barramento de Serviço para Java</span><span class="sxs-lookup"><span data-stu-id="c4430-104">Service Bus libraries for Java</span></span>
 

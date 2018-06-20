@@ -1,6 +1,6 @@
 ---
 title: Ferramentas para desenvolvedores de Java do Azure | Microsoft Docs
-description: "Integrações do IDE, emuladores, gerenciadores de recursos e interfaces de linha de comando para desenvolvedores de Java trabalhando no Azure."
+description: Integrações do IDE, emuladores, gerenciadores de recursos e interfaces de linha de comando para desenvolvedores de Java trabalhando no Azure.
 author: rloutlaw
 manager: douge
 ms.assetid: b55923b7-d60a-460d-b77c-af5fac67f1cc
@@ -15,6 +15,7 @@ ms.sourcegitcommit: f0dadb22efb191182c3b79dcaa97a76cfcdcc324
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2017
+ms.locfileid: "26288300"
 ---
 # <a name="azure-tools-for-java-developers"></a><span data-ttu-id="63cfa-103">Ferramentas do Azure para desenvolvedores Java</span><span class="sxs-lookup"><span data-stu-id="63cfa-103">Azure tools for Java developers</span></span>
 

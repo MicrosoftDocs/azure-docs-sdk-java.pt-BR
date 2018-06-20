@@ -1,7 +1,7 @@
 ---
-title: "Introdução às bibliotecas do Azure para Java"
-description: "Saiba como criar recursos de nuvem do Azure, conectá-los e usá-los em seus aplicativos Java."
-keywords: "Azure, Java, SDK, API, autenticar, introdução"
+title: Introdução às bibliotecas do Azure para Java
+description: Saiba como criar recursos de nuvem do Azure, conectá-los e usá-los em seus aplicativos Java.
+keywords: Azure, Java, SDK, API, autenticar, introdução
 author: rloutlaw
 ms.author: routlaw
 manager: douge
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 720c2eaf66532d277015610ec375c71e934d9ee6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "29065523"
 ---
 # <a name="get-started-with-cloud-development-using-the-azure-libraries-for-java"></a><span data-ttu-id="270c5-104">Introdução ao desenvolvimento em nuvem usando as bibliotecas do Azure para Java</span><span class="sxs-lookup"><span data-stu-id="270c5-104">Get started with cloud development using the Azure libraries for Java</span></span>
 

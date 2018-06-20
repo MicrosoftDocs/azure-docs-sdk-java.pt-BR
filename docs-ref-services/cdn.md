@@ -16,6 +16,7 @@ ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823729"
 ---
 # <a name="azure-cdn-libraries-for-java"></a><span data-ttu-id="a6bcd-104">Bibliotecas CDN do Azure para Java</span><span class="sxs-lookup"><span data-stu-id="a6bcd-104">Azure CDN libraries for Java</span></span>
 

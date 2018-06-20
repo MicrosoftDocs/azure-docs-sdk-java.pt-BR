@@ -16,6 +16,7 @@ ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823779"
 ---
 # <a name="azure-active-directory-libraries-for-java"></a><span data-ttu-id="c5073-104">Bibliotecas do Azure Active Directory para Java</span><span class="sxs-lookup"><span data-stu-id="c5073-104">Azure Active Directory libraries for Java</span></span>
 

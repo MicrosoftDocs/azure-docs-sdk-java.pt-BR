@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas do Banco de Dados do Azure para PostgreSQL para Java
-description: "Documentação de referência para as bibliotecas de cliente de Java para o Banco de Dados do Azure para PostgreSQL"
+description: Documentação de referência para as bibliotecas de cliente de Java para o Banco de Dados do Azure para PostgreSQL
 keywords: Azure, Java, SDK, API, SQL, banco de dados, PostGres, PostgreSQL
 author: rloutlaw
 ms.author: routlaw
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21930972"
 ---
 # <a name="azure-database-for-postgresql-libraries-for-java"></a><span data-ttu-id="1090a-104">Bibliotecas do Banco de Dados do Azure para PostgreSQL para Java</span><span class="sxs-lookup"><span data-stu-id="1090a-104">Azure Database for PostgreSQL libraries for Java</span></span>
 

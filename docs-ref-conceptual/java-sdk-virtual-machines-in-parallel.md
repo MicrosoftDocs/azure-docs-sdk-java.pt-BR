@@ -1,6 +1,6 @@
 ---
-title: "Criar VMs em várias regiões em paralelo | Microsoft Docs"
-description: "Exemplo de código para criar máquinas virtuais em diferentes regiões do Azure em paralelo usando o SDK do Azure para Java"
+title: Criar VMs em várias regiões em paralelo | Microsoft Docs
+description: Exemplo de código para criar máquinas virtuais em diferentes regiões do Azure em paralelo usando o SDK do Azure para Java
 author: rloutlaw
 manager: douge
 ms.assetid: e5a36699-2d96-4571-84f9-a6af13f3c067
@@ -14,6 +14,7 @@ ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/28/2017
+ms.locfileid: "21931192"
 ---
 # <a name="create-virtual-machines-across-multiple-regions-from-your-java-applications"></a><span data-ttu-id="6fee1-103">Criar máquinas virtuais em várias regiões a partir de seus aplicativos Java</span><span class="sxs-lookup"><span data-stu-id="6fee1-103">Create virtual machines across multiple regions from your Java applications</span></span>
 

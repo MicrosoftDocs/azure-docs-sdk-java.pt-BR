@@ -19,6 +19,7 @@ ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33883643"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-eclipse"></a><span data-ttu-id="59435-103">Criar um aplicativo Web Olá, Mundo para o Azure usando o Eclipse</span><span class="sxs-lookup"><span data-stu-id="59435-103">Create a Hello World web app for Azure using Eclipse</span></span>
 
