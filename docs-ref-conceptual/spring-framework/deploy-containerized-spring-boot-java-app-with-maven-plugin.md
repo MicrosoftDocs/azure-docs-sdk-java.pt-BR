@@ -1,12 +1,12 @@
 ---
-title: "Como usar o plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot em contêineres no Azure"
+title: Como usar o plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot em contêineres no Azure
 description: Saiba como usar o plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Azure.
 services: app-service
 documentationcenter: java
 author: rmcmurray
 manager: routlaw
-editor: 
-ms.assetid: 
+editor: ''
+ms.assetid: ''
 ms.author: robmcm;kevinzha
 ms.date: 02/01/2018
 ms.devlang: java
@@ -14,11 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 515cf350f32fc8252644e7022846cc2c9d264ed0
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: d9f2cf5c15bb8f990c8e82fddd6455ecbf8cc02c
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090759"
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-containerized-spring-boot-app-to-azure"></a>Como usar o plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot em contêineres no Azure
 
@@ -35,7 +36,7 @@ Este artigo demonstra como usar o [plug-in do Maven para Aplicativos Web do Azur
 
 Para concluir as etapas deste tutorial, você precisa ter os seguintes pré-requisitos:
 
-* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [benefício de assinante do MSDN] ou inscrever-se para uma [conta gratuita do Azure].
+* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [Benefícios do assinante do MSDN] ou inscrever-se para uma [conta do Azure gratuita].
 * A[CLI (interface de linha de comando) do Azure].
 * Um JDK (Java Development Kit) versão 1.7 ou posterior atualizado.
 * A ferramenta de compilação [Maven] do Apache (Versão 3).
@@ -64,7 +65,7 @@ Nesta seção, você clonará um aplicativo Spring Boot em contêineres e o test
 
 1. Clone o exemplo de projeto [Introdução ao Spring Boot no Docker] para o diretório criado. Por exemplo:
    ```shell
-   git clone https://github.com/microsoft/gs-spring-boot-docker
+   git clone https://github.com/spring-guides/gs-spring-boot-docker
    ```
 
 1. Altere o diretório para o projeto concluído. Por exemplo:
@@ -95,23 +96,25 @@ Nesta seção, você criará uma entidade de serviço do Azure que será usada p
 
 1. Abra um prompt de comando.
 
-1. Entre em sua conta do Azure usando a CLI do Azure:
+2. Entre em sua conta do Azure usando a CLI do Azure:
    ```shell
    az login
    ```
    Siga as instruções na tela para concluir o processo de entrada.
 
-1. Crie uma entidade de serviço do Azure:
+3. Crie uma entidade de serviço do Azure:
    ```shell
    az ad sp create-for-rbac --name "uuuuuuuu" --password "pppppppp"
    ```
    Em que:
-   | Parâmetro | DESCRIÇÃO |
-   |---|---|
-   | `uuuuuuuu` | Especifica o nome de usuário para a entidade de serviço. |
-   | `pppppppp` | Especifica a senha para a entidade de serviço. |
 
-1. O Azure responde com um JSON parecido com o exemplo a seguir:
+   | Parâmetro  |                    DESCRIÇÃO                     |
+   |------------|----------------------------------------------------|
+   | `uuuuuuuu` | Especifica o nome de usuário para a entidade de serviço. |
+   | `pppppppp` | Especifica a senha para a entidade de serviço.  |
+
+
+4. O Azure responde com um JSON parecido com o exemplo a seguir:
    ```json
    {
       "appId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
@@ -137,7 +140,7 @@ Nesta seção, você usará os valores de sua entidade de serviço do Azure para
    * `%ProgramFiles%\apache-maven\3.5.0\conf\settings.xml`
    * `$HOME/.m2/settings.xml`
 
-1. Adicione as configurações de sua entidade de serviço do Azure da seção anterior deste tutorial à coleção `<servers>` no arquivo *settings.xml*; por exemplo:
+2. Adicione as configurações de sua entidade de serviço do Azure da seção anterior deste tutorial à coleção `<servers>` no arquivo *settings.xml*; por exemplo:
 
    ```xml
    <servers>
@@ -153,15 +156,17 @@ Nesta seção, você usará os valores de sua entidade de serviço do Azure para
    </servers>
    ```
    Em que:
-   | Elemento | DESCRIÇÃO |
-   |---|---|
-   | `<id>` | Especifica um nome exclusivo usado pelo Maven para analisar suas configurações de segurança durante a implantação de seu aplicativo Web no Azure. |
-   | `<client>` | Contém o valor `appId` de sua entidade de serviço. |
-   | `<tenant>` | Contém o valor `tenant` de sua entidade de serviço. |
-   | `<key>` | Contém o valor `password` de sua entidade de serviço. |
+
+   |     Elemento     |                                                                                   DESCRIÇÃO                                                                                   |
+   |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |     `<id>`      |                                Especifica um nome exclusivo usado pelo Maven para analisar suas configurações de segurança durante a implantação de seu aplicativo Web no Azure.                                |
+   |   `<client>`    |                                                             Contém o valor `appId` de sua entidade de serviço.                                                             |
+   |   `<tenant>`    |                                                            Contém o valor `tenant` de sua entidade de serviço.                                                             |
+   |     `<key>`     |                                                           Contém o valor `password` de sua entidade de serviço.                                                            |
    | `<environment>` | Define o ambiente de nuvem do Azure de destino, que é `AZURE` neste exemplo. (Uma lista completa dos ambientes está disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]) |
 
-1. Salve e feche o arquivo *settings.xml*.
+
+3. Salve e feche o arquivo *settings.xml*.
 
 ## <a name="optional-deploy-your-local-docker-file-to-docker-hub"></a>OPCIONAL: Implantar o arquivo local do Docker no Hub do Docker
 
@@ -185,8 +190,8 @@ Se você tiver uma conta do Docker, poderá compilar sua imagem de contêiner do
       mvn clean package docker:build
       docker push
       ```
-   
-   * Se o [plug-in do Docker para Maven] estiver instalado, você poderá compilar automaticamente a imagem de seu contêiner no Hub do Docker usando o parâmetro `-DpushImage`:
+
+   * Se o [Plug-in do Docker para o Maven] estiver instalado, você poderá compilar automaticamente a imagem de seu contêiner no Hub do Docker usando o parâmetro `-DpushImage`:
       ```shell
       mvn clean package docker:build -DpushImage
       ```
@@ -220,11 +225,11 @@ Abra o arquivo `pom.xml` de seu aplicativo Spring Boot em um editor de texto e l
    </plugin>
    ```
 
-Você pode modificar diversos valores do plug-in do Maven, e há uma descrição detalhada de cada um desses elementos disponível na documentação [Plug-in do Maven para Aplicativos Web do Azure]. Dito isso, vale a pena destacar diversos valores neste artigo:
+Você pode modificar diversos valores do plug-in do Maven, e há uma descrição detalhada de cada um desses elementos disponível na documentação [Plug-in do Maven para aplicativos Web do Azure]. Dito isso, vale a pena destacar diversos valores neste artigo:
 
 | Elemento | DESCRIÇÃO |
 |---|---|
-| `<version>` | Especifica a versão do [Plug-in do Maven para Aplicativos Web do Azure]. Você deve verificar a versão listada no [Repositório Central do Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22) para garantir que esteja usando a versão mais recente. |
+| `<version>` | Especifica a versão do [Plug-in do Maven para aplicativos Web do Azure]. Você deve verificar a versão listada no [Repositório Central do Maven](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22azure-webapp-maven-plugin%22) para garantir que esteja usando a versão mais recente. |
 | `<authentication>` | Especifica as informações de autenticação do Azure, que, neste exemplo, contêm um elemento `<serverId>` contendo `azure-auth`; o Maven usa esse valor para procurar os valores de entidade de serviço do Azure em seu arquivo *settings.xml* do Maven, que você definiu em uma seção anterior deste artigo. |
 | `<resourceGroup>` | Especifica o grupo de recursos de destino, que é `maven-plugin` neste exemplo. Esse grupo de recursos será criado durante a implantação, caso ainda não exista. |
 | `<appName>` | Especifica o nome de destino de seu aplicativo Web. Neste exemplo, o nome de destino é `maven-linux-app-${maven.build.timestamp}`, no qual o sufixo `${maven.build.timestamp}` é acrescentado neste exemplo para evitar conflitos. (O carimbo de data/hora é opcional; você pode especificar qualquer cadeia de caracteres exclusiva para o nome do aplicativo). |
@@ -307,7 +312,7 @@ The embedded Tomcat server in the sample Spring Boot application is configured t
 
 Para saber mais sobre as diversas tecnologias discutidas neste artigo, veja os artigos a seguir:
 
-* [Plug-in do Maven para Aplicativos Web do Azure]
+* [Plug-in do Maven para aplicativos Web do Azure]
 
 * [Faça logon no Azure na CLI do Azure](/azure/xplat-cli-connect)
 
@@ -317,7 +322,7 @@ Para saber mais sobre as diversas tecnologias discutidas neste artigo, veja os a
 
 * [Referência de configurações do Maven](https://maven.apache.org/settings.html)
 
-* [plug-in do Docker para Maven]
+* [Plug-in do Docker para o Maven]
 
 <!-- URL List -->
 
@@ -325,17 +330,17 @@ Para saber mais sobre as diversas tecnologias discutidas neste artigo, veja os a
 [Azure for Java Developers]: https://docs.microsoft.com/java/azure/
 [Portal do Azure]: https://portal.azure.com/
 [Docker]: https://www.docker.com/
-[plug-in do Docker para Maven]: https://github.com/spotify/docker-maven-plugin
-[conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
+[Plug-in do Docker para o Maven]: https://github.com/spotify/docker-maven-plugin
+[conta do Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
 [Java Developer Kit (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
 [Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/
 [Maven]: http://maven.apache.org/
-[benefício de assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
+[Benefícios do assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Introdução ao Spring Boot no Docker]: https://github.com/spring-guides/gs-spring-boot-docker
 [Spring Framework]: https://spring.io/
-[Plug-in do Maven para Aplicativos Web do Azure]: https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin
+[Plug-in do Maven para aplicativos Web do Azure]: https://github.com/Microsoft/azure-maven-plugins/tree/master/azure-webapp-maven-plugin
 
 <!-- IMG List -->
 

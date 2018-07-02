@@ -14,12 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 8b831f4545be9162d28f8ba86eb7271ffa4391af
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: 896e7eff389bc7d3ac119d315c50aae505a381da
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954737"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090799"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-eclipse"></a>Criar um aplicativo Web Olá, Mundo para o Azure usando o kit de ferramentas herdado do Eclipse
 
@@ -117,18 +117,18 @@ Há várias maneiras pelas quais você pode implantar um aplicativo Web Java no 
       
       Você pode selecionar um Grupo de Recursos existente (se houver) e ignorar a etapa g abaixo ou usar as seguintes etapas para criar um novo Grupo de Recursos:
       
-      * Clique em **Novo...**
-      * A caixa de diálogo **Novo Grupo de Recursos** será exibida:
+   * Clique em **Novo...**
+   * A caixa de diálogo **Novo Grupo de Recursos** será exibida:
         
-          ![Caixa de diálogo Novo Grupo de Recursos][08]
-      * Na caixa de texto **Nome** , especifique um nome para o novo Grupo de Recursos.
-      * No menu suspenso **Região** , selecione a localização do data center do Azure apropriada ao Grupo de Recursos.
-      * OPCIONAL: por padrão, uma distribuição recente de Java 8 será implantada pelo Azure automaticamente no contêiner de aplicativo Web como sua JVM. No entanto, você pode especificar uma versão e uma distribuição da JVM diferentes se for necessário para seu aplicativo Web. Para especificar o JDK do seu aplicativo Web, clique na guia **JDK** e selecione uma das seguintes opções:
-         * **Implantar o JDK oferecido pelo Serviço de Aplicativos Web do Azure padrão**: essa opção implantará uma distribuição recente do Java 8.
-         * **Implantar um JDK de terceiro disponível no Azure**: essa opção permite que você escolha na lista de JDKs que são fornecidos pelo Microsoft Azure.
-         * **Meu próprio JDK deste local de download**: essa opção permite que você especifique sua própria distribuição de JDK, que deve ser empacotada como um arquivo ZIP e carregada em um local de download disponível publicamente ou em uma conta de armazenamento do Azure à qual você tenha acesso.
+       ![Caixa de diálogo Novo Grupo de Recursos][08]
+   * Na caixa de texto **Nome** , especifique um nome para o novo Grupo de Recursos.
+   * No menu suspenso **Região** , selecione a localização do data center do Azure apropriada ao Grupo de Recursos.
+   * OPCIONAL: por padrão, uma distribuição recente de Java 8 será implantada pelo Azure automaticamente no contêiner de aplicativo Web como sua JVM. No entanto, você pode especificar uma versão e uma distribuição da JVM diferentes se for necessário para seu aplicativo Web. Para especificar o JDK do seu aplicativo Web, clique na guia **JDK** e selecione uma das seguintes opções:
+     * **Implantar o JDK oferecido pelo Serviço de Aplicativos Web do Azure padrão**: essa opção implantará uma distribuição recente do Java 8.
+     * **Implantar um JDK de terceiro disponível no Azure**: essa opção permite que você escolha na lista de JDKs que são fornecidos pelo Microsoft Azure.
+     * **Meu próprio JDK deste local de download**: essa opção permite que você especifique sua própria distribuição de JDK, que deve ser empacotada como um arquivo ZIP e carregada em um local de download disponível publicamente ou em uma conta de armazenamento do Azure à qual você tenha acesso.
           
-         ![Caixa de diálogo Novo contêiner do aplicativo Web][07b]
+       ![Caixa de diálogo Novo contêiner do aplicativo Web][07b]
 
    g. Clique em **OK**.
 

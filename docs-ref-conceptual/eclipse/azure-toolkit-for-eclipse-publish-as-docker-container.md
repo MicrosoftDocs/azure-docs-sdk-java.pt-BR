@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: aec3682cc14204ca2b395d4b851db7bb68cb8728
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: be76733bffa36160d6e366c383672a15374a9996
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954767"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090839"
 ---
 # <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse"></a>Publicar um aplicativo Web como um contêiner do Docker usando o Kit de ferramentas do Azure para Eclipse
 
@@ -35,7 +35,7 @@ Contêineres do Docker são um método amplamente usado para implantar aplicativ
 
 1. Abra seu projeto de aplicativo Web no Eclipse.
 
-1. Para iniciar o assistente **Publicar como Contêiner do Docker**, execute um dos seguintes procedimentos:
+2. Para iniciar o assistente **Publicar como Contêiner do Docker**, execute um dos seguintes procedimentos:
 
    * Na exibição **Navegador**, clique com o botão direito do mouse em seu projeto, clique em **Azure** e clique em **Publicar como Contêiner do Docker**.
 
@@ -49,7 +49,7 @@ Contêineres do Docker são um método amplamente usado para implantar aplicativ
 
    ![O assistente para Implantar o Contêiner do Docker no Azure][PUB03]
 
-1. Na janela **Digite um nome de imagem, selecione o caminho do artefato e marque um host do Docker a ser usado**, faça o seguinte:
+3. Na janela **Digite um nome de imagem, selecione o caminho do artefato e marque um host do Docker a ser usado**, faça o seguinte:
 
    a. Na caixa **Nome da imagem do Docker**, insira um nome exclusivo para o host do Docker. (O assistente cria automaticamente um nome, mas você pode modificá-lo.)
 
@@ -62,7 +62,7 @@ Contêineres do Docker são um método amplamente usado para implantar aplicativ
 
    ![Assistente para Implantar o Contêiner do Docker no Azure][PUB04a]
 
-1. Na janela **Configurar a nova máquina virtual**, especifique as seguintes opções para o host do Docker. (O assistente gera automaticamente a maioria das opções para você, mas você pode modificar qualquer uma delas.)
+4. Na janela **Configurar a nova máquina virtual**, especifique as seguintes opções para o host do Docker. (O assistente gera automaticamente a maioria das opções para você, mas você pode modificar qualquer uma delas.)
 
    a. **Nome**: insira um nome exclusivo para o host do Docker. (Não é o mesmo que o nome da imagem do Docker que você especificou anteriormente.)
 
@@ -86,9 +86,9 @@ Contêineres do Docker são um método amplamente usado para implantar aplicativ
    * **Nova conta de armazenamento**: crie uma nova conta de armazenamento para o host.
    * **Conta de armazenamento existente**: insira uma conta de armazenamento existente da sua conta do Azure.
 
-1. Clique em **Próximo**.
+5. Clique em **Próximo**.
 
-1. Na janela **Configurar credenciais de logon e configurações de porta**, selecione uma das opções a seguir:
+6. Na janela **Configurar credenciais de logon e configurações de porta**, selecione uma das opções a seguir:
 
    * **Importar credenciais do Azure Key Vault**: especifica um conjunto de credenciais salvas anteriormente que são armazenadas em sua assinatura do Azure. 
 
@@ -98,61 +98,61 @@ Contêineres do Docker são um método amplamente usado para implantar aplicativ
 
    * **Novas credenciais de logon**: cria um novo conjunto de credenciais de logon. Se você selecionar essa opção, faça o seguinte: 
     
-      * Na guia **Credenciais de VM**, escolha uma das opções a seguir para as credenciais de logon de máquina virtual do host do Docker: 
+     * Na guia **Credenciais de VM**, escolha uma das opções a seguir para as credenciais de logon de máquina virtual do host do Docker: 
 
-         * **Nome de usuário**: insira o nome de usuário para as credenciais de logon de máquina virtual. 
-         * **Senha** e **Confirmar**: especifica a senha para as credenciais de logon da máquina virtual. 
-         * **SSH**: insira as configurações de SSH (Secure Shell) para o host do Docker. É possível escolher um das seguintes opções: 
-            * **Nenhum**: especifica que a sua máquina virtual não permitirá conexões SSH. 
-            * **Gerar automaticamente**: cria automaticamente as configurações necessárias para conectar-se via SSH. 
-            * **Importar do diretório**: especifica um diretório que contém um conjunto de configurações de SSH salvas anteriormente. O diretório deve conter os dois arquivos a seguir: 
-               * *id_rsa*: contém a identificação da RSA para um usuário. 
-               * *id_rsa.pub*: contém a chave pública RSA que é usada para autenticação. 
+       * **Nome de usuário**: insira o nome de usuário para as credenciais de logon de máquina virtual. 
+       * **Senha** e **Confirmar**: especifica a senha para as credenciais de logon da máquina virtual. 
+       * **SSH**: insira as configurações de SSH (Secure Shell) para o host do Docker. É possível escolher um das seguintes opções: 
+          * **Nenhum**: especifica que a sua máquina virtual não permitirá conexões SSH. 
+          * **Gerar automaticamente**: cria automaticamente as configurações necessárias para conectar-se via SSH. 
+          * **Importar do diretório**: especifica um diretório que contém um conjunto de configurações de SSH salvas anteriormente. O diretório deve conter os dois arquivos a seguir: 
+             * *id_rsa*: contém a identificação da RSA para um usuário. 
+             * *id_rsa.pub*: contém a chave pública RSA que é usada para autenticação. 
         
          ![Criar host do Docker][PUB05]
 
-      * Na guia **Credenciais de Daemon do Docker**, especifique as seguintes opções: 
+     * Na guia **Credenciais de Daemon do Docker**, especifique as seguintes opções: 
 
-         * **Porta de Daemon do Docker**: insira a porta TCP exclusiva para o host do Docker. 
-         * **Segurança de TLS**: insira as configurações de protocolo TLS para o host do Docker. É possível escolher um das seguintes opções: 
-            * **Nenhum**: especifica que a sua máquina virtual não permitirá conexões TLS. 
-            * **Gerar automaticamente**: cria automaticamente as configurações necessárias para conectar-se via TLS. 
-            * **Importar do diretório**: especifica um diretório que contém um conjunto de configurações de TLS salvas anteriormente. Mais especificamente, o diretório deve conter os seis arquivos a seguir: 
-               * *ca.pem* e *ca-key.pem*: contêm o certificado e a chave pública da autoridade de certificado TLS. 
-               * *cert.pem* e *key.pem*: contêm o certificado do cliente e a chave pública que é usada para autenticação TLS. 
-               * *server.pem* e *server-key.pem*: contêm o certificado do servidor e a chave pública para o host. 
+       * **Porta de Daemon do Docker**: insira a porta TCP exclusiva para o host do Docker. 
+       * **Segurança de TLS**: insira as configurações de protocolo TLS para o host do Docker. É possível escolher um das seguintes opções: 
+          * **Nenhum**: especifica que a sua máquina virtual não permitirá conexões TLS. 
+          * **Gerar automaticamente**: cria automaticamente as configurações necessárias para conectar-se via TLS. 
+          * **Importar do diretório**: especifica um diretório que contém um conjunto de configurações de TLS salvas anteriormente. Mais especificamente, o diretório deve conter os seis arquivos a seguir: 
+             * *ca.pem* e *ca-key.pem*: contêm o certificado e a chave pública da autoridade de certificado TLS. 
+             * *cert.pem* e *key.pem*: contêm o certificado do cliente e a chave pública que é usada para autenticação TLS. 
+             * *server.pem* e *server-key.pem*: contêm o certificado do servidor e a chave pública para o host. 
 
          ![Criar host do Docker][PUB06]
 
-1. Depois de inserir todas as informações anteriores, clique em **Concluir**.
+7. Depois de inserir todas as informações anteriores, clique em **Concluir**.
 
-1. No assistente **Implantar Contêiner do Docker no Azure**, clique em **Avançar**.
+8. No assistente **Implantar Contêiner do Docker no Azure**, clique em **Avançar**.
 
    ![O assistente para Implantar o Contêiner do Docker no Azure][PUB07]
 
-1. Na janela **Configurar o contêiner do Docker a ser criado**, faça o seguinte:
+9. Na janela **Configurar o contêiner do Docker a ser criado**, faça o seguinte:
 
    a. Na caixa **Nome do contêiner do Docker**, insira um nome exclusivo do contêiner do Docker.
 
    b. Escolha uma das seguintes imagens do Docker: 
 
-      * **Imagem do Docker predefinida**: especifica uma imagem já existente do Docker do Azure. 
+   * **Imagem do Docker predefinida**: especifica uma imagem já existente do Docker do Azure. 
 
-      >[!NOTE]
-      >A lista de imagens do Docker nessa caixa é composta por várias imagens às quais o Kit de Ferramentas do Azure foi configurado para aplicar patches, de modo que o artefato seja implantado automaticamente.
-      >
+     >[!NOTE]
+     >A lista de imagens do Docker nessa caixa é composta por várias imagens às quais o Kit de Ferramentas do Azure foi configurado para aplicar patches, de modo que o artefato seja implantado automaticamente.
+     >
 
-      * **Dockerfile personalizado**: especifica um Dockerfile salvo anteriormente do computador local.
+   * **Dockerfile personalizado**: especifica um Dockerfile salvo anteriormente do computador local.
 
-      >[!NOTE]
-      >Esse é um recurso mais avançado para desenvolvedores que desejam implantar um Dockerfile próprio. No entanto, cabe aos desenvolvedores que usam essa opção garantir que o Dockerfile seja compilado corretamente. O Kit de ferramentas do Azure não valida o conteúdo em um Dockerfile personalizado, portanto, a implantação poderá falhar se o Dockerfile tiver problemas. Além disso, o Kit de Ferramentas do Azure espera que o Dockerfile personalizado contenha um artefato de aplicativo Web e ele tentará abrir uma conexão HTTP. Se os desenvolvedores publicarem um tipo diferente de artefato, eles poderão receber erros inócuos após a implantação.
-      >
+     >[!NOTE]
+     >Esse é um recurso mais avançado para desenvolvedores que desejam implantar um Dockerfile próprio. No entanto, cabe aos desenvolvedores que usam essa opção garantir que o Dockerfile seja compilado corretamente. O Kit de ferramentas do Azure não valida o conteúdo em um Dockerfile personalizado, portanto, a implantação poderá falhar se o Dockerfile tiver problemas. Além disso, o Kit de Ferramentas do Azure espera que o Dockerfile personalizado contenha um artefato de aplicativo Web e ele tentará abrir uma conexão HTTP. Se os desenvolvedores publicarem um tipo diferente de artefato, eles poderão receber erros inócuos após a implantação.
+     >
 
    c. **Configurações de porta**: insira a associação de porta TCP exclusiva para seu contêiner do Docker.
 
       ![A janela Configurar o contêiner do Docker a ser criado][PUB08]
 
-1. Depois de concluir todas as etapas anteriores, clique em **Concluir**.
+10. Depois de concluir todas as etapas anteriores, clique em **Concluir**.
 
 O Kit de ferramentas do Azure começa a implantar seu aplicativo Web no Azure em um contêiner do Docker. 
 
@@ -164,7 +164,7 @@ Para obter recursos adicionais para o Docker, consulte o [site do Docker] oficia
 
 <!-- URL List -->
 
-[site do Docker]: https://www.docker.com/
+[Site do Docker]: https://www.docker.com/
 
 <!-- IMG List -->
 

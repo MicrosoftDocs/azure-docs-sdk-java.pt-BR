@@ -14,12 +14,12 @@ ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: 1dda697cac80a6cad3ebbbbf8a5a4f18b515dfd8
-ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
+ms.openlocfilehash: a2734fc08f2f59f64ba6c6c20ff18d75070b68d5
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883679"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090709"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Como usar o iniciador do Spring Boot para o Azure Key Vault
 
@@ -31,7 +31,7 @@ Este artigo demonstra como criar um aplicativo com o **[Spring Initializr]**, o 
 
 Os seguintes pré-requisitos são obrigatórios para você concluir as etapas neste artigo:
 
-* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [benefício de assinante do MSDN] ou inscrever-se para uma [conta gratuita do Azure].
+* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [Benefícios do assinante do MSDN] ou inscrever-se para uma [conta do Azure gratuita].
 * Um [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/) versão 1.7 ou posterior.
 * [Apache Maven](http://maven.apache.org/) versão 3.0 ou posterior.
 
@@ -101,6 +101,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    az group create --name wingtiptoysresources --location westus
    ```
    Em que:
+
    | Parâmetro | Descrição |
    |---|---|
    | `name` | Especifica um nome exclusivo para o grupo de recursos. |
@@ -121,11 +122,12 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    }
    ```
 
-1. Crie uma entidade de serviço do Azure a partir do registro do seu aplicativo. Por exemplo:
+2. Crie uma entidade de serviço do Azure a partir do registro do seu aplicativo. Por exemplo:
    ```shell
    az ad sp create-for-rbac --name "wingtiptoysuser"
    ```
    Em que:
+
    | Parâmetro | DESCRIÇÃO |
    |---|---|
    | `name` | Especifica o nome para a entidade de serviço do Azure. |
@@ -142,11 +144,12 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    }
    ```
 
-1. Crie um novo cofre de chaves no grupo de recursos. Por exemplo:
+3. Crie um novo cofre de chaves no grupo de recursos. Por exemplo:
    ```azurecli
    az keyvault create --name wingtiptoyskeyvault --resource-group wingtiptoysresources --location westus --enabled-for-deployment true --enabled-for-disk-encryption true --enabled-for-template-deployment true --sku standard --query properties.vaultUri
    ```
    Em que:
+
    | Parâmetro | Descrição |
    |---|---|
    | `name` | Especifica um nome exclusivo para o seu cofre de chaves. |
@@ -163,11 +166,12 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    "https://wingtiptoyskeyvault.vault.azure.net"
    ```
 
-1. Defina a política de acesso da entidade de serviço do Azure criada anteriormente. Por exemplo:
+4. Defina a política de acesso da entidade de serviço do Azure criada anteriormente. Por exemplo:
    ```azurecli
    az keyvault set-policy --name wingtiptoyskeyvault --secret-permission set get list delete --spn "iiiiiiii-iiii-iiii-iiii-iiiiiiiiiiii"
    ```
    Em que:
+
    | Parâmetro | Descrição |
    |---|---|
    | `name` | Especifica o nome do cofre de chaves de antes. |
@@ -192,11 +196,12 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    }
    ```
 
-1. Armazenar um segredo no seu novo cofre de chaves. Por exemplo:
+5. Armazenar um segredo no seu novo cofre de chaves. Por exemplo:
    ```azurecli
    az keyvault secret set --vault-name "wingtiptoyskeyvault" --name "connectionString" --value "jdbc:sqlserver://SERVER.database.windows.net:1433;database=DATABASE;"
    ```
    Em que:
+
    | Parâmetro | Descrição |
    |---|---|
    | `vault-name` | Especifica o nome do cofre de chaves de antes. |
@@ -230,24 +235,26 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
 
 1. Extraia os arquivos do projeto Spring Boot que você baixou anteriormente em um diretório.
 
-1. Navegue até a pasta *src/main/resources* no seu projeto e abra o arquivo *application.properties* no editor de texto.
+2. Navegue até a pasta *src/main/resources* no seu projeto e abra o arquivo *application.properties* no editor de texto.
 
-1. Adicione os valores do cofre de chaves usando os valores obtidos nas etapas concluídas anteriormente neste tutorial. Por exemplo:
+3. Adicione os valores do cofre de chaves usando os valores obtidos nas etapas concluídas anteriormente neste tutorial. Por exemplo:
    ```yaml
    azure.keyvault.uri=https://wingtiptoyskeyvault.vault.azure.net/
    azure.keyvault.client-id=iiiiiiii-iiii-iiii-iiii-iiiiiiiiiiii
    azure.keyvault.client-key=pppppppp-pppp-pppp-pppp-pppppppppppp
    ```
    Em que:
-   | Parâmetro | Descrição |
-   |---|---|
-   | `azure.keyvault.uri` | Especifica o URI de quando você criou seu cofre de chaves. |
-   | `azure.keyvault.client-id` | Especifica o GUID da *appId* de quando você criou a entidade de serviço. |
+
+   |          Parâmetro          |                                 Descrição                                 |
+   |-----------------------------|-----------------------------------------------------------------------------|
+   |    `azure.keyvault.uri`     |           Especifica o URI de quando você criou seu cofre de chaves.           |
+   | `azure.keyvault.client-id`  |  Especifica o GUID da *appId* de quando você criou a entidade de serviço.   |
    | `azure.keyvault.client-key` | Especifica o GUID da *senha* de quando você criou a entidade de serviço. |
 
-1. Navegue até o arquivo de código-fonte principal do projeto. Por exemplo: */src/main/java/com/wingtiptoys/secrets*.
 
-1. Abra o arquivo Java principal do aplicativo em um editor de texto, por exemplo *SecretsApplication.java*, e adicione as seguintes linhas ao arquivo:
+4. Navegue até o arquivo de código-fonte principal do projeto. Por exemplo: */src/main/java/com/wingtiptoys/secrets*.
+
+5. Abra o arquivo Java principal do aplicativo em um editor de texto, por exemplo *SecretsApplication.java*, e adicione as seguintes linhas ao arquivo:
 
    ```java
    package com.wingtiptoys.secrets;
@@ -274,7 +281,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    ```
    Este exemplo de código recupera a cadeia de conexão do cofre de chaves e a exibe à linha de comando.
 
-1. Salve e feche o arquivo Java.
+6. Salve e feche o arquivo Java.
 
 ## <a name="build-and-test-your-app"></a>Crie e testar seu aplicativo
 
@@ -319,9 +326,9 @@ Para obter mais informações sobre como usar o Azure com o Java, veja os docume
 [Documentação do Key Vault]: /azure/key-vault/
 [Introdução ao Cofre da Chave do Azure]: /azure/key-vault/key-vault-get-started
 [Azure para desenvolvedores Java]: https://docs.microsoft.com/java/azure/
-[conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
+[conta do Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Ferramentas Java para Visual Studio Team Services]: https://java.visualstudio.com/
-[benefício de assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
+[Benefícios do assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Initializr]: https://start.spring.io/
 [Spring Framework]: https://spring.io/

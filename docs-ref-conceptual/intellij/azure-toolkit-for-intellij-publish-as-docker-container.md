@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 64cefc1ace5d0377dea25fdbdc83d8dada31ddf7
-ms.sourcegitcommit: ed130145f9e5c2d803791d96bb118023175e644a
+ms.openlocfilehash: 05fb81466202547cb1bad34caae0f94f16a9d21b
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30223373"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090652"
 ---
 # <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicar um aplicativo Web como um contêiner do Docker usando o Kit de ferramentas do Azure para IntelliJ
 
@@ -60,11 +60,11 @@ Contêineres do Docker são um método amplamente usado para implantar aplicativ
    a. Na caixa **Nome da imagem do Docker**, insira um nome exclusivo para o host do Docker. (O assistente cria automaticamente um nome, mas você pode modificá-lo.) 
 
    b. A área **Hosts** exibe quaisquer hosts do Docker que você já criou. Faça uma das opções a seguir: 
-      * Se você tiver um host do Docker existente, poderá implantar seu aplicativo Web nele.
-      * Para criar um host do Docker, clique no sinal de adição verde (**+**).  
-       A caixa de diálogo **Criar Host do Docker** é aberta. 
+   * Se você tiver um host do Docker existente, poderá implantar seu aplicativo Web nele.
+   * Para criar um host do Docker, clique no sinal de adição verde (**+**).  
+     A caixa de diálogo **Criar Host do Docker** é aberta. 
 
-      ![Assistente para Implantar o Contêiner do Docker no Azure][PUB04a]
+     ![Assistente para Implantar o Contêiner do Docker no Azure][PUB04a]
 
 4. Na janela **Configurar a nova máquina virtual**, forneça as seguintes informações sobre o host do Docker. (O assistente gera automaticamente a maioria das informações para você, mas você pode modificar qualquer uma delas.) 
 
@@ -97,50 +97,50 @@ Contêineres do Docker são um método amplamente usado para implantar aplicativ
 
 6. Selecione uma das seguintes opções:
 
-      * **Importar credenciais do Azure Key Vault**: especifique um conjunto de credenciais que são armazenadas em sua assinatura do Azure salva anteriormente.
+   * **Importar credenciais do Azure Key Vault**: especifique um conjunto de credenciais que são armazenadas em sua assinatura do Azure salva anteriormente.
 
-          > [!NOTE]
-          > Um Azure Key Vault que é criado com uma conta ou entidade de serviço específica não poderá ser acessado automaticamente por outra conta ou entidade de serviço que compartilhe a assinatura. Para permitir que outra conta ou entidade de serviço use o Key Vault, você deve usar o Portal do Azure para adicionar a conta ou a entidade de serviço.
+       > [!NOTE]
+       > Um Azure Key Vault que é criado com uma conta ou entidade de serviço específica não poderá ser acessado automaticamente por outra conta ou entidade de serviço que compartilhe a assinatura. Para permitir que outra conta ou entidade de serviço use o Key Vault, você deve usar o Portal do Azure para adicionar a conta ou a entidade de serviço.
 
-      * **Novas credenciais de logon**: crie um novo conjunto de credenciais de logon. Se você selecionar essa opção, faça o seguinte:
+   * **Novas credenciais de logon**: crie um novo conjunto de credenciais de logon. Se você selecionar essa opção, faça o seguinte:
 
-    a. Na guia **Credenciais de VM**, forneça as informações a seguir para as credenciais de logon de máquina virtual do seu host do Docker:
+     a. Na guia **Credenciais de VM**, forneça as informações a seguir para as credenciais de logon de máquina virtual do seu host do Docker:
 
-    * **Nome de usuário**: insira o nome de usuário para suas credenciais de logon de máquina virtual.
+     * **Nome de usuário**: insira o nome de usuário para suas credenciais de logon de máquina virtual.
 
-    * **Senha** e **Confirmar**: especifica a senha para as credenciais de logon da máquina virtual.
+     * **Senha** e **Confirmar**: especifica a senha para as credenciais de logon da máquina virtual.
 
-    * **SSH**: insira as configurações de SSH (Secure Shell) para o host do Docker. É possível selecionar uma das seguintes opções:
+     * **SSH**: insira as configurações de SSH (Secure Shell) para o host do Docker. É possível selecionar uma das seguintes opções:
 
-        * **Nenhum**: especifica que a sua máquina virtual não permite conexões SSH.
+     * **Nenhum**: especifica que a sua máquina virtual não permite conexões SSH.
 
-        * **Gerar automaticamente**: cria automaticamente as configurações necessárias para conectar-se via SSH.
+     * **Gerar automaticamente**: cria automaticamente as configurações necessárias para conectar-se via SSH.
 
-        * **Importar do diretório**: permite que você especifique um diretório que contém um conjunto de configurações de SSH salvas anteriormente. O diretório deve conter os dois arquivos a seguir:
+     * **Importar do diretório**: permite que você especifique um diretório que contém um conjunto de configurações de SSH salvas anteriormente. O diretório deve conter os dois arquivos a seguir:
 
-            * *id_rsa*: contém a identificação da RSA para um usuário.
+         * *id_rsa*: contém a identificação da RSA para um usuário.
 
-            * *id_rsa.pub*: contém a chave pública RSA que é usada para autenticação.
+         * *id_rsa.pub*: contém a chave pública RSA que é usada para autenticação.
 
-    b. Na guia **Acesso ao Daemon do Docker** forneça as seguintes informações:
+     b. Na guia **Acesso ao Daemon do Docker** forneça as seguintes informações:
 
-    ![Criar host do Docker][PUB06]
+     ![Criar host do Docker][PUB06]
     
-    * **Porta de Daemon do Docker**: insira a porta TCP exclusiva para o host do Docker.
+     * **Porta de Daemon do Docker**: insira a porta TCP exclusiva para o host do Docker.
     
-    * **Segurança de TLS**: insira as configurações de protocolo TLS para o host do Docker. É possível escolher um das seguintes opções:
+     * **Segurança de TLS**: insira as configurações de protocolo TLS para o host do Docker. É possível escolher um das seguintes opções:
     
-        * **Nenhum**: especifica que a sua máquina virtual não permite conexões TLS.
+     * **Nenhum**: especifica que a sua máquina virtual não permite conexões TLS.
         
-        * **Gerar automaticamente**: cria automaticamente as configurações necessárias para conectar-se via TLS.
+     * **Gerar automaticamente**: cria automaticamente as configurações necessárias para conectar-se via TLS.
         
-        * **Importar do diretório**: especifica um diretório que contém um conjunto de configurações de TLS salvas anteriormente. O diretório deve conter os seis arquivos a seguir:
+     * **Importar do diretório**: especifica um diretório que contém um conjunto de configurações de TLS salvas anteriormente. O diretório deve conter os seis arquivos a seguir:
         
-            * *ca.pem* e *ca-key.pem*: contêm o certificado e a chave pública da autoridade de certificado TLS.
+         * *ca.pem* e *ca-key.pem*: contêm o certificado e a chave pública da autoridade de certificado TLS.
             
-            * *cert.pem* e *key.pem*: contêm o certificado do cliente e a chave pública que serão usados para autenticação TLS.
+         * *cert.pem* e *key.pem*: contêm o certificado do cliente e a chave pública que serão usados para autenticação TLS.
             
-            * *server.pem* e *server-key.pem*: contêm o certificado do cliente e a chave pública que é usada para autenticação TLS.
+         * *server.pem* e *server-key.pem*: contêm o certificado do cliente e a chave pública que é usada para autenticação TLS.
 
 7. Depois de inserir as informações necessárias, clique em **Concluir**.  
     O assistente para **Implantar Contêiner do Docker no Azure** é aberto novamente.
@@ -205,7 +205,7 @@ Para obter recursos adicionais para o Docker, consulte o [site do Docker] oficia
 
 <!-- URL List -->
 
-[site do Docker]: https://www.docker.com/
+[Site do Docker]: https://www.docker.com/
 [Configurar artefatos]: https://www.jetbrains.com/help/idea/2016.1/configuring-artifacts.html
 
 <!-- IMG List -->

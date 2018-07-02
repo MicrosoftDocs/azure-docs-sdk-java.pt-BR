@@ -14,12 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: ebe98a604b52dc9a4b5a47cbf65a4c68a5c86fe3
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: efc1dffa248987772827bbe7bc0caa9f10a0b4ef
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954777"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090779"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-intellij"></a>Criar um aplicativo Web Olá, Mundo para o Azure usando o kit de ferramentas herdado do IntelliJ
 
@@ -161,14 +161,14 @@ Quando você tiver definido suas configurações de módulo, poderá publicar se
 
    h. (Opcional) Por padrão, uma distribuição recente de Java 8 será implantada automaticamente como sua JVM pelo Azure no contêiner do aplicativo Web. No entanto, você pode selecionar uma versão diferente e uma distribuição da JVM. Para fazer isso, execute as seguintes etapas:
       
-      * Clique na guia **JDK** na caixa de diálogo **Novo Contêiner do Aplicativo Web**.
-      * Você pode escolher entre uma das duas seguintes opções:
+   * Clique na guia **JDK** na caixa de diálogo **Novo Contêiner do Aplicativo Web**.
+   * Você pode escolher entre uma das duas seguintes opções:
         
-         * Implantar o JDK padrão, que é oferecido pelo Azure
-         * Implantar um JDK de terceiros de uma lista suspensa de JDKs adicionais que estão disponíveis no Azure
-         * Implantar um JDK personalizado, que deve ser empacotado como um arquivo ZIP e ser publicamente disponível ou em sua conta de armazenamento do Azure
+      * Implantar o JDK padrão, que é oferecido pelo Azure
+      * Implantar um JDK de terceiros de uma lista suspensa de JDKs adicionais que estão disponíveis no Azure
+      * Implantar um JDK personalizado, que deve ser empacotado como um arquivo ZIP e ser publicamente disponível ou em sua conta de armazenamento do Azure
         
-      ![Guia Novo JDK de Contêiner de Aplicativo][11b]
+     ![Guia Novo JDK de Contêiner de Aplicativo][11b]
 
    i. Depois de concluir todas as etapas acima, a caixa de diálogo New Web App Container (Novo Contêiner de Aplicativos Web) deve ser semelhante à ilustração a seguir:
       

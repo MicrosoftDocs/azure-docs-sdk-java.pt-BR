@@ -10,12 +10,12 @@ ms.devlang: java
 ms.topic: reference
 ms.technology: Azure
 ms.date: 3/06/2016
-ms.openlocfilehash: 924ccf9bdaad4bc635f133adbcfcc8f797d06644
-ms.sourcegitcommit: acc83bb537d77568b2a5427479d6354d6ae30885
+ms.openlocfilehash: 0aaa83ceb42192441decb5972baae56fed337fb2
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2017
-ms.locfileid: "23982158"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090679"
 ---
 # <a name="release-notes"></a>Notas de versão 
 
@@ -35,7 +35,7 @@ Algumas das APIs que ainda estavam em versões Beta anteriores estão agora na f
 - todos os métodos na CDN que estavam anteriormente na versão Beta
 - todos os métodos e interfaces no Gateway de Aplicativo que estavam anteriormente em versão Beta
 
- Algumas partes da biblioteca ainda estão em Versão Prévia. Consulte a tabela abaixo para saber o estado atual das bibliotecas:
+  Algumas partes da biblioteca ainda estão em Versão Prévia. Consulte a tabela abaixo para saber o estado atual das bibliotecas:
 
 Serviço ou recurso | Disponível como Disponibilidade Geral (GA) | Disponível como versão prévia 
 ---------|---------|---------|-
@@ -43,7 +43,7 @@ Computação  | Máquinas virtuais e extensões de VM, conjuntos de dimensioname
 Armazenamento   |  Contas de armazenamento       |    Criptografia     
 Banco de dados SQL  | Bancos de dados, firewalls, pools elásticos              
 Rede    |  Redes virtuais, interfaces de rede, endereços IP, tabelas de roteamento, grupos de segurança de rede, DNS, gerenciadores de tráfego, gateways de aplicativo  |    Balanceadores de carga, Emparelhamento de rede, Gateway de Rede Virtual, Inspetores de rede 
-Mais serviços    |  Gerenciador de Recursos, Cofre de Chaves, Redis, CDN, Lote       |  Aplicativos Web, Aplicativos de funções, Barramento de Serviço, Gráfico RBAC, Cosmos DB, Pesquisar  
+Mais serviços    |  Gerenciador de Recursos, Cofre de Chaves, Redis, CDN, Lote       |  Aplicativos Web, Aplicativos de funções, Barramento de Serviço, Grafo RBAC, Cosmos DB, Pesquisar  
 Conceitos básicos     |   Autenticação - núcleo, métodos assíncronos, identidade de serviço gerenciado      |      |
 
 > Os recursos de visualização são marcados com uma anotação `@Beta` no nível de classe, interface ou método em bibliotecas. Esses recursos estão sujeitos a alterações. Eles podem ser modificados de alguma forma, ou até mesmo removidos, no futuro.

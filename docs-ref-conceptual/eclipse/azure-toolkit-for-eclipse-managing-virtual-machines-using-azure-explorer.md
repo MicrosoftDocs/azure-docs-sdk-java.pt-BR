@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: ec67ed44ec570da7b826c12a9f8a24a5b0170e99
-ms.sourcegitcommit: 3d3460289ab6b9165c2cf6a3dd56eafd0692501e
+ms.openlocfilehash: c04f5225f0bb99898f69b26a4782aa57d75c4f22
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34283044"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090651"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-eclipse"></a>Gerenciar máquinas virtuais usando o Azure Explorer para Eclipse
 
@@ -35,17 +35,17 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
 1. Entre em sua conta do Azure usando as [Instruções de conexão para o Kit de ferramentas do Azure para Eclipse](https://docs.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse-sign-in-instructions).
 
-1. Na exibição do **Azure Explorer**, expanda o nó **Azure**, clique com o botão direito do mouse em **Máquinas Virtuais** e, em seguida, clique em **Criar VM**.
+2. Na exibição do **Azure Explorer**, expanda o nó **Azure**, clique com o botão direito do mouse em **Máquinas Virtuais** e, em seguida, clique em **Criar VM**.
 
    ![Comando Criar VM][CR01]  
 
    O assistente para **Criar uma nova Máquina Virtual** é aberto.
 
-1. Na caixa de diálogo **Escolha uma Assinatura**, selecione sua assinatura e clique em **Avançar**.
+3. Na caixa de diálogo **Escolha uma Assinatura**, selecione sua assinatura e clique em **Avançar**.
 
    ![A janela Escolha uma Assinatura][CR02]
 
-1. Na janela **Selecionar uma Imagem de Máquina Virtual**, insira as seguintes informações:
+4. Na janela **Selecionar uma Imagem de Máquina Virtual**, insira as seguintes informações:
 
    * **Localização**: especifica o local no qual sua máquina virtual será criada (por exemplo, *Oeste dos EUA*).
 
@@ -59,9 +59,9 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
    ![A janela Selecionar uma Imagem de Máquina Virtual][CR03]
 
-1. Clique em **Próximo**.
+5. Clique em **Próximo**.
 
-1. Na janela **Configurações Básicas de Máquina Virtual**, insira as seguintes informações:
+6. Na janela **Configurações Básicas de Máquina Virtual**, insira as seguintes informações:
 
    * **Nome da Máquina Virtual**: especifica o nome para sua nova máquina virtual, que deve começar com uma letra e conter somente letras, números e hifens.
 
@@ -73,15 +73,15 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
    ![A janela Configurações Básicas de Máquina Virtual][CR04]
 
-1. Clique em **Próximo**.
+7. Clique em **Próximo**.
 
-1. Na janela **Criar Nova Conta de Armazenamento**, insira as seguintes informações:
+8. Na janela **Criar Nova Conta de Armazenamento**, insira as seguintes informações:
 
    * **Grupo de Recursos**: especifica o grupo de recursos para suas máquinas virtuais. Selecione uma das seguintes opções:
-      * **Criar novo**: especifica que você deseja criar um novo grupo de recursos.
-      * **Usar existente**: especifica que você quer selecionar um grupo de recursos que já está associado à sua conta do Azure.
+     * **Criar novo**: especifica que você deseja criar um novo grupo de recursos.
+     * **Usar existente**: especifica que você quer selecionar um grupo de recursos que já está associado à sua conta do Azure.
 
-      ![A caixa de diálogo Criar Nova Conta de Armazenamento][CR05]
+       ![A caixa de diálogo Criar Nova Conta de Armazenamento][CR05]
 
    * **Conta de armazenamento**: especifica a conta de armazenamento que será usada para armazenar a máquina virtual. Você pode usar uma conta de armazenamento existente ou criar uma nova.
 
@@ -89,7 +89,7 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
       ![A caixa de diálogo Criar Nova Rede Virtual][CR06]
 
-1. Na janela **Recursos Associados**, insira as informações a seguir:
+9. Na janela **Recursos Associados**, insira as informações a seguir:
 
    * **Endereço IP público**: especifica um endereço IP externo para sua máquina virtual. Você pode optar por criar um novo endereço IP ou, se sua máquina virtual não tiver um endereço IP público, selecione **(Nenhum)**.
 
@@ -99,11 +99,11 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
    ![A janela Recursos Associados][CR07]
 
-1. Clique em **Concluir**.  
+10. Clique em **Concluir**.  
 
-   Sua nova máquina virtual aparece na janela de ferramentas do Azure Explorer.
+    Sua nova máquina virtual aparece na janela de ferramentas do Azure Explorer.
 
-   ![Nova máquina virtual][CR08]
+    ![Nova máquina virtual][CR08]
 
 ## <a name="restart-a-virtual-machine-in-eclipse"></a>Reiniciar uma máquina virtual no Eclipse
 
