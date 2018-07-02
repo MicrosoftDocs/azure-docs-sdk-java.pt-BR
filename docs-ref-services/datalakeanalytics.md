@@ -12,25 +12,25 @@ ms.technology: azure
 ms.devlang: java
 ms.service: data-lake-store
 ms.openlocfilehash: c14c89f961951d114362adee4fec6239e78cffb3
-ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
+ms.sourcegitcommit: 33c70f921f1524c8bdb69ad5a1a3c1b4b1de97ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31823769"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37026768"
 ---
-# <a name="azure-data-lake-analytics-libraries-for-java"></a><span data-ttu-id="527b7-104">Bibliotecas do Azure Data Lake Analytics para Java</span><span class="sxs-lookup"><span data-stu-id="527b7-104">Azure Data Lake Analytics libraries for Java</span></span>
+# <a name="azure-data-lake-analytics-libraries-for-java"></a><span data-ttu-id="60775-104">Bibliotecas do Azure Data Lake Analytics para Java</span><span class="sxs-lookup"><span data-stu-id="60775-104">Azure Data Lake Analytics libraries for Java</span></span>
 
-## <a name="overview"></a><span data-ttu-id="527b7-105">Visão geral</span><span class="sxs-lookup"><span data-stu-id="527b7-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="60775-105">Visão geral</span><span class="sxs-lookup"><span data-stu-id="60775-105">Overview</span></span>
 
-<span data-ttu-id="527b7-106">Execute trabalhos de análise de big data dimensionados para grandes conjuntos de dados com o [Azure Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview).</span><span class="sxs-lookup"><span data-stu-id="527b7-106">Run big data analysis jobs that scale to massive data sets with [Azure Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview).</span></span>
+<span data-ttu-id="60775-106">Execute trabalhos de análise de big data dimensionados para grandes conjuntos de dados com o [Azure Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview).</span><span class="sxs-lookup"><span data-stu-id="60775-106">Run big data analysis jobs that scale to massive data sets with [Azure Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview).</span></span>
 
-<span data-ttu-id="527b7-107">Para começar a usar o Azure Data Lake Analytics, veja [Introdução ao Azure Data Lake Analytics com o SDK de Java](/azure/data-lake-analytics/data-lake-analytics-get-started-java-sdk).</span><span class="sxs-lookup"><span data-stu-id="527b7-107">To get started with Azure Data Lake Analytics, see [Get started with Azure Data Lake Analytics using Java SDK](/azure/data-lake-analytics/data-lake-analytics-get-started-java-sdk).</span></span>
+<span data-ttu-id="60775-107">Para começar a usar o Azure Data Lake Analytics, veja [Introdução ao Azure Data Lake Analytics com o SDK de Java](/azure/data-lake-analytics/data-lake-analytics-get-started-java-sdk).</span><span class="sxs-lookup"><span data-stu-id="60775-107">To get started with Azure Data Lake Analytics, see [Get started with Azure Data Lake Analytics using Java SDK](/azure/data-lake-analytics/data-lake-analytics-get-started-java-sdk).</span></span>
 
-## <a name="management-api"></a><span data-ttu-id="527b7-108">API de gerenciamento</span><span class="sxs-lookup"><span data-stu-id="527b7-108">Management API</span></span>
+## <a name="management-api"></a><span data-ttu-id="60775-108">API de gerenciamento</span><span class="sxs-lookup"><span data-stu-id="60775-108">Management API</span></span>
 
-<span data-ttu-id="527b7-109">Use a API de gerenciamento para gerenciar contas, trabalhos, políticas e catálogos de Data Lake Analytics.</span><span class="sxs-lookup"><span data-stu-id="527b7-109">Use the management API to manage Data Lake Analytics accounts, jobs, policies, and catalogs.</span></span>
+<span data-ttu-id="60775-109">Use a API de gerenciamento para gerenciar contas, trabalhos, políticas e catálogos de Data Lake Analytics.</span><span class="sxs-lookup"><span data-stu-id="60775-109">Use the management API to manage Data Lake Analytics accounts, jobs, policies, and catalogs.</span></span>
 
-<span data-ttu-id="527b7-110">[Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a API de gerenciamento em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="527b7-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
+<span data-ttu-id="60775-110">[Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a API de gerenciamento em seu projeto.</span><span class="sxs-lookup"><span data-stu-id="60775-110">[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.</span></span>
 
 
 ```XML
@@ -41,9 +41,9 @@ ms.locfileid: "31823769"
 </dependency>
 ```
 
-## <a name="example"></a><span data-ttu-id="527b7-111">Exemplo</span><span class="sxs-lookup"><span data-stu-id="527b7-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="60775-111">Exemplo</span><span class="sxs-lookup"><span data-stu-id="60775-111">Example</span></span>
 
-<span data-ttu-id="527b7-112">Enviar um novo trabalho de U-SQL para o Data Lake Analytics.</span><span class="sxs-lookup"><span data-stu-id="527b7-112">Submit a new U-SQL job to Data Lake Analytics.</span></span>
+<span data-ttu-id="60775-112">Enviar um novo trabalho de U-SQL para o Data Lake Analytics.</span><span class="sxs-lookup"><span data-stu-id="60775-112">Submit a new U-SQL job to Data Lake Analytics.</span></span>
 
 ```java
 // authenticate with service principal credentials
@@ -66,12 +66,12 @@ JobInformation jobInfo = adlaJobClient.getJobOperations().create(accountName, jo
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="527b7-113">Explorar as APIs de gerenciamento</span><span class="sxs-lookup"><span data-stu-id="527b7-113">Explore the Management APIs</span></span>](/java/api/overview/azure/datalakeanalytics/management)
+> [<span data-ttu-id="60775-113">Explorar as APIs de gerenciamento</span><span class="sxs-lookup"><span data-stu-id="60775-113">Explore the Management APIs</span></span>](/java/api/overview/azure/datalakeanalytics/management)
 
-## <a name="samples"></a><span data-ttu-id="527b7-114">Exemplos</span><span class="sxs-lookup"><span data-stu-id="527b7-114">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="60775-114">Exemplos</span><span class="sxs-lookup"><span data-stu-id="60775-114">Samples</span></span>
 
-<span data-ttu-id="527b7-115">[Azure Data Lake Analytics usando o SDK de Java][1]</span><span class="sxs-lookup"><span data-stu-id="527b7-115">[Azure Data Lake Analytics using Java SDK][1]</span></span> 
+<span data-ttu-id="60775-115">[Azure Data Lake Analytics usando o SDK de Java][1]</span><span class="sxs-lookup"><span data-stu-id="60775-115">[Azure Data Lake Analytics using Java SDK][1]</span></span> 
 
 [1]: https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-get-started-java-sdk
 
-<span data-ttu-id="527b7-116">Veja a [lista completa](https://azure.microsoft.com/resources/samples/?platform=java&term=analytics) de exemplos do Azure Data Lake Analytics.</span><span class="sxs-lookup"><span data-stu-id="527b7-116">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=java&term=analytics) of Azure Data Lake Analytics samples.</span></span>
+<span data-ttu-id="60775-116">Veja a [lista completa](https://azure.microsoft.com/resources/samples/?platform=java&term=analytics) de exemplos do Azure Data Lake Analytics.</span><span class="sxs-lookup"><span data-stu-id="60775-116">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=java&term=analytics) of Azure Data Lake Analytics samples.</span></span>
