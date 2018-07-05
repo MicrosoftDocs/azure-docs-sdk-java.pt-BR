@@ -11,6 +11,8 @@
           href: configure-spring-boot-starter-java-app-with-azure-active-directory.md
         - name: Cofre da Chave do Azure
           href: configure-spring-boot-starter-java-app-with-azure-key-vault.md
+        - name: Azure App Insights
+          href: configure-spring-boot-java-applicationinsights.md
     - name: Tutoriais
       items:
         - name: Cache Redis do Azure
