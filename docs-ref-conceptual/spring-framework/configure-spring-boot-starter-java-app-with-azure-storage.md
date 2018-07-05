@@ -14,11 +14,12 @@ ms.service: storage
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: storage
-ms.openlocfilehash: e10ecfb7f6d705aa3ccffc49d354d1019f7f1a0b
-ms.sourcegitcommit: 49b17bbf34732512f836ee634818f1058147ff5c
+ms.openlocfilehash: 2f9381fce2fee207360287c57443b56eb5128e42
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090689"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>Como usar o iniciador do Spring Boot para Armazenamento do Azure
 
@@ -108,6 +109,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    az group create --name wingtiptoysresources --location westus
    ```
    Em que:
+
    | Parâmetro | Descrição |
    |---|---|
    | `name` | Especifica um nome exclusivo para o grupo de recursos. |
@@ -128,11 +130,12 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    }
    ```
 
-1. Crie uma conta de armazenamento do Azure no grupo de recursos para seu aplicativo Spring Boot. Por exemplo:
+2. Crie uma conta de armazenamento do Azure no grupo de recursos para seu aplicativo Spring Boot. Por exemplo:
    ```azurecli
    az storage account create --name wingtiptoysstorage --resource-group wingtiptoysresources --location westus --sku Standard_LRS
    ```
    Em que:
+
    | Parâmetro | DESCRIÇÃO |
    |---|---|
    | `name` | Especifica um nome exclusivo para sua conta de armazenamento. |
@@ -141,7 +144,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    | `sku` | Especifica um dos seguintes: `Premium_LRS`, `Standard_GRS`, `Standard_LRS`, `Standard_RAGRS`, `Standard_ZRS`. |
 
    O Azure retornará uma cadeia de caracteres JSON longa, a qual contém o estado de provisionamento. Por exemplo: |
-   
+
    ```json
    {
      "id": "/subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss/...",
@@ -157,11 +160,12 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    }
    ```
 
-1. Recuperar a cadeia de conexão para sua conta de armazenamento. Por exemplo:
+3. Recuperar a cadeia de conexão para sua conta de armazenamento. Por exemplo:
    ```azurecli
    az storage account show-connection-string --name wingtiptoysstorage --resource-group wingtiptoysresources
    ```
    Em que:
+
    | Parâmetro | DESCRIÇÃO |
    | ---|---|
    | `name` | Especifica um nome exclusivo da conta de armazenamento que você criou nas etapas anteriores. |
@@ -270,7 +274,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    ```shell
    mvn clean package spring-boot:run
    ```
-   
+
    O aplicativo criará um contêiner e carregará um arquivo de texto como um blob ao contêiner, o qual será listado na sua conta de armazenamento no [portal do Azure](https://portal.azure.com).
 
    ![Listar blobs no portal do Azure](media/configure-spring-boot-starter-java-app-with-azure-storage/list-blobs-in-portal.png)

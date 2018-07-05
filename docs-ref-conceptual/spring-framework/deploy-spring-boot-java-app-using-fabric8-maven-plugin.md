@@ -14,24 +14,24 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 396d0ecfb051109924f09ae8b5d9b8074e49c404
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.openlocfilehash: f05dca50f84b27f157892d63cda02286c6755795
+ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954887"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090809"
 ---
 # <a name="deploy-a-spring-boot-app-using-the-fabric8-maven-plugin"></a>Implantar um aplicativo Spring Boot usando o plug-in Fabric8 Maven
 
 O **[Fabric8]** é uma solução de software livre baseada em **[Kubernetes]**, que ajuda os desenvolvedores a criar aplicativos em contêineres do Linux.
 
-Este tutorial mostra como usar o plug-in Fabric8 do Maven para desenvolver e implantar um aplicativo em um host do Linux no [AKS (Serviço de Contêiner do Azure)].
+Este tutorial mostra como usar o plug-in Fabric8 do Maven para desenvolver e implantar um aplicativo em um host do Linux no [Serviço de Contêiner do Azure (AKS)].
 
 ## <a name="prerequisites"></a>pré-requisitos
 
 Para concluir as etapas deste tutorial, você precisa ter os seguintes pré-requisitos:
 
-* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [benefício de assinante do MSDN] ou inscrever-se para uma [conta gratuita do Azure].
+* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [Benefícios do assinante do MSDN] ou inscrever-se para uma [conta do Azure gratuita].
 * A[CLI (interface de linha de comando) do Azure].
 * Um [JDK (Java Developer Kit)] atualizado.
 * A ferramenta de compilação [Maven] do Apache (Versão 3).
@@ -77,7 +77,7 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    mvn clean package spring-boot:run
    ```
 
-1. Teste o aplicativo Web navegando até http://localhost:8080, ou com o seguinte comando `curl`:
+1. Teste o aplicativo Web navegando até http://localhost:8080 ou com o seguinte comando `curl`:
    ```shell
    curl http://localhost:8080
    ```
@@ -96,7 +96,7 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    az login
    ```
    Siga as instruções para concluir o processo de logon
-   
+
    A CLI do Azure exibirá uma lista de suas contas, por exemplo:
 
    ```json
@@ -255,6 +255,7 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    az acr create --admin-enabled --resource-group wingtiptoys-kubernetes --location westeurope --name wingtiptoysregistry --sku Basic
    ```
    Em que:
+
    | Parâmetro | DESCRIÇÃO |
    |---|---|
    | `wingtiptoys-kubernetes` | Especifica o nome do seu grupo de recursos referido anteriormente neste artigo. |
@@ -285,7 +286,7 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    }
    ```
 
-1. Recupere a senha de seu registro de contêiner na CLI do Azure.
+2. Recupere a senha de seu registro de contêiner na CLI do Azure.
    ```azurecli
    az acr credential show --name wingtiptoysregistry --query passwords[0]
    ```
@@ -299,10 +300,10 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    }
    ```
 
-1. Navegue até o diretório de configuração de sua instalação do Maven (padrão ~/.m2/ ou C:\Usuários\nomedeusuário\.m2) e abra o arquivo *settings.xml* com um editor de texto.
+3. Navegue até o diretório de configuração de sua instalação do Maven (padrão ~/.m2/ ou C:\Usuários\nomedeusuário\.m2) e abra o arquivo *settings.xml* com um editor de texto.
 
-1. Adicione o nome de usuário, a senha e a URL do Registro de Contêiner do Azure a uma nova coleção `<server>` no arquivo *settings.xml*.
-`id` e `username` são os nomes do registro. Use o valor `password` do comando anterior (sem as aspas).
+4. Adicione o nome de usuário, a senha e a URL do Registro de Contêiner do Azure a uma nova coleção `<server>` no arquivo *settings.xml*.
+   `id` e `username` são os nomes do registro. Use o valor `password` do comando anterior (sem as aspas).
 
    ```xml
    <servers>
@@ -314,9 +315,9 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    </servers>
    ```
 
-1. Navegue até o diretório do projeto completo de seu aplicativo Spring Boot (por exemplo, "*C:\SpringBoot\gs-spring-boot-docker\complete*" ou "*/home/GenaSoto/SpringBoot/gs-spring-boot-docker/complete*") e abra o arquivo *pom.xml* com um editor de texto.
+5. Navegue até o diretório do projeto completo de seu aplicativo Spring Boot (por exemplo, "*C:\SpringBoot\gs-spring-boot-docker\complete*" ou "*/home/GenaSoto/SpringBoot/gs-spring-boot-docker/complete*") e abra o arquivo *pom.xml* com um editor de texto.
 
-1. Atualize a coleção `<properties>` no arquivo *pom.xml* com o valor do servidor de logon para seu Registro de Contêiner do Azure.
+6. Atualize a coleção `<properties>` no arquivo *pom.xml* com o valor do servidor de logon para seu Registro de Contêiner do Azure.
 
    ```xml
    <properties>
@@ -325,7 +326,7 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    </properties>
    ```
 
-1. Atualize a coleção `<plugins>` no arquivo *pom.xml* para que o `<plugin>` contenha o endereço do servidor de logon e o nome de registro para seu Registro de Contêiner do Azure.
+7. Atualize a coleção `<plugins>` no arquivo *pom.xml* para que o `<plugin>` contenha o endereço do servidor de logon e o nome de registro para seu Registro de Contêiner do Azure.
 
    ```xml
    <plugin>
@@ -340,7 +341,7 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    </plugin>
    ```
 
-1. Navegue até o diretório do projeto completo de seu aplicativo Spring Boot e execute o seguinte comando do Maven para compilar o contêiner do Docker e enviar por push a imagem ao Registro:
+8. Navegue até o diretório do projeto completo de seu aplicativo Spring Boot e execute o seguinte comando do Maven para compilar o contêiner do Docker e enviar por push a imagem ao Registro:
 
    ```shell
    mvn package dockerfile:build -DpushImage
@@ -485,13 +486,13 @@ As etapas a seguir mostram como compilar um aplicativo Web Spring Boot e testá-
    ```
 
    `kubectl` exibirá os endereços IP internos e externos, por exemplo:
-   
+
    ```shell
    NAME                    CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
    kubernetes              10.0.0.1     <none>        443/TCP        19h
    gs-spring-boot-docker   10.0.242.8   13.65.196.3   80:31215/TCP   3m
    ```
-   
+
    Você pode usar o endereço IP externo para abrir o aplicativo em um navegador da Web.
 
    ![Procurar o aplicativo de exemplo externamente][SB02]
@@ -516,29 +517,29 @@ Para obter mais informações sobre como usar o Azure com o Java, veja os docume
 
 Para obter mais detalhes sobre o Spring Boot no projeto de exemplo do Docker, consulte [Introdução ao Spring Boot no Docker].
 
-Para obter ajuda na introdução aos seus próprios aplicativos Spring Boot, confira **Spring Initializr** em <https://start.spring.io/>.
+Para obter ajuda na introdução a seus próprios aplicativos Spring Boot, confira **Spring Initializr** em <https://start.spring.io/>.
 
-Para obter mais informações sobre como começar a criar um aplicativo Spring Boot simples, consulte o Spring Initializr em <https://start.spring.io/>.
+Para obter mais informações de introdução sobre como criar um aplicativo Spring Boot simples, consulte o Spring Initializr em <https://start.spring.io/>.
 
-Para obter mais exemplos sobre como usar imagens personalizadas do Docker com o Azure, veja [Usando uma imagem personalizada do Docker para o aplicativo Web do Azure no Linux].
+Para obter mais exemplos sobre como usar imagens personalizadas do Docker com o Azure, veja [Usando uma imagem personalizada do Docker para o Aplicativo Web do Azure no Linux].
 
 <!-- URL List -->
 
 [CLI (interface de linha de comando) do Azure]: /cli/azure/overview
-[AKS (Serviço de Contêiner do Azure)]: https://azure.microsoft.com/services/container-service/
+[Serviço de Contêiner do Azure (AKS)]: https://azure.microsoft.com/services/container-service/
 [Azure para desenvolvedores Java]: https://docs.microsoft.com/java/azure/
 [Azure portal]: https://portal.azure.com/
 [Create a private Docker container registry using the Azure portal]: /azure/container-registry/container-registry-get-started-portal
-[Usando uma imagem personalizada do Docker para o aplicativo Web do Azure no Linux]: /azure/app-service-web/app-service-linux-using-custom-docker-image
+[Usando uma imagem personalizada do Docker para o Aplicativo Web do Azure no Linux]: /azure/app-service-web/app-service-linux-using-custom-docker-image
 [Docker]: https://www.docker.com/
 [Fabric8]: https://fabric8.io/
-[conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
+[conta do Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
 [JDK (Java Developer Kit)]: http://www.oracle.com/technetwork/java/javase/downloads/
 [Ferramentas Java para Visual Studio Team Services]: https://java.visualstudio.com/
 [Kubernetes]: https://kubernetes.io/
 [Maven]: http://maven.apache.org/
-[benefício de assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
+[Benefícios do assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Introdução ao Spring Boot no Docker]: https://github.com/spring-guides/gs-spring-boot-docker
 [Spring Framework]: https://spring.io/
