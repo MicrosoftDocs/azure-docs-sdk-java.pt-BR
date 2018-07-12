@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 046ae0428d50a7f173f5ad15be53ffd8e66c11c5
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: 0ed7c5af0152125322ff1d265c179f35028f3c15
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954177"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38075365"
 ---
 # <a name="managing-redis-caches-using-the-azure-explorer-for-intellij"></a>Gerenciar Caches Redis utilizando o Azure Explorer para IntelliJ
 
@@ -53,7 +53,7 @@ As etapas a seguir guiarão você pelas etapas para criar um Cache Redis utiliza
 
    d. **Localização**: especifica a localização em que seu cache redis será criado; por exemplo, *Oeste dos EUA*.
 
-   e. **Tipo de Preços**: especifica qual tipo de preço seu cache redis utiliza; essa configuração determina o número de conexões do cliente. (Para saber mais, veja [Preços do Cache Redis]).
+   e. **Tipo de Preços**: especifica qual tipo de preço seu cache redis utiliza; essa configuração determina o número de conexões do cliente. (Para saber mais, veja [Preço do Cache Redis]).
 
    f. **Porta não SSL**: especifica se o cache redis permite conexões não SSL; por padrão, apenas as conexões SSL são permitidas.
 
@@ -94,14 +94,14 @@ Para saber mais sobre caches redis, configurações e preços do Azure, veja os 
 
 * [Cache Redis do Azure]
 * [Documentação do Cache Redis]
-* [Preços do Cache Redis]
+* [Preço do Cache Redis]
 * [Como configurar o Cache Redis do Azure]
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
 <!-- URL List -->
 
-[Preços do Cache Redis]: https://azure.microsoft.com/pricing/details/cache/
+[Preço do Cache Redis]: https://azure.microsoft.com/pricing/details/cache/
 [Cache Redis do Azure]: https://azure.microsoft.com/services/cache/
 [Documentação do Cache Redis]: /azure/redis-cache
 [Como configurar o Cache Redis do Azure]: /azure/redis-cache/cache-configure

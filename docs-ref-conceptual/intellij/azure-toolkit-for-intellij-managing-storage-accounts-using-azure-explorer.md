@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 4edb8c1ceef508dd251db693ccc3b98d77ec452b
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: 0ed7c5af0152125322ff1d265c179f35028f3c15
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954837"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38075425"
 ---
 # <a name="manage-storage-accounts-by-using-the-azure-explorer-for-intellij"></a>Gerenciar contas de armazenamento usando o Azure Explorer para IntelliJ
 
@@ -49,7 +49,7 @@ Para criar uma conta de armazenamento usando o Azure Explorer, faça o seguinte:
 
    * **Desempenho**: especifica qual oferta de conta de armazenamento usar do editor selecionado (por exemplo "Premium"). Para saber mais, veja [Metas de desempenho e escalabilidade do Armazenamento do Azure]. 
 
-   * **Replicação**: especifica a replicação para a conta de armazenamento (por exemplo "Zona redundante"). Para saber mais, veja [Replicação do Armazenamento do Azure]. 
+   * **Replicação**: especifica a replicação para a conta de armazenamento (por exemplo "Zona redundante"). Para saber mais, veja [Replicação de Armazenamento do Azure]. 
 
    * **Assinatura**: especifica a assinatura do Azure que deseja usar para a nova conta de armazenamento.
 
@@ -69,7 +69,7 @@ Para criar um contêiner de armazenamento usando o Azure Explorer, faça o segui
 
    ![Comando Criar contêiner de blobs][CC01]
 
-2. Na caixa de diálogo **Criar Contêiner de Blob**, especifique o nome do seu contêiner e, em seguida, clique em **OK**. Para saber mais sobre como nomear contêineres de armazenamento, veja [Nomenclatura e referência de contêineres, blobs e metadados].
+2. Na caixa de diálogo **Criar Contêiner de Blob**, especifique o nome do seu contêiner e, em seguida, clique em **OK**. Para saber mais sobre como nomear contêineres de armazenamento, veja [Nomeando e referenciando contêineres, blobs e metadados].
 
    ![Caixa de Diálogo Criar Contêiner de Armazenamento][CC02]
 
@@ -117,9 +117,9 @@ Para saber mais sobre os tamanhos, preços e contas de armazenamento do Azure, v
 [Instruções de conexão para o Kit de ferramentas do Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
 [Introdução ao Armazenamento do Microsoft Azure]: /azure/storage/storage-introduction
 [Sobre as contas de armazenamento do Azure]: /azure/storage/storage-create-storage-account
-[Replicação do Armazenamento do Azure]: /azure/storage/storage-redundancy
+[Replicação de Armazenamento do Azure]: /azure/storage/storage-redundancy
 [Metas de desempenho e escalabilidade do Armazenamento do Azure]: /azure/storage/storage-scalability-targets
-[Nomenclatura e referência de contêineres, blobs e metadados]: http://go.microsoft.com/fwlink/?LinkId=255555
+[Nomeando e referenciando contêineres, blobs e metadados]: http://go.microsoft.com/fwlink/?LinkId=255555
 
 [Tamanhos das contas de armazenamento do Windows no Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamanhos das contas de armazenamento do Linux no Azure]: /azure/virtual-machines/virtual-machines-linux-sizes

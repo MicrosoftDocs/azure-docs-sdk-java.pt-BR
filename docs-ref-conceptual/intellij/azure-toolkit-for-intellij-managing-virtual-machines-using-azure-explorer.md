@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 213efa7fc31705b0ffcba6f2fe40e7186a365fae
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: 0ed7c5af0152125322ff1d265c179f35028f3c15
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954867"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38074526"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-intellij"></a>Gerenciar máquinas virtuais usando o Azure Explorer para IntelliJ
 
@@ -33,7 +33,7 @@ O Azure Explorer, que faz parte do Kit de ferramentas do Azure para IntelliJ, fo
 
 Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte: 
 
-1. Entre em sua conta do Azure usando as etapas no artigo [Instruções de entrada para o Kit de ferramentas do Azure para IntelliJ].
+1. Entre em sua conta do Azure usando as etapas no artigo [Instruções de conexão para o Kit de ferramentas do Azure para IntelliJ].
 
 2. Na exibição do **Azure Explorer**, expanda o nó **Azure**, clique com o botão direito do mouse em **Máquinas Virtuais** e, em seguida, clique em **Criar VM**. 
 
@@ -156,7 +156,7 @@ Para saber mais sobre os tamanhos e preços das máquinas virtuais do Azure, vej
 
 <!-- URL List -->
 
-[Instruções de entrada para o Kit de ferramentas do Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
+[Instruções de conexão para o Kit de ferramentas do Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
 [Tamanhos das máquinas virtuais do Windows no Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamanhos das máquinas virtuais do Linux no Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
 [Preços de máquinas virtuais do Windows]: /pricing/details/virtual-machines/windows/
