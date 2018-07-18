@@ -1,6 +1,6 @@
 Para obter mais informações sobre o Kit de Ferramentas do Azure para Eclipse, confira os seguintes links: 
 
-* [Kit de ferramentas do Azure para Eclipse](../eclipse/azure-toolkit-for-eclipse.md) 
+* [Kit de Ferramentas do Azure para Eclipse](../eclipse/azure-toolkit-for-eclipse.md) 
 * [Notas de versão](https://github.com/Microsoft/azure-tools-for-java/releases) 
 * [Instalação do Kit de Ferramentas do Azure para Eclipse](../eclipse/azure-toolkit-for-eclipse-installation.md) 
 * [Criar um aplicativo Web Olá, Mundo para o Azure no Eclipse](../eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app.md) 
