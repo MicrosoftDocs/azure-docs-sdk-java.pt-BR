@@ -14,12 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 3610312ed17301131967bd2c047c86656de070e7
-ms.sourcegitcommit: f313c14e92f38c54a3a583270ee85cc928cd39d7
+ms.openlocfilehash: d58cafe3456150069ec8572c101c62d1b2c29c5d
+ms.sourcegitcommit: e1a5d9687e006e8bf12d11747d45cf130a2c82af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689419"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "42703361"
 ---
 # <a name="deploy-a-spring-boot-app-to-the-cloud-using-the-maven-plugin-for-azure-app-service"></a>Implantar um aplicativo Spring Boot na nuvem usando o Maven Plugin para o Serviço de Aplicativo do Azure
 
@@ -31,7 +31,7 @@ Este artigo demonstra como usar o plug-in do Maven para Aplicativos Web do Servi
 
 Antes de usar o plug-in do Maven, verifique na Central do Maven a versão mais recente do plugin disponível: [![Central do Maven](https://img.shields.io/maven-central/v/com.microsoft.azure/azure-webapp-maven-plugin.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.microsoft.azure%22%20AND%20a%3A%22azure-webapp-maven-plugin%22) 
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir as etapas neste tutorial, você precisará ter os seguintes pré-requisitos:
 
@@ -163,9 +163,11 @@ Com essas configurações, seu projeto do Maven está pronto para a implantaçã
 A maneira mais simples e fácil de obter o plug-in do Maven implantando seu aplicativo Spring Boot é usando a [CLI do Azure](https://docs.microsoft.com/cli/azure/). Verifique se ela está instalada.
 
 1. Entre em sua conta do Azure usando a CLI do Azure:
+   
    ```shell
    az login
    ```
+   
    Siga as instruções na tela para concluir o processo de entrada.
 
 ## <a name="optionally-customize-pomxml-before-deploying"></a>Opcionalmente, personalize o pom.xml antes de implantar
@@ -266,7 +268,7 @@ Para saber mais sobre as diversas tecnologias discutidas neste artigo, veja os a
 
 [CLI (interface de linha de comando) do Azure]: /cli/azure/overview
 [Azure for Java Developers]: https://docs.microsoft.com/java/azure/
-[portal do Azure]: https://portal.azure.com/
+[Portal do Azure]: https://portal.azure.com/
 [conta do Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
 [Java Developer Kit (JDK)]: http://www.oracle.com/technetwork/java/javase/downloads/
