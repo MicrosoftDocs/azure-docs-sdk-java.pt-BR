@@ -13,12 +13,12 @@ ms.devlang: na
 ms.topic: hero-article
 ms.date: 03/17/2017
 ms.author: routlaw
-ms.openlocfilehash: 1adc0a104ba22bcd353664e68323165890e46c64
-ms.sourcegitcommit: 30d502b3150fa14bcc1251f5f88c7c0dd83e531e
+ms.openlocfilehash: 70b508118c50b75693e2d746dc1e2919c827cb29
+ms.sourcegitcommit: 0f38ef9ad64cffdb7b2e9e966224dfd0af251b0f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2017
-ms.locfileid: "22033628"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42703539"
 ---
 # <a name="create-and-deploy-a-java-app-to-azure-with-maven"></a>Criar e implantar um aplicativo Java no Azure com Maven
 
@@ -53,7 +53,7 @@ mvn package
 mvn tomcat7:run-war
 ```
 
-Abra um navegador da Web e navegue até http://localhost:8080 para exibir o aplicativo:
+Abra um navegador da Web e navegue até http://localhost:8080 para visualizar o aplicativo:
 
   ![Saída de Hello World do aplicativo de exemplo de Java](media/maven-quickstart/java-app-hello-world-output.png)
 
@@ -147,7 +147,7 @@ az webapp config set \
 
 ## <a name="configure-maven"></a>Configurar Maven 
 
-O `pom.xml` Maven de exemplo inclui a configuração para enviar o exemplo por FTP para o Azure, mas você precisará personalizá-lo para implantar seu próprio aplicativo Web. Recuperar as credenciais do seu Serviço de Aplicativo com [az appservice web deployment list-publishing-profiles](/cli/azure/appservice/web/deployment#list-publishing-profiles):
+O `pom.xml` Maven de exemplo inclui a configuração para enviar o exemplo por FTP para o Azure, mas você precisará personalizá-lo para implantar seu próprio aplicativo Web. Recupere as credenciais do seu Serviço de Aplicativo com [az appservice web deployment list-publishing-profiles](/cli/azure/appservice/web/deployment#list-publishing-profiles):
 
 ```azurecli
 az webapp deployment list-publishing-profiles  \
@@ -236,7 +236,7 @@ Atualize o navegador após a reimplantação do aplicativo para visualizar as al
 
 Vá para o portal do Azure para examinar o aplicativo Web que você acabou de criar.
 
-Para fazer isso, entre em [https://portal.azure.com](https://portal.azure.com).
+Para fazer isso, conecte [https://portal.azure.com](https://portal.azure.com).
 
 No menu à esquerda, clique em **Serviço de Aplicativo**, em seguida, clique no nome do seu aplicativo Web do Azure.
 
