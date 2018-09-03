@@ -1,0 +1,56 @@
+items:
+- name: Eclipse MicroProfile no Azure
+  href: ./index.yml
+  items:
+  - name: Extensões do Azure
+    href: https://github.com/Azure/azure-microprofile
+  - name: Tutoriais
+    items:
+    - name: Implantar para Instâncias de Contêiner do Azure
+      href: deploy-microprofile-to-container-instances.md
+    - name: Implantar no Aplicativos Web do Azure
+      href: deploy-microprofile-to-web-app-for-containers.md
+    - name: Fonte de configuração para o Azure Key Vault
+      href: configure-microprofile-with-keyvault.md
+    expanded: true
+  - name: Exemplos
+    items:
+    - name: MicroProfile Hello Azure
+      href: https://github.com/azure-samples/microprofile-hello-azure
+    - name: Fonte de configuração do MicroProfile para Azure Key Vault
+      href: https://github.com/Azure-Samples/microprofile-configsource-keyvault
+    expanded: false
+  - name: Referência
+    items:
+    - name: Eclipse MicroProfile
+      href: https://microprofile.io/
+    - name: Implementações do MicroProfile
+      items:
+      - name: Apache TomEE
+        href: https://tomee.apache.org
+      - name: IBM OpenLiberty
+        href: https://openliberty.io/
+      - name: KumuluzEE Micro
+        href: https://ee.kumuluz.com/microprofile
+      - name: Payara Micro
+        href: https://payara.fish/payara_micro
+      - name: Red Hat WildFly Swarm (Thorntail)
+        href: http://wildfly-swarm.io/
+      expanded: false
+    - name: Geradores de projetos do MicroProfile
+      items:
+      - name: Gerador do WildFly Swarm (Thorntail)
+        href: http://wildfly-swarm.io/generator/
+      - name: Gerador do KumuluzEE
+        href: https://ee.kumuluz.com/generator/
+      - name: Jeddict
+        href: https://jeddict.github.io/
+      expanded: false
+    expanded: true
+  expanded: true
+ms.openlocfilehash: 62be295bce66c292922e88a4277fe49064c8f989
+ms.sourcegitcommit: 77dc6c03a2e6264df688d91a04fc6b40950779ef
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43240760"

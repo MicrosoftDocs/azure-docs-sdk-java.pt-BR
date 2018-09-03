@@ -1,0 +1,60 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: a2677c06a1d295d6b5ed5142d26cf16a1c591dbd
+ms.sourcegitcommit: 3d0896f821907278547c283c54b53fbd7f4f30f0
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43153775"
+documentType: LandingData
+title: Eclipse MicroProfile no Azure
+metadata:
+  document_id: 
+  title: Eclipse MicroProfile no Azure
+  description: Introdução ao uso do Eclipse MicroProfile para desenvolver aplicativos no Azure.
+  keywords: Azure, Java, Maven, MicroProfile, Jakarta EE, Java EE, Eclipse
+  author: brborges
+  ms.author: brborges
+  manager: brborges
+  ms.date: 02/01/2018
+  ms.topic: landing-page
+  ms.prod: azure
+  ms.technology: azure
+  ms.devlang: java
+  ms.service: multiple
+sections:
+- items:
+  - type: markdown
+    text: >
+      [MicroProfile](http://microprofile.io/) é um projeto da Eclipse Foundation voltado para aproveitar e evoluir tecnologias de Enterprise Java, como Java EE para arquiteturas de microsserviço distribuído, através da inovação em várias implementações e colaboração em áreas de interesse comuns com o objetivo de padronização.
+- title: Guias de introdução
+  items:
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/ContainerInstances.svg
+      text: Implantar para Instâncias de Contêiner do Azure
+      href: deploy-microprofile-to-container-instances.md
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/AppService.svg
+      text: Implantar no Aplicativos Web do Azure
+      href: deploy-microprofile-to-web-app-for-containers.md
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/keyvault.svg
+      text: Fonte de configuração para o Azure Key Vault
+      href: configure-microprofile-with-keyvault.md
+- title: Exemplos para Azure
+  items:
+  - type: list
+    style: unordered
+    className: spaced noBullet
+    items:
+    - html: <a href="https://github.com/search?q=topic%3Amicroprofile+org%3AAzure-Samples+fork%3Atrue">Exemplos de MicroProfile for Azure</a>
+- title: Referência
+  items:
+  - type: list
+    style: cards
+    className: cardsD
+    items:
+    - title: Projetos MicroProfile
+      html: <p><a href="https://microprofile.io/">MicroProfile.io</a></p><p><a href="http://microprofile.io/project/eclipse/microprofile-samples">Exemplos de MicroProfile.io</a></p>
