@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: keyvault
-ms.openlocfilehash: 1fd03fb772b6411985f99b5e7cce3918e79496b1
-ms.sourcegitcommit: dad28b332346dfa9af249b5a64e042cbb1eb90d7
+ms.openlocfilehash: b3433d2da2054741015b9fa669753a8edb48cdf3
+ms.sourcegitcommit: 280d13b43cef94177d95e03879a5919da234a23c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39625012"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43324293"
 ---
 # <a name="azure-key-vault-libraries-for-java"></a>Bibliotecas do Azure Key Vault para Java
 
@@ -36,7 +36,7 @@ Criar, atualizar e excluir chaves e segredos no Azure Key Vault com as bibliotec
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-keyvault</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 ```   
 
@@ -64,7 +64,7 @@ Use as bibliotecas de gerenciamento do Azure Key Vault para criar cofres de chav
 <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-mgmt-keyvault</artifactId>
-    <version>1.3.0</version>
+    <version>1.15.0</version>
 </dependency>
 ```
 
