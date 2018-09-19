@@ -7,19 +7,18 @@ author: rmcmurray
 manager: mbaldwin
 editor: ''
 ms.assetid: ''
-ms.author: robmcm
 ms.date: 08/20/2018
 ms.devlang: java
 ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: 0976f4b0c13ce5c577458f2974f5dce123bf7e59
-ms.sourcegitcommit: 77dc6c03a2e6264df688d91a04fc6b40950779ef
+ms.openlocfilehash: 4e0138e3cc474b4c47d3bf492e696ec49ea3ef37
+ms.sourcegitcommit: c2019ba6da6c7c28b17b5a85f89e49bb5e570ba4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241120"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44040264"
 ---
 # <a name="how-to-use-the-spring-data-gremlin-starter-with-the-azure-cosmos-db-sql-api"></a>Como usar o Iniciador do Spring Data Gremlin com a API SQL do Azure Cosmos DB
 
