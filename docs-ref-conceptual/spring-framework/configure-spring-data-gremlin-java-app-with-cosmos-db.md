@@ -13,12 +13,12 @@ ms.service: cosmos-db
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: data-services
-ms.openlocfilehash: 4e0138e3cc474b4c47d3bf492e696ec49ea3ef37
-ms.sourcegitcommit: c2019ba6da6c7c28b17b5a85f89e49bb5e570ba4
+ms.openlocfilehash: 3e7ec1a2f6b15ec9444dc6ee8d8f2d0f779b1f10
+ms.sourcegitcommit: e017de4677c5bedd6ef88c8c1b6da279dc973efe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44040264"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45639789"
 ---
 # <a name="how-to-use-the-spring-data-gremlin-starter-with-the-azure-cosmos-db-sql-api"></a>Como usar o Iniciador do Spring Data Gremlin com a API SQL do Azure Cosmos DB
 
@@ -163,9 +163,11 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
       password: 57686f6120447564652c20426f6220526f636b73==
       telemetryAllowed: false
    ```
+   
    Em que:
+   
    | Campo | DESCRIÇÃO |
-   | ---|---|
+   |---|---|
    | `endpoint` | Especifica o URI do Gremlin para o seu banco de dados, que é derivado da **ID** exclusiva que você especificou ao criar seu Azure Cosmos DB anteriormente no tutorial. |
    | `port` | Especifica a porta TCP/IP, que deve ser **443** para HTTPS. |
    | `username` | Especifica a **ID de banco de dados** e a **ID do Graph** exclusivas usadas ao adicionar o grafo anteriormente. Essa opção deve ser inserida usando a seguinte sintaxe: “/dbs/**{ID do banco de dados}**/colls/**{Id do Graph}**”. |

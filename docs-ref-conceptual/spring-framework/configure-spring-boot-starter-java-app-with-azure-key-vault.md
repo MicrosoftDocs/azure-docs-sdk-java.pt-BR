@@ -14,12 +14,12 @@ ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: a2734fc08f2f59f64ba6c6c20ff18d75070b68d5
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.openlocfilehash: 78b7a9a2e26168b19dc8a1d12e47456752b57ffc
+ms.sourcegitcommit: e017de4677c5bedd6ef88c8c1b6da279dc973efe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090709"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45639769"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Como usar o iniciador do Spring Boot para o Azure Key Vault
 
@@ -27,7 +27,7 @@ ms.locfileid: "37090709"
 
 Este artigo demonstra como criar um aplicativo com o **[Spring Initializr]**, o qual usa o iniciador do Spring Boot para o Azure Key Vault para recuperar uma cadeia de conexão armazenada como um segredo em um cofre de chaves.
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Os seguintes pré-requisitos são obrigatórios para você concluir as etapas neste artigo:
 
@@ -154,10 +154,10 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    |---|---|
    | `name` | Especifica um nome exclusivo para o seu cofre de chaves. |
    | `location` | Especifica a [região do Azure](https://azure.microsoft.com/regions/) na qual seu grupo de recursos será hospedado. |
-   | `enabled-for-deployment` | Especifica a [opção de implantação do cofre de chaves](https://docs.microsoft.com/en-us/cli/azure/keyvault). |
-   | `enabled-for-disk-encryption` | Especifica a [opção de criptografia do cofre de chaves](https://docs.microsoft.com/en-us/cli/azure/keyvault). |
-   | `enabled-for-template-deployment` | Especifica a [opção de criptografia do cofre de chaves](https://docs.microsoft.com/en-us/cli/azure/keyvault). |
-   | `sku` | Especifica a [opção de SKU do cofre de chaves](https://docs.microsoft.com/en-us/cli/azure/keyvault). |
+   | `enabled-for-deployment` | Especifica a [opção de implantação do cofre de chaves](https://docs.microsoft.com/cli/azure/keyvault). |
+   | `enabled-for-disk-encryption` | Especifica a [opção de criptografia do cofre de chaves](https://docs.microsoft.com/cli/azure/keyvault). |
+   | `enabled-for-template-deployment` | Especifica a [opção de criptografia do cofre de chaves](https://docs.microsoft.com/cli/azure/keyvault). |
+   | `sku` | Especifica a [opção de SKU do cofre de chaves](https://docs.microsoft.com/cli/azure/keyvault). |
    | `query` | Especifica um valor a ser recuperado da resposta, que é o URI do cofre de chaves que será necessário para concluir este tutorial. |
 
    A CLI do Azure exibirá o URI do cofre de chaves, que será usado posteriormente. Por exemplo:  
@@ -175,7 +175,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    | Parâmetro | Descrição |
    |---|---|
    | `name` | Especifica o nome do cofre de chaves de antes. |
-   | `secret-permission` | Especifica as [políticas de segurança](https://docs.microsoft.com/en-us/cli/azure/keyvault) do seu cofre de chaves. |
+   | `secret-permission` | Especifica as [políticas de segurança](https://docs.microsoft.com/cli/azure/keyvault) do seu cofre de chaves. |
    | `spn` | Especifica o GUID do seu registro de aplicativo de antes. |
 
    A CLI do Azure exibirá os resultados da criação da política de segurança. Por exemplo:  

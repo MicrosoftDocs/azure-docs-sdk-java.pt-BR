@@ -15,12 +15,12 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.custom: mvc
-ms.openlocfilehash: cb83a7d6ec3a9a83fbfd3b2e34e5a4e498aa36d3
-ms.sourcegitcommit: 51dc05a96a8cbc8a6c9b45e094d8f3cfec16a607
+ms.openlocfilehash: 546aa2dc18143ca173d72198ea8e6c30bda3c97f
+ms.sourcegitcommit: e017de4677c5bedd6ef88c8c1b6da279dc973efe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2018
-ms.locfileid: "39189666"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45639719"
 ---
 # <a name="deploy-a-spring-boot-application-on-a-kubernetes-cluster-in-the-azure-kubernetes-service"></a>Implantar um Aplicativo Spring Boot em um Cluster Kubernetes no Serviço de Kubernetes do Azure
 
@@ -321,7 +321,7 @@ Os links a seguir fornecem mais informações sobre como criar aplicativos Sprin
 
 Os links a seguir fornecem mais informações sobre como usar kubernetes com o Azure:
 
-* [Comece com um cluster Kubernetes no Serviço de Kubernetes do Azure](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes)
+* [Comece com um cluster Kubernetes no Serviço de Kubernetes do Azure](https://docs.microsoft.com/azure/aks/intro-kubernetes)
 
 Saiba mais sobre como usar a interface de linha de comando Kubernetes no guia do usuário **kubectl** em <https://kubernetes.io/docs/user-guide/kubectl/>.
 
@@ -358,7 +358,7 @@ Para obter mais exemplos sobre como usar imagens personalizadas do Docker com o 
 [Extrair uma imagem de um registro privado]: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
 
 <!-- Newly added -->
-[Autenticar com o Registro de Contêiner do Azure do Serviço de Kubernetes do Azure]: https://docs.microsoft.com/en-us/azure/container-registry/container-registry-auth-aks/
+[Autenticar com o Registro de Contêiner do Azure do Serviço de Kubernetes do Azure]: https://docs.microsoft.com/azure/container-registry/container-registry-auth-aks/
 [Tutoriais de Java do Visual Studio Code]: https://code.visualstudio.com/docs/java/java-kubernetes/
 
 <!-- IMG List -->

@@ -14,12 +14,12 @@ ms.service: Azure Monitor
 ms.tgt_pltfrm: application-insights
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 0e57bfb304185b8b98dedfdecb2e0374c4a72fe5
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.openlocfilehash: e78987a05527aef739bc1467511381665513a3ab
+ms.sourcegitcommit: e017de4677c5bedd6ef88c8c1b6da279dc973efe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090769"
+ms.lasthandoff: 09/15/2018
+ms.locfileid: "45639729"
 ---
 # <a name="configure-a-spring-boot-initializer-app-to-use-application-insights"></a>Configure um aplicativo Inicializador do Spring Boot para usar o Application Insights
 
@@ -29,7 +29,7 @@ Este artigo explica como criar um aplicativo Spring Boot usando **[Spring Initia
 > 
 > *Esse iniciador está atualmente em **(versão prévia pública) do BETA*<em>.</em>
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Os seguintes pré-requisitos são obrigatórios para você concluir as etapas neste artigo:
 
@@ -91,7 +91,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
  <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>applicationinsights-spring-boot-starter</artifactId>
-    <version>1.0.0-BETA</version>
+    <version>1.0.1-BETA</version>
 </dependency>
 ```
 
@@ -222,7 +222,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
     <dependency>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>applicationinsights-spring-boot-starter</artifactId>
-        <version>1.0.0-BETA</version>
+        <version>1.0.1-BETA</version>
     </dependency>
 
     <dependency>
@@ -278,7 +278,7 @@ Para obter mais informações sobre como usar aplicativos Spring Boot no Azure, 
 
 * [Executando um Aplicativo Spring Boot em um Cluster Kubernetes no Serviço de Contêiner do Azure](deploy-spring-boot-java-app-on-kubernetes.md)
 
-O Application Insights oferece suporte à coleta automática de dependências externas e a correlação com as solicitações de entrada. Atualmente, damos suporte à coleta automática da Oracle, MsSQL, MySQL e Redis. Para obter mais detalhes sobre como habilitar a coleta automática, confira o artigo [como usar o agente Java do Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-java-agent).
+O Application Insights oferece suporte à coleta automática de dependências externas e a correlação com as solicitações de entrada. Atualmente, damos suporte à coleta automática da Oracle, MsSQL, MySQL e Redis. Para obter mais detalhes sobre como habilitar a coleta automática, confira o artigo [como usar o agente Java do Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-java-agent).
 
 Para saber mais sobre o Azure Application Insights e seus recursos de monitoramento, confira a home page **[Application Insights]**.
 
@@ -300,7 +300,7 @@ O **[Spring Framework]** é uma solução de software livre que ajuda os desenvo
 [Propriedades específicas de perfil do Spring Boot]: https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html#boot-features-external-config-profile-specific-properties
 [Spring Initializr]: https://start.spring.io/
 [Spring Framework]: https://spring.io/
-[Application Insights]: https://docs.microsoft.com/en-us/azure/application-insights/
+[Application Insights]: https://docs.microsoft.com/azure/application-insights/
 
 <!-- IMG List -->
 
