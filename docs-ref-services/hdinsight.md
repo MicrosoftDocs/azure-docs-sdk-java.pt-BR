@@ -1,24 +1,21 @@
 ---
 title: SDK do Java do Azure HDInsight
-description: Referência para o SDK do Java do Azure HDInsight
-keywords: Azure, Java, SDK, API, HDInsight
+description: Referência para o SDK do Java do Azure HDInsight. O SDK Java do HDInsight oferece classes e métodos que permitem gerenciar os seus clusters do HDInsight.
 author: tylerfox
 ms.author: tyfox
-manager: arindamc
-ms.date: 9/20/2018
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
-ms.devlang: java
+ms.reviewer: jasonh
 ms.service: hdinsight
-ms.openlocfilehash: 4723613924d1a0c0b75cc8e4de28e3f59612ab19
-ms.sourcegitcommit: 7c6a15f574fb85ee22f6ccdb7864627b73a6c1f7
+ms.topic: reference
+ms.devlang: java
+ms.date: 9/20/2018
+ms.openlocfilehash: 5e3887341ddb2fdcab336f0a8a232e6e8bfbe0f2
+ms.sourcegitcommit: bb7286fad75a2bb43e6ce1a8f1b09e701147c9f9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47398178"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48047153"
 ---
-# <a name="hdinsight-java-management-sdk-preview"></a>Visualização do SDK de Gerenciamento de Java do HDInsight
+# <a name="hdinsight-java-management-sdk-preview"></a>SDK de Gerenciamento de Java do HDInsight (versão prévia)
 
 ## <a name="overview"></a>Visão geral
 
