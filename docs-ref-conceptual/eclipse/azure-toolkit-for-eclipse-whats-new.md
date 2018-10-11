@@ -15,20 +15,20 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: e993fd09e555274f51a500408efbffc4ac5df394
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954667"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892547"
 ---
-# <a name="whats-new-in-the-azure-toolkit-for-eclipse"></a><span data-ttu-id="abfd7-103">Novidades no Kit de Ferramentas do Azure para Eclipse</span><span class="sxs-lookup"><span data-stu-id="abfd7-103">What's new in the Azure Toolkit for Eclipse</span></span>
+# <a name="whats-new-in-the-azure-toolkit-for-eclipse"></a><span data-ttu-id="e158f-103">Novidades no Kit de Ferramentas do Azure para Eclipse</span><span class="sxs-lookup"><span data-stu-id="e158f-103">What's new in the Azure Toolkit for Eclipse</span></span>
 
-<span data-ttu-id="abfd7-104">A página da Web a seguir contém informações sobre as várias versões e atualizações mais recentes do Kit de Ferramentas do Azure para Eclipse.</span><span class="sxs-lookup"><span data-stu-id="abfd7-104">The following web page contains information on the various releases and latest updates to the Azure Toolkit for Eclipse.</span></span>
+<span data-ttu-id="e158f-104">A página da Web a seguir contém informações sobre as várias versões e atualizações mais recentes do Kit de Ferramentas do Azure para Eclipse.</span><span class="sxs-lookup"><span data-stu-id="e158f-104">The following web page contains information on the various releases and latest updates to the Azure Toolkit for Eclipse.</span></span>
 
-<span data-ttu-id="abfd7-105"><https://github.com/Microsoft/azure-tools-for-java/releases></span><span class="sxs-lookup"><span data-stu-id="abfd7-105"><https://github.com/Microsoft/azure-tools-for-java/releases></span></span>
+<https://github.com/Microsoft/azure-tools-for-java/releases>
 
 > [!NOTE] 
-> <span data-ttu-id="abfd7-106">Há também um kit de ferramentas do Azure para o IDE do IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="abfd7-106">There is also an Azure Toolkit for the IntelliJ IDE.</span></span> <span data-ttu-id="abfd7-107">Para obter mais informações, confira [Kit de Ferramentas do Azure para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="abfd7-107">For more information, see [Azure Toolkit for IntelliJ].</span></span> 
+> <span data-ttu-id="e158f-105">Há também um kit de ferramentas do Azure para o IDE do IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="e158f-105">There is also an Azure Toolkit for the IntelliJ IDE.</span></span> <span data-ttu-id="e158f-106">Para obter mais informações, confira [Kit de Ferramentas do Azure para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="e158f-106">For more information, see [Azure Toolkit for IntelliJ].</span></span> 
 > 
 
 <!--
@@ -314,7 +314,7 @@ Azure Plugin for Eclipse - December 2011 CTP has released. New features include:
 
 -->
 
-## <a name="next-steps"></a><span data-ttu-id="abfd7-108">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="abfd7-108">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="e158f-107">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="e158f-107">Next steps</span></span>
 
 [!INCLUDE [azure-toolkit-for-eclipse-additional-resources](../includes/azure-toolkit-for-eclipse-additional-resources.md)]
 
