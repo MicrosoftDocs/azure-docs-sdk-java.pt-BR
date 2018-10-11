@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.openlocfilehash: d9f2cf5c15bb8f990c8e82fddd6455ecbf8cc02c
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090759"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892687"
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-containerized-spring-boot-app-to-azure"></a>Como usar o plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot em contêineres no Azure
 
@@ -32,7 +32,7 @@ Este artigo demonstra como usar o [plug-in do Maven para Aplicativos Web do Azur
 > O plug-in do Maven para Aplicativos Web do Azure está disponível no momento como uma versão prévia. Por enquanto, há suporte somente para a publicação FTP, embora existam planos para recursos adicionais futuros.
 > 
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir as etapas deste tutorial, você precisa ter os seguintes pré-requisitos:
 

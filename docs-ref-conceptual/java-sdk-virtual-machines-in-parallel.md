@@ -10,11 +10,11 @@ ms.topic: article
 ms.date: 03/30/2017
 ms.author: routlaw;asirveda
 ms.openlocfilehash: e20feb555c3a360eceae60c1569af9a00a5cd027
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
-ms.locfileid: "21931192"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893207"
 ---
 # <a name="create-virtual-machines-across-multiple-regions-from-your-java-applications"></a>Criar máquinas virtuais em várias regiões a partir de seus aplicativos Java
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: d8ab3de791d1a4893efb77a51418c437f81c86ff
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954207"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893457"
 ---
 # <a name="azure-toolkit-for-eclipse"></a>Kit de ferramentas do Azure para Eclipse
 

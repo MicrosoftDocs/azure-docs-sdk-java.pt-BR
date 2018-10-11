@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: java
 ms.service: service-bus
 ms.openlocfilehash: ed830b4f7ffa104174205f75ea2923235029ea80
-ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33887756"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892777"
 ---
 # <a name="service-bus-libraries-for-java"></a>Bibliotecas de Barramento de Serviço para Java
 

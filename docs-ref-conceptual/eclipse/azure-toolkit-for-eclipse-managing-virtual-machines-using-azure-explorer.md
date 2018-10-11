@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: c04f5225f0bb99898f69b26a4782aa57d75c4f22
-ms.sourcegitcommit: 0ed7c5af0152125322ff1d265c179f35028f3c15
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38074561"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48898697"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-eclipse"></a>Gerenciar máquinas virtuais usando o Azure Explorer para Eclipse
 

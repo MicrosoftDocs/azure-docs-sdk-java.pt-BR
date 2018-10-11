@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.openlocfilehash: 88eb64c07ad4f480dc2d2c2869e710c0ae910c4d
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090789"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892677"
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-spring-boot-app-in-azure-container-registry-to-azure-app-service"></a>Como usar o Plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Registro de Contêiner do Azure ao Serviço de Aplicativo do Azure
 
@@ -32,7 +32,7 @@ Este artigo demonstra como implantar um exemplo de aplicativo [Spring Boot] no R
 > O plug-in do Maven para Aplicativos Web do Azure está disponível no momento como uma versão prévia. Por enquanto, há suporte somente para a publicação FTP, embora existam planos para recursos adicionais futuros.
 > 
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir as etapas deste tutorial, você precisa ter os seguintes pré-requisitos:
 

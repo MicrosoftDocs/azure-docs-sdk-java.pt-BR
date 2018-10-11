@@ -11,11 +11,11 @@ ms.technology: Azure
 ms.date: 3/30/2017
 ms.author: routlaw;asirveda
 ms.openlocfilehash: 3d21cdd890912c1fc58fc65a79ba972b8327edeb
-ms.sourcegitcommit: 1500f341a96d9da461c288abf4baf79f494ae662
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2017
-ms.locfileid: "21931082"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892537"
 ---
 # <a name="create-and-manage-azure-virtual-networks-from-your-java-apps"></a>Criar e gerenciar redes virtuais do Azure de seus aplicativos Java
 

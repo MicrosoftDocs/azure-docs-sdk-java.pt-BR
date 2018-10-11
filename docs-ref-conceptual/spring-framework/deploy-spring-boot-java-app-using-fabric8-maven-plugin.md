@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: f05dca50f84b27f157892d63cda02286c6755795
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090809"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48898681"
 ---
 # <a name="deploy-a-spring-boot-app-using-the-fabric8-maven-plugin"></a>Implantar um aplicativo Spring Boot usando o plug-in Fabric8 Maven
 
@@ -27,7 +27,7 @@ O **[Fabric8]** é uma solução de software livre baseada em **[Kubernetes]**, 
 
 Este tutorial mostra como usar o plug-in Fabric8 do Maven para desenvolver e implantar um aplicativo em um host do Linux no [Serviço de Contêiner do Azure (AKS)].
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir as etapas deste tutorial, você precisa ter os seguintes pré-requisitos:
 

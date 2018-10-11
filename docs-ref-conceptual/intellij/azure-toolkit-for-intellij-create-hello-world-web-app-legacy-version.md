@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.openlocfilehash: efc1dffa248987772827bbe7bc0caa9f10a0b4ef
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090779"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893387"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-intellij"></a>Criar um aplicativo Web Olá, Mundo para o Azure usando o kit de ferramentas herdado do IntelliJ
 

@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: d281f37b027d4011ea2e3106990c5e45b69ebc88
-ms.sourcegitcommit: 798f4d4199d3be9fc5c9f8bf7a754d7393de31ae
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33887089"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892587"
 ---
 # <a name="deploy-a-hello-world-web-app-to-a-linux-container-in-the-cloud-using-the-azure-toolkit-for-intellij"></a>Implantar um aplicativo Web Olá, Mundo em um contêiner do Linux na nuvem usando o Kit de Ferramentas do Azure para IntelliJ
 
@@ -140,7 +140,7 @@ Para obter recursos adicionais para o Docker, consulte o [site oficial do Docker
 
 <!-- URL List -->
 
-[portal do Azure]: https://portal.azure.com/
+[Portal do Azure]: https://portal.azure.com/
 [Criar um registro de contêiner privado do Docker usando o portal do Azure]: /azure/container-registry/container-registry-get-started-portal
 [Azure for Java Developers]: https://docs.microsoft.com/java/azure/
 [Java Tools for Visual Studio Team Services]: https://java.visualstudio.com/

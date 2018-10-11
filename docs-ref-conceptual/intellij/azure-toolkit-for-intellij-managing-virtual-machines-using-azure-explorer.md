@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 213efa7fc31705b0ffcba6f2fe40e7186a365fae
-ms.sourcegitcommit: 0ed7c5af0152125322ff1d265c179f35028f3c15
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38074526"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893517"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-intellij"></a>Gerenciar máquinas virtuais usando o Azure Explorer para IntelliJ
 

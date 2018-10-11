@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
 ms.openlocfilehash: cc68e16a6940a1f0f2b08f0b63c90c58ec6dbc4e
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954187"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892857"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-intellij"></a>Criar um aplicativo Web Olá, Mundo para o Azure usando o IntelliJ
 

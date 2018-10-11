@@ -14,11 +14,11 @@ ms.topic: article
 ms.date: 07/02/2018
 ms.author: robmcm
 ms.openlocfilehash: 3f2de63f7eb1422ff1dd6db45d68e02f4af188b8
-ms.sourcegitcommit: 0ed7c5af0152125322ff1d265c179f35028f3c15
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37864036"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48898654"
 ---
 # <a name="adding-a-root-certificate-to-the-java-ca-certificates-store"></a>Adicionar um certificado raiz ao repositório de certificados CA de Java
 

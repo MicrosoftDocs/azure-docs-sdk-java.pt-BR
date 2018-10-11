@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: be76733bffa36160d6e366c383672a15374a9996
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090839"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48898653"
 ---
 # <a name="publish-a-web-app-as-a-docker-container-by-using-the-azure-toolkit-for-eclipse"></a>Publicar um aplicativo Web como um contêiner do Docker usando o Kit de ferramentas do Azure para Eclipse
 

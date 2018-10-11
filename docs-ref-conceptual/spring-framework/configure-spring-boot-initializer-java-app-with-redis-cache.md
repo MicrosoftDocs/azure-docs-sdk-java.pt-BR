@@ -15,21 +15,21 @@ ms.tgt_pltfrm: cache-redis
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 8bfe7c2ddd238e0e5a259de9078b831a97b1b1a4
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954577"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892907"
 ---
 # <a name="configure-a-spring-boot-initializer-app-to-use-redis-in-the-cloud-with-azure-redis-cache"></a>Configurar um aplicativo Inicializador do Spring Boot para usar o Redis na nuvem com o Cache Redis do Azure
 
 Este artigo ensina a criar um cache Redis na nuvem usando o portal do Azure, depois usar o **[Spring Initializr]** para criar um aplicativo personalizado e, então, criar um aplicativo Web de Java que armazena e recupera os dados usando o cache Redis.
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Os seguintes pré-requisitos são obrigatórios para você concluir as etapas neste artigo:
 
-* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [benefício de assinante do MSDN] ou inscrever-se para uma [conta gratuita do Azure].
+* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [Benefícios do assinante do MSDN] ou inscrever-se para uma [conta do Azure gratuita].
 * Um [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/) versão 1.7 ou posterior.
 * [Apache Maven](http://maven.apache.org/) versão 3.0 ou posterior.
 
@@ -60,7 +60,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
 
 ## <a name="create-a-redis-cache-on-azure"></a>Criar um cache Redis no Azure
 
-1. Navegue até o portal do Azure em <https://portal.azure.com/> e clique em **+Novo**.
+1. Navegue até o Portal do Azure em <https://portal.azure.com/> e clique em **+Novo**.
 
    ![Portal do Azure][AZ01]
 
@@ -213,9 +213,9 @@ O **[Spring Framework]** é uma solução de software livre que ajuda os desenvo
 <!-- URL List -->
 
 [Azure para desenvolvedores Java]: https://docs.microsoft.com/java/azure/
-[conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
+[conta do Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Ferramentas Java para Visual Studio Team Services]: https://java.visualstudio.com/
-[benefício de assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
+[Benefícios do assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Initializr]: https://start.spring.io/
 [Spring Framework]: https://spring.io/

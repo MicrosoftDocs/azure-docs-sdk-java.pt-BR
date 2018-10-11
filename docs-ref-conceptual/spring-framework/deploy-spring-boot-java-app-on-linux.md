@@ -16,17 +16,17 @@ ms.topic: article
 ms.workload: web
 ms.custom: mvc
 ms.openlocfilehash: 49d94d11ad6a4e103ded849e477d99f01955c693
-ms.sourcegitcommit: 5282a51bf31771671df01af5814df1d2b8e4620c
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090859"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48898659"
 ---
 # <a name="deploy-a-spring-boot-application-on-linux-in-the-azure-container-service"></a>Implantar um aplicativo Spring Boot no Linux no Serviço de Contêiner do Azure
 
 Este tutorial mostra como usar o [Docker] para desenvolver e implantar um aplicativo [Spring Boot] em um host do Linux no [Serviço de Contêiner do Azure (AKS)].
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir as etapas deste tutorial, você precisa ter os seguintes pré-requisitos:
 
@@ -283,7 +283,7 @@ Para obter mais exemplos sobre como usar imagens personalizadas do Docker com o 
 [CLI (interface de linha de comando) do Azure]: /cli/azure/overview
 [Serviço de Contêiner do Azure (AKS)]: https://azure.microsoft.com/services/container-service/
 [Azure para desenvolvedores Java]: https://docs.microsoft.com/java/azure/
-[portal do Azure]: https://portal.azure.com/
+[Portal do Azure]: https://portal.azure.com/
 [Criar um registro de contêiner privado do Docker usando o portal do Azure]: /azure/container-registry/container-registry-get-started-portal
 [Usando uma imagem personalizada do Docker para o Aplicativo Web do Azure no Linux]: /azure/app-service-web/app-service-linux-using-custom-docker-image
 [Docker]: https://www.docker.com/

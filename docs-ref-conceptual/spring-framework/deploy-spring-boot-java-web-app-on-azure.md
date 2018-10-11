@@ -15,21 +15,21 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: adf779e2ba6ca73ea3a2406613f9622cc9ecbf99
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954519"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893157"
 ---
 # <a name="deploy-a-spring-boot-application-to-the-cloud-with-azure-app-service"></a>Implantar um aplicativo Spring Boot na nuvem com o Serviço de Aplicativo do Azure
 
 Este tutorial o orientará durante a criação de um aplicativo Web de exemplo [Spring Boot] Getting Started e o implantará no [Serviço de Aplicativo do Azure].
 
-### <a name="prerequisites"></a>pré-requisitos
+### <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir as etapas deste tutorial, você precisa ter o seguinte:
 
-* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [benefício de assinante do MSDN] ou inscrever-se para uma [conta gratuita do Azure].
+* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [Benefícios do assinante do MSDN] ou inscrever-se para uma [conta do Azure gratuita].
 * Um [JDK (Java Developer Kit)] atualizado.
 * A ferramenta de compilação [Maven] do Apache (Versão 3).
 * Um cliente [Git].
@@ -49,7 +49,7 @@ As etapas a seguir explicarão as etapas necessárias para criar um aplicativo W
    cd /users/robert/SpringBoot
    ```
 
-1. Clone o projeto de exemplo [Spring Boot Getting Started] para o diretório que você acabou de criar. Por exemplo:
+1. Clone o projeto de exemplo [Introdução ao Spring Boot] para o diretório que você acabou de criar. Por exemplo:
    ```
    git clone https://github.com/spring-guides/gs-spring-boot.git
    ```
@@ -201,7 +201,7 @@ Para obter mais informações sobre como usar o Azure com o Java, veja os docume
 
 Para obter informações adicionais sobre a implantação dos aplicativos Web no Azure usando o FTP, confira [Implantar o aplicativo no Serviço de Aplicativo do Azure usando FTP/S].
 
-Para obter mais detalhes sobre o projeto de exemplo Spring Boot, confira [Spring Boot Getting Started].
+Para obter mais detalhes sobre o projeto de exemplo Spring Boot, confira [Introdução ao Spring Boot].
 
 Para obter ajuda na introdução a seus próprios aplicativos Spring Boot, confira **Spring Initializr** em https://start.spring.io/.
 
@@ -215,14 +215,14 @@ Para obter mais informações sobre como definir configurações adicionais para
 [Portal do Azure]: https://portal.azure.com/
 [Configurar aplicativos Web no Serviço de Aplicativo do Azure]: /azure/app-service/web-sites-configure
 [Implantar o aplicativo no Serviço de Aplicativo do Azure usando FTP/S]: https://docs.microsoft.com/azure/app-service/app-service-deploy-ftp
-[conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
+[conta do Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
 [JDK (Java Developer Kit)]: http://www.oracle.com/technetwork/java/javase/downloads/
 [Ferramentas Java para Visual Studio Team Services]: https://java.visualstudio.com/
 [Maven]: http://maven.apache.org/
-[benefício de assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
+[Benefícios do assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
-[Spring Boot Getting Started]: https://github.com/spring-guides/gs-spring-boot
+[Introdução ao Spring Boot]: https://github.com/spring-guides/gs-spring-boot
 [Spring Framework]: https://spring.io/
 
 <!-- IMG List -->
