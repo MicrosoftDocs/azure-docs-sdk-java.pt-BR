@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 4228352efa4354bfe4969c1a5ecd3f3b40483f85
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954727"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893577"
 ---
 # <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicar um aplicativo Spring Boot como um contêiner do Docker usando o Kit de Ferramentas do Azure para IntelliJ
 
@@ -51,7 +51,7 @@ As etapas a seguir explicam a clonagem do repositório do Spring Boot Docker usa
 
       ![Caixa de diálogo para inserção de um token do GitHub][CL02b]
 
-1. Insira **https://github.com/spring-guides/gs-spring-boot-docker.git** como a URL do repositório, especifique o caminho local e as informações de pasta e, em seguida, clique em **Clonar**.
+1. Digite **https://github.com/spring-guides/gs-spring-boot-docker.git** para a URL do repositório, especifique o caminho local e as informações de pasta, em seguida, clique em **Clonar**.
 
    ![Caixa de diálogo Clonar Repositório][CL03]
 

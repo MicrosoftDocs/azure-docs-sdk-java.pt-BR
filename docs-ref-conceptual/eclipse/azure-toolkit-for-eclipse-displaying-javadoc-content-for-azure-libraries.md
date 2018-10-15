@@ -15,11 +15,11 @@ ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
 ms.openlocfilehash: 6f1edcc1411e8ec716dbfe41271d21d2397515c5
-ms.sourcegitcommit: 151aaa6ccc64d94ed67f03e846bab953bde15b4a
+ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2018
-ms.locfileid: "28954497"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48893187"
 ---
 # <a name="displaying-javadoc-content-in-eclipse-for-the-azure-libraries-package-for-java"></a>Exibindo o Conteúdo do Javadoc no Eclipse para o Pacote de Bibliotecas do Azure para Java
 
@@ -37,7 +37,7 @@ Este procedimento pressupõe que você já adicionou a Biblioteca do Azure para 
 
 1. Você pode especificar uma **URL Javadoc**, ou um **Javadoc no arquivo**.
 
-   * Se você optar por especificar uma **URL Javadoc**, use URLs como **http://dl.windowsazure.com/javadoc** ou **http://dl.windowsazure.com/storage/javadoc**.
+   * Se você optar por especificar uma **URL do Javadoc**, use URLs como **http://dl.windowsazure.com/javadoc** ou **http://dl.windowsazure.com/storage/javadoc**.
 
    * Se optar por usar **Javadoc no arquivo**, você pode especificar um arquivo externo ou um arquivo de espaço de trabalho.
 
