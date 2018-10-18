@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 88eb64c07ad4f480dc2d2c2869e710c0ae910c4d
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: e84960ebf79b89b2430924016a429518a935d086
+ms.sourcegitcommit: 9d9e2fa97ebd95a699adcb58e82c3fc0882f0a24
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48892677"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49315930"
 ---
 # <a name="how-to-use-the-maven-plugin-for-azure-web-apps-to-deploy-a-spring-boot-app-in-azure-container-registry-to-azure-app-service"></a>Como usar o Plug-in do Maven para Aplicativos Web do Azure para implantar um aplicativo Spring Boot no Registro de Contêiner do Azure ao Serviço de Aplicativo do Azure
 
@@ -65,7 +65,7 @@ Nesta seção, você clonará um aplicativo Spring Boot em contêineres e o test
 
 1. Clone o exemplo de projeto [Introdução ao Spring Boot no Docker] para o diretório criado. Por exemplo:
    ```shell
-   git clone -b private-registry https://github.com/spring-guides/gs-spring-boot-docker
+   git clone -b https://github.com/spring-guides/gs-spring-boot-docker
    ```
 
 1. Altere o diretório para o projeto concluído. Por exemplo:
