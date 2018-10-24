@@ -8,18 +8,18 @@ ms.service: hdinsight
 ms.topic: reference
 ms.devlang: java
 ms.date: 9/20/2018
-ms.openlocfilehash: 5e3887341ddb2fdcab336f0a8a232e6e8bfbe0f2
-ms.sourcegitcommit: bb7286fad75a2bb43e6ce1a8f1b09e701147c9f9
+ms.openlocfilehash: 1271f70fff876f4d24c8afa81123c54735f2d522
+ms.sourcegitcommit: 788b49d0b37909c575c9e5176e484cba627e7921
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48047153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49120534"
 ---
 # <a name="hdinsight-java-management-sdk-preview"></a>SDK de Gerenciamento de Java do HDInsight (versão prévia)
 
 ## <a name="overview"></a>Visão geral
 
-O SDK Java do HDInsight oferece classes e métodos que permitem gerenciar os seus clusters do HDInsight. Ele inclui operações para criar, excluir, atualizar, listar, dimensionar, executar ações de script, monitorar, obter propriedades de clusters HDInsight e muito mais.
+O SDK Java do HDInsight oferece classes e métodos que permitem gerenciar os seus clusters do HDInsight. Inclui operações para criar, excluir, atualizar, listar, redimensionar, executar ações de script, monitorar, obter propriedades dos clusters HDInsight e muito mais.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -340,9 +340,9 @@ client.clusters.delete("<Resource Group Name>", "<Cluster Name>");
 client.clusters.update("<Resource Group Name>", "<Cluster Name>", <Map<String,String> of Tags>);
 ```
 
-### <a name="scale-cluster"></a>Dimensionar cluster
+### <a name="resize-cluster"></a>Redimensionar Cluster
 
-É possível dimensionar um determinado número de nós de trabalho do cluster especificando um novo tamanho da seguinte forma:
+É possível redimensionar o número de nós de trabalho de determinado cluster especificando um novo tamanho, assim:
 
 ```java
 client.clusters.resize("<Resource Group Name>", "<Cluster Name>", <Num of Worker Nodes (int)>)
