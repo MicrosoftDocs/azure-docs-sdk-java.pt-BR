@@ -14,12 +14,12 @@ ms.service: event-hubs
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 3f7eeffe8bd36196f9b79edd60830b5d202ea285
-ms.sourcegitcommit: fd67d4088be2cad01c642b9ecf3f9475d9cb4f3c
+ms.openlocfilehash: dfc3b6121bddcb637735047e2e7bc7485da9a4fe
+ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46506257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49799942"
 ---
 # <a name="how-to-create-a-spring-cloud-stream-binder-application-with-azure-event-hubs"></a>Como criar um aplicativo Spring Cloud Stream Binder com os Hubs de Eventos do Azure
 
@@ -57,7 +57,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    * Escolha a **Assinatura** que você deseja usar para o namespace.
    * Especifique se deseja criar um novo **Grupo de recursos** para o namespace ou escolher um grupo de recursos existente.
    * Especifique o **Local** do namespace do hub de eventos.
-   
+
    ![Especificar opções de Namespace do Hub de Eventos do Azure][IMG02]
 
 1. Quando você tiver especificado as opções listadas acima, clique em **Criar** para criar o namespace.
@@ -97,7 +97,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    * Especifique o **Local** da conta de armazenamento.
    * Escolha a **Assinatura** que você deseja usar para a conta de armazenamento.
    * Especifique se deseja criar um novo **Grupo de recursos** para a conta de armazenamento ou escolher um grupo de recursos existente.
-   
+
    ![Especificar opções da Conta de Armazenamento do Azure][IMG08]
 
 1. Quando você tiver especificado as opções listadas acima, clique em **Criar** para criar a conta de armazenamento.
@@ -236,7 +236,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
    `/users/example/home/eventhub/src/main/resources/application.properties`
 
-1.  Abra o arquivo *application.properties* em um editor de texto, adicione as seguintes linhas e substitua os valores de exemplo pelas propriedades adequadas de seu hub de eventos:
+2. Abra o arquivo *application.properties* em um editor de texto, adicione as seguintes linhas e substitua os valores de exemplo pelas propriedades adequadas de seu hub de eventos:
 
    ```yaml
    spring.cloud.azure.credential-file-path=my.azureauth
@@ -250,18 +250,20 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    spring.cloud.stream.eventhub.bindings.input.consumer.checkpoint-mode=MANUAL
    ```
    Em que:
-   | Campo | DESCRIÇÃO |
-   | ---|---|
-   | `spring.cloud.azure.credential-file-path` | Especifica o arquivo de credencial do Azure que você criou anteriormente neste tutorial. |
-   | `spring.cloud.azure.resource-group` | Especifica o Grupo de Recursos do Azure que contém seu Hub de Eventos do Azure. |
-   | `spring.cloud.azure.region` | Especifica a região geográfica definida quando você criou o Hub de Eventos do Azure. |
-   | `spring.cloud.azure.eventhub.namespace` | Especifica o nome exclusivo definido quando você criou o namespace do Hub de Eventos do Azure. |
-   | `spring.cloud.azure.eventhub.checkpoint-storage-account` | Especifica a Conta de Armazenamento do Azure criada neste tutorial.
-   | `spring.cloud.stream.bindings.input.destination` | Especifica o destino de entrada do Hub de Eventos do Azure, que é o hub criado anteriormente neste tutorial. |
-   | `spring.cloud.stream.bindings.input.group `| Especifica um Grupo de Consumidores do Hub de Eventos do Azure, que pode ser definido para “$Default” para usar o grupo de consumidores básico gerado quando você criou seu Hub de Eventos do Azure. |
-   | `spring.cloud.stream.bindings.output.destination` | Especifica o destino de saída do Hub de Eventos do Azure que, para este tutorial, será igual ao destino de entrada. |
 
-1. Salve e feche o arquivo *application.properties*.
+   |                          Campo                           |                                                                                   DESCRIÇÃO                                                                                    |
+   |----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |        `spring.cloud.azure.credential-file-path`         |                                                    Especifica o arquivo de credencial do Azure que você criou anteriormente neste tutorial.                                                    |
+   |           `spring.cloud.azure.resource-group`            |                                                      Especifica o Grupo de Recursos do Azure que contém seu Hub de Eventos do Azure.                                                      |
+   |               `spring.cloud.azure.region`                |                                           Especifica a região geográfica definida quando você criou o Hub de Eventos do Azure.                                            |
+   |         `spring.cloud.azure.eventhub.namespace`          |                                          Especifica o nome exclusivo definido quando você criou o namespace do Hub de Eventos do Azure.                                           |
+   | `spring.cloud.azure.eventhub.checkpoint-storage-account` |                                                    Especifica a Conta de Armazenamento do Azure criada neste tutorial.                                                    |
+   |     `spring.cloud.stream.bindings.input.destination`     |                            Especifica o destino de entrada do Hub de Eventos do Azure, que é o hub criado anteriormente neste tutorial.                            |
+   |       `spring.cloud.stream.bindings.input.group `        | Especifica um Grupo de Consumidores do Hub de Eventos do Azure, que pode ser definido para “$Default” para usar o grupo de consumidores básico gerado quando você criou seu Hub de Eventos do Azure. |
+   |    `spring.cloud.stream.bindings.output.destination`     |                               Especifica o destino de saída do Hub de Eventos do Azure que, para este tutorial, será igual ao destino de entrada.                               |
+
+
+3. Salve e feche o arquivo *application.properties*.
 
 ## <a name="add-sample-code-to-implement-basic-event-hub-functionality"></a>Adicionar código de exemplo para implementar a funcionalidade básica do hub de eventos
 
@@ -281,10 +283,10 @@ Nesta seção, você criará as classes Java necessárias para enviar eventos ao
 
    ```java
    package com.wingtiptoys.eventhub;
-   
+
    import org.springframework.boot.SpringApplication;
    import org.springframework.boot.autoconfigure.SpringBootApplication;
-   
+
    @SpringBootApplication
    public class EventhubApplication {
       public static void main(String[] args) {
@@ -301,7 +303,7 @@ Nesta seção, você criará as classes Java necessárias para enviar eventos ao
 
    ```java
    package com.wingtiptoys.eventhub;
-   
+
    import org.springframework.beans.factory.annotation.Autowired;
    import org.springframework.cloud.stream.annotation.EnableBinding;
    import org.springframework.cloud.stream.messaging.Source;
@@ -309,14 +311,14 @@ Nesta seção, você criará as classes Java necessárias para enviar eventos ao
    import org.springframework.web.bind.annotation.PostMapping;
    import org.springframework.web.bind.annotation.RequestBody;
    import org.springframework.web.bind.annotation.RestController;
-   
+
    @EnableBinding(Source.class)
    @RestController
    public class EventhubSource {
-   
+
       @Autowired
       private Source source;
-   
+
       @PostMapping("/messages")
       public String postMessage(@RequestBody String message) {
          this.source.output().send(new GenericMessage<>(message));
@@ -332,7 +334,7 @@ Nesta seção, você criará as classes Java necessárias para enviar eventos ao
 
    ```java
    package com.wingtiptoys.eventhub;
-   
+
    import com.microsoft.azure.spring.integration.core.AzureHeaders;
    import com.microsoft.azure.spring.integration.core.api.Checkpointer;
    import org.slf4j.Logger;
@@ -341,10 +343,10 @@ Nesta seção, você criará as classes Java necessárias para enviar eventos ao
    import org.springframework.cloud.stream.annotation.StreamListener;
    import org.springframework.cloud.stream.messaging.Sink;
    import org.springframework.messaging.handler.annotation.Header;
-   
+
    @EnableBinding(Sink.class)
    public class EventhubSink {
-   
+
       private static final Logger LOGGER = LoggerFactory.getLogger(EventhubSink.class);
 
       @StreamListener(Sink.INPUT)
