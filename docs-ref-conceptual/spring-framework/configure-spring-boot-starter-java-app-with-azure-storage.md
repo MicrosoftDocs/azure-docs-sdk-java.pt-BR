@@ -14,12 +14,12 @@ ms.service: storage
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: storage
-ms.openlocfilehash: 1a219a066f0f89adbf3f541856b36b842520bfbb
-ms.sourcegitcommit: fd67d4088be2cad01c642b9ecf3f9475d9cb4f3c
+ms.openlocfilehash: 4838b6dbd354ad941df12933dddfa7f3e7eef905
+ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46505914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49799962"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>Como usar o iniciador do Spring Boot para Armazenamento do Azure
 
@@ -56,8 +56,8 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    * Especifique o **Local** da conta de armazenamento.
    * Escolha a **Assinatura** que você deseja usar para a conta de armazenamento.
    * Especifique se deseja criar um novo **Grupo de recursos** para a conta de armazenamento ou escolher um grupo de recursos existente.
-   
-   ![Especificar opções de conta do Armazenamento do Azure][IMG02]
+
+   ![Especificar opções da Conta de Armazenamento do Azure][IMG02]
 
 1. Quando você tiver especificado as opções listadas acima, clique em **Criar** para criar a conta de armazenamento.
 
@@ -81,7 +81,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
    * Gere um projeto **Maven** com **Java**.
    * Especifique uma versão **Spring Boot** igual ou maior que 2.0.
-   * Especifique os nomes de **Grupo** e **Artefato** para o aplicativo.
+   * Especifique os nomes de **Grupo** e **Artefato** do aplicativo.
    * Adicione a dependência da **Web**.
 
       ![Opções básicas do Initializr Basic][SI01]
@@ -101,7 +101,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
 ## <a name="configure-your-spring-boot-app-to-use-the-azure-storage-starter"></a>Configurar o aplicativo Spring Boot para usar o Iniciador do Armazenamento do Azure
 
-1. Localize o arquivo *pom.xml* no diretório raiz do aplicativo, por exemplo:
+1. Localize o arquivo *pom.xml* no diretório-raiz do aplicativo, por exemplo:
 
    `C:\SpringBoot\storage\pom.xml`
 
@@ -199,7 +199,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
 ## <a name="configure-your-spring-boot-app-to-use-your-azure-storage-account"></a>Configurar o aplicativo Spring Boot para usar sua conta do Armazenamento do Azure
 
-1. Localize o *application.properties* no diretório *recursos* do aplicativo, por exemplo:
+1. Localize *application.properties* no diretório *recursos* do aplicativo, por exemplo:
 
    `C:\SpringBoot\storage\src\main\resources\application.properties`
 
@@ -207,7 +207,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
    `/users/example/home/storage/src/main/resources/application.properties`
 
-1.  Abra o arquivo *application.properties* em um editor de texto, adicione as seguintes linhas ao arquivo e substitua os valores de exemplo pelas propriedades adequadas para sua conta de armazenamento:
+2. Abra o arquivo *application.properties* em um editor de texto, adicione as seguintes linhas ao arquivo e substitua os valores de exemplo pelas propriedades adequadas para sua conta de armazenamento:
 
    ```yaml
    spring.cloud.azure.credential-file-path=my.azureauth
@@ -216,14 +216,16 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
    spring.cloud.azure.storage.account=wingtiptoysstorage
    ```
    Em que:
-   | Campo | DESCRIÇÃO |
-   | ---|---|
-   | `spring.cloud.azure.credential-file-path` | Especifica o arquivo de credencial do Azure que você criou neste tutorial. |
-   | `spring.cloud.azure.resource-group` | O nome do grupo de recursos do Azure que contém a conta do Armazenamento do Azure. |
-   | `spring.cloud.azure.region` | Especifica a região geográfica que você especificou quando criou a conta do Armazenamento do Azure. |
-   | `spring.cloud.azure.storage.account` | Especifica a conta do Armazenamento do Azure que você criou neste tutorial.
 
-1. Salve e feche o arquivo *application.properties*.
+   |                   Campo                   |                                            DESCRIÇÃO                                            |
+   |-------------------------------------------|---------------------------------------------------------------------------------------------------|
+   | `spring.cloud.azure.credential-file-path` |            Especifica o arquivo de credencial do Azure que você criou anteriormente neste tutorial.             |
+   |    `spring.cloud.azure.resource-group`    |           O nome do grupo de recursos do Azure que contém a conta do Armazenamento do Azure.            |
+   |        `spring.cloud.azure.region`        | Especifica a região geográfica que você especificou quando criou a conta do Armazenamento do Azure. |
+   |   `spring.cloud.azure.storage.account`    |            Especifica a conta do Armazenamento do Azure que você criou neste tutorial.             |
+
+
+3. Salve e feche o arquivo *application.properties*.
 
 ## <a name="add-sample-code-to-implement-basic-azure-storage-functionality"></a>Adicionar código de exemplo para implementar a funcionalidade básica do armazenamento do Azure
 
@@ -243,10 +245,10 @@ Nesta seção, você criará as classes Java necessárias para armazenar um blob
 
    ```java
    package com.wingtiptoys.storage;
-   
+
    import org.springframework.boot.SpringApplication;
    import org.springframework.boot.autoconfigure.SpringBootApplication;
-   
+
    @SpringBootApplication
    public class StorageApplication {
       public static void main(String[] args) {
@@ -271,7 +273,7 @@ Nesta seção, você criará as classes Java necessárias para armazenar um blob
 
    ```java
    package com.wingtiptoys.storage;
-   
+
    import org.springframework.beans.factory.annotation.Value;
    import org.springframework.core.io.Resource;
    import org.springframework.core.io.WritableResource;
@@ -280,14 +282,14 @@ Nesta seção, você criará as classes Java necessárias para armazenar um blob
    import org.springframework.web.bind.annotation.PostMapping;
    import org.springframework.web.bind.annotation.RequestBody;
    import org.springframework.web.bind.annotation.RestController;
-   
+
    import java.io.IOException;
    import java.io.OutputStream;
    import java.nio.charset.Charset;
-   
+
    @RestController
    public class WebController {
-   
+
       @Value("blob://test/myfile.txt")
       private Resource blobFile;
 
@@ -297,7 +299,7 @@ Nesta seção, você criará as classes Java necessárias para armazenar um blob
             this.blobFile.getInputStream(),
             Charset.defaultCharset()) + "\n";
       }
-   
+
       @PostMapping(value = "/")
       public String writeBlobFile(@RequestBody String data) throws IOException {
          try (OutputStream os = ((WritableResource) this.blobFile).getOutputStream()) {
@@ -307,7 +309,7 @@ Nesta seção, você criará as classes Java necessárias para armazenar um blob
       }
    }
    ```
-   
+
    Em que a sintaxe `@Value("blob://[container]/[blob]")` define respectivamente os nomes do contêiner e do blob onde você deseja armazenar os dados.
 
 1. Salve e feche o arquivo Java do controlador da Web.

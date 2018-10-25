@@ -14,12 +14,12 @@ ms.service: active-directory
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: d3b6bdc4aaae79864d370c581585167cf3732160
-ms.sourcegitcommit: bb7286fad75a2bb43e6ce1a8f1b09e701147c9f9
+ms.openlocfilehash: 665768ffe7bec977d553ffa62e1dbd6b968eb9de
+ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48047173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49799902"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-active-directory"></a>Como usar o iniciador do Spring Boot para o Azure Active Directory
 
@@ -85,54 +85,54 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
 
    ![Adicionar um novo registro de aplicativo][directory-04]
 
-1. Clique em **Novo registro de aplicativo**, especifique o **Nome** do aplicativo, use http://localhost:8080 como a **URL de entrada** e depois clique em **Criar**.
+2. Clique em **Novo registro de aplicativo**, especifique o **Nome** do aplicativo, use http://localhost:8080 como a **URL de entrada** e depois clique em **Criar**.
 
    ![Criar novo registro de aplicativo][directory-05]
 
-1. Clique em seu registro de aplicativo depois de ele ter sido criado.
+3. Clique em seu registro de aplicativo depois de ele ter sido criado.
 
    ![Selecione o registro de aplicativo][directory-06]
 
-1. Quando a página de registro do aplicativo aparecer, copie seu **ID do aplicativo**. Você usará esse valor para configurar o arquivo *application.properties* posteriormente no tutorial. Clique em **Configurações** e **Chaves**.
+4. Quando a página de registro do aplicativo aparecer, copie seu **ID do aplicativo**. Você usará esse valor para configurar o arquivo *application.properties* posteriormente no tutorial. Clique em **Configurações** e **Chaves**.
 
    ![Criar chaves do registro de aplicativo][directory-07]
 
-1. Adicione uma **Descrição**, especifique a **Duração** de uma nova chave e clique em **Salvar**. O valor da chave será preenchido automaticamente quando clicar no ícone **Salvar** e você precisará copiar o valor da chave para configurar o arquivo *application.properties* posteriormente neste tutorial. (Você não conseguirá recuperar esse valor depois.)
+5. Adicione uma **Descrição**, especifique a **Duração** de uma nova chave e clique em **Salvar**. O valor da chave será preenchido automaticamente quando clicar no ícone **Salvar** e você precisará copiar o valor da chave para configurar o arquivo *application.properties* posteriormente neste tutorial. (Você não conseguirá recuperar esse valor depois.)
 
    ![Especificar parâmetros da chave de registro do aplicativo][directory-08]
 
-1. Na página principal do registro do aplicativo, clique em **Configurações** e depois em **Permissões necessárias**.
+6. Na página principal do registro do aplicativo, clique em **Configurações** e depois em **Permissões necessárias**.
 
    ![Permissões necessárias para o registro do aplicativo][directory-09]
 
-1. Clique em **Microsoft Azure Active Directory**.
+7. Clique em **Microsoft Azure Active Directory**.
 
    ![Selecione Microsoft Azure Active Directory][directory-10]
 
-1. Marque as caixas **Acessar o diretório como o usuário conectado** e **Entrar e ler o perfil de usuário**, depois clique em **Salvar**.
+8. Marque as caixas **Acessar o diretório como o usuário conectado** e **Entrar e ler o perfil de usuário**, depois clique em **Salvar**.
 
    ![Habilitar permissões de acesso][directory-11]
 
-1. Na página **Permissões necessárias**, clique em **Conceder Permissões** e em **Sim**, quando solicitado.
+9. Na página **Permissões necessárias**, clique em **Conceder Permissões** e em **Sim**, quando solicitado.
 
    ![Conceder permissões de acesso][directory-12]
 
-1. Na página principal do registro do aplicativo, clique em **Configurações** e depois em **URLs de Resposta**.
+10. Na página principal do registro do aplicativo, clique em **Configurações** e depois em **URLs de Resposta**.
 
-   ![Editar URLs de Resposta][directory-14]
+    ![Editar URLs de Resposta][directory-14]
 
-1. Insira "http://localhost:8080/login/oauth2/code/azure" como uma nova URL de resposta e depois clique em **Salvar**.
+11. Insira "<http://localhost:8080/login/oauth2/code/azure>" como uma nova URL de resposta e depois clique em **Salvar**.
 
-   ![Adicionar nova URL de Resposta][directory-15]
+    ![Adicionar nova URL de Resposta][directory-15]
 
-1. Na página principal de registro do aplicativo, clique em **Manifesto**, em seguida defina o valor do `oauth2AllowImplicitFlow` parâmetro para `true` e clique em **Salvar**.
+12. Na página principal de registro do aplicativo, clique em **Manifesto**, em seguida defina o valor do `oauth2AllowImplicitFlow` parâmetro para `true` e clique em **Salvar**.
 
-   ![Configurar manifesto do aplicativo][directory-16]
+    ![Configurar manifesto do aplicativo][directory-16]
 
-   > [!NOTE]
-   > 
-   > Para obter mais informações sobre o `oauth2AllowImplicitFlow` parâmetro e outras configurações do aplicativo, consulte [Manifesto do aplicativo do Azure Active Directory][AAD app manifest]. 
-   >
+    > [!NOTE]
+    > 
+    > Para obter mais informações sobre o `oauth2AllowImplicitFlow` parâmetro e outras configurações do aplicativo, consulte [Manifesto do aplicativo do Azure Active Directory][AAD app manifest]. 
+    >
 
 ### <a name="add-a-user-account-to-your-directory-and-add-that-account-to-a-group"></a>Adicionar uma conta de usuário ao diretório e adicionar essa conta a um grupo
 

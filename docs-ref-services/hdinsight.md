@@ -8,12 +8,12 @@ ms.service: hdinsight
 ms.topic: reference
 ms.devlang: java
 ms.date: 9/20/2018
-ms.openlocfilehash: 1271f70fff876f4d24c8afa81123c54735f2d522
-ms.sourcegitcommit: 788b49d0b37909c575c9e5176e484cba627e7921
+ms.openlocfilehash: 9fd35d12e0aa864b5d23cf03547f7b76dc74c677
+ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49120534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49799892"
 ---
 # <a name="hdinsight-java-management-sdk-preview"></a>SDK de Gerenciamento de Java do HDInsight (versão prévia)
 
@@ -42,23 +42,23 @@ O SDK de Java do HDInsight está disponível no Maven [aqui](https://mvnreposito
 Você também precisará adicionar as seguintes dependências ao pom.xml:
 
 * [Biblioteca de autenticação de cliente do Azure:](https://mvnrepository.com/artifact/com.microsoft.azure/azure-client-authentication/1.6.2)
-```
-<dependency>
+  ```
+  <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-client-authentication</artifactId>
     <version>1.6.2</version>
     <scope>test</scope>
-</dependency>
-```
+  </dependency>
+  ```
 
 * [Tempo de execução de cliente Java do Azure para ARM:](https://mvnrepository.com/artifact/com.microsoft.azure/azure-arm-client-runtime/1.6.2)
-```
-<dependency>
+  ```
+  <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-arm-client-runtime</artifactId>
     <version>1.6.2</version>
-</dependency>
-```
+  </dependency>
+  ```
 
 ## <a name="authentication"></a>Autenticação
 
@@ -355,7 +355,7 @@ O SDK de gerenciamento do HDInsight também pode ser usado para gerenciar o moni
 ### <a name="enable-oms-monitoring"></a>Habilitar Monitoramento de OMS
 
 > [!NOTE]
-> Para habilitar o Monitoramento de OMS, você deve ter um espaço de trabalho existente do Log Analytics. Se você já não tiver criado um, você pode aprender como fazer isso aqui: [Criar um espaço de trabalho do Log Analytics no portal do Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
+> Para habilitar o Monitoramento de OMS, você deve ter um workspace existente do Log Analytics. Se você já não tiver criado um, você pode aprender como fazer isso aqui: [Criar um workspace do Log Analytics no portal do Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Para habilitar o Monitoramento de OMS no seu cluster:
 
