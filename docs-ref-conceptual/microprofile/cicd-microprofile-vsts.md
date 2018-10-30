@@ -14,12 +14,12 @@ ms.service: Azure DevOps
 ms.tgt_pltfrm: multiple
 ms.topic: tutorial
 ms.workload: web
-ms.openlocfilehash: c2b6bf3370982d26d8d23fede370e0105a70b734
-ms.sourcegitcommit: fd67d4088be2cad01c642b9ecf3f9475d9cb4f3c
+ms.openlocfilehash: 818e37291fa47f99cb161c63a86062bddbf6248c
+ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46506259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49799932"
 ---
 # <a name="cicd-for-microprofile-applications-using-azure-devops"></a>CI/CD para aplicativos MicroProfile usando o Azure DevOps
 
@@ -38,9 +38,9 @@ Vamos começar o processo de colocação em contêiner do Azure DevOps criando u
 - Criar um novo [projeto do Azure DevOps](https://docs.microsoft.com/en-us/vsts/organizations/projects/create-project?view=vsts&tabs=new-nav) e usar a URL Git acima para **importar um repositório**
 - Criar um [Registro de Contêiner do Azure](https://azure.microsoft.com/en-us/services/container-registry) (ACR)
 - Criar um Aplicativo Web para Contêiner do Azure
-> [!NOTE]
->
-> Selecionar "Início Rápido" nas Configurações do Contêiner ao provisionar a instância do Aplicativo Web
+  > [!NOTE]
+  >
+  > Selecionar "Início Rápido" nas Configurações do Contêiner ao provisionar a instância do Aplicativo Web
 
 
 ## <a name="create-a-build-definition"></a>Criar a definição de build
@@ -54,17 +54,17 @@ A definição de build no Azure DevOps executa automaticamente todas as tarefas 
 2. Clique no botão **Novo Pipeline** e em **Continuar** para começar a definir as tarefas de build
 3. Selecione "Maven" na lista de modelos e clique no botão **Aplicar** para compilar seu projeto Java
 4. Use o menu suspenso no campo Pool de agentes para selecionar a opção **Versão prévia do Linux Hospedada**.
-> [!NOTE]
->
-> Isso informa ao Azure DevOps sobre qual servidor de build usar.  Você pode usar seu próprio servidor de build personalizado
+   > [!NOTE]
+   >
+   > Isso informa ao Azure DevOps sobre qual servidor de build usar.  Você pode usar seu próprio servidor de build personalizado
 
 5. Para configurar o build para a integração contínua, selecione a guia **Gatilhos** e marque a caixa de seleção **Habilitar integração contínua**.  
 
 <img src="media/VSTS/Build-Triggers2.png"> 
- 
-6. Selecione a guia **Tarefas** para retornar à página do pipeline de build principal
-7. Use o menu suspenso **Salvar e enfileirar** para selecionar a opção **Salvar**
- 
+
+6. Selecione a guia <strong>Tarefas</strong> para retornar à página do pipeline de build principal
+7. Use o menu suspenso <strong>Salvar &amp; enfileirar</strong> para selecionar a opção <strong>Salvar</strong>
+
 
 ## <a name="create-a-docker-build-image"></a>Criar uma Imagem de Build do Docker
 
@@ -72,15 +72,14 @@ Nessa tarefa, o Azure DevOps usa um Dockerfile com uma imagem básica do Payara 
 
 1. Selecione a guia **Tarefas** para retornar à página do pipeline de build principal
 2. Clique no ícone **+** para adicionar uma nova tarefa à definição de build
- 
+
 <img src="media/VSTS/Tasks-add4.png">
- 
-3. Selecione "Docker" na lista de modelos e clique no botão **Adicionar**
-4. Insira um nome descritivo no campo **Nome de exibição**
-5. Verifique se a opção **Registro de Contêiner do Azure** está selecionada no menu suspenso do **Tipo do registro de contêiner**.
-> [!NOTE]
->
->  Se você estiver usando o Hub do Docker ou outro registro, selecione "Registro de Contêiner".  Em seguida, clique no botão "+ Novo" para fornecer as credenciais e as informações de conexão. Vá para a seção Comandos para continuar.
+
+3. Selecione &quot;Docker&quot; na lista de modelos e clique no botão <strong>Adicionar</strong>
+4. Insira um nome descritivo no campo <strong>Nome de exibição</strong>
+5. Verifique se a opção <strong>Registro de Contêiner do Azure</strong> está selecionada no menu suspenso do <strong>Tipo do registro de contêiner</strong>.
+&gt; [!NOTE]
+&gt; &gt;  Se você estiver usando o Hub do Docker ou outro registro, selecione &quot;Registro de Contêiner&quot;.  Em seguida, clique no botão &quot;+ Novo&quot; para fornecer as credenciais e as informações de conexão. Vá para a seção Comandos para continuar.
 
 6. Use o menu suspenso **Assinatura do Azure** para selecionar a ID de sua assinatura do Azure.  Em seguida, clique no botão **Autorizar**
 7. No menu suspenso **Registro de contêiner do Azure**, selecione o nome de registro criado no Azure.
@@ -103,7 +102,7 @@ Nessa tarefa, o Azure DevOps enviará por push a imagem do Docker para seu Regis
 5. Clique no número de build para verificar se o pipeline de build do projeto Java foi concluído com êxito.
 
 <img src="media/VSTS/Build-Number6.png">
- 
+
 
 ## <a name="create-a-release-definition-for-a-java-app"></a>Criar uma definição da versão para um aplicativo Java
 
@@ -112,20 +111,19 @@ O pipeline de lançamento no Azure DevOps dispara automaticamente a implantaçã
 1. Clique na guia "Build e versão" na parte superior da página do projeto Azure DevOps.  Em seguida, selecione o link **Versões**.
 
 <img src="media/VSTS/Release-new-pipeline7.png">
- 
-2. Clique no botão “Novo pipeline”
-3. Selecione **Implantar um aplicativo Java no Serviço de Aplicativo do Azure** na lista de modelos e clique no botão **Aplicar**.
+
+2. Clique no botão &quot;Novo pipeline**
+3. Selecione <strong>Implantar um aplicativo Java no Serviço de Aplicativo do Azure</strong> na lista de modelos e clique no botão <strong>Aplicar</strong>.
 
 <img src="media/VSTS/deploy-java-template8.png">
- 
-4. Defina um **Nome do estágio** (por exemplo, Desenvolvimento, Teste, Preparo ou Produção).  Em seguida, clique no botão **X** para fechar a janela pop-up
-5. Clique no botão **+ Adicionar** na seção Artefatos.  Isso vinculará os artefatos da definição de build a essa definição da versão.  
-6. Use o menu suspenso da **Fonte (pipeline de build)** para selecionar sua definição de build. Em seguida, clique no botão **Adicionar** para continuar.
+
+4. Defina um <strong>Nome do estágio</strong> (por exemplo, Desenvolvimento, Teste, Preparo ou Produção).  Em seguida, clique no botão <strong>X</strong> para fechar a janela pop-up
+5. Clique no botão <strong>+ Adicionar</strong> na seção Artefatos.  Isso vinculará os artefatos da definição de build a essa definição da versão.<br/>6. Use o menu suspenso da <strong>Fonte (pipeline de build)</strong> para selecionar sua definição de build. Em seguida, clique no botão <strong>Adicionar</strong> para continuar.
 
 <img src="media/VSTS/add-artifact9.png">
- 
-7. Clique na guia **Tarefas** no pipeline.  Depois, selecione o nome do estágio.
- 
+
+7. Clique na guia <strong>Tarefas</strong> no pipeline.  Depois, selecione o nome do estágio.
+
 <img src="media/VSTS/release-stage10.png">
 
 8. Use o menu suspenso **Assinatura do Azure** para selecionar a ID de sua assinatura do Azure.
@@ -152,13 +150,13 @@ Por exemplo:
 4. Clique em **Implantar Serviço de Aplicativo do Azure**. 
 5. Expanda a seção **Definições do Aplicativo e da Configuração** e clique no caminho de navegação do campo **Configurações do Aplicativo** para adicionar a variável de ambiente e conectar o registro de contêiner durante a implantação.
 6. Clique no botão ** + Adicionar** para definir as configurações do aplicativo a seguir e atribuir as variáveis de ambiente.
-- DOCKER_REGISTRY_SERVER_PASSWORD = $(registry.password)
-- DOCKER_REGISTRY_SERVER_URL = $(registry.url)
-- DOCKER_REGISTRY_SERVER_USERNAME = $(registry.username)
+7. DOCKER_REGISTRY_SERVER_PASSWORD = $(registry.password)
+8. DOCKER_REGISTRY_SERVER_URL = $(registry.url)
+9. DOCKER_REGISTRY_SERVER_USERNAME = $(registry.username)
 
 <img src="media/VSTS/environment-variables14.png">
- 
-7. Clique no botão **OK** para continuar
+
+7. Clique no botão <strong>OK</strong> para continuar
 
 ## <a name="setup-continious-deployment--deploy-java-application"></a>Configurar Implantação Contínua e Implantar Aplicativo Java
 
@@ -166,22 +164,22 @@ Por exemplo:
 2. Na seção Artefatos, clique no ícone de raio.  Em seguida, defina o **Gatilho de implantação contínua** para Habilitado.
 
 <img src="media/VSTS/release-enable-CD.png">
- 
-3. Clique no botão **Salvar** e no botão **OK** 
-4. Clique no menu suspenso **+ Versão** e selecione o link **Criar uma versão**
-5. Use o menu suspenso **Estágios para alterar gatilho de automático para manual** para marcar a caixa de seleção do nome do estágio
-6. Clique no botão **Criar** para continuar
-7. Clique no número da versão.  Em seguida, passe o cursor do mouse sobre o nome do estágio e clique no botão **Implantar**
-8. Clique no botão **Implantar** na janela pop-up para iniciar o processo de implantação no Azure
+
+3. Clique no botão <strong>Salvar</strong> e no botão <strong>OK</strong> 
+4. Clique no menu suspenso <strong>+ Versão</strong> e selecione o link <strong>Criar uma versão</strong>
+5. Use o menu suspenso <strong>Estágios para alterar gatilho de automático para manual</strong> para marcar a caixa de seleção do nome do estágio
+6. Clique no botão <strong>Criar</strong> para continuar
+7. Clique no número da versão.  Em seguida, passe o cursor do mouse sobre o nome do estágio e clique no botão <strong>Implantar</strong>
+8. Clique no botão <strong>Implantar</strong> na janela pop-up para iniciar o processo de implantação no Azure
 
 
 ## <a name="test-the-java-web-application"></a>Testar Aplicativo Web Java
 1. Execute a URL do aplicativo Web no navegador da Web:  
-https://{nome-do-serviço-de-aplicativo}.azurewebsites.net/api/hello
+   https://{nome-do-serviço-de-aplicativo}.azurewebsites.net/api/hello
 
- 
+
 <img src="media/VSTS/web-app16.png">
 
 2. A página da Web deverá mostrar **Olá Azure!**
- 
+
 <img src="media/VSTS/web-api17.png">

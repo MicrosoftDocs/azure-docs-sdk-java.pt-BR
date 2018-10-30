@@ -6,17 +6,17 @@ documentationcenter: java
 author: rmcmurray
 manager: routlaw
 editor: brborges
-ms.author: robmcm;kevinzha;brborges
-ms.date: 10/04/2018
+ms.author: robmcm
+ms.date: 10/18/2018
 ms.devlang: java
 ms.service: app-service
 ms.topic: article
-ms.openlocfilehash: 36afcc764c1cb984779518ddec004ecbfa1b7c57
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: dc3038fed6859203f36e0c4dc9a9b01e81a7c4c5
+ms.sourcegitcommit: dae7511a9d93ca7f388d5b0e05dc098e22c2f2f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48876390"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49962490"
 ---
 # <a name="deploy-a-spring-boot-jar-file-web-app-to-azure-app-service-on-linux"></a>Implantar um aplicativo Web do arquivo JAR do Spring Boot no Serviço de Aplicativo do Azure no Linux
 
@@ -33,6 +33,18 @@ Para concluir as etapas deste tutorial, você precisa ter o seguinte instalado e
 * O [Java Development Kit (JDK)](https://www.azul.com/downloads/azure-only/zulu/) versão 1.7 ou posterior.
 * O [Maven](https://maven.apache.org/) do Apache, versão 3.
 * Um cliente [Git](https://git-scm.com/downloads).
+
+## <a name="install-and-sign-in-to-azure-cli"></a>Instalar e entrar na CLI do Azure
+
+A maneira mais simples e fácil de obter o plug-in do Maven implantando seu aplicativo Spring Boot é usando a [CLI do Azure](https://docs.microsoft.com/cli/azure/).
+
+Entre em sua conta do Azure usando a CLI do Azure:
+   
+   ```shell
+   az login
+   ```
+   
+Siga as instruções na tela para concluir o processo de entrada.
 
 ## <a name="clone-the-sample-app"></a>Clonar o aplicativo de exemplo
 
@@ -82,10 +94,10 @@ Nesta seção, será configurado o projeto Spring Boot `pom.xml` para que o Mave
 
 1. Abra `pom.xml` em um editor de código.
 
-1. Na seção `<build>` do pom.xml, adicione a seguinte entrada `<plugin>` dentro da marca `<plugins>`.
+2. Na seção `<build>` do pom.xml, adicione a seguinte entrada `<plugin>` dentro da marca `<plugins>`.
 
    ```xml
-  <plugin>
+   <plugin>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-webapp-maven-plugin</artifactId>
     <version>1.4.0</version>
@@ -108,10 +120,10 @@ Nesta seção, será configurado o projeto Spring Boot `pom.xml` para que o Mave
       <!-- Java Runtime Stack for Web App on Linux-->
       <linuxRuntime>jre8</linuxRuntime>
     </configuration>
-  </plugin>
-  ```
+   </plugin>
+   ```
 
-1. Atualize os seguintes espaços reservados na configuração do plug-in:
+3. Atualize os seguintes espaços reservados na configuração do plug-in:
 
 | Placeholder | DESCRIÇÃO |
 | ----------- | ----------- |
@@ -120,18 +132,6 @@ Nesta seção, será configurado o projeto Spring Boot `pom.xml` para que o Mave
 | `REGION` | Uma região do Azure onde o aplicativo Web está hospedado, por exemplo, `westus2`. Você pode obter uma lista de regiões do Cloud Shell ou da CLI usando o comando `az account list-locations`. |
 
 Há uma lista completa das opções de configuração na [referência de plug-in do Maven no GitHub](https://github.com/Microsoft/azure-maven-plugins/tree/develop/azure-webapp-maven-plugin).
-
-## <a name="install-and-log-in-to-azure-cli"></a>Instalar e fazer logon na CLI do Azure
-
-A maneira mais simples e fácil de obter o plug-in do Maven implantando seu aplicativo Spring Boot é usando a [CLI do Azure](https://docs.microsoft.com/cli/azure/).
-
-1. Entre em sua conta do Azure usando a CLI do Azure:
-   
-   ```shell
-   az login
-   ```
-   
-   Siga as instruções na tela para concluir o processo de entrada.
 
 ## <a name="deploy-the-app-to-azure"></a>Implantar o aplicativo no Azure
 
