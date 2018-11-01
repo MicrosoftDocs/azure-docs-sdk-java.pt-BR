@@ -1,48 +1,18 @@
 items:
-- name: Azure
-  tocHref: /azure/
-  topicHref: /azure/
+- name: Java
+  tocHref: /java/
+  topicHref: /java/azure/
   items:
   - name: Azure para desenvolvedores Java
-    tocHref: /java/
+    tocHref: /java/azure/
     topicHref: /java/azure/
     items:
-    - name: Instalar
-      tocHref: /java/azure/java-sdk-azure-install
-      topicHref: /java/azure/java-sdk-azure-install
-    - name: Introdução
-      tocHref: /java/azure/java-sdk-azure-get-started
-      topicHref: /java/azure/java-sdk-azure-get-started
-    - name: Principais conceitos
-      tocHref: /java/azure/java-sdk-azure-concepts
-      topicHref: /java/azure/java-sdk-azure-concepts
-    - name: Autenticação
-      tocHref: /java/azure/java-sdk-azure-authenticate
-      topicHref: /java/azure/java-sdk-azure-authenticate
-      items:
-      - name: Criar uma entidade de serviço
-        tocHref: /cli/azure/create-an-azure-service-principal-azure-cli
-        topicHref: /cli/azure/create-an-azure-service-principal-azure-cli
-    - name: Notas de versão
-      tocHref: /java/azure/java-sdk-azure-release-notes
-      topicHref: /java/azure/java-sdk-azure-release-notes
-  - name: Spring no Azure
-    tocHref: /java/azure/spring-framework
-    topicHref: /java/azure/spring-framework
-  - name: Exemplo de código
-    items:
-    - name: Máquinas virtuais
-      tocHref: /java/azure/java-sdk-azure-virtual-machine-samples
-      topicHref: /java/azure/java-sdk-azure-virtual-machine-samples
-    - name: Aplicativos Web
-      tocHref: /java/azure/java-sdk-azure-web-apps-samples
-      topicHref: /java/azure/java-sdk-azure-web-apps-samples
-    - name: Banco de dados SQL
-      tocHref: /java/azure/java-sdk-azure-sql-database-samples
-      topicHref: /java/azure/java-sdk-azure-sql-database-samples
-ms.openlocfilehash: cf486dba041d928bfb7275ff6fdbe17f2859cac6
-ms.sourcegitcommit: bb7286fad75a2bb43e6ce1a8f1b09e701147c9f9
+    - name: Spring no Azure
+      tocHref: /java/azure/spring-framework/
+      topicHref: /java/azure/spring-framework/
+ms.openlocfilehash: 91b192e02c91a67867ca4d7064dd6c871f758709
+ms.sourcegitcommit: c4501d5d88058a4ddb6e21898adcf711ee3df2b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48047083"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50245563"
