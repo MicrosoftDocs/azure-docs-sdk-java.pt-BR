@@ -5,18 +5,20 @@ author: rloutlaw
 manager: angerobe
 ms.devlang: java
 ms.topic: article
-ms.date: 10/15/2017
+ms.date: 10/26/2017
 ms.author: routlaw
-ms.openlocfilehash: 2865219f350990e8b07f7d2cd99f536168a6b8d4
-ms.sourcegitcommit: 7df2d442ad7cbdb235e5dd35302a9b73379c23d5
+ms.openlocfilehash: 7f75b26bffc02a161e8d58827970bd80a3a6c48a
+ms.sourcegitcommit: 66f3dd4bdb09712b73c9194e23028567c0c4ee3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50026992"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50235202"
 ---
 # <a name="get-java-jdk-downloads-and-support-when-developing-for-azure"></a>Obtenha downloads do JDK do Java e suporte ao desenvolver para o Azure
 
-Desenvolvedores de Java no Azure e Azure Stack podem compilar e executar aplicativos Java de produção usando [builds da Azul Systems Zulu Enterprise do OpenJDK](https://www.azul.com/downloads/azure-only/zulu/) sem incorrer em custos adicionais de suporte. É possível usar qualquer tempo de execução do Java que desejar no Azure, mas quando usa o Zulu você recebe atualizações de manutenção gratuitas e pode criar suporte para problemas com a Microsoft com um [plano de suporte qualificado do Azure](https://azure.microsoft.com/support/plans/).
+Os desenvolvedores de Java no Azure e Azure Stack podem compilar e executar aplicativos Java de produção usando [Azul Zulu Enterprise para Azure](https://www.azul.com/downloads/azure-only/zulu/) sem incorrer em custos adicionais de suporte. É possível usar qualquer tempo de execução do Java que desejar no Azure, mas quando usa o Zulu você recebe atualizações de manutenção gratuitas e pode criar suporte para problemas com a Microsoft com um [plano de suporte qualificado do Azure](https://azure.microsoft.com/support/plans/).
+
+Os desenvolvedores podem usar seus próprios tempos de execução do Java, incluindo o JDK do Oracle e o JDK do Red Hat para executar seus aplicativos no Azure e conectar-se aos recursos e serviços do Azure. A edição de produção do Oracle Java SE continua disponível para desenvolvedores de Java executando cargas de trabalho nas máquinas virtuais do Linux ou Windows Azure.
 
 ## <a name="supported-java-versions-and-update-schedule"></a>Versões com suporte de Java e agendamento de atualização
 
@@ -31,9 +33,9 @@ A Azul Systems mantém um [roteiro do Java SE](https://www.azul.com/products/azu
 
 ## <a name="use-for-local-development"></a>Uso para desenvolvimento local 
 
-Os desenvolvedores podem baixar JDKs do Java para o Azure e Azure Stack no [site da Azul Systems](https://www.azul.com/downloads/azure-only/zulu/). Há downloads disponíveis para Windows, Linux e macOS. Os desenvolvedores que trabalham no Linux também podem obter pacotes por meio dos gerenciadores de pacotes [yum](https://www.azul.com/downloads/azure-only/zulu/#yum-repo) e [apt](https://www.azul.com/downloads/azure-only/zulu/#apt-repo).
+Os desenvolvedores podem [baixar](https://www.azul.com/downloads/azure-only/zulu/) os JDKs do Java para o Azure e Azure Stack para uso nos ambientes de desenvolvimento. Há downloads disponíveis para Windows, Linux e macOS. Os desenvolvedores que trabalham no Linux também podem obter pacotes por meio dos gerenciadores de pacotes [yum](https://www.azul.com/downloads/azure-only/zulu/#yum-repo) e [apt](https://www.azul.com/downloads/azure-only/zulu/#apt-repo).
 
-O suporte ao produto do Azul Zulu JDK com suporte do Azure está disponível durante o desenvolvimento para Azure ou Microsoft Azure Stack com um [plano de suporte qualificado do Azure](https://azure.microsoft.com/support/plans/).
+O suporte para o desenvolvimento local para o JDK está disponível com um [plano de suporte qualificado do Azure](https://azure.microsoft.com/support/plans/) ao desenvolver para o Azure ou Azure Stack.
 
 ## <a name="use-in-docker-containers"></a>Uso em contêineres do Docker
 
