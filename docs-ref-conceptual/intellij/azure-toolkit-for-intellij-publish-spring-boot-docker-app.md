@@ -4,22 +4,22 @@ description: Saiba como publicar um aplicativo Web para o Microsoft Azure como u
 services: ''
 documentationcenter: java
 author: rmcmurray
-manager: routlaw
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 02/01/2018
+ms.date: 11/13/2018
 ms.devlang: Java
 ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 4228352efa4354bfe4969c1a5ecd3f3b40483f85
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 4b8527ced4aa8010a26b6d1f99f76943a875e66e
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48893577"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338700"
 ---
 # <a name="publish-a-spring-boot-app-as-a-docker-container-by-using-the-azure-toolkit-for-intellij"></a>Publicar um aplicativo Spring Boot como um contêiner do Docker usando o Kit de Ferramentas do Azure para IntelliJ
 
@@ -135,7 +135,7 @@ Para publicar o aplicativo Spring Boot, você precisa criar um artefato pronto p
 
 1. Crie um manifesto para o artefato (opcional):
 
-   a. Clique em **Criar Manifesto**.
+    a. Clique em **Criar Manifesto**.
 
       ![Clicar no botão Criar Manifesto][ART04a]
 
@@ -183,7 +183,7 @@ O IntelliJ deverá exibir o artefato concluído para o aplicativo Spring Boot na
 
 1. Quando a caixa de diálogo **Implantar Contêiner do Docker no Azure** for exibida, todos os hosts existentes do Docker serão exibidos. Se você optar por implantar em um host existente, poderá pular para a etapa 4. Caso contrário, use as seguintes etapas para criar um host:
 
-   a. Clique no símbolo de sinal de adição verde (**+**).
+    a. Clique no símbolo de sinal de adição verde (**+**).
 
       ![Adicionar um novo host do Docker][PU02]
 
@@ -201,7 +201,7 @@ O IntelliJ deverá exibir o artefato concluído para o aplicativo Spring Boot na
 
 1. Na última página da caixa de diálogo **Implantar o Contêiner do Docker no Azure**, especifique as seguintes opções:
 
-   a. Você pode optar por especificar um nome personalizado para o contêiner que hospedará o contêiner do Docker ou aceitar o padrão.
+    a. Você pode optar por especificar um nome personalizado para o contêiner que hospedará o contêiner do Docker ou aceitar o padrão.
 
    b. Insira as portas TCP do host do Docker usando a seguinte sintaxe: *[external port]*:*[internal port]*. Por exemplo, **80:8080** especifica uma porta externa 80 e a porta interna padrão 8080 do Spring Boot.
    
