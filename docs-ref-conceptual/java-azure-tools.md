@@ -8,14 +8,14 @@ ms.devlang: java
 ms.topic: article
 ms.service: Azure
 ms.technology: Azure
-ms.date: 4/10/2017
-ms.author: routlaw;asirveda
-ms.openlocfilehash: dac0a1c576974a141950919292129890f4e15be4
-ms.sourcegitcommit: 19876d17fed0afd9af0cb8e161f5a463696e74cf
+ms.date: 11/13/2018
+ms.author: routlaw
+ms.openlocfilehash: 9e9828540ddc678f69eab11f5a61eef8bf8e916c
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49634449"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52339010"
 ---
 # <a name="azure-tools-for-java-developers"></a>Ferramentas do Azure para desenvolvedores Java
 
@@ -23,7 +23,7 @@ ms.locfileid: "49634449"
 
 Desenvolvedores de Java no Azure e Azure Stack podem compilar e executar aplicativos de Java 7, 8 e 11 de produção usando [buils de Azul Systems Zulu Enterprise do OpenJDK](https://www.azul.com/downloads/azure-only/zulu/) sem incorrer em custos adicionais de suporte. Se você estiver executando aplicativos Java com outros JDKs, considere a migração para o Zulu no Azure para obter manutenção e suporte gratuitos. 
 
-[Saiba mais](java-supported-jdk-runtime.md) sobre os tempos de execução do Java com suporte do Azure.
+Para obter mais informações sobre os JDKs com suporte disponíveis para usar durante o desenvolvimento no Azure, confira <https://aka.ms/azure-jdks>.
 
 ## <a name="eclipse-and-intellij-plugins"></a>Plug-ins Eclipse e IntelliJ
 
