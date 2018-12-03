@@ -4,22 +4,22 @@ description: Descubra como configurar um aplicativo inicializador do Spring Boot
 services: key-vault
 documentationcenter: java
 author: rmcmurray
-manager: routlaw
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 02/01/2018
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: 78b7a9a2e26168b19dc8a1d12e47456752b57ffc
-ms.sourcegitcommit: e017de4677c5bedd6ef88c8c1b6da279dc973efe
+ms.openlocfilehash: fcb18de809f4465239f1f360a755624a5095e03a
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45639769"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52339150"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Como usar o iniciador do Spring Boot para o Azure Key Vault
 
@@ -32,10 +32,10 @@ Este artigo demonstra como criar um aplicativo com o **[Spring Initializr]**, o 
 Os seguintes pré-requisitos são obrigatórios para você concluir as etapas neste artigo:
 
 * Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [Benefícios do assinante do MSDN] ou inscrever-se para uma [conta do Azure gratuita].
-* Um [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/) versão 1.7 ou posterior.
+* Um JDK (Java Development Kit) com suporte. Para obter mais informações sobre os JDKs disponíveis para usar durante o desenvolvimento no Azure, confira <https://aka.ms/azure-jdks>.
 * [Apache Maven](http://maven.apache.org/) versão 3.0 ou posterior.
 
-## <a name="create-an-app-using-the-spring-initialzr"></a>Criar um aplicativo usando o Spring Initialzr
+## <a name="create-an-app-using-spring-initializr"></a>Criar um aplicativo usando o Spring Initialzr
 
 1. Navegue até <https://start.spring.io/>.
 
@@ -53,7 +53,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
 
 1. Quando solicitado, baixe o projeto para um caminho no computador local.
 
-## <a name="sign-into-azure-and-select-the-subscription-to-use"></a>Entre no Azure e selecione a assinatura a ser usada
+## <a name="sign-into-azure"></a>Entrar no Azure
 
 1. Abra um prompt de comando.
 
@@ -94,7 +94,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    az account set -s ssssssss-ssss-ssss-ssss-ssssssssssss
    ```
 
-## <a name="create-and-configure-a-new-azure-key-vault-using-the-azure-cli"></a>Criar e configurar um novo Azure Key Vault usando a CLI do Azure
+## <a name="create-a-new-azure-key-vault"></a>Crie um novo Azure Key Vault
 
 1. Crie um grupo de recursos para os recursos do Azure que serão usados no seu cofre de chaves. Por exemplo:
    ```azurecli
@@ -231,7 +231,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    }
    ```
 
-## <a name="configure-and-compile-your-spring-boot-application"></a>Configurar e compilar seu aplicativo Spring Boot
+## <a name="configure-and-compile-your-app"></a>Configurar e compilar seu aplicativo
 
 1. Extraia os arquivos do projeto Spring Boot que você baixou anteriormente em um diretório.
 
@@ -305,7 +305,9 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
 
    ![Mensagem do tempo de execução do Spring Boot][build-application-02]
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="summary"></a>Resumo
+
+Neste tutorial, você criou um novo aplicativo Web Java usando o **[Spring Initializr]**, criou um Azure Key Vault para armazenar informações confidenciais e, por fim, configurou o aplicativo para recuperar informações do cofre de chaves.
 
 Para obter mais informações sobre como usar o Azure Key Vault, consulte os seguintes artigos:
 
@@ -320,6 +322,13 @@ Para obter mais informações sobre como usar aplicativos Spring Boot no Azure, 
 * [Executando um Aplicativo Spring Boot em um Cluster Kubernetes no Serviço de Contêiner do Azure](deploy-spring-boot-java-app-on-kubernetes.md)
 
 Para obter mais informações sobre como usar o Azure com o Java, veja os documentos [Azure para desenvolvedores Java] e [Ferramentas Java para Visual Studio Team Services].
+
+## <a name="next-steps"></a>Próximas etapas
+
+Para saber mais sobre o Spring e o Azure, continue no Spring no Centro de Documentação do Azure.
+
+> [!div class="nextstepaction"]
+> [Spring no Azure](/java/azure/spring-framework)
 
 <!-- URL List -->
 

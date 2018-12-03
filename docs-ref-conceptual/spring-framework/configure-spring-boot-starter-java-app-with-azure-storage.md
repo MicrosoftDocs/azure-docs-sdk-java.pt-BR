@@ -4,22 +4,22 @@ description: Saiba como configurar um aplicativo inicializador do Spring Boot co
 services: storage
 documentationcenter: java
 author: rmcmurray
-manager: routlaw
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 09/10/2018
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: storage
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: storage
-ms.openlocfilehash: 4838b6dbd354ad941df12933dddfa7f3e7eef905
-ms.sourcegitcommit: 4d52e47073fb0b3ac40a2689daea186bad5b1ef5
+ms.openlocfilehash: f94b2981f1e641a6e4b2d9d3028608a56a6590e7
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49799962"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338870"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-storage"></a>Como usar o iniciador do Spring Boot para Armazenamento do Azure
 
@@ -33,7 +33,7 @@ Os seguintes pré-requisitos são obrigatórios para que você siga as etapas ne
 
 * Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [benefício de assinante do MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) ou inscrever-se para uma [conta gratuita do Azure](https://azure.microsoft.com/pricing/free-trial/).
 * A[CLI (interface de linha de comando) do Azure](http://docs.microsoft.com/cli/azure/overview).
-* Um [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/) atualizado, versão 1.7 ou posterior.
+* Um JDK (Java Development Kit) com suporte. Para obter mais informações sobre os JDKs disponíveis para usar durante o desenvolvimento no Azure, confira <https://aka.ms/azure-jdks>.
 * [Maven](http://maven.apache.org/) do Apache, versão 3.0 ou posterior.
 
 > [!IMPORTANT]
@@ -331,7 +331,7 @@ Nesta seção, você criará as classes Java necessárias para armazenar um blob
 
 1. Quando seu aplicativo estiver em execução, você poderá usar *curl* para testá-lo, por exemplo:
 
-   a. Envie uma solicitação POST para atualizar o conteúdo do arquivo:
+    a. Envie uma solicitação POST para atualizar o conteúdo do arquivo:
 
       ```shell
       curl -X POST -H "Content-Type: text/plain" -d "Hello World" http://localhost:8080/

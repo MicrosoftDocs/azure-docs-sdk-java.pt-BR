@@ -8,18 +8,18 @@ manager: routlaw
 editor: brunoborges
 ms.assetid: ''
 ms.author: brborges
-ms.date: 07/30/2018
+ms.date: 11/21/2018
 ms.devlang: java
 ms.service: container-instances
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 336af51bbdf5d2f843c3868ebc2358e128daaeaa
-ms.sourcegitcommit: 280d13b43cef94177d95e03879a5919da234a23c
+ms.openlocfilehash: 22870b7ba32f115e7270c63d1bf42cbfc6531d7e
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43324322"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338780"
 ---
 # <a name="deploy-a-microprofile-application-to-the-cloud-with-docker-and-azure"></a>Implantar um aplicativo MicroProfile na nuvem com Docker e Azure
 
@@ -33,9 +33,9 @@ Este artigo demonstra como empacotar um aplicativo [MicroProfile.io] em um cont�
 
 Para concluir as etapas neste tutorial, você precisará ter os seguintes pré-requisitos:
 
-* Uma assinatura do Azure; se ainda não tiver uma, inscreva-se para uma [conta do Azure gratuita].
+* Uma assinatura do Azure; se ainda não tiver uma, inscreva-se para uma [conta gratuita do Azure].
 * A[CLI (interface de linha de comando) do Azure].
-* Um [JDK (Java Development Kit)] versão 1.8 ou posterior atualizado.
+* Um JDK (Java Development Kit) com suporte. Para obter mais informações sobre os JDKs disponíveis para usar durante o desenvolvimento no Azure, confira <https://aka.ms/azure-jdks>.
 * A ferramenta de build do [Maven] do Apache (versão 3+).
 * Um cliente [Git].
 
@@ -162,9 +162,10 @@ Para saber mais sobre as diversas tecnologias discutidas neste artigo, veja os a
 [CLI (interface de linha de comando) do Azure]: /cli/azure/overview
 [Azure for Java Developers]: https://docs.microsoft.com/java/azure/
 [Azure portal]: https://portal.azure.com/
-[conta do Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
+[conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
 [Git]: https://github.com/
 [Maven]: http://maven.apache.org/
-[JDK (Java Development Kit)]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+[Java Development Kit (JDK)]: https://aka.ms/azure-jdks
+<!-- http://www.oracle.com/technetwork/java/javase/downloads/ -->
 [Instâncias de Contêiner do Azure]: https://docs.microsoft.com/azure/container-instances/
 [Registro de Contêiner do Azure]:  https://docs.microsoft.com/azure/container-registry

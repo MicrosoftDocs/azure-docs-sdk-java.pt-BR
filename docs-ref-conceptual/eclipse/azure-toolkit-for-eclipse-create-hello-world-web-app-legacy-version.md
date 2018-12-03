@@ -3,23 +3,23 @@ title: ''
 description: Este tutorial mostra como usar a versão 3.0.6 (ou anterior) do Kit de Ferramentas do Azure para Eclipse para criar um aplicativo Web Olá, Mundo para o Azure.
 services: app-service
 documentationcenter: java
-author: selvasingh
-manager: routlaw
+author: rmcmurray
+manager: mbaldwin
 editor: ''
 ms.assetid: ''
-ms.author: robmcm;asirveda
-ms.date: 02/01/2018
+ms.author: robmcm
+ms.date: 11/13/2018
 ms.devlang: java
 ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 896e7eff389bc7d3ac119d315c50aae505a381da
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: b05dcd52f36524ab17652f83c6ced4006f874365
+ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48892557"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52338710"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-the-legacy-toolkit-for-eclipse"></a>Criar um aplicativo Web Olá, Mundo para o Azure usando o kit de ferramentas herdado do Eclipse
 
@@ -97,7 +97,7 @@ Há várias maneiras pelas quais você pode implantar um aplicativo Web Java no 
 
 6. Se você nunca tiver criado um contêiner de aplicativos Web do Azure, ou se quiser publicar seu aplicativo em um novo contêiner, use as etapas a seguir. Caso contrário, selecione um Contêiner de Aplicativo Web existente e pule para a etapa 7 abaixo.
    
-   a. Clique em **Novo...**
+    a. Clique em **Novo...**
       
       ![Caixa de diálogo Implantar no contêiner do aplicativo Web do Azure][15]
 
@@ -109,7 +109,7 @@ Há várias maneiras pelas quais você pode implantar um aplicativo Web Java no 
 
    d. No menu suspenso **Contêiner da Web** , selecione o software apropriado ao seu aplicativo.
       
-      No momento, você pode escolher entre o Tomcat 8, Tomcat 7 ou Jetty 9. Uma distribuição recente do software selecionado será fornecida pelo Azure e ele será executado em uma distribuição recente do JDK 8 criado pela Oracle e fornecido pelo Azure.
+      No momento, você pode escolher entre o Tomcat 8, Tomcat 7 ou Jetty 9. Uma distribuição recente do software selecionado será fornecida pelo Azure e ele será executado em uma distribuição recente do JDK fornecido pelo Azure.
 
    e. No menu suspenso **Assinatura** , selecione a assinatura que deseja usar para essa implantação.
 
@@ -124,7 +124,7 @@ Há várias maneiras pelas quais você pode implantar um aplicativo Web Java no 
    * Na caixa de texto **Nome** , especifique um nome para o novo Grupo de Recursos.
    * No menu suspenso **Região** , selecione a localização do data center do Azure apropriada ao Grupo de Recursos.
    * OPCIONAL: por padrão, uma distribuição recente de Java 8 será implantada pelo Azure automaticamente no contêiner de aplicativo Web como sua JVM. No entanto, você pode especificar uma versão e uma distribuição da JVM diferentes se for necessário para seu aplicativo Web. Para especificar o JDK do seu aplicativo Web, clique na guia **JDK** e selecione uma das seguintes opções:
-     * **Implantar o JDK oferecido pelo Serviço de Aplicativos Web do Azure padrão**: essa opção implantará uma distribuição recente do Java 8.
+     * **Implantar o JDK padrão oferecido pelo Serviço de Aplicativos Web do Azure**: essa opção implantará uma distribuição recente do Java.
      * **Implantar um JDK de terceiro disponível no Azure**: essa opção permite que você escolha na lista de JDKs que são fornecidos pelo Microsoft Azure.
      * **Meu próprio JDK deste local de download**: essa opção permite que você especifique sua própria distribuição de JDK, que deve ser empacotada como um arquivo ZIP e carregada em um local de download disponível publicamente ou em uma conta de armazenamento do Azure à qual você tenha acesso.
           
