@@ -9,6 +9,6 @@ Para obter mais informações sobre o Kit de Ferramentas do Azure para IntelliJ 
 Para obter mais informações sobre como usar o Java com o Azure, consulte os links a seguir: 
 
 * [Azure para desenvolvedores Java](https://docs.microsoft.com/java/azure/) 
-* [Ferramentas Java para Visual Studio Team Services](https://java.visualstudio.com/) 
+* [Ferramentas Java para Visual Studio Team Services](/azure/devops/java/)
 * [Obter downloads e suporte do JDK do Java ao desenvolver para o Azure](https://aka.ms/azure-jdks)
 <!-- TODO: Add URLs for Java in VSCode here --> 
