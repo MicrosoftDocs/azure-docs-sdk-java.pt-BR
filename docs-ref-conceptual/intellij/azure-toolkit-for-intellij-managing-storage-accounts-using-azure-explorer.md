@@ -14,101 +14,101 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 4edb8c1ceef508dd251db693ccc3b98d77ec452b
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: bf5d5ad1c4ccd24e3e0174e70bcbae568f0e839d
+ms.sourcegitcommit: 24f037d133875f86761ec893dfa74e723de040b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48898705"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53636431"
 ---
-# <a name="manage-storage-accounts-by-using-the-azure-explorer-for-intellij"></a><span data-ttu-id="24a8a-103">Gerenciar contas de armazenamento usando o Azure Explorer para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="24a8a-103">Manage storage accounts by using the Azure Explorer for IntelliJ</span></span>
+# <a name="manage-storage-accounts-by-using-the-azure-explorer-for-intellij"></a><span data-ttu-id="327f5-103">Gerenciar contas de armazenamento usando o Azure Explorer para IntelliJ</span><span class="sxs-lookup"><span data-stu-id="327f5-103">Manage storage accounts by using the Azure Explorer for IntelliJ</span></span>
 
-<span data-ttu-id="24a8a-104">O Azure Explorer, que faz parte do Kit de ferramentas do Azure para IntelliJ, fornece aos desenvolvedores de Java com uma solução fácil de usar para gerenciar contas de armazenamento em sua conta do Azure de dentro do IDE (ambiente de desenvolvimento integrado) IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="24a8a-104">The Azure Explorer, which is part of the Azure Toolkit for IntelliJ, provides Java developers with an easy-to-use solution for managing storage accounts in their Azure account from inside the IntelliJ integrated development environment (IDE).</span></span>
+<span data-ttu-id="327f5-104">O Azure Explorer, que faz parte do Kit de ferramentas do Azure para IntelliJ, fornece aos desenvolvedores de Java com uma solução fácil de usar para gerenciar contas de armazenamento em sua conta do Azure de dentro do IDE (ambiente de desenvolvimento integrado) IntelliJ.</span><span class="sxs-lookup"><span data-stu-id="327f5-104">The Azure Explorer, which is part of the Azure Toolkit for IntelliJ, provides Java developers with an easy-to-use solution for managing storage accounts in their Azure account from inside the IntelliJ integrated development environment (IDE).</span></span>
 
 [!INCLUDE [azure-toolkit-for-intellij-prerequisites](../includes/azure-toolkit-for-intellij-prerequisites.md)]
 
 [!INCLUDE [azure-toolkit-for-intellij-show-azure-explorer](../includes/azure-toolkit-for-intellij-show-azure-explorer.md)]
 
-## <a name="create-a-storage-account-in-intellij"></a><span data-ttu-id="24a8a-105">Criar uma conta de armazenamento no IntelliJ</span><span class="sxs-lookup"><span data-stu-id="24a8a-105">Create a storage account in IntelliJ</span></span>
+## <a name="create-a-storage-account-in-intellij"></a><span data-ttu-id="327f5-105">Criar uma conta de armazenamento no IntelliJ</span><span class="sxs-lookup"><span data-stu-id="327f5-105">Create a storage account in IntelliJ</span></span>
 
-<span data-ttu-id="24a8a-106">Para criar uma conta de armazenamento usando o Azure Explorer, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="24a8a-106">To create a storage account by using the Azure Explorer, do the following:</span></span>
+<span data-ttu-id="327f5-106">Para criar uma conta de armazenamento usando o Azure Explorer, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="327f5-106">To create a storage account by using the Azure Explorer, do the following:</span></span>
 
-1. <span data-ttu-id="24a8a-107">Entre em sua conta do Azure usando as [Instruções de conexão para o Kit de ferramentas do Azure para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="24a8a-107">Sign in to your Azure account by using the [Sign-in instructions for the Azure Toolkit for IntelliJ].</span></span> 
+1. <span data-ttu-id="327f5-107">Entre em sua conta do Azure usando as [Instruções de conexão para o Kit de ferramentas do Azure para IntelliJ].</span><span class="sxs-lookup"><span data-stu-id="327f5-107">Sign in to your Azure account by using the [Sign-in instructions for the Azure Toolkit for IntelliJ].</span></span> 
 
-2. <span data-ttu-id="24a8a-108">Na exibição do **Azure Explorer**, expanda o nó **Azure**, clique com o botão direito do mouse em **Contas de Armazenamento** e, em seguida, clique em **Criar Conta de Armazenamento**.</span><span class="sxs-lookup"><span data-stu-id="24a8a-108">In the **Azure Explorer** view, expand the **Azure** node, right-click **Storage Accounts**, and then click **Create Storage Account**.</span></span>
+2. <span data-ttu-id="327f5-108">Na exibição do **Azure Explorer**, expanda o nó **Azure**, clique com o botão direito do mouse em **Contas de Armazenamento** e, em seguida, clique em **Criar Conta de Armazenamento**.</span><span class="sxs-lookup"><span data-stu-id="327f5-108">In the **Azure Explorer** view, expand the **Azure** node, right-click **Storage Accounts**, and then click **Create Storage Account**.</span></span>
 
    ![Comando para Criar Conta de Armazenamento][CS01]
 
-3. <span data-ttu-id="24a8a-110">Na caixa de diálogo **Criar Conta de Armazenamento**, especifique as opções a seguir:</span><span class="sxs-lookup"><span data-stu-id="24a8a-110">In the **Create Storage Account** dialog box, specify the following options:</span></span>
+3. <span data-ttu-id="327f5-110">Na caixa de diálogo **Criar Conta de Armazenamento**, especifique as opções a seguir:</span><span class="sxs-lookup"><span data-stu-id="327f5-110">In the **Create Storage Account** dialog box, specify the following options:</span></span>
 
    ![Caixa de diálogo Criar Nova Conta de Armazenamento][CS02]
 
-   * <span data-ttu-id="24a8a-112">**Nome**: especifica o nome que você deseja usar para a nova conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="24a8a-112">**Name**: Specifies the name for the new storage account.</span></span>
+   * <span data-ttu-id="327f5-112">**Nome**: especifica o nome que você deseja usar para a nova conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="327f5-112">**Name**: Specifies the name for the new storage account.</span></span>
 
-   * <span data-ttu-id="24a8a-113">**Tipo de conta**: especifica o tipo de conta de armazenamento a criar (por exemplo, "Armazenamento de Blobs").</span><span class="sxs-lookup"><span data-stu-id="24a8a-113">**Account kind**: Specifies the type of storage account to create (for example, "Blob storage").</span></span> <span data-ttu-id="24a8a-114">Para saber mais, confira [Sobre as contas de armazenamento do Azure].</span><span class="sxs-lookup"><span data-stu-id="24a8a-114">For more information, see [About Azure storage accounts].</span></span> 
+   * <span data-ttu-id="327f5-113">**Tipo de conta**: especifica o tipo de conta de armazenamento a ser criada (por exemplo, "Armazenamento de Blobs").</span><span class="sxs-lookup"><span data-stu-id="327f5-113">**Account kind**: Specifies the type of storage account to create (for example, "Blob storage").</span></span> <span data-ttu-id="327f5-114">Para saber mais, confira [Sobre as contas de armazenamento do Azure].</span><span class="sxs-lookup"><span data-stu-id="327f5-114">For more information, see [About Azure storage accounts].</span></span> 
 
-   * <span data-ttu-id="24a8a-115">**Desempenho**: especifica qual oferta de conta de armazenamento usar do editor selecionado (por exemplo "Premium").</span><span class="sxs-lookup"><span data-stu-id="24a8a-115">**Performance**: Specifies which storage account offering to use from the selected publisher (for example, "Premium").</span></span> <span data-ttu-id="24a8a-116">Para saber mais, veja [Metas de desempenho e escalabilidade do Armazenamento do Azure].</span><span class="sxs-lookup"><span data-stu-id="24a8a-116">For more information, see [Azure storage scalability and performance targets].</span></span> 
+   * <span data-ttu-id="327f5-115">**Desempenho**: especifica qual oferta de conta de armazenamento usar do editor selecionado (por exemplo "Premium").</span><span class="sxs-lookup"><span data-stu-id="327f5-115">**Performance**: Specifies which storage account offering to use from the selected publisher (for example, "Premium").</span></span> <span data-ttu-id="327f5-116">Para saber mais, veja [Metas de desempenho e escalabilidade do Armazenamento do Azure].</span><span class="sxs-lookup"><span data-stu-id="327f5-116">For more information, see [Azure storage scalability and performance targets].</span></span> 
 
-   * <span data-ttu-id="24a8a-117">**Replicação**: especifica a replicação para a conta de armazenamento (por exemplo "Zona redundante").</span><span class="sxs-lookup"><span data-stu-id="24a8a-117">**Replication**: Specifies the replication for the storage account (for example, "Zone-Redundant").</span></span> <span data-ttu-id="24a8a-118">Para saber mais, veja [Replicação de Armazenamento do Azure].</span><span class="sxs-lookup"><span data-stu-id="24a8a-118">For more information, see [Azure storage replication].</span></span> 
+   * <span data-ttu-id="327f5-117">**Replicação**: especifica a replicação para a conta de armazenamento (por exemplo "Com Redundância de Zona").</span><span class="sxs-lookup"><span data-stu-id="327f5-117">**Replication**: Specifies the replication for the storage account (for example, "Zone-Redundant").</span></span> <span data-ttu-id="327f5-118">Para saber mais, veja [Replicação de Armazenamento do Azure].</span><span class="sxs-lookup"><span data-stu-id="327f5-118">For more information, see [Azure storage replication].</span></span> 
 
-   * <span data-ttu-id="24a8a-119">**Assinatura**: especifica a assinatura do Azure que deseja usar para a nova conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="24a8a-119">**Subscription**: Specifies the Azure subscription that you want to use for the new storage account.</span></span>
+   * <span data-ttu-id="327f5-119">**Assinatura**: especifica a assinatura do Azure que deseja usar para a nova conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="327f5-119">**Subscription**: Specifies the Azure subscription that you want to use for the new storage account.</span></span>
 
-   * <span data-ttu-id="24a8a-120">**Localização**: especifica a localização em que sua conta de armazenamento será criada (por exemplo "Oeste dos EUA").</span><span class="sxs-lookup"><span data-stu-id="24a8a-120">**Location**: Specifies the location where your storage account will be created (for example, "West US").</span></span>
+   * <span data-ttu-id="327f5-120">**Localização**: especifica a localização em que sua conta de armazenamento será criada (por exemplo, "Oeste dos EUA").</span><span class="sxs-lookup"><span data-stu-id="327f5-120">**Location**: Specifies the location where your storage account will be created (for example, "West US").</span></span>
 
-   * <span data-ttu-id="24a8a-121">**Grupo de Recursos**: especifica o grupo de recursos para suas máquinas virtuais.</span><span class="sxs-lookup"><span data-stu-id="24a8a-121">**Resource Group**: Specifies the resource group for your virtual machine.</span></span> <span data-ttu-id="24a8a-122">Selecione uma das seguintes opções:</span><span class="sxs-lookup"><span data-stu-id="24a8a-122">Select one of the following options:</span></span>
-      * <span data-ttu-id="24a8a-123">**Criar novo**: especifica que você deseja criar um novo grupo de recursos.</span><span class="sxs-lookup"><span data-stu-id="24a8a-123">**Create new**: Specifies that you want to create a new resource group.</span></span>
-      * <span data-ttu-id="24a8a-124">**Usar existente**: especifica que você selecionará em uma lista de grupos de recursos associados à sua conta do Azure.</span><span class="sxs-lookup"><span data-stu-id="24a8a-124">**Use existing**: Specifies that you will select from a list of resource groups that are associated with your Azure account.</span></span>
+   * <span data-ttu-id="327f5-121">**Grupo de Recursos**: especifica o grupo de recursos para sua máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="327f5-121">**Resource Group**: Specifies the resource group for your virtual machine.</span></span> <span data-ttu-id="327f5-122">Selecione uma das seguintes opções:</span><span class="sxs-lookup"><span data-stu-id="327f5-122">Select one of the following options:</span></span>
+      * <span data-ttu-id="327f5-123">**Criar novo**: especifica que você deseja criar um novo grupo de recursos.</span><span class="sxs-lookup"><span data-stu-id="327f5-123">**Create new**: Specifies that you want to create a new resource group.</span></span>
+      * <span data-ttu-id="327f5-124">**Usar existente**: especifica que você selecionará em uma lista de grupos de recursos associados à sua conta do Azure.</span><span class="sxs-lookup"><span data-stu-id="327f5-124">**Use existing**: Specifies that you will select from a list of resource groups that are associated with your Azure account.</span></span>
 
-4. <span data-ttu-id="24a8a-125">Quando você tiver especificado todas as opções anteriores, clique em **OK**.</span><span class="sxs-lookup"><span data-stu-id="24a8a-125">When you have specified all of the preceding options, click **OK**.</span></span>
+4. <span data-ttu-id="327f5-125">Quando você tiver especificado todas as opções anteriores, clique em **OK**.</span><span class="sxs-lookup"><span data-stu-id="327f5-125">When you have specified all of the preceding options, click **OK**.</span></span>
 
-## <a name="create-a-storage-container-in-intellij"></a><span data-ttu-id="24a8a-126">Criar um contêiner de armazenamento no IntelliJ</span><span class="sxs-lookup"><span data-stu-id="24a8a-126">Create a storage container in IntelliJ</span></span>
+## <a name="create-a-storage-container-in-intellij"></a><span data-ttu-id="327f5-126">Criar um contêiner de armazenamento no IntelliJ</span><span class="sxs-lookup"><span data-stu-id="327f5-126">Create a storage container in IntelliJ</span></span>
 
-<span data-ttu-id="24a8a-127">Para criar um contêiner de armazenamento usando o Azure Explorer, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="24a8a-127">To create a storage container by using the Azure Explorer, do the following:</span></span>
+<span data-ttu-id="327f5-127">Para criar um contêiner de armazenamento usando o Azure Explorer, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="327f5-127">To create a storage container by using the Azure Explorer, do the following:</span></span>
 
-1. <span data-ttu-id="24a8a-128">Na exibição do Azure Explorer, clique com o botão direito do mouse na conta de armazenamento em que deseja criar um contêiner e, em seguida, clique em **Criar contêiner de blob**.</span><span class="sxs-lookup"><span data-stu-id="24a8a-128">In the Azure Explorer view, right-click the storage account where you want to create a container, and then click **Create blob container**.</span></span>
+1. <span data-ttu-id="327f5-128">Na exibição do Azure Explorer, clique com o botão direito do mouse na conta de armazenamento em que deseja criar um contêiner e, em seguida, clique em **Criar contêiner de blob**.</span><span class="sxs-lookup"><span data-stu-id="327f5-128">In the Azure Explorer view, right-click the storage account where you want to create a container, and then click **Create blob container**.</span></span>
 
    ![Comando Criar contêiner de blobs][CC01]
 
-2. <span data-ttu-id="24a8a-130">Na caixa de diálogo **Criar Contêiner de Blob**, especifique o nome do seu contêiner e, em seguida, clique em **OK**.</span><span class="sxs-lookup"><span data-stu-id="24a8a-130">In the **Create blob container** dialog box, specify the name for your container, and then click **OK**.</span></span> <span data-ttu-id="24a8a-131">Para saber mais sobre como nomear contêineres de armazenamento, veja [Nomeando e referenciando contêineres, blobs e metadados].</span><span class="sxs-lookup"><span data-stu-id="24a8a-131">For more information about naming storage containers, see [Naming and referencing containers, blobs, and metadata].</span></span>
+2. <span data-ttu-id="327f5-130">Na caixa de diálogo **Criar Contêiner de Blob**, especifique o nome do seu contêiner e, em seguida, clique em **OK**.</span><span class="sxs-lookup"><span data-stu-id="327f5-130">In the **Create blob container** dialog box, specify the name for your container, and then click **OK**.</span></span> <span data-ttu-id="327f5-131">Para saber mais sobre como nomear contêineres de armazenamento, veja [Nomeando e referenciando contêineres, blobs e metadados].</span><span class="sxs-lookup"><span data-stu-id="327f5-131">For more information about naming storage containers, see [Naming and referencing containers, blobs, and metadata].</span></span>
 
    ![Caixa de Diálogo Criar Contêiner de Armazenamento][CC02]
 
-## <a name="delete-a-storage-container-in-intellij"></a><span data-ttu-id="24a8a-133">Excluir um contêiner de armazenamento no IntelliJ</span><span class="sxs-lookup"><span data-stu-id="24a8a-133">Delete a storage container in IntelliJ</span></span>
+## <a name="delete-a-storage-container-in-intellij"></a><span data-ttu-id="327f5-133">Excluir um contêiner de armazenamento no IntelliJ</span><span class="sxs-lookup"><span data-stu-id="327f5-133">Delete a storage container in IntelliJ</span></span>
 
-<span data-ttu-id="24a8a-134">Para excluir um contêiner de armazenamento usando o Azure Explorer, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="24a8a-134">To delete a storage container by using the Azure Explorer, do the following:</span></span>
+<span data-ttu-id="327f5-134">Para excluir um contêiner de armazenamento usando o Azure Explorer, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="327f5-134">To delete a storage container by using the Azure Explorer, do the following:</span></span>
 
-1. <span data-ttu-id="24a8a-135">Na exibição Azure Explorer, clique com o botão direito do mouse no contêiner de armazenamento e, em seguida, clique em **Excluir**.</span><span class="sxs-lookup"><span data-stu-id="24a8a-135">In the Azure Explorer view, right-click the storage container, and then click **Delete**.</span></span>
+1. <span data-ttu-id="327f5-135">Na exibição Azure Explorer, clique com o botão direito do mouse no contêiner de armazenamento e, em seguida, clique em **Excluir**.</span><span class="sxs-lookup"><span data-stu-id="327f5-135">In the Azure Explorer view, right-click the storage container, and then click **Delete**.</span></span>
 
    ![Comando Excluir contêiner de armazenamento][DC01]
 
-2. <span data-ttu-id="24a8a-137">Na janela de confirmação, clique em **Sim**.</span><span class="sxs-lookup"><span data-stu-id="24a8a-137">In the confirmation window, click **Yes**.</span></span>
+2. <span data-ttu-id="327f5-137">Na janela de confirmação, clique em **Sim**.</span><span class="sxs-lookup"><span data-stu-id="327f5-137">In the confirmation window, click **Yes**.</span></span>
 
    ![Janela de confirmação de Excluir contêiner de armazenamento][DC02]
 
-## <a name="delete-a-storage-account-in-intellij"></a><span data-ttu-id="24a8a-139">Excluir uma conta de armazenamento no IntelliJ</span><span class="sxs-lookup"><span data-stu-id="24a8a-139">Delete a storage account in IntelliJ</span></span>
+## <a name="delete-a-storage-account-in-intellij"></a><span data-ttu-id="327f5-139">Excluir uma conta de armazenamento no IntelliJ</span><span class="sxs-lookup"><span data-stu-id="327f5-139">Delete a storage account in IntelliJ</span></span>
 
-<span data-ttu-id="24a8a-140">Para excluir uma conta de armazenamento usando o Azure Explorer, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="24a8a-140">To delete a storage account by using the Azure Explorer, do the following:</span></span>
+<span data-ttu-id="327f5-140">Para excluir uma conta de armazenamento usando o Azure Explorer, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="327f5-140">To delete a storage account by using the Azure Explorer, do the following:</span></span>
 
-1. <span data-ttu-id="24a8a-141">Na exibição do **Azure Explorer**, clique com o botão direito do mouse na conta de armazenamento e selecione **Excluir**.</span><span class="sxs-lookup"><span data-stu-id="24a8a-141">In the **Azure Explorer** view, right-click the storage account, and then select **Delete**.</span></span>
+1. <span data-ttu-id="327f5-141">Na exibição do **Azure Explorer**, clique com o botão direito do mouse na conta de armazenamento e selecione **Excluir**.</span><span class="sxs-lookup"><span data-stu-id="327f5-141">In the **Azure Explorer** view, right-click the storage account, and then select **Delete**.</span></span>
 
    ![Menu Excluir Conta de Armazenamento][DS01]
 
-2. <span data-ttu-id="24a8a-143">Na janela de confirmação, clique em **Sim**.</span><span class="sxs-lookup"><span data-stu-id="24a8a-143">In the confirmation window, click **Yes**.</span></span>
+2. <span data-ttu-id="327f5-143">Na janela de confirmação, clique em **Sim**.</span><span class="sxs-lookup"><span data-stu-id="327f5-143">In the confirmation window, click **Yes**.</span></span>
 
    ![Janela de confirmação de Excluir conta de armazenamento][DS02]
 
-## <a name="next-steps"></a><span data-ttu-id="24a8a-145">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="24a8a-145">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="327f5-145">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="327f5-145">Next steps</span></span>
 
-<span data-ttu-id="24a8a-146">Para saber mais sobre os tamanhos, preços e contas de armazenamento do Azure, veja os recursos a seguir:</span><span class="sxs-lookup"><span data-stu-id="24a8a-146">For more information about Azure storage accounts, sizes, and pricing, see the following resources:</span></span>
+<span data-ttu-id="327f5-146">Para saber mais sobre os tamanhos, preços e contas de armazenamento do Azure, veja os recursos a seguir:</span><span class="sxs-lookup"><span data-stu-id="327f5-146">For more information about Azure storage accounts, sizes, and pricing, see the following resources:</span></span>
 
-* <span data-ttu-id="24a8a-147">[Introdução ao Armazenamento do Microsoft Azure]</span><span class="sxs-lookup"><span data-stu-id="24a8a-147">[Introduction to Microsoft Azure Storage]</span></span>
-* <span data-ttu-id="24a8a-148">[Sobre as contas de armazenamento do Azure]</span><span class="sxs-lookup"><span data-stu-id="24a8a-148">[About Azure storage accounts]</span></span>
-* <span data-ttu-id="24a8a-149">Tamanhos de conta de armazenamento do Azure</span><span class="sxs-lookup"><span data-stu-id="24a8a-149">Azure storage-account sizes</span></span>
-  * <span data-ttu-id="24a8a-150">[Tamanhos das contas de armazenamento do Windows no Azure]</span><span class="sxs-lookup"><span data-stu-id="24a8a-150">[Sizes for Windows storage accounts in Azure]</span></span>
-  * <span data-ttu-id="24a8a-151">[Tamanhos das contas de armazenamento do Linux no Azure]</span><span class="sxs-lookup"><span data-stu-id="24a8a-151">[Sizes for Linux storage accounts in Azure]</span></span>
-* <span data-ttu-id="24a8a-152">Preços da conta de armazenamento do Azure</span><span class="sxs-lookup"><span data-stu-id="24a8a-152">Azure storage-account pricing</span></span>
-  * <span data-ttu-id="24a8a-153">[Preços da conta de armazenamento do Windows]</span><span class="sxs-lookup"><span data-stu-id="24a8a-153">[Windows storage-account pricing]</span></span>
-  * <span data-ttu-id="24a8a-154">[Preços da conta de armazenamento do Linux]</span><span class="sxs-lookup"><span data-stu-id="24a8a-154">[Linux storage-account pricing]</span></span>
+* <span data-ttu-id="327f5-147">[Introdução ao Armazenamento do Microsoft Azure]</span><span class="sxs-lookup"><span data-stu-id="327f5-147">[Introduction to Microsoft Azure Storage]</span></span>
+* <span data-ttu-id="327f5-148">[Sobre as contas de armazenamento do Azure]</span><span class="sxs-lookup"><span data-stu-id="327f5-148">[About Azure storage accounts]</span></span>
+* <span data-ttu-id="327f5-149">Tamanhos de conta de armazenamento do Azure</span><span class="sxs-lookup"><span data-stu-id="327f5-149">Azure storage-account sizes</span></span>
+  * <span data-ttu-id="327f5-150">[Tamanhos das contas de armazenamento do Windows no Azure]</span><span class="sxs-lookup"><span data-stu-id="327f5-150">[Sizes for Windows storage accounts in Azure]</span></span>
+  * <span data-ttu-id="327f5-151">[Tamanhos das contas de armazenamento do Linux no Azure]</span><span class="sxs-lookup"><span data-stu-id="327f5-151">[Sizes for Linux storage accounts in Azure]</span></span>
+* <span data-ttu-id="327f5-152">Preços da conta de armazenamento do Azure</span><span class="sxs-lookup"><span data-stu-id="327f5-152">Azure storage-account pricing</span></span>
+  * <span data-ttu-id="327f5-153">[Preços da conta de armazenamento do Windows]</span><span class="sxs-lookup"><span data-stu-id="327f5-153">[Windows storage-account pricing]</span></span>
+  * <span data-ttu-id="327f5-154">[Preços da conta de armazenamento do Linux]</span><span class="sxs-lookup"><span data-stu-id="327f5-154">[Linux storage-account pricing]</span></span>
 
 [!INCLUDE [azure-toolkit-for-intellij-additional-resources](../includes/azure-toolkit-for-intellij-additional-resources.md)]
 
@@ -131,10 +131,10 @@ ms.locfileid: "48898705"
 [Sizes for Windows storage accounts in Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamanhos das contas de armazenamento do Linux no Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
 [Sizes for Linux storage accounts in Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
-[Preços da conta de armazenamento do Windows]: /pricing/details/virtual-machines/windows/
-[Windows storage-account pricing]: /pricing/details/virtual-machines/windows/
-[Preços da conta de armazenamento do Linux]: /pricing/details/virtual-machines/linux/
-[Linux storage-account pricing]: /pricing/details/virtual-machines/linux/
+[Preços da conta de armazenamento do Windows]: https://azure.microsoft.com/pricing/details/virtual-machines/windows/
+[Windows storage-account pricing]: https://azure.microsoft.com/pricing/details/virtual-machines/windows/
+[Preços da conta de armazenamento do Linux]: https://azure.microsoft.com/pricing/details/virtual-machines/linux/
+[Linux storage-account pricing]: https://azure.microsoft.com/pricing/details/virtual-machines/linux/
 
 <!-- IMG List -->
 
