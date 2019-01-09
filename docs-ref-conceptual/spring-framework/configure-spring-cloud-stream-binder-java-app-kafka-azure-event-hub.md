@@ -8,18 +8,18 @@ manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 11/21/2018
+ms.date: 12/19/2018
 ms.devlang: java
 ms.service: event-hubs
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: ab465b56c05c7d480109fc97a4f1c74beaf53856
-ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
+ms.openlocfilehash: f2cf66a4e0ac113406781b4859869ff4edab527e
+ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52339110"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53991530"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-apache-kafka-with-azure-event-hubs"></a>Como usar o Inicializador do Spring Boot para Apache Kafka com os Hubs de Eventos do Azure
 
@@ -423,6 +423,13 @@ Nesta seção, você criará as classes Java necessárias para enviar eventos ao
 
 ## <a name="next-steps"></a>Próximas etapas
 
+Para saber mais sobre o Spring e o Azure, continue no Spring no Centro de Documentação do Azure.
+
+> [!div class="nextstepaction"]
+> [Spring no Azure](/java/azure/spring-framework)
+
+### <a name="additional-resources"></a>Recursos adicionais
+
 Para obter mais informações sobre o suporte do Azure para o Event Hub Stream Binder e para o Apache Kafka, confira os seguintes artigos:
 
 * [O que é Hub de Eventos do Azure?](/azure/event-hubs/event-hubs-about)
@@ -433,7 +440,7 @@ Para obter mais informações sobre o suporte do Azure para o Event Hub Stream B
 
 * [Criar hubs de eventos habilitados para Apache Kafka](/azure/event-hubs/event-hubs-create-kafka-enabled)
 
-Para obter mais informações sobre como usar o Azure com Java, veja [Azure para Desenvolvedores Java] e [Ferramentas Java para Visual Studio Team Services].
+Para obter mais informações sobre como usar o Azure com Java, confira [Azure para Desenvolvedores Java] e [Trabalhando com o Java e Azure DevOps].
 
 O **[Spring Framework]** é uma solução de software livre que ajuda os desenvolvedores Java criar aplicativos de nível empresarial. Um dos projetos mais populares que é criado com base nessa plataforma é o [Spring Boot], que fornece uma abordagem simplificada para a criação de aplicativos Java autônomos. Para ajudar os desenvolvedores a começarem a usar o Spring Boot, vários exemplos de pacotes do Spring Boot estão disponíveis em <https://github.com/spring-guides/>. Além de escolher na lista de projetos básicos do Spring Boot, o  **[Spring Initializr]** ajuda os desenvolvedores a começarem a criar aplicativos personalizados do Spring Boot.
 
@@ -441,7 +448,7 @@ O **[Spring Framework]** é uma solução de software livre que ajuda os desenvo
 
 [Apache Kafka]: http://kafka.apache.org
 [conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
-[Ferramentas Java para Visual Studio Team Services]: https://java.visualstudio.com/
+[Trabalhando com o Java e Azure DevOps]: /azure/devops/
 [benefício de assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Initializr]: https://start.spring.io/

@@ -8,18 +8,18 @@ manager: mbaldwin
 editor: ''
 ms.assetid: ''
 ms.author: robmcm
-ms.date: 11/21/2018
+ms.date: 12/19/2018
 ms.devlang: java
 ms.service: key-vault
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: identity
-ms.openlocfilehash: fcb18de809f4465239f1f360a755624a5095e03a
-ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
+ms.openlocfilehash: 78dadcf93bfc57ab669271495393fa9ba164c89d
+ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52339150"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53991360"
 ---
 # <a name="how-to-use-the-spring-boot-starter-for-azure-key-vault"></a>Como usar o iniciador do Spring Boot para o Azure Key Vault
 
@@ -31,7 +31,7 @@ Este artigo demonstra como criar um aplicativo com o **[Spring Initializr]**, o 
 
 Os seguintes pré-requisitos são obrigatórios para você concluir as etapas neste artigo:
 
-* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [Benefícios do assinante do MSDN] ou inscrever-se para uma [conta do Azure gratuita].
+* Uma assinatura do Azure; se ainda não tiver uma assinatura do Azure, você poderá ativar o [benefício de assinante do MSDN] ou inscrever-se para uma [conta gratuita do Azure].
 * Um JDK (Java Development Kit) com suporte. Para obter mais informações sobre os JDKs disponíveis para usar durante o desenvolvimento no Azure, confira <https://aka.ms/azure-jdks>.
 * [Apache Maven](http://maven.apache.org/) versão 3.0 ou posterior.
 
@@ -154,10 +154,10 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    |---|---|
    | `name` | Especifica um nome exclusivo para o seu cofre de chaves. |
    | `location` | Especifica a [região do Azure](https://azure.microsoft.com/regions/) na qual seu grupo de recursos será hospedado. |
-   | `enabled-for-deployment` | Especifica a [opção de implantação do cofre de chaves](https://docs.microsoft.com/cli/azure/keyvault). |
-   | `enabled-for-disk-encryption` | Especifica a [opção de criptografia do cofre de chaves](https://docs.microsoft.com/cli/azure/keyvault). |
-   | `enabled-for-template-deployment` | Especifica a [opção de criptografia do cofre de chaves](https://docs.microsoft.com/cli/azure/keyvault). |
-   | `sku` | Especifica a [opção de SKU do cofre de chaves](https://docs.microsoft.com/cli/azure/keyvault). |
+   | `enabled-for-deployment` | Especifica a [opção de implantação do cofre de chaves](/cli/azure/keyvault). |
+   | `enabled-for-disk-encryption` | Especifica a [opção de criptografia do cofre de chaves](/cli/azure/keyvault). |
+   | `enabled-for-template-deployment` | Especifica a [opção de criptografia do cofre de chaves](/cli/azure/keyvault). |
+   | `sku` | Especifica a [opção de SKU do cofre de chaves](/cli/azure/keyvault). |
    | `query` | Especifica um valor a ser recuperado da resposta, que é o URI do cofre de chaves que será necessário para concluir este tutorial. |
 
    A CLI do Azure exibirá o URI do cofre de chaves, que será usado posteriormente. Por exemplo:  
@@ -175,7 +175,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
    | Parâmetro | Descrição |
    |---|---|
    | `name` | Especifica o nome do cofre de chaves de antes. |
-   | `secret-permission` | Especifica as [políticas de segurança](https://docs.microsoft.com/cli/azure/keyvault) do seu cofre de chaves. |
+   | `secret-permission` | Especifica as [políticas de segurança](/cli/azure/keyvault) do seu cofre de chaves. |
    | `spn` | Especifica o GUID do seu registro de aplicativo de antes. |
 
    A CLI do Azure exibirá os resultados da criação da política de segurança. Por exemplo:  
@@ -254,7 +254,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
 
 4. Navegue até o arquivo de código-fonte principal do projeto. Por exemplo: */src/main/java/com/wingtiptoys/secrets*.
 
-5. Abra o arquivo Java principal do aplicativo em um editor de texto, por exemplo *SecretsApplication.java*, e adicione as seguintes linhas ao arquivo:
+5. Abra o arquivo principal Java do aplicativo em um arquivo em um editor de texto; por exemplo: *SecretsApplication.java* e adicione as seguintes linhas ao arquivo:
 
    ```java
    package com.wingtiptoys.secrets;
@@ -307,7 +307,16 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
 
 ## <a name="summary"></a>Resumo
 
-Neste tutorial, você criou um novo aplicativo Web Java usando o **[Spring Initializr]**, criou um Azure Key Vault para armazenar informações confidenciais e, por fim, configurou o aplicativo para recuperar informações do cofre de chaves.
+Nesse tutorial, você criou um novo aplicativo Web Java usando o **[Spring Initializr]**, criou um Azure Key Vault para armazenar informações confidenciais, em seguida, configurou o aplicativo para recuperar informações do cofre de chaves.
+
+## <a name="next-steps"></a>Próximas etapas
+
+Para saber mais sobre o Spring e o Azure, continue no Spring no Centro de Documentação do Azure.
+
+> [!div class="nextstepaction"]
+> [Spring no Azure](/java/azure/spring-framework)
+
+### <a name="additional-resources"></a>Recursos adicionais
 
 Para obter mais informações sobre como usar o Azure Key Vault, consulte os seguintes artigos:
 
@@ -321,23 +330,16 @@ Para obter mais informações sobre como usar aplicativos Spring Boot no Azure, 
 
 * [Executando um Aplicativo Spring Boot em um Cluster Kubernetes no Serviço de Contêiner do Azure](deploy-spring-boot-java-app-on-kubernetes.md)
 
-Para obter mais informações sobre como usar o Azure com o Java, veja os documentos [Azure para desenvolvedores Java] e [Ferramentas Java para Visual Studio Team Services].
-
-## <a name="next-steps"></a>Próximas etapas
-
-Para saber mais sobre o Spring e o Azure, continue no Spring no Centro de Documentação do Azure.
-
-> [!div class="nextstepaction"]
-> [Spring no Azure](/java/azure/spring-framework)
+Para obter mais informações sobre como usar o Azure com Java, confira [Azure para Desenvolvedores Java] e [Trabalhando com o Java e Azure DevOps].
 
 <!-- URL List -->
 
 [Documentação do Key Vault]: /azure/key-vault/
 [Introdução ao Cofre da Chave do Azure]: /azure/key-vault/key-vault-get-started
-[Azure para desenvolvedores Java]: https://docs.microsoft.com/java/azure/
-[conta do Azure gratuita]: https://azure.microsoft.com/pricing/free-trial/
-[Ferramentas Java para Visual Studio Team Services]: https://java.visualstudio.com/
-[Benefícios do assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
+[Azure para desenvolvedores Java]: /java/azure/
+[conta gratuita do Azure]: https://azure.microsoft.com/pricing/free-trial/
+[Trabalhando com o Java e Azure DevOps]: /azure/devops/
+[benefício de assinante do MSDN]: https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/
 [Spring Boot]: http://projects.spring.io/spring-boot/
 [Spring Initializr]: https://start.spring.io/
 [Spring Framework]: https://spring.io/

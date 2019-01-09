@@ -4,26 +4,50 @@ items:
   items:
   - name: Guias de introdução
     items:
-    - name: Spring Boot Azure
+    - name: Spring Boot
       href: spring-boot-starters-for-azure.md
-    - name: Armazenamento do Azure
-      href: configure-spring-boot-starter-java-app-with-azure-storage.md
-    - name: Cofre da Chave do Azure
-      href: configure-spring-boot-starter-java-app-with-azure-key-vault.md
-    - name: Azure App Insights
-      href: configure-spring-boot-java-applicationinsights.md
+      items:
+      - name: Armazenamento do Azure
+        href: configure-spring-boot-starter-java-app-with-azure-storage.md
+      - name: Cofre da Chave do Azure
+        href: configure-spring-boot-starter-java-app-with-azure-key-vault.md
+      - name: Azure App Insights
+        href: configure-spring-boot-java-applicationinsights.md
+    - name: Spring Data
+      items:
+      - name: Iniciador do Microsoft Azure Cosmos DB
+        href: configure-spring-boot-starter-java-app-with-cosmos-db.md
+      - name: API do Apache Cassandra do Azure Cosmos DB
+        href: configure-spring-data-apache-cassandra-with-cosmos-db.md
+      - name: API do Gremlin do Azure Cosmos DB
+        href: configure-spring-data-gremlin-java-app-with-cosmos-db.md
+      - name: API do MongoDB do Azure Cosmos DB
+        href: configure-spring-data-mongodb-with-cosmos-db.md
+      - name: JDBC com o MySQL do Azure
+        href: configure-spring-data-jdbc-with-azure-mysql.md
+      - name: JDBC com o PostgreSQL do Azure
+        href: configure-spring-data-jdbc-with-azure-postgresql.md
+      - name: JDBC com o Azure SQL Server
+        href: configure-spring-data-jdbc-with-azure-sql-server.md
+      - name: JPA com o MySQL do Azure
+        href: configure-spring-data-jpa-with-azure-mysql.md
+      - name: JPA com o PostgreSQL do Azure
+        href: configure-spring-data-jpa-with-azure-postgresql.md
+      - name: JPA com o Azure SQL Server
+        href: configure-spring-data-jpa-with-azure-sql-server.md
+    - name: Spring Security
+      items:
+      - name: Azure Active Directory
+        href: configure-spring-boot-starter-java-app-with-azure-active-directory.md
+    - name: Spring Cloud
+      items:
+      - name: Hub de Eventos do Azure
+        href: configure-spring-cloud-stream-binder-java-app-azure-event-hub.md
+      - name: API do Apache Kafka do Hub de eventos do Azure
+        href: configure-spring-cloud-stream-binder-java-app-kafka-azure-event-hub.md
+    expanded: true
   - name: Tutoriais
     items:
-    - name: Azure Active Directory
-      href: configure-spring-boot-starter-java-app-with-azure-active-directory.md
-    - name: Azure Cosmos DB
-      href: configure-spring-boot-starter-java-app-with-cosmos-db.md
-    - name: Hub de Eventos do Azure
-      href: configure-spring-cloud-stream-binder-java-app-azure-event-hub.md
-    - name: Hub de Eventos do Azure com Apache Kafka
-      href: configure-spring-cloud-stream-binder-java-app-kafka-azure-event-hub.md
-    - name: Armazenamento do Azure
-      href: configure-spring-boot-starter-java-app-with-azure-storage.md
     - name: Implantar o Serviço de Aplicativo com Maven
       href: deploy-spring-boot-java-app-with-maven-plugin.md
     - name: Implantar para o Kubernetes
@@ -60,9 +84,10 @@ items:
       href: https://spring.io/docs/reference
     - name: Iniciadores do Spring Boot para Azure
       href: https://github.com/Microsoft/azure-spring-boot/
-ms.openlocfilehash: d0bb181371550e094411bf81eea6f5af4fb08870
-ms.sourcegitcommit: 473c3aec55f3e9b131dc87c62e2eac218ce9564e
+  expanded: true
+ms.openlocfilehash: d6c24d292f68e6e4b0d8d73e67afffbffcf0fb1f
+ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51571703"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53991570"
