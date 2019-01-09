@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 310d95436189af09f794154f4c9f0e71c47d88c8
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: dc39298d88f2fb0b2f56d6fbc0071b68b8d27989
+ms.sourcegitcommit: 24f037d133875f86761ec893dfa74e723de040b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48898744"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53636652"
 ---
 # <a name="manage-storage-accounts-by-using-the-azure-explorer-for-eclipse"></a>Gerenciar contas de armazenamento usando o Azure Explorer para Eclipse
 
@@ -45,19 +45,19 @@ Para criar uma conta de armazenamento usando o Azure Explorer, faça o seguinte:
 
    * **Nome**: especifica o nome que você deseja usar para a nova conta de armazenamento.
 
-   * **Assinatura**: especifica a assinatura do Azure que deseja usar para a nova conta de armazenamento.
+   * **Assinatura**: especifica a assinatura do Azure que você deseja usar para a nova conta de armazenamento.
 
-   * **Grupo de Recursos**: especifica o grupo de recursos para suas máquinas virtuais. Selecione uma das seguintes opções:
-      * **Criar Novo**: especifica que você deseja criar um novo grupo de recursos.
+   * **Grupo de Recursos**: especifica o grupo de recursos para sua máquina virtual. Selecione uma das seguintes opções:
+      * **Criar novo**: especifica que você deseja criar um novo grupo de recursos.
       * **Usar existente**: especifica que você selecionará em uma lista de grupos de recursos associados à sua conta do Azure.
 
    * **Região**: especifica a localização em que sua conta de armazenamento será criada (por exemplo, "Oeste dos EUA").
 
-   * **Tipo de conta**: especifica o tipo de conta de armazenamento a criar (por exemplo, "Armazenamento de Blobs"). Para saber mais, confira [Sobre as contas de armazenamento do Azure].
+   * **Tipo de conta**: especifica o tipo de conta de armazenamento a ser criada (por exemplo, "Armazenamento de Blobs"). Para saber mais, confira [Sobre as contas de armazenamento do Azure].
 
    * **Desempenho**: especifica qual oferta de conta de armazenamento usar do editor selecionado (por exemplo "Premium"). Para saber mais, veja [Metas de desempenho e escalabilidade do Armazenamento do Azure].
 
-   * **Replicação**: especifica a replicação para a conta de armazenamento (por exemplo "Zona redundante"). Para saber mais, veja [Replicação de Armazenamento do Azure].
+   * **Replicação**: especifica a replicação para a conta de armazenamento (por exemplo "Com Redundância de Zona"). Para saber mais, veja [Replicação de Armazenamento do Azure].
 
 1. Quando você tiver especificado todas as opções anteriores, clique em **Criar**.
 
@@ -122,8 +122,8 @@ Para saber mais sobre os tamanhos, preços e contas de armazenamento do Azure, v
 
 [Tamanhos das contas de armazenamento do Windows no Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamanhos das contas de armazenamento do Linux no Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
-[Preços da conta de armazenamento do Windows]: /pricing/details/virtual-machines/windows/
-[Preços da conta de armazenamento do Linux]: /pricing/details/virtual-machines/linux/
+[Preços da conta de armazenamento do Windows]: https://azure.microsoft.com/pricing/details/virtual-machines/windows/
+[Preços da conta de armazenamento do Linux]: https://azure.microsoft.com/pricing/details/virtual-machines/linux/
 
 <!-- IMG List -->
 

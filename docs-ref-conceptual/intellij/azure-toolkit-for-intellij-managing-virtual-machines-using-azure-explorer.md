@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 57441a9cbdf0805e08f303c1f05049ce7f668ac0
-ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
+ms.openlocfilehash: a3aff77bc2fd2dac0396187d9e6b27910bc60e58
+ms.sourcegitcommit: 24f037d133875f86761ec893dfa74e723de040b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52338660"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53636411"
 ---
 # <a name="manage-virtual-machines-by-using-the-azure-explorer-for-intellij"></a>Gerenciar máquinas virtuais usando o Azure Explorer para IntelliJ
 
@@ -46,9 +46,9 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
 4. Na janela **Selecionar uma Imagem de Máquina Virtual**, insira as seguintes informações:
 
-   * **Localização**: especifica o local onde sua máquina virtual será criada (por exemplo, *Oeste dos EUA*). 
+   * **Localização**: especifica a localização em que sua máquina virtual será criada (por exemplo, *Oeste dos EUA*). 
 
-   * **Imagem recomendada**: especifica que você escolherá uma imagem de uma lista abreviada de imagens usadas com frequência.
+   * **Imagem recomendada**: especifica que você escolherá uma imagem em uma lista abreviada de imagens usadas com frequência.
 
    * **Imagem personalizada**: especifica que você escolherá uma imagem personalizada fornecendo as seguintes informações:
 
@@ -56,7 +56,7 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
       * **Oferta**: especifica qual oferta de máquina virtual do editor selecionado será usada (por exemplo *JDK*).
 
-      * **Sku**: especifica qual SKU (unidade de manutenção de estoque) da oferta selecionada será usada (por exemplo, *JDK_8*).
+      * **SKU**: especifica qual SKU (unidade de manutenção de estoque) da oferta selecionada será usada (por exemplo, *JDK_8*).
 
       * **No. de Versão**: especifica qual versão do SKU selecionado será usada.
 
@@ -70,7 +70,7 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
    * **Tamanho**: especifica o número de núcleos e a memória para alocar para sua máquina virtual.
 
-   * **Nome de usuário**: especifica a conta de administrador a criar para gerenciar sua máquina virtual.
+   * **Nome de usuário**: especifica a conta de administrador a ser criada para gerenciar sua máquina virtual.
 
    * **Senha** e **Confirmar**: especifica a senha para sua conta de administrador.
 
@@ -80,7 +80,7 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
 8. Na janela **Recursos Associados**, insira as informações a seguir:
 
-   * **Grupo de recursos**: especifica o grupo de recursos para suas máquinas virtuais. Selecione uma das seguintes opções:
+   * **Grupo de recursos**: especifica o grupo de recursos para sua máquina virtual. Selecione uma das seguintes opções:
       * **Criar novo**: especifica que você deseja criar um novo grupo de recursos.
       * **Usar existente**: especifica que você quer selecionar em uma lista de grupos de recursos associados à sua conta do Azure.
 
@@ -90,13 +90,13 @@ Para criar uma máquina virtual usando o Azure Explorer, faça o seguinte:
 
       ![A caixa de diálogo Criar Conta de Armazenamento][CR05]
 
-   * **Rede Virtual** e **Sub-rede**: especifica a rede virtual e a sub-rede as quais sua máquina virtual se conectará. Use uma rede e sub-rede existentes, ou crie uma nova rede e sub-rede. Se você selecionar **Criar novo**, a caixa de diálogo a seguir será exibida:
+   * **Rede Virtual** e **Sub-rede**: especifica a rede virtual e a sub-rede às quais sua máquina virtual se conectará. Use uma rede e sub-rede existentes ou crie uma nova rede e sub-rede. Se você selecionar **Criar novo**, a caixa de diálogo a seguir será exibida:
 
       ![A caixa de diálogo Criar Rede Virtual][CR06]
 
    * **Endereço IP público**: especifica um endereço IP externo para sua máquina virtual. Você pode optar por criar um novo endereço IP ou, se sua máquina virtual não tiver um endereço IP público, selecione **(Nenhum)**. 
 
-   * **Grupo de segurança de rede**: especifica um firewall de rede opcional para sua máquina virtual. Selecione um firewall existente ou, se sua máquina virtual não for usar um firewall de rede, selecione **(Nenhum)**. 
+   * **Grupo de Segurança de Rede**: especifica um firewall de rede opcional para sua máquina virtual. Selecione um firewall existente ou, se sua máquina virtual não for usar um firewall de rede, selecione **(Nenhum)**. 
 
    * **Conjunto de disponibilidade**: especifica um conjunto de disponibilidade opcional ao qual sua máquina virtual pode pertencer. Selecione um conjunto de disponibilidade existente, crie um novo conjunto de disponibilidade ou, se sua máquina virtual não for pertencer a um conjunto de disponibilidade, selecione **(Nenhum)**.
 
@@ -159,8 +159,8 @@ Para saber mais sobre os tamanhos e preços das máquinas virtuais do Azure, vej
 [Instruções de conexão para o Kit de ferramentas do Azure para IntelliJ]: ./azure-toolkit-for-intellij-sign-in-instructions.md
 [Tamanhos das máquinas virtuais do Windows no Azure]: /azure/virtual-machines/virtual-machines-windows-sizes
 [Tamanhos das máquinas virtuais do Linux no Azure]: /azure/virtual-machines/virtual-machines-linux-sizes
-[Preços de máquinas virtuais do Windows]: /pricing/details/virtual-machines/windows/
-[Preços de máquinas virtuais do Linux]: /pricing/details/virtual-machines/linux/
+[Preços de máquinas virtuais do Windows]: https://azure.microsoft.com/pricing/details/virtual-machines/windows/
+[Preços de máquinas virtuais do Linux]: https://azure.microsoft.com/pricing/details/virtual-machines/linux/
 
 <!-- IMG List -->
 
