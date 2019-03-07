@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: java
 ms.service: storage
-ms.openlocfilehash: fba48dfa04f223dce72a0ee54da967565ebd3687
-ms.sourcegitcommit: 67b3542b174e8448f9ca3e7c9506f1216ea6a8fe
+ms.openlocfilehash: ee54e92ee0084cd2fc5e827764cfe094434ea784
+ms.sourcegitcommit: 1c1412ad5d8960975c3fc7fd3d1948152ef651ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51285659"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335369"
 ---
 # <a name="azure-storage-libraries-for-java"></a>Bibliotecas do Armazenamento Azure para Java
 
@@ -79,7 +79,7 @@ TransferManager.uploadFileToBlockBlob(fileChannel, blobURL,0, null).blockingGet(
 
 ## <a name="management-api"></a>API de gerenciamento
 
-Criar e gerenciar contas de Armazenamento do Azure e as chaves de conexão com a API de gerenciamento.
+Crie e gerencie contas do Armazenamento do Azure e chaves de conexão com a API de gerenciamento.
 
 [Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar a API de gerenciamento em seu projeto.  
 
