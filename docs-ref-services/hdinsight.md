@@ -8,12 +8,12 @@ ms.service: hdinsight
 ms.topic: reference
 ms.devlang: java
 ms.date: 11/21/2018
-ms.openlocfilehash: 96ecbedc90706775a80b97c42f0d55a46a45b8ac
-ms.sourcegitcommit: 8d0c59ae7c91adbb9be3c3e6d4a3429ffe51519d
+ms.openlocfilehash: 3827b5744a5d08c53cbbff1db29eca34194c1625
+ms.sourcegitcommit: 1c1412ad5d8960975c3fc7fd3d1948152ef651ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52338680"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335429"
 ---
 # <a name="hdinsight-java-management-sdk-preview"></a>SDK de Gerenciamento de Java do HDInsight (versão prévia)
 
@@ -47,7 +47,6 @@ Você também precisará adicionar as seguintes dependências ao pom.xml:
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-client-authentication</artifactId>
     <version>1.6.2</version>
-    <scope>test</scope>
   </dependency>
   ```
 
@@ -60,12 +59,12 @@ Você também precisará adicionar as seguintes dependências ao pom.xml:
   </dependency>
   ```
 
-## <a name="authentication"></a>Autenticação
+## <a name="authentication"></a>Authentication
 
 O SDK precisa primeiro ser autenticado com a assinatura do Azure.  Siga o exemplo abaixo para criar uma entidade de serviço e use-a para a autenticação. Após isso ser feito, você terá uma instância de um `HDInsightManagementClientImpl`, que contém muitos métodos (destacados nas seções abaixo) que podem ser usados para realizar operações de gerenciamento.
 
 > [!NOTE]
-> Existem outras formas de autenticar além do exemplo abaixo que talvez sejam mais adequadas às suas necessidades. Todos os métodos são descritos aqui: [Autenticar com as bibliotecas de gerenciamento para Java](https://docs.microsoft.com/en-us/java/azure/java-sdk-azure-authenticate?view=azure-java-stable)
+> Existem outras formas de autenticar além do exemplo abaixo que talvez sejam mais adequadas às suas necessidades. Todos os métodos são descritos aqui: [Autenticar com as bibliotecas de gerenciamento do Azure para Java](https://docs.microsoft.com/en-us/java/azure/java-sdk-azure-authenticate?view=azure-java-stable)
 
 ### <a name="authentication-example-using-a-service-principal"></a>Exemplo de autenticação usando uma entidade de serviço
 
@@ -150,7 +149,8 @@ public class Main {
                 CLIENT_SECRET,
                 AzureEnvironment.AZURE);
 
-        HDInsightManagementClientImpl client = new HDInsightManagementClientImpl(credentials);
+        HDInsightManagementClientImpl client = new HDInsightManagementClientImpl(credentials)
+                .withSubscriptionId(SUBSCRIPTION_ID);
 ```
 
 
@@ -355,7 +355,7 @@ O SDK de gerenciamento do HDInsight também pode ser usado para gerenciar o moni
 ### <a name="enable-oms-monitoring"></a>Habilitar Monitoramento de OMS
 
 > [!NOTE]
-> Para habilitar o Monitoramento de OMS, você deve ter um workspace existente do Log Analytics. Se você já não tiver criado um, você pode aprender como fazer isso aqui: [Criar um workspace do Log Analytics no portal do Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
+> Para habilitar o Monitoramento de OMS, você deve ter um workspace existente do Log Analytics. Se você ainda não criou, aprenda como fazer isso aqui: [Criar um workspace do Log Analytics no Portal do Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Para habilitar o Monitoramento de OMS no seu cluster:
 
@@ -383,7 +383,7 @@ client.extensions().disableMonitoring("<Resource Group Name>", "<Cluster Name>")
 
 O HDInsight fornece um método de configuração chamado ações de script que chama os scripts personalizados para personalizar o cluster.
 > [!NOTE]
-> Mais informações sobre como usar as ações de script podem ser encontradas aqui: [Personalizar clusters HDInsight com base em Linux usando ações de script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)
+> Mais informações sobre como usar as ações de script podem ser encontradas aqui: [Customizar clusters HDInsight baseados em Linux usando as ações de script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)
 
 ### <a name="execute-script-actions"></a>Executar ações de script
 

@@ -13,18 +13,18 @@ ms.devlang: java
 ms.service: postgresql
 ms.tgt_pltfrm: multiple
 ms.topic: article
-ms.openlocfilehash: 371a8c686f7ad045443328d02a32a4e65af55981
-ms.sourcegitcommit: f0f140b0862ca5338b1b7e5c33cec3e58a70b8fd
+ms.openlocfilehash: 29f3c957dd0ccd754eedef12e3fc01c3484dddf3
+ms.sourcegitcommit: 1c1412ad5d8960975c3fc7fd3d1948152ef651ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53991960"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335389"
 ---
 # <a name="how-to-use-spring-data-jdbc-with-azure-postgresql"></a>Como usar o Spring Data JDBC com o Azure PostgreSQL
 
 ## <a name="overview"></a>Visão geral
 
-Este artigo demonstra a criação de um aplicativo de exemplo que usa o [Spring Data] para armazenar e recuperar informações em um banco de dados [PostgreSQL] do Azure https://www.postgresql.org/ usando [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).
+Este artigo demonstra a criação de um aplicativo de exemplo que usa o [Spring Data] para armazenar e recuperar informações em um banco de dados [PostgreSQL](https://www.postgresql.org/) do Azure usando [Java Database Connectivity (JDBC)](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
