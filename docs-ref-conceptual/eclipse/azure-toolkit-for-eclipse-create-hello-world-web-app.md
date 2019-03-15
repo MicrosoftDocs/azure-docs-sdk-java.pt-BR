@@ -14,12 +14,12 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: 5e025c90c2619ec72ffddf5815fd49c3ac59c00f
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: c98f966eb17e3fbde877451c8f8fefb21e6bf686
+ms.sourcegitcommit: dca98b953fa3149fb2e6aa49e27e843b6df0c6c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48893087"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57786885"
 ---
 # <a name="create-a-hello-world-web-app-for-azure-using-eclipse"></a>Criar um aplicativo Web Olá, Mundo para o Azure usando o Eclipse
 
@@ -92,6 +92,8 @@ Após a conclusão deste tutorial, seu aplicativo será semelhante à ilustraç�
       ![Criar Serviço de Aplicativo][create-app-service]
 
       Especifique as informações necessárias para seu aplicativo Web na caixa de diálogo **Criar Serviço de Aplicativo** e clique em **Criar**.
+
+      Aqui você pode configurar o ambiente de tempo de execução, as configurações do aplicativo, o grupo de recursos e o plano de serviço.
 
       ![Criar a caixa de diálogo Serviço de Aplicativo][create-app-service-dialog]
 
