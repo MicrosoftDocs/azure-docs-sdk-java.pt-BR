@@ -8,12 +8,12 @@ ms.service: hdinsight
 ms.topic: reference
 ms.devlang: java
 ms.date: 11/21/2018
-ms.openlocfilehash: 3827b5744a5d08c53cbbff1db29eca34194c1625
-ms.sourcegitcommit: 1c1412ad5d8960975c3fc7fd3d1948152ef651ef
+ms.openlocfilehash: 0ae8d78a0618c4dbcc5e734fce311f7c2e5684bd
+ms.sourcegitcommit: a108a82414bd35be896e3c4e7047f5eb7b1518cb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335429"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58489644"
 ---
 # <a name="hdinsight-java-management-sdk-preview"></a>SDK de Gerenciamento de Java do HDInsight (versão prévia)
 
@@ -25,7 +25,7 @@ O SDK Java do HDInsight oferece classes e métodos que permitem gerenciar os seu
 
 * Uma conta do Azure. Se você não tiver uma, [obtenha uma avaliação gratuita](https://azure.microsoft.com/free/).
 * Um JDK (Java Development Kit) com suporte. Para obter mais informações sobre os JDKs disponíveis para usar durante o desenvolvimento no Azure, confira <https://aka.ms/azure-jdks>.
-* [Maven](https://maven.apache.org/install.html)
+* [Maven](https://maven.apache.org/download.cgi)
 
 ## <a name="sdk-installation"></a>Instalação do SDK
 
