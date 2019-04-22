@@ -1,25 +1,25 @@
 ---
-title: SDK do Java do Azure HDInsight
-description: Referência para o SDK do Java do Azure HDInsight. O SDK Java do HDInsight oferece classes e métodos que permitem gerenciar os seus clusters do HDInsight.
+title: SDK do Azure HDInsight para Java
+description: Referência do SDK do Azure HDInsight para Java. O SDK do HDInsight para Java oferece classes e métodos que permitem gerenciar os clusters do HDInsight.
 author: tylerfox
 ms.author: tyfox
 ms.reviewer: jasonh
 ms.service: hdinsight
 ms.topic: reference
 ms.devlang: java
-ms.date: 11/21/2018
-ms.openlocfilehash: 0ae8d78a0618c4dbcc5e734fce311f7c2e5684bd
-ms.sourcegitcommit: a108a82414bd35be896e3c4e7047f5eb7b1518cb
+ms.date: 04/15/2019
+ms.openlocfilehash: fe87c9214e2a620230cf2f1f52261fd66a2b8857
+ms.sourcegitcommit: f33befab25a66a252b4c91c7aeb1b77cb32821bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489644"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59705114"
 ---
-# <a name="hdinsight-java-management-sdk-preview"></a>SDK de Gerenciamento de Java do HDInsight (versão prévia)
+# <a name="hdinsight-sdk-for-java"></a>SDK do HDInsight para Java
 
 ## <a name="overview"></a>Visão geral
 
-O SDK Java do HDInsight oferece classes e métodos que permitem gerenciar os seus clusters do HDInsight. Inclui operações para criar, excluir, atualizar, listar, redimensionar, executar ações de script, monitorar, obter propriedades dos clusters HDInsight e muito mais.
+O SDK do HDInsight para Java oferece classes e métodos que permitem gerenciar os clusters do HDInsight. Inclui operações para criar, excluir, atualizar, listar, redimensionar, executar ações de script, monitorar, obter propriedades dos clusters HDInsight e muito mais.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -29,7 +29,7 @@ O SDK Java do HDInsight oferece classes e métodos que permitem gerenciar os seu
 
 ## <a name="sdk-installation"></a>Instalação do SDK
 
-O SDK de Java do HDInsight está disponível no Maven [aqui](https://mvnrepository.com/artifact/com.microsoft.azure.hdinsight.v2018_06_01_preview/azure-mgmt-hdinsight). Adicione a seguinte dependência ao seu pom.xml:
+O SDK do HDInsight para Java está disponível no Maven [aqui](https://search.maven.org/artifact/com.microsoft.azure.hdinsight.v2018_06_01_preview/azure-mgmt-hdinsight). Adicione a seguinte dependência ao seu pom.xml:
 
 ```
 <dependency>
@@ -41,21 +41,21 @@ O SDK de Java do HDInsight está disponível no Maven [aqui](https://mvnreposito
 
 Você também precisará adicionar as seguintes dependências ao pom.xml:
 
-* [Biblioteca de autenticação de cliente do Azure:](https://mvnrepository.com/artifact/com.microsoft.azure/azure-client-authentication/1.6.2)
+* [Biblioteca de autenticação de cliente do Azure:](https://search.maven.org/artifact/com.microsoft.azure/azure-client-authentication)
   ```
   <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-client-authentication</artifactId>
-    <version>1.6.2</version>
+    <version>1.6.5</version>
   </dependency>
   ```
 
-* [Tempo de execução de cliente Java do Azure para ARM:](https://mvnrepository.com/artifact/com.microsoft.azure/azure-arm-client-runtime/1.6.2)
+* [Tempo de execução de cliente Java do Azure para ARM:](https://search.maven.org/artifact/com.microsoft.azure/azure-arm-client-runtime)
   ```
   <dependency>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-arm-client-runtime</artifactId>
-    <version>1.6.2</version>
+    <version>1.6.5</version>
   </dependency>
   ```
 
@@ -153,7 +153,6 @@ public class Main {
                 .withSubscriptionId(SUBSCRIPTION_ID);
 ```
 
-
 ## <a name="cluster-management"></a>Gerenciamento de clusters
 
 > [!NOTE]
@@ -162,6 +161,10 @@ public class Main {
 ### <a name="create-a-cluster"></a>Criar um cluster
 
 Um novo cluster pode ser criado chamando `client.clusters().create()`.
+
+#### <a name="samples"></a>Exemplos
+
+Os exemplos de código para criar vários tipos comuns de clusters HDInsight estão disponíveis: [Exemplos do Java do HDInsight](https://github.com/Azure-Samples/hdinsight-java-sdk-samples).
 
 #### <a name="example"></a>Exemplo
 
@@ -355,7 +358,7 @@ O SDK de gerenciamento do HDInsight também pode ser usado para gerenciar o moni
 ### <a name="enable-oms-monitoring"></a>Habilitar Monitoramento de OMS
 
 > [!NOTE]
-> Para habilitar o Monitoramento de OMS, você deve ter um espaço de trabalho do Log Analytics existente. Se você ainda não criou, aprenda como fazer isso aqui: [Criar um workspace do Log Analytics no Portal do Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
+> Para habilitar o Monitoramento de OMS, você deve ter um espaço de trabalho do Log Analytics existente. Se você ainda não criou, aprenda como fazer isso aqui: [Criar um espaço de trabalho do Log Analytics no Portal do Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Para habilitar o Monitoramento de OMS no seu cluster:
 
