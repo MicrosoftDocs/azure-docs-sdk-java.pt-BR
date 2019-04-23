@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de Banco de Dados SQL do Azure para Java
-description: Conecte-se ao banco de dados do SQL Azure usando o driver JDBC ou as instâncias de banco de dados do SQL do Azure com a API de gerenciamento.
+description: Conecte-se ao banco de dados SQL do Azure usando o driver JDBC ou as instâncias de banco de dados do SQL do Azure com a API de gerenciamento.
 keywords: Azure, Java, SDK, API, SQL, banco de dados, JDBC
 author: rloutlaw
 ms.author: routlaw
@@ -28,7 +28,7 @@ Para começar a usar o Banco de Dados SQL do Azure, consulte [Banco de Dados SQL
 
 ## <a name="client-jdbc-driver"></a>Driver JDBC do cliente
 
-Conecte-se ao banco de dados do SQL Azure a partir de seus aplicativos usando o [driver JDBC do Banco de Dados SQL](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server). Você pode usar a [API do JDBC de Java](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) para se conectar diretamente ao banco de dados ou usar as estruturas de acesso a dados que interagem com o banco de dados por meio do JDBC, como [Hibernate](http://hibernate.org/).
+Conecte-se ao banco de dados SQL do Azure a partir de seus aplicativos usando o [driver JDBC do Banco de Dados SQL](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server). Você pode usar a [API do JDBC de Java](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) para se conectar diretamente ao banco de dados ou usar as estruturas de acesso a dados que interagem com o banco de dados por meio do JDBC, como [Hibernate](http://hibernate.org/).
 
 [Adicionar uma dependência](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) para seu arquivo `pom.xml` Maven para usar o driver JDBC do cliente em seu projeto.
 

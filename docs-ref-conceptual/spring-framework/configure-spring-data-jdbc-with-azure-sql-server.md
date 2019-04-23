@@ -38,7 +38,7 @@ Os seguintes pré-requisitos são obrigatórios para você concluir as etapas ne
 
 ## <a name="create-an-azure-sql-satabase"></a>Criar um Banco de Dados SQL do Azure
 
-### <a name="create-a-sql-database-server-using-the-azure-portal"></a>Criar um servidor de banco de dados SQL usando o Portal do Azure
+### <a name="create-a-sql-database-server-using-the-azure-portal"></a>Criar um servidor do banco de dados SQL usando o Portal do Azure
 
 > [!NOTE]
 > 
