@@ -10,20 +10,20 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 3/30/2017
 ms.author: routlaw;asirveda
-ms.openlocfilehash: 5945164b2b04e1fa9169590a71f6c5f9f45842d6
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: 620ee28691f70ed6cf29c4f7c169cd43a6e71351
+ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48893057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61592571"
 ---
-# <a name="manage-azure-storage-accounts-from-your-java-applications"></a><span data-ttu-id="b4763-103">Gerenciar contas de armazenamento do Azure a partir dos seus aplicativos Java</span><span class="sxs-lookup"><span data-stu-id="b4763-103">Manage Azure storage accounts from your Java applications</span></span>
+# <a name="manage-azure-storage-accounts-from-your-java-applications"></a><span data-ttu-id="ce5d8-103">Gerenciar contas de armazenamento do Azure a partir dos seus aplicativos Java</span><span class="sxs-lookup"><span data-stu-id="ce5d8-103">Manage Azure storage accounts from your Java applications</span></span>
 
-<span data-ttu-id="b4763-104">[Este exemplo](https://github.com/Azure-Samples/storage-java-manage-storage-accounts) cria uma conta de [Armazenamento do Azure](https://docs.microsoft.com/azure/storage/storage-introduction) e funciona com as chaves de acesso da conta usando as [bibliotecas de gerenciamento de Java](https://github.com/Azure/azure-sdk-for-java).</span><span class="sxs-lookup"><span data-stu-id="b4763-104">[This sample](https://github.com/Azure-Samples/storage-java-manage-storage-accounts) creates an [Azure Storage](https://docs.microsoft.com/azure/storage/storage-introduction) account and works with the account access keys using the [Java management libraries](https://github.com/Azure/azure-sdk-for-java).</span></span> 
+<span data-ttu-id="ce5d8-104">[Este exemplo](https://github.com/Azure-Samples/storage-java-manage-storage-accounts) cria uma conta de [Armazenamento do Azure](https://docs.microsoft.com/azure/storage/storage-introduction) e funciona com as chaves de acesso da conta usando as [bibliotecas de gerenciamento de Java](https://github.com/Azure/azure-sdk-for-java).</span><span class="sxs-lookup"><span data-stu-id="ce5d8-104">[This sample](https://github.com/Azure-Samples/storage-java-manage-storage-accounts) creates an [Azure Storage](https://docs.microsoft.com/azure/storage/storage-introduction) account and works with the account access keys using the [Java management libraries](https://github.com/Azure/azure-sdk-for-java).</span></span> 
 
-## <a name="run-the-sample"></a><span data-ttu-id="b4763-105">Execute o exemplo</span><span class="sxs-lookup"><span data-stu-id="b4763-105">Run the sample</span></span>
+## <a name="run-the-sample"></a><span data-ttu-id="ce5d8-105">Execute o exemplo</span><span class="sxs-lookup"><span data-stu-id="ce5d8-105">Run the sample</span></span>
 
-<span data-ttu-id="b4763-106">Criar um [arquivo de autenticação](https://github.com/Azure/azure-sdk-for-java/blob/master/AUTH.md) e definir uma variável de ambiente `AZURE_AUTH_LOCATION` com o caminho completo para o arquivo em seu computador.</span><span class="sxs-lookup"><span data-stu-id="b4763-106">Create an [authentication file](https://github.com/Azure/azure-sdk-for-java/blob/master/AUTH.md) and set an environment variable `AZURE_AUTH_LOCATION` with the full path to the file on your computer.</span></span> <span data-ttu-id="b4763-107">Em seguida, execute:</span><span class="sxs-lookup"><span data-stu-id="b4763-107">Then run:</span></span>
+<span data-ttu-id="ce5d8-106">Criar um [arquivo de autenticação](https://github.com/Azure/azure-sdk-for-java/blob/master/AUTH.md) e definir uma variável de ambiente `AZURE_AUTH_LOCATION` com o caminho completo para o arquivo em seu computador.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-106">Create an [authentication file](https://github.com/Azure/azure-sdk-for-java/blob/master/AUTH.md) and set an environment variable `AZURE_AUTH_LOCATION` with the full path to the file on your computer.</span></span> <span data-ttu-id="ce5d8-107">Em seguida, execute:</span><span class="sxs-lookup"><span data-stu-id="ce5d8-107">Then run:</span></span>
 
 ```
 git clone https://github.com/Azure-Samples/storage-java-manage-storage-accounts.git
@@ -31,13 +31,13 @@ cd storage-java-manage-storage-accounts
 mvn clean compile exec:java
 ```
 
-<span data-ttu-id="b4763-108">Exibição de [exemplo de código completo no GitHub](https://github.com/Azure-Samples/storage-java-manage-storage-accounts).</span><span class="sxs-lookup"><span data-stu-id="b4763-108">View the [complete code sample on GitHub](https://github.com/Azure-Samples/storage-java-manage-storage-accounts).</span></span>
+<span data-ttu-id="ce5d8-108">Exibição de [exemplo de código completo no GitHub](https://github.com/Azure-Samples/storage-java-manage-storage-accounts).</span><span class="sxs-lookup"><span data-stu-id="ce5d8-108">View the [complete code sample on GitHub](https://github.com/Azure-Samples/storage-java-manage-storage-accounts).</span></span>
 
-## <a name="authenticate-with-azure"></a><span data-ttu-id="b4763-109">Autenticar com o Azure</span><span class="sxs-lookup"><span data-stu-id="b4763-109">Authenticate with Azure</span></span>
+## <a name="authenticate-with-azure"></a><span data-ttu-id="ce5d8-109">Autenticar com o Azure</span><span class="sxs-lookup"><span data-stu-id="ce5d8-109">Authenticate with Azure</span></span>
 
 [!INCLUDE [auth-include](includes/java-auth-include.md)] 
 
-## <a name="create-a-storage-account"></a><span data-ttu-id="b4763-110">Criar uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="b4763-110">Create a storage account</span></span>
+## <a name="create-a-storage-account"></a><span data-ttu-id="ce5d8-110">Criar uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="ce5d8-110">Create a storage account</span></span>
 
 ```java
 // create a new storage account
@@ -47,9 +47,9 @@ StorageAccount storageAccount = azure.storageAccounts().define(storageAccountNam
                     .create();
 ```
 
-<span data-ttu-id="b4763-111">O nome de armazenamento fornecido deve ser exclusivo entre todos os nomes no Azure e conter apenas letras minúsculas e números.</span><span class="sxs-lookup"><span data-stu-id="b4763-111">The storage name provided must be unique across all names in Azure and contain only lowercase letters and numbers.</span></span> <span data-ttu-id="b4763-112">O perfil de desempenho e replicação padrão usado para essa conta é [Standard_GRS](https://docs.microsoft.com/azure/storage/storage-redundancy#geo-redundant-storage).</span><span class="sxs-lookup"><span data-stu-id="b4763-112">The default performance and replication profile used for this account is [Standard_GRS](https://docs.microsoft.com/azure/storage/storage-redundancy#geo-redundant-storage).</span></span>
+<span data-ttu-id="ce5d8-111">O nome de armazenamento fornecido deve ser exclusivo entre todos os nomes no Azure e conter apenas letras minúsculas e números.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-111">The storage name provided must be unique across all names in Azure and contain only lowercase letters and numbers.</span></span> <span data-ttu-id="ce5d8-112">O perfil de desempenho e replicação padrão usado para essa conta é [Standard_GRS](https://docs.microsoft.com/azure/storage/storage-redundancy#geo-redundant-storage).</span><span class="sxs-lookup"><span data-stu-id="ce5d8-112">The default performance and replication profile used for this account is [Standard_GRS](https://docs.microsoft.com/azure/storage/storage-redundancy#geo-redundant-storage).</span></span>
 
-## <a name="list-keys-in-a-storage-account"></a><span data-ttu-id="b4763-113">Listar chaves em uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="b4763-113">List keys in a storage account</span></span>
+## <a name="list-keys-in-a-storage-account"></a><span data-ttu-id="ce5d8-113">Listar chaves em uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="ce5d8-113">List keys in a storage account</span></span>
 ```java
 // list the name and value for each access key in the storage account
 List<StorageAccountKey> storageAccountKeys = storageAccount.getKeys();
@@ -58,9 +58,9 @@ for(StorageAccountKey key : storageAccountKeys)    {
 }
 ```
 
-<span data-ttu-id="b4763-114">Duas chaves são fornecidas em cada conta de armazenamento do Azure para que você possa regenerar uma chave e ainda permitir acesso ao armazenamento usando a outra chave.</span><span class="sxs-lookup"><span data-stu-id="b4763-114">Two keys are provided in each Azure storage account so that you can regenerate one key while still allowing access to storage using the other key.</span></span>
+<span data-ttu-id="ce5d8-114">Duas chaves são fornecidas em cada conta de armazenamento do Azure para que você possa regenerar uma chave e ainda permitir acesso ao armazenamento usando a outra chave.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-114">Two keys are provided in each Azure storage account so that you can regenerate one key while still allowing access to storage using the other key.</span></span>
 
-## <a name="regenerate-a-key-in-a-storage-account"></a><span data-ttu-id="b4763-115">Regenerar uma chave em uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="b4763-115">Regenerate a key in a storage account</span></span>
+## <a name="regenerate-a-key-in-a-storage-account"></a><span data-ttu-id="ce5d8-115">Regenerar uma chave em uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="ce5d8-115">Regenerate a key in a storage account</span></span>
 
 ```java
 // regenerate the first key in a storage account and return an updated list of keys 
@@ -68,9 +68,9 @@ List<StorageAccountKey> updatedStorageAccountKeys =
     storageAccount.regenerateKey(storageAccountKeys.get(0).keyName());
 ```
 
-<span data-ttu-id="b4763-116">Depois de gerar um novo, você deve atualizar todos os aplicativos e recursos do Azure com a nova chave.</span><span class="sxs-lookup"><span data-stu-id="b4763-116">You must update all Azure resources and applications with the new key after generating a new one.</span></span>
+<span data-ttu-id="ce5d8-116">Depois de gerar um novo, você deve atualizar todos os aplicativos e recursos do Azure com a nova chave.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-116">You must update all Azure resources and applications with the new key after generating a new one.</span></span>
 
-## <a name="list-all-storage-accounts-in-a-resource-group"></a><span data-ttu-id="b4763-117">Listar todas as contas de armazenamento em um grupo de recursos</span><span class="sxs-lookup"><span data-stu-id="b4763-117">List all storage accounts in a resource group</span></span>
+## <a name="list-all-storage-accounts-in-a-resource-group"></a><span data-ttu-id="ce5d8-117">Listar todas as contas de armazenamento em um grupo de recursos</span><span class="sxs-lookup"><span data-stu-id="ce5d8-117">List all storage accounts in a resource group</span></span>
 ```java
 // get a list of accounts in a resource group , log info about each one
 List<StorageAccount> accounts = azure.storageAccounts().listByResourceGroup(rgName);
@@ -79,9 +79,9 @@ for (StorageAccount sa : accounts) {
 }
 ```
 
-<span data-ttu-id="b4763-118">[com.microsoft.azure.management.storage.StorageAccount](https://docs.microsoft.com/java/api/com.microsoft.azure.management.storage._storage_account) fornece um conjunto de métodos úteis para inspecionar a configuração de uma conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="b4763-118">[com.microsoft.azure.management.storage.StorageAccount](https://docs.microsoft.com/java/api/com.microsoft.azure.management.storage._storage_account) provides a set of useful methods to inspect the configuration of a storage account.</span></span>
+<span data-ttu-id="ce5d8-118">[com.microsoft.azure.management.storage.StorageAccount](https://docs.microsoft.com/java/api/com.microsoft.azure.management.storage._storage_account) fornece um conjunto de métodos úteis para inspecionar a configuração de uma conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-118">[com.microsoft.azure.management.storage.StorageAccount](https://docs.microsoft.com/java/api/com.microsoft.azure.management.storage._storage_account) provides a set of useful methods to inspect the configuration of a storage account.</span></span>
 
-## <a name="delete-a-storage-account"></a><span data-ttu-id="b4763-119">Excluir uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="b4763-119">Delete a storage account</span></span>
+## <a name="delete-a-storage-account"></a><span data-ttu-id="ce5d8-119">Excluir uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="ce5d8-119">Delete a storage account</span></span>
 ```java
 // delete by ID when you already have a storage account object
 azure.storageAccounts().deleteById(storageAccount.id());
@@ -91,22 +91,22 @@ azure.storageAccounts().deleteByResourceGroup(rgName,accountName);
 ```
 
 > [!NOTE]
-> <span data-ttu-id="b4763-120">Contas de armazenamento com imagens de disco em uso conectadas a máquinas virtuais ou discos em uso por outros artefatos não podem remover esses métodos.</span><span class="sxs-lookup"><span data-stu-id="b4763-120">Storage accounts with in-use disk images connected to virtual machines or disks in use by other artifacts may not remove with these methods.</span></span> <span data-ttu-id="b4763-121">Desanexe o armazenamento desses recursos antes de remover a conta.</span><span class="sxs-lookup"><span data-stu-id="b4763-121">Detach the storage from these resources before removing the account.</span></span>
+> <span data-ttu-id="ce5d8-120">Contas de armazenamento com imagens de disco em uso conectadas a máquinas virtuais ou discos em uso por outros artefatos não podem remover esses métodos.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-120">Storage accounts with in-use disk images connected to virtual machines or disks in use by other artifacts may not remove with these methods.</span></span> <span data-ttu-id="ce5d8-121">Desanexe o armazenamento desses recursos antes de remover a conta.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-121">Detach the storage from these resources before removing the account.</span></span>
 
-## <a name="sample-explanation"></a><span data-ttu-id="b4763-122">Explicação do exemplo</span><span class="sxs-lookup"><span data-stu-id="b4763-122">Sample explanation</span></span>
+## <a name="sample-explanation"></a><span data-ttu-id="ce5d8-122">Explicação do exemplo</span><span class="sxs-lookup"><span data-stu-id="ce5d8-122">Sample explanation</span></span>
 
-<span data-ttu-id="b4763-123">[Exemplo de código no GitHub](https://github.com/Azure-Samples/storage-java-manage-storage-accounts):</span><span class="sxs-lookup"><span data-stu-id="b4763-123">[The sample code on GitHub](https://github.com/Azure-Samples/storage-java-manage-storage-accounts):</span></span>
+<span data-ttu-id="ce5d8-123">[Exemplo de código no GitHub](https://github.com/Azure-Samples/storage-java-manage-storage-accounts):</span><span class="sxs-lookup"><span data-stu-id="ce5d8-123">[The sample code on GitHub](https://github.com/Azure-Samples/storage-java-manage-storage-accounts):</span></span>
 
-- <span data-ttu-id="b4763-124">cria uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="b4763-124">creates a storage account</span></span>
-- <span data-ttu-id="b4763-125">lê e regenera as chaves de acesso</span><span class="sxs-lookup"><span data-stu-id="b4763-125">reads and regenerates access keys</span></span>
-- <span data-ttu-id="b4763-126">lista todas as contas de armazenamento em um grupo de recursos</span><span class="sxs-lookup"><span data-stu-id="b4763-126">lists all storage accounts in a resource group</span></span>
-- <span data-ttu-id="b4763-127">elimina a conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="b4763-127">deletes the storage account</span></span> 
+- <span data-ttu-id="ce5d8-124">cria uma conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="ce5d8-124">creates a storage account</span></span>
+- <span data-ttu-id="ce5d8-125">lê e regenera as chaves de acesso</span><span class="sxs-lookup"><span data-stu-id="ce5d8-125">reads and regenerates access keys</span></span>
+- <span data-ttu-id="ce5d8-126">lista todas as contas de armazenamento em um grupo de recursos</span><span class="sxs-lookup"><span data-stu-id="ce5d8-126">lists all storage accounts in a resource group</span></span>
+- <span data-ttu-id="ce5d8-127">elimina a conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="ce5d8-127">deletes the storage account</span></span> 
 
-| <span data-ttu-id="b4763-128">Classe usada no exemplo</span><span class="sxs-lookup"><span data-stu-id="b4763-128">Class used in sample</span></span> | <span data-ttu-id="b4763-129">Observações</span><span class="sxs-lookup"><span data-stu-id="b4763-129">Notes</span></span>
+| <span data-ttu-id="ce5d8-128">Classe usada no exemplo</span><span class="sxs-lookup"><span data-stu-id="ce5d8-128">Class used in sample</span></span> | <span data-ttu-id="ce5d8-129">Observações</span><span class="sxs-lookup"><span data-stu-id="ce5d8-129">Notes</span></span>
 |-------|-------|
-| [<span data-ttu-id="b4763-130">StorageAccount</span><span class="sxs-lookup"><span data-stu-id="b4763-130">StorageAccount</span></span>](https://docs.microsoft.com/java/api/com.microsoft.azure.management.storage._storage_account)  | <span data-ttu-id="b4763-131">Representação de uma conta de armazenamento do Azure.</span><span class="sxs-lookup"><span data-stu-id="b4763-131">Representation of an Azure storage account.</span></span> <span data-ttu-id="b4763-132">Use os métodos na classe para obter informações sobre a conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="b4763-132">Use the methods in the class to get information about the storage account.</span></span>
-| [<span data-ttu-id="b4763-133">StorageAccountKey</span><span class="sxs-lookup"><span data-stu-id="b4763-133">StorageAccountKey</span></span>](https://docs.microsoft.com/java/api/com.microsoft.azure.management.storage._storage_account_key) | <span data-ttu-id="b4763-134">`StorageAccount.getKeys()` retorna as chaves da conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="b4763-134">`StorageAccount.getKeys()` returns the storage account keys.</span></span> <span data-ttu-id="b4763-135">Use os métodos `regenerateKey` em `StorageAccount` para atualizar as chaves.</span><span class="sxs-lookup"><span data-stu-id="b4763-135">Use the `regenerateKey` methods in `StorageAccount` to update the keys.</span></span>
+| [<span data-ttu-id="ce5d8-130">StorageAccount</span><span class="sxs-lookup"><span data-stu-id="ce5d8-130">StorageAccount</span></span>](https://docs.microsoft.com/java/api/com.microsoft.azure.management.storage._storage_account)  | <span data-ttu-id="ce5d8-131">Representação de uma conta de armazenamento do Azure.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-131">Representation of an Azure storage account.</span></span> <span data-ttu-id="ce5d8-132">Use os métodos na classe para obter informações sobre a conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-132">Use the methods in the class to get information about the storage account.</span></span>
+| [<span data-ttu-id="ce5d8-133">StorageAccountKey</span><span class="sxs-lookup"><span data-stu-id="ce5d8-133">StorageAccountKey</span></span>](https://docs.microsoft.com/java/api/com.microsoft.azure.management.storage._storage_account_key) | <span data-ttu-id="ce5d8-134">`StorageAccount.getKeys()` retorna as chaves da conta de armazenamento.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-134">`StorageAccount.getKeys()` returns the storage account keys.</span></span> <span data-ttu-id="ce5d8-135">Use os métodos `regenerateKey` em `StorageAccount` para atualizar as chaves.</span><span class="sxs-lookup"><span data-stu-id="ce5d8-135">Use the `regenerateKey` methods in `StorageAccount` to update the keys.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="b4763-136">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="b4763-136">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="ce5d8-136">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="ce5d8-136">Next steps</span></span>
 
 [!INCLUDE [next-steps](includes/java-next-steps.md)]
