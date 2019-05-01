@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8d8ca00d6707927c0664908f1e79deddf63d80d7
+ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61592633"
+---
 |  |  |
 |---------|---------|
 | [Conecte-se e consulte dados a partir do Banco de Dados SQL do Azure usando o JDBC][4] | Configure um exemplo de banco de dados, em seguida, selecione, insira, atualize e exclua comandos. |

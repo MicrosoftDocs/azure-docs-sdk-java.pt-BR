@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ab31ee32ea940db2d7bcfa2fe36475d8a648bfc9
+ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61592602"
+---
 | **Criar máquinas virtuais** || 
 |---|---|
 | [Gerenciar redes virtuais][1] | Criar, modificar, iniciar, parar e excluir máquinas virtuais. |
