@@ -14,12 +14,12 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 6f1edcc1411e8ec716dbfe41271d21d2397515c5
-ms.sourcegitcommit: b64017f119177f97da7a5930489874e67b09c0fc
+ms.openlocfilehash: bfed1a879bacf82436b71654c0ceca2826381eed
+ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48893187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61590596"
 ---
 # <a name="displaying-javadoc-content-in-eclipse-for-the-azure-libraries-package-for-java"></a>Exibindo o Conteúdo do Javadoc no Eclipse para o Pacote de Bibliotecas do Azure para Java
 
@@ -45,7 +45,7 @@ Este procedimento pressupõe que você já adicionou a Biblioteca do Azure para 
 
    ![Exiba o conteúdo do Javadoc.][ic553487]
 
-1. *Etapa Opcional*: clique em **Validar**. Problemas potenciais com o Javadoc JAR podem ser exibidos aqui.
+1. *Etapa opcional*: Clique em **Validar**. Problemas potenciais com o Javadoc JAR podem ser exibidos aqui.
 
 1. Clique em **OK**.
 
