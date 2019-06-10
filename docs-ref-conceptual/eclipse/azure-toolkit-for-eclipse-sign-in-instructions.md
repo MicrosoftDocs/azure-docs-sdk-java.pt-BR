@@ -14,127 +14,113 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: 79f6cfd3b21d68c131a3f0052d86e4bcb3254e55
-ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
+ms.openlocfilehash: b4b13de38913ae6e7ae2bb09210ac742efc9d0ad
+ms.sourcegitcommit: d18d9dce22b7f7af178f756bd341433d24e3c3b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61590931"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66575313"
 ---
-# <a name="azure-sign-in-instructions-for-the-azure-toolkit-for-eclipse"></a>Instruções de entrada no Azure para o Kit de Ferramentas do Azure para Eclipse
+# <a name="sign-in-instructions-for-the-azure-toolkit-for-eclipse"></a>Instruções de entrada para o Kit de Ferramentas do Azure para Eclipse
 
 O Kit de ferramentas do Azure para Eclipse fornece dois métodos para entrar em sua conta do Azure:
 
-  * **Automatizado** – quando você estiver usando esse método, você criará um arquivo de credenciais que conterá os dados da entidade de serviço, após o qual você poderá usar o arquivo de credenciais para entrar automaticamente em sua conta do Azure.
-  * **Interativo** – quando você estiver usando esse método, você inserirá suas credenciais do Azure sempre que entrar na conta do Azure.
+  - [Entre em sua conta do Azure com o Logon no Dispositivo](#sign-in-to-your-azure-account-by-device-login)
+  - [Entre em sua conta do Azure com a Entidade de Serviço](#sign-in-to-your-azure-account-by-service-principal)
 
-As etapas nas seções a seguir descreverão como usar cada método.
+[Também são fornecidos métodos para **Sair**](#sign-out-of-your-azure-account).
 
 [!INCLUDE [azure-toolkit-for-eclipse-prerequisites](../includes/azure-toolkit-for-eclipse-prerequisites.md)]
 
-## <a name="signing-into-your-azure-account-automatically-and-creating-a-credentials-file-to-use-in-the-future"></a>Entrar automaticamente em sua conta do Azure e criar um arquivo de credenciais para usar no futuro
+## <a name="sign-in-to-your-azure-account-by-device-login"></a>Entre em sua conta do Azure com o Logon no Dispositivo
 
-As etapas a seguir lhe orientarão na criação de um arquivo de credenciais que contém os dados da entidade de serviço. Depois de concluir essas etapas, o Eclipse usará automaticamente o arquivo de credenciais para entrar automaticamente no Azure toda vez que você abrir o projeto.
+Para entrar no Azure por logon no dispositivo, faça o seguinte:
 
 1. Abra seu projeto com o Eclipse.
 
-1. Clique em **Ferramentas**, depois clique em **Azure** e, em seguida, clique em **Entrar**.
+2. Clique em **Ferramentas**, depois clique em **Azure** e, em seguida, clique em **Entrar**.
+   ![Menu do Eclipse para Entrada no Azure][I01]
 
-   ![Menu do Eclipse para Entrar no Azure][A01]
+3. Na caixa de diálogo **Entrar no Azure**, selecione **Logon no Dispositivo** e clique em **Entrar**.
 
-1. Quando a caixa de diálogo **Entrar no Azure** for exibida, selecione **Automatizado** e, em seguida, clique em **Novo**.
+   ![A janela Entrar no Azure com o logon no dispositivo selecionado][I02]
 
-   ![Caixa de diálogo Entrar][A02]
+4. Clique em **Copiar e Abrir** na caixa de diálogo **Logon no Dispositivo do Azure**.
 
-1. Quando a caixa de diálogo **Logon no Azure** for exibida, digite as credenciais do Azure e, em seguida, clique em **Entrar**.
+   ![A janela da caixa de diálogo Logon no Azure][I03]
 
-   ![Caixa de Diálogo de Logon do Azure][A03]
+> [!NOTE]
+>
+> Se o navegador não abrir, configure o Eclipse para usar um navegador externo, como o Internet Explorer, o Firefox ou o Chrome:
+>
+> 1. Abra Preferências -> Geral -> Navegador da Web -> Usar navegador da Web externo no Eclipse
+>
+> 2. Selecione o navegador que você prefere usar
+>
 
-1. Quando a caixa de diálogo **Criar Arquivos de Autenticação** for exibida, selecione as assinaturas que deseja usar, escolha o diretório de destino e, em seguida, clique em **Iniciar**.
+5. No navegador, cole o código de dispositivo (que foi copiado quando você clicou em **Copiar e Abrir** na última etapa) e, em seguida, clique em **Avançar**.
 
-   ![Caixa de diálogo Logon no Azure][A04]
+   ![O navegador de logon do dispositivo][I04]
 
-1. A caixa de diálogo **Status de Criação da Entidade de Serviço** será exibida e, depois que os arquivos tiverem sido criados com êxito, clique em **OK**.
+6. Por fim, na caixa de diálogo **Selecionar Assinaturas**, selecione as assinaturas que deseja usar e clique em **OK**.
 
-   ![Caixa de diálogo Status de Criação da Entidade de Serviço][A05]
+   ![A caixa de diálogo Selecionar Assinaturas][I05]
 
-1. Quando a caixa de diálogo **Entrar no Azure** for exibida, clique em **Entrar**.
+## <a name="sign-in-to-your-azure-account-by-service-principal"></a>Entre em sua conta do Azure com a Entidade de Serviço
+
+Esta seção fornece uma orientarão pela criação de um arquivo de credenciais contendo os dados de sua entidade de serviço. Após a conclusão desse processo, o Eclipse usará automaticamente o arquivo de credenciais para entrar automaticamente no Azure quando você abrir o projeto.
+
+1. Abra seu projeto com o Eclipse.
+
+2. Clique em **Ferramentas**, depois clique em **Azure** e, em seguida, clique em **Entrar**.
+   ![O comando de Entrada do Azure para Eclipse][A01]
+
+3. Na janela **Entrar no Azure**, selecione **Entidade de Serviço**. Se você ainda não tiver o arquivo de autenticação de entidade de serviço, clique em **Novo** para criá-lo. Caso contrário, você pode clicar em **Procurar** abri-lo e ir para a etapa 8.
+
+   ![A janela Entrada do Azure com a entidade de serviço selecionada][A02]
+
+4. Clique em **Copiar e Abrir** na caixa de diálogo **Logon no Dispositivo do Azure**.
+
+   ![A janela da caixa de diálogo Logon no Azure][A08]
+
+> [!NOTE]
+>
+> Se o navegador não abrir, configure o Eclipse para usar um navegador externo, como o IE ou o Chrome:
+>
+> 1. Abra Preferências -> Geral -> Navegador da Web -> Usar navegador da Web externo no Eclipse
+>
+> 2. Selecione o navegador que você prefere usar
+>
+
+5. No navegador, cole o código de dispositivo (que foi copiado quando você clicou em **Copiar e Abrir** na última etapa) e, em seguida, clique em **Avançar**.
+
+   ![O navegador de logon do dispositivo][A03]
+
+6. Na janela **Criar Arquivos de Autenticação**, selecione as assinaturas que quer usar, escolha o diretório de destino e clique em **Iniciar**.
+
+   ![A janela Criar Arquivos de Autenticação][A04]
+
+7. Na caixa de diálogo **Status de Criação da Entidade de Serviço**, clique em **OK** após a criação bem-sucedida dos arquivos.
+
+   ![A caixa de diálogo Status de Criação da Entidade de Serviço][A05]
+
+8. O endereço do arquivo criado será automaticamente preenchido na janela **Entrar no Azure**, agora clique **Entrar**.
 
    ![Caixa de Diálogo de Logon do Azure][A06]
 
-1. Quando a caixa de diálogo **Selecionar Assinaturas** for exibida, selecione as assinaturas que deseja usar e, em seguida, clique em **OK**.
+9. Por fim, na caixa de diálogo **Selecionar Assinaturas**, selecione as assinaturas que deseja usar e clique em **OK**.
 
-   ![Caixa de diálogo Selecionar Assinaturas][A07]
+   ![A caixa de diálogo Selecionar Assinaturas][A07]
 
-## <a name="signing-out-of-your-azure-account-when-you-signed-in-automatically"></a>Sair de sua conta do Azure quando você entrou automaticamente
+## <a name="sign-out-of-your-azure-account"></a>Sair de sua conta do Azure
 
-Depois de configurar as etapas na seção anterior, o Kit de ferramentas do Azure realizará sua entrada automaticamente em sua conta do Azure toda vez que você reiniciar o Eclipse. No entanto, para sair de sua conta do Azure e impedir que o Kit de ferramentas do Azure promova sua entrada automaticamente, use as etapas a seguir.
+Depois que você configurou sua conta seguindo as etapas anteriores, será conectado automaticamente sempre que iniciar o Eclipse. No entanto, se desejar sair de sua conta do Azure, use as etapas a seguir.
 
 1. No Eclipse, clique em **Ferramentas**, depois clique em **Azure** e, em seguida, clique em **Sair**.
 
    ![Menu do Eclipse para saída do Azure][L01]
 
-1. Quando a caixa de diálogo **Saída do Azure** for exibida, clique em **Sim**.
-
-   ![Caixa de diálogo Saída do Azure][L03]
-
-## <a name="signing-into-your-azure-account-automatically-using-a-credentials-file-which-you-have-already-created"></a>Entre automaticamente em sua conta do Azure usando um arquivo de credenciais que você já criou
-
-Se você sair do Azure quando você estiver usando o Eclipse, você precisará reconfigurar o Kit de ferramentas do Azure para Eclipse para usar um arquivo de credenciais criado antes que você possa entrar automaticamente em sua conta do Azure. As etapas a seguir explicam como configurar o Kit de ferramentas do Azure para usar um arquivo de credenciais existente.
-
-1. Abra seu projeto com o Eclipse.
-
-1. Clique em **Ferramentas**, depois clique em **Azure** e, em seguida, clique em **Entrar**.
-
-   ![Menu do Eclipse para Entrar no Azure][A01]
-
-1. Quando a caixa de diálogo **Entrar no Azure** for exibida, selecione **Automatizado** e, em seguida, clique em **Procurar**.
-
-   ![Caixa de diálogo Entrar][A02]
-
-1. Quando a caixa de diálogo **Selecionar Arquivo Autenticado** for exibida, selecione um arquivo de credenciais criado anteriormente e clique em **Abrir**.
-
-   ![Caixa de diálogo Entrar][A08]
-
-1. Quando a caixa de diálogo **Entrar no Azure** for exibida, clique em **Entrar**.
-
-   ![Caixa de Diálogo de Logon do Azure][A06]
-
-1. Quando a caixa de diálogo **Selecionar Assinaturas** for exibida, selecione as assinaturas que deseja usar e, em seguida, clique em **OK**.
-
-   ![Caixa de diálogo Selecionar Assinaturas][A07]
-
-## <a name="signing-into-your-azure-account-interactively"></a>Entrar em sua conta do Azure interativamente
-
-As etapas a seguir ilustrarão como se inscrever no Azure inserindo manualmente suas credenciais do Azure.
-
-1. Abra seu projeto com o Eclipse.
-
-1. Clique em **Ferramentas**, depois clique em **Azure** e, em seguida, clique em **Entrar**.
-
-   ![Menu do Eclipse para Entrar no Azure][I01]
-
-1. Quando a caixa de diálogo **Entrar no Azure** for exibida, selecione **Interativo** e, em seguida, clique em **Entrar**.
-
-   ![Caixa de diálogo Entrar][I02]
-
-1. Quando a caixa de diálogo **Logon no Azure** for exibida, digite as credenciais do Azure e, em seguida, clique em **Entrar**.
-
-   ![Caixa de Diálogo de Logon do Azure][I03]
-
-1. Quando a caixa de diálogo **Selecionar Assinaturas** for exibida, selecione as assinaturas que deseja usar e, em seguida, clique em **OK**.
-
-   ![Caixa de diálogo Selecionar Assinaturas][I04]
-
-## <a name="signing-out-of-your-azure-account-when-you-signed-in-interactively"></a>Sair de sua conta do Azure quando você entrou no modo interativo
-
-Depois de configurar as etapas na seção anterior, você sairá automaticamente de sua conta do Azure toda vez que reiniciar o Eclipse. No entanto, se você quiser sair de sua conta do Azure sem reiniciar o Eclipse, use as etapas a seguir.
-
-1. No Eclipse, clique em **Ferramentas**, depois clique em **Azure** e, em seguida, clique em **Sair**.
-
-   ![Menu do Eclipse para saída do Azure][L01]
-
-1. Quando a caixa de diálogo **Saída do Azure** for exibida, clique em **Sim**.
+2. Quando a caixa de diálogo **Saída do Azure** for exibida, clique em **Sim**.
 
    ![Caixa de diálogo Saída do Azure][L02]
 
@@ -151,6 +137,7 @@ Depois de configurar as etapas na seção anterior, você sairá automaticamente
 [I02]: media/azure-toolkit-for-eclipse-sign-in-instructions/I02.png
 [I03]: media/azure-toolkit-for-eclipse-sign-in-instructions/I03.png
 [I04]: media/azure-toolkit-for-eclipse-sign-in-instructions/I04.png
+[I05]: media/azure-toolkit-for-eclipse-sign-in-instructions/I05.png
 
 [A01]: media/azure-toolkit-for-eclipse-sign-in-instructions/A01.png
 [A02]: media/azure-toolkit-for-eclipse-sign-in-instructions/A02.png

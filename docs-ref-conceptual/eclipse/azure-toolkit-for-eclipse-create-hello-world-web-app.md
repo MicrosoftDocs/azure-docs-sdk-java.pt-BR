@@ -1,7 +1,8 @@
 ---
-title: Criar um aplicativo Web Olá, Mundo para o Azure usando o Eclipse
+title: Criar um aplicativo Web Olá, Mundo para o Serviço de Aplicativo do Azure usando o Eclipse
 description: Este tutorial mostra como usar o Kit de Ferramentas do Azure para Eclipse para criar um aplicativo Web Hello World para o Azure.
 services: app-service
+keywords: java, eclipse, aplicativo Web, serviço de aplicativo do azure, olá, mundo, início rápido
 documentationcenter: java
 author: selvasingh
 manager: routlaw
@@ -14,38 +15,56 @@ ms.service: app-service
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: web
-ms.openlocfilehash: c98f966eb17e3fbde877451c8f8fefb21e6bf686
-ms.sourcegitcommit: dca98b953fa3149fb2e6aa49e27e843b6df0c6c2
+ms.openlocfilehash: 7e88298afaf0b4601d85d6063b7096c79e677421
+ms.sourcegitcommit: 733115fe0a7b5109b511b4a32490f8264cf91217
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57786885"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65625846"
 ---
-# <a name="create-a-hello-world-web-app-for-azure-using-eclipse"></a>Criar um aplicativo Web Olá, Mundo para o Azure usando o Eclipse
+# <a name="create-a-hello-world-web-app-for-azure-app-service-using-eclipse"></a>Criar um aplicativo Web Olá, Mundo para o Serviço de Aplicativo do Azure usando o Eclipse
 
-Este tutorial mostra como criar e implantar um aplicativo Olá, Mundo básico para o Azure como um aplicativo Web usando o [Kit de Ferramentas do Azure para Eclipse].
+Usando o plug-in [Azure Toolkit for Eclipse](https://marketplace.eclipse.org/content/azure-toolkit-eclipse) de software livre, criar e implantar um aplicativo Olá, Mundo básico para o Serviço de Aplicativo do Azure como um aplicativo Web pode ser feito em poucos minutos.
 
 > [!NOTE]
 >
-> Para obter uma versão deste artigo que usa o [Kit de Ferramentas do Azure para IntelliJ], consulte [Criar um aplicativo Web Olá, Mundo para o Azure usando o IntelliJ][intellij-hello-world].
+> Se você preferir usar o IntelliJ IDEA, confira nosso [tutorial semelhante para IntelliJ][intellij-hello-world].
+>
+>[!INCLUDE [quickstarts-free-trial-note](../includes/quickstarts-free-trial-note.md)]
+>
+> Não se esqueça de limpar os recursos depois de concluir este tutorial. Nesse caso, executar este guia não excederá sua cota da conta gratuita.
 >
 
-> [!IMPORTANT]
-> 
-> O Kit de Ferramentas do Azure para Eclipse foi atualizado em agosto de 2017, com um fluxo de trabalho diferente. Este artigo mostra a criação de um aplicativo Web Olá, Mundo usando a versão 3.0.7 (ou posterior) do Kit de Ferramentas do Azure para Eclipse. Se você estiver usando a versão 3.0.6 (ou anterior) do kit de ferramentas, precisará seguir as etapas em [Criar um aplicativo Web Olá, Mundo para o Azure no Eclipse usando o kit de ferramentas herdado][Legacy Version].
-> 
+[!INCLUDE [azure-toolkit-for-intellij-basic-prerequisites](../includes/azure-toolkit-for-eclipse-basic-prerequisites.md)]
 
-Após a conclusão deste tutorial, seu aplicativo será semelhante à ilustração a seguir quando exibido em um navegador da Web:
+## <a name="installation-and-sign-in"></a>Instalação e credenciais
 
-![Visualização do aplicativo Hello World][browse-web-app]
+1. Arraste o botão a seguir para seu workspace do Eclipse em execução para instalar o plug-in do Azure Toolkit for Eclipse ([outras opções de instalação](azure-toolkit-for-eclipse-installation.md)).
 
-[!INCLUDE [azure-toolkit-for-eclipse-prerequisites](../includes/azure-toolkit-for-eclipse-prerequisites.md)]
+    [![Arraste para seu workspace do Eclipse* em execução. *Requer o Cliente do Eclipse Marketplace](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png)](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Arraste para seu workspace do Eclipse* em execução. *Requer o Cliente do Eclipse Marketplace")
 
-## <a name="create-a-new-web-app-project"></a>Criar um novo projeto do aplicativo Web
+1. Para entrar em sua conta do Azure, clique em **Ferramentas**, então em **Azure** e em **Entrar**.
+   ![Menu do Eclipse para Entrada no Azure][I01]
 
-1. Inicie o Eclipse e entre em sua conta do Azure usando as instruções no artigo [Instruções de entrada no Azure para o Kit de Ferramentas do Azure para Eclipse][eclipse-sign-in-instructions].
+1. Na janela **Entrar no Azure**, selecione **Logon do Dispositivo** e, em seguida, clique em **Entrar** ([outras opções de entrada](azure-toolkit-for-eclipse-sign-in-instructions.md)).
 
-1. Clique em **Arquivo**, **Novo**, em seguida, clique em **Projeto Web Dinâmico**. (Se você não vir o **Projeto Web Dinâmico** listado como um projeto disponível depois de clicar em **Arquivo** e em **Novo**, faça o seguinte: clique em **Arquivo**, clique em **Novo**, clique em **Projeto...**, expanda **Web**, clique em **Projeto Web Dinâmico** e clique em **Avançar**.)
+   ![A janela Entrar no Azure com o logon no dispositivo selecionado][I02]
+
+1. Clique em **Copiar e Abrir** na caixa de diálogo **Logon no Dispositivo do Azure**.
+
+   ![A janela da caixa de diálogo Logon no Azure][I03]
+
+1. No navegador, cole o código de dispositivo (que foi copiado quando você clicou em **Copiar e Abrir** na última etapa) e, em seguida, clique em **Avançar**.
+
+   ![O navegador de logon do dispositivo][I04]
+
+1. Por fim, na caixa de diálogo **Selecionar Assinaturas**, selecione as assinaturas que deseja usar e clique em **OK**.
+
+   ![A caixa de diálogo Selecionar Assinaturas][I05]
+
+## <a name="creating-web-app-project"></a>Como criar um projeto de aplicativo Web
+
+1. Clique em **Arquivo**, **Novo**, em seguida, clique em **Projeto Web Dinâmico**. (Se você não vir o **Projeto Web Dinâmico** listado como um projeto disponível depois de clicar em **Arquivo** e em **Novo**, faça o seguinte: clique em **Arquivo**, clique em **Novo**, clique em **Projeto...** , expanda **Web**, clique em **Projeto Web Dinâmico** e clique em **Avançar**.)
 
    ![Criando um novo projeto Web dinâmico][file-new-dynamic-web-project]
 
@@ -75,7 +94,7 @@ Após a conclusão deste tutorial, seu aplicativo será semelhante à ilustraç�
 
 8. Salve o index.jsp.
 
-## <a name="deploy-your-web-app-to-azure"></a>Implante seu aplicativo Web no Azure
+## <a name="deploying-web-app-to-azure"></a>Como implantar o aplicativo Web no Azure
 
 1. Na exibição Gerenciador de Projetos do Eclipse, clique no projeto com o botão direito, escolha **Azure**, em seguida, escolha **Publicar como Aplicativo Web**.
    
@@ -109,7 +128,11 @@ Após a conclusão deste tutorial, seu aplicativo será semelhante à ilustraç�
 
    ![Procurar seu aplicativo Web][browse-web-app]
 
-1. Depois de publicar a Web no Azure, você poderá gerenciar seu aplicativo ao clicar com o botão direito e selecionar uma das opções no menu de contexto. Por exemplo, você pode **Iniciar**, **Parar** ou **Excluir** seu aplicativo Web.
+[!INCLUDE [azure-toolkit-for-eclipse-show-azure-explorer](../includes/azure-toolkit-for-eclipse-show-azure-explorer.md)]
+
+## <a name="cleaning-up-resources"></a>Limpando recursos
+
+1. Depois de publicar o aplicativo Web no Azure, você poderá gerenciá-lo clicando com o botão direito do mouse no Azure Explorer e selecionando uma das opções no menu de contexto. Por exemplo, você pode **Excluir** seu aplicativo Web aqui para limpar o recurso para este tutorial.
 
    ![Gerenciar o serviço de aplicativo][manage-app-service]
 
@@ -121,8 +144,8 @@ Para obter mais informações sobre como criar aplicativos Web do Azure, confira
 
 <!-- URL List -->
 
-[Kit de Ferramentas do Azure para Eclipse]: azure-toolkit-for-eclipse.md
-[Kit de Ferramentas do Azure para IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
+[Azure Toolkit for Eclipse]: azure-toolkit-for-eclipse.md
+[Azure Toolkit for IntelliJ]: ../intellij/azure-toolkit-for-intellij.md
 [intellij-hello-world]: ../intellij/azure-toolkit-for-intellij-create-hello-world-web-app.md
 [Visão geral de Aplicativos Web]: /azure/app-service/app-service-web-overview
 [Apache Tomcat]: http://tomcat.apache.org/
@@ -130,6 +153,11 @@ Para obter mais informações sobre como criar aplicativos Web do Azure, confira
 [Legacy Version]: azure-toolkit-for-eclipse-create-hello-world-web-app-legacy-version.md
 
 <!-- IMG List -->
+[I01]: media/azure-toolkit-for-eclipse-sign-in-instructions/I01.png
+[I02]: media/azure-toolkit-for-eclipse-sign-in-instructions/I02.png
+[I03]: media/azure-toolkit-for-eclipse-sign-in-instructions/I03.png
+[I04]: media/azure-toolkit-for-eclipse-sign-in-instructions/I04.png
+[I05]: media/azure-toolkit-for-eclipse-sign-in-instructions/I05.png
 
 [browse-web-app]: ./media/azure-toolkit-for-eclipse-create-hello-world-web-app/browse-web-app.png
 [file-new-dynamic-web-project]: ./media/azure-toolkit-for-eclipse-create-hello-world-web-app/file-new-dynamic-web-project.png

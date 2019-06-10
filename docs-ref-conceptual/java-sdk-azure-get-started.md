@@ -12,12 +12,12 @@ ms.technology: azure
 ms.devlang: java
 ms.service: multiple
 ms.assetid: b1e10b79-f75e-4605-aecd-eed64873e2d3
-ms.openlocfilehash: fdf0334a8796d636a1968943cc34d7ae98d6361c
-ms.sourcegitcommit: c2019ba6da6c7c28b17b5a85f89e49bb5e570ba4
+ms.openlocfilehash: 22389ce7346a1d97c072dcc82162c9286f21f178
+ms.sourcegitcommit: 04d0d92c46399976b58a9dfa107ba644378bf171
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44040254"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65986194"
 ---
 # <a name="get-started-with-cloud-development-using-java-on-azure"></a>Introdução ao desenvolvimento em nuvem usando Java no Azure
 
@@ -147,23 +147,23 @@ Adicionar uma entrada `build` sob o elemento `project` de nível superior para u
 
 ### <a name="install-the-azure-toolkit-for-intellij"></a>Instalar o Kit de Ferramentas do Azure para IntelliJ
 
-O [Kit de ferramentas do Azure](intellij/azure-toolkit-for-intellij-installation.md) é necessário caso você vá implantar aplicativos Web ou APIs de forma programática, mas não está sendo usado para outros tipos de desenvolvimento. A seguir há um resumo dos processos de instalação. Para obter etapas detalhadas, visite [Instalação do Kit de ferramentas do Azure para o IntelliJ](intellij/azure-toolkit-for-intellij-installation.md).
+O [Kit de ferramentas do Azure](intellij/azure-toolkit-for-intellij-installation.md) é necessário caso você vá implantar aplicativos Web ou APIs de forma programática, mas não está sendo usado para outros tipos de desenvolvimento. A seguir há um resumo dos processos de instalação. Para obter um início rápido, acesse o [Início rápido do Azure Toolkit for IntelliJ](intellij/azure-toolkit-for-intellij-create-hello-world-web-app.md).
 
-Selecione o menu **Arquivo** e depois **Configurações...**. 
+- Selecione o menu **Arquivo** e depois **Configurações...** . 
 
-Selecione **Repositórios de navegador...** e depois pesquise por "Azure" e instale o **Kit de ferramentas do Azure para o Intellij**.
+- Selecione **Repositórios de navegador...** e depois pesquise por "Azure" e instale o **Kit de ferramentas do Azure para o Intellij**.
 
-Reinicie o IntelliJ.
+- Reinicie o IntelliJ.
 
 ### <a name="install-the-azure-toolkit-for-eclipse"></a>Instalar o Kit de Ferramentas do Azure para Eclipse
 
-O [Kit de ferramentas do Azure](eclipse/azure-toolkit-for-eclipse.md) é necessário caso você vá implantar aplicativos Web ou APIs de forma programática, mas não está sendo usado para outros tipos de desenvolvimento. A seguir há um resumo dos processos de instalação. Para obter etapas detalhadas, visite [Instalação do Kit de ferramentas do Azure para o Eclipse](eclipse/azure-toolkit-for-eclipse.md).
+O [Kit de ferramentas do Azure](eclipse/azure-toolkit-for-eclipse.md) é necessário caso você vá implantar aplicativos Web ou APIs de forma programática, mas não está sendo usado para outros tipos de desenvolvimento. A seguir há um resumo dos processos de instalação. Para obter um início rápido, acesse o [Início rápido do Azure Toolkit for Eclipse](eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app.md).
 
-Selecione o menu **Ajuda** e depois **Instalar novo software**.
+- Selecione o menu **Ajuda** e depois **Instalar novo software**.
 
-No campo **Trabalhar com:**, insira `http://dl.microsoft.com/eclipse` e pressione Enter.
+- No campo **Trabalhar com:** , insira `http://dl.microsoft.com/eclipse` e pressione Enter.
 
-Depois marque a caixa de seleção próxima a **Kit de ferramentas do Azure para Java** e desmarque a caixa de seleção para **Contatar todos os sites de atualização durante a instalação para encontrar o software requerido**. Depois selecione Avançar.
+- Depois marque a caixa de seleção próxima a **Kit de ferramentas do Azure para Java** e desmarque a caixa de seleção para **Contatar todos os sites de atualização durante a instalação para encontrar o software requerido**. Depois selecione Avançar.
 
 ## <a name="create-a-linux-virtual-machine"></a>Criar uma máquina virtual Linux
 

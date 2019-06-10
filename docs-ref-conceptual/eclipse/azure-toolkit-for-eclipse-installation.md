@@ -1,5 +1,5 @@
 ---
-title: Instalar o Kit de Ferramentas do Azure para Eclipse
+title: Instalação do Kit de Ferramentas do Azure para o Eclipse
 description: Saiba como instalar o Kit de Ferramentas do Azure para o plug-in Eclipse para criar e implantar aplicativos de nuvem no Azure.
 services: ''
 documentationcenter: java
@@ -14,16 +14,19 @@ ms.service: multiple
 ms.tgt_pltfrm: multiple
 ms.topic: article
 ms.workload: na
-ms.openlocfilehash: bcc5ed04143eebaff89e5688a818e464f077390e
-ms.sourcegitcommit: 115f4c8ad07a11f17d79e9d945d63917836b11c8
+ms.openlocfilehash: 8e6630f7e019d950249e7e84024ac800a0f2f136
+ms.sourcegitcommit: 394521c47ac9895d00d9f97535cc9d1e27d08fe9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61590640"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66270842"
 ---
-# <a name="install-the-azure-toolkit-for-eclipse"></a>Instalar o Kit de Ferramentas do Azure para Eclipse
+# <a name="installing-the-azure-toolkit-for-eclipse"></a>Instalação do Kit de Ferramentas do Azure para o Eclipse
 
-O Kit de Ferramentas do Azure para Eclipse fornece modelos e funcionalidades que permitem criar, desenvolver, testar e implantar facilmente aplicativos de nuvem para o Azure a partir do ambiente de desenvolvimento do Eclipse.
+Há duas maneiras de instalar o Azure Toolkit for Eclipse:
+
+  - [Marketplace do Eclipse](#eclipse-marketplace)
+  - [Instalar novo software](#install-new-software)
 
 > [!NOTE] 
 > 
@@ -32,22 +35,30 @@ O Kit de Ferramentas do Azure para Eclipse fornece modelos e funcionalidades que
 > <https://github.com/microsoft/azure-tools-for-java> 
 > 
 
-As etapas a seguir mostram como instalar o Kit de Ferramentas do Azure para o Eclipse.
+[!INCLUDE [azure-toolkit-for-eclipse-basic-prerequisites](../includes/azure-toolkit-for-eclipse-basic-prerequisites.md)]
 
-[!INCLUDE [azure-toolkit-for-eclipse-prerequisites](../includes/azure-toolkit-for-eclipse-prerequisites.md)]
+## <a name="eclipse-marketplace"></a>Marketplace do Eclipse
 
-## <a name="to-install-the-azure-toolkit-for-eclipse"></a>Para instalar o Kit de Ferramentas do Azure para o Eclipse
+1. Arraste o botão a seguir para seu workspace do Eclipse em execução.
+
+    [![Arraste para seu workspace do Eclipse* em execução. *Requer o Cliente do Eclipse Marketplace](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png)](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Arraste para seu workspace do Eclipse* em execução. *Requer o Cliente do Eclipse Marketplace")
+
+2. Caso contrário, também será possível pesquisar e instalar o **plug-in Azure Toolkit for Eclipse** em **Ajuda/Marketplace do Eclipse**.
+
+    ![Marketplace](./media/azure-toolkit-for-eclipse-installation/marketplace.png)
+
+## <a name="install-new-software"></a>Instalar novo software
 
 1. Inicie o Eclipse.
 
 1. Clique no menu **Ajuda** e, em seguida, clique em **Instalar Novo Software**, conforme mostrado na ilustração a seguir.
-   
+
    ![Instalação do Kit de Ferramentas do Azure para o Eclipse][01]
 
 1. Na caixa de diálogo **Software Disponível** na caixa de texto **Trabalhar com**, digite `http://dl.microsoft.com/eclipse/` seguido pela tecla **Enter**.
 
 1. No painel **Nome**, marque **Kit de Ferramentas do Azure para Java** e desmarque **Entrar em contato com todos os sites de atualização durante a instalação para encontrar o software necessário**. Sua tela será semelhante à seguinte:
-   
+
    ![Instalação do Kit de Ferramentas do Azure para o Eclipse][02]
 
 1. Se você expandir o **Kit de Ferramentas do Azure para Eclipse**, verá uma lista de componentes que serão instalados; por exemplo:
@@ -65,19 +76,19 @@ As etapas a seguir mostram como instalar o Kit de Ferramentas do Azure para o Ec
 1. Clique em **Próximo**. (Se você experimentar atrasos incomuns ao instalar o kit de ferramentas, certifique-se de que a opção **Contatar todos os sites de atualização durante a instalação para encontrar o software necessário** está desmarcada.)
 
 1. No diálogo **Instalar Detalhes**, clique em **Avançar**.
-   
+
    ![Revisão dos detalhes de instalação][03]
 
 1. No diálogo **Examinar Licenças** , leia os termos dos contratos de licença. Se você aceitar os termos dos contratos de licença, clique em **Aceito os termos dos contratos de licença** e clique em **Concluir**. (As etapas restantes supõem que você aceite os termos dos contratos de licença. Se você não aceitar os termos dos contratos de licença, saia do processo de instalação.)
-   
+
    ![Examinar Licenças][04]
-   
+
    O Eclipse baixará e instalará os pacotes necessários.
-   
+
    ![Progresso da Instalação][05]
 
 1. Se for solicitado a reiniciar o Eclipse para concluir a instalação, clique em **Sim**.
-   
+
    ![Reinicie o prompt][06]
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -89,7 +100,6 @@ As etapas a seguir mostram como instalar o Kit de Ferramentas do Azure para o Ec
 <!-- Legacy MSDN URL = https://msdn.microsoft.com/library/azure/hh690946.aspx -->
 
 <!-- IMG List -->
-
 [01]: media/azure-toolkit-for-eclipse-installation/eclipse-installation-01.png
 [02]: media/azure-toolkit-for-eclipse-installation/eclipse-installation-02.png
 [03]: media/azure-toolkit-for-eclipse-installation/eclipse-installation-03.png
