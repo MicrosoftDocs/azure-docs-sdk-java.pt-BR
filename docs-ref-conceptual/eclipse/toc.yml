@@ -1,19 +1,19 @@
 - name: Kit de ferramentas do Azure para Eclipse
   href: azure-toolkit-for-eclipse.md
   items:
-    - name: Instalar
-      href: azure-toolkit-for-eclipse-installation.md
     - name: Introdução
       href: azure-toolkit-for-eclipse-create-hello-world-web-app.md
     - name: Tutoriais
       items:
         - name: Implantar contêineres nas VMs do Azure
           href: azure-toolkit-for-eclipse-publish-as-docker-container.md
-        - name: Implantar um aplicativo Web no Serviço de Aplicativo do Azure
+        - name: Publicar um aplicativo Spring Boot como um contêiner do Docker
           href: azure-toolkit-for-eclipse-publish-spring-boot-docker-app.md
     - name: Instruções
       items:
-        - name: Configurar a autenticação
+        - name: Instalar o kit de ferramentas
+          href: azure-toolkit-for-eclipse-installation.md
+        - name: Entre na sua conta do Azure
           href: azure-toolkit-for-eclipse-sign-in-instructions.md
         - name: Gerenciar recursos do Azure
           items:
@@ -25,3 +25,5 @@
               href: azure-toolkit-for-eclipse-managing-redis-caches-using-azure-explorer.md
     - name: Notas de versão
       href: 'https://github.com/Microsoft/azure-tools-for-java/releases'
+    - name: Marketplace
+      href: 'https://marketplace.eclipse.org/content/azure-toolkit-eclipse'
